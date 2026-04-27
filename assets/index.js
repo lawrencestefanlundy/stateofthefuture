@@ -55,11 +55,6 @@
     return acc;
   }, { all: 0 });
 
-  document.getElementById('stat-total').textContent = totals.all;
-  document.getElementById('stat-essay').textContent = totals['Essay'] || 0;
-  document.getElementById('stat-interview').textContent = totals['Interview'] || 0;
-  document.getElementById('stat-friday-four').textContent = totals['Friday Four'] || 0;
-
   document.getElementById('count-all').textContent = '(' + totals.all + ')';
   document.getElementById('count-Essay').textContent = '(' + (totals['Essay'] || 0) + ')';
   document.getElementById('count-Interview').textContent = '(' + (totals['Interview'] || 0) + ')';
@@ -99,6 +94,16 @@
     return 'cat-' + String(cat).toLowerCase().replace(/\s+/g, '-');
   }
 
+  function buildPlaceholder(p) {
+    // Broadsheet "no image" treatment: small mono category label, hairline
+    // rule, EB Garamond title fills the card.
+    const wrap = el('div', { className: 'card-image placeholder' });
+    wrap.appendChild(el('div', { className: 'ph-label', text: p.category || '' }));
+    wrap.appendChild(el('div', { className: 'ph-rule' }));
+    wrap.appendChild(el('div', { className: 'ph-title', text: p.title || '' }));
+    return wrap;
+  }
+
   function buildCard(p) {
     const card = el('a', { className: 'card', attrs: { href: p.url || '#' } });
     if (p.category) card.dataset.category = p.category;
@@ -107,12 +112,16 @@
     if (heroSrc) {
       const wrap = el('div', { className: 'card-image' });
       const img = el('img', { attrs: { src: heroSrc, alt: '', loading: 'lazy' } });
+      // If the image fails to load (404, 403, broken hot-link), swap the wrap
+      // for an editorial placeholder rather than show a broken-image icon.
+      img.addEventListener('error', function () {
+        const ph = buildPlaceholder(p);
+        wrap.replaceWith(ph);
+      });
       wrap.appendChild(img);
       card.appendChild(wrap);
     } else {
-      const wrap = el('div', { className: 'card-image placeholder' });
-      wrap.appendChild(el('span', { text: p.category || '' }));
-      card.appendChild(wrap);
+      card.appendChild(buildPlaceholder(p));
     }
 
     const body = el('div', { className: 'card-body' });

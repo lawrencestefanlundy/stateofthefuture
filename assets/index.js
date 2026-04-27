@@ -94,56 +94,34 @@
     return 'cat-' + String(cat).toLowerCase().replace(/\s+/g, '-');
   }
 
-  function buildPlaceholder(p) {
-    // Broadsheet "no image" treatment: small mono category label, hairline
-    // rule, EB Garamond title fills the card.
-    const wrap = el('div', { className: 'card-image placeholder' });
-    wrap.appendChild(el('div', { className: 'ph-label', text: p.category || '' }));
-    wrap.appendChild(el('div', { className: 'ph-rule' }));
-    wrap.appendChild(el('div', { className: 'ph-title', text: p.title || '' }));
-    return wrap;
-  }
-
   function buildCard(p) {
     const card = el('a', { className: 'card', attrs: { href: p.url || '#' } });
     if (p.category) card.dataset.category = p.category;
 
-    const heroSrc = p.hero_local || p.hero_remote;
-    if (heroSrc) {
-      const wrap = el('div', { className: 'card-image' });
-      const img = el('img', { attrs: { src: heroSrc, alt: '', loading: 'lazy' } });
-      // If the image fails to load, swap to the editorial placeholder rather
-      // than show a broken-image glyph.
-      img.addEventListener('error', function () {
-        const ph = buildPlaceholder(p);
-        wrap.replaceWith(ph);
-      });
-      wrap.appendChild(img);
-      card.appendChild(wrap);
-    } else {
-      card.appendChild(buildPlaceholder(p));
-    }
-
     const body = el('div', { className: 'card-body' });
 
-    // Eyebrow: CATEGORY · DATE — small mono, separated by a dot.
-    const eyebrow = el('div', { className: 'card-eyebrow' });
-    eyebrow.appendChild(el('span', { className: 'cat-tag ' + categoryClass(p.category || 'Essay'), text: p.category || '' }));
-    if (p.date_pretty) {
-      eyebrow.appendChild(el('span', { className: 'sep' }));
-      eyebrow.appendChild(el('span', { text: p.date_pretty }));
-    }
-    body.appendChild(eyebrow);
-
     body.appendChild(el('div', { className: 'card-title', text: p.title || '' }));
-    body.appendChild(el('div', { className: 'card-byline', text: 'Lawrence Lundy-Bryan' }));
+
+    const byline = el('div', { className: 'card-byline' });
+    byline.appendChild(el('span', { className: 'label', text: 'Words by ' }));
+    byline.appendChild(el('span', { className: 'name', text: 'Lawrence Lundy-Bryan' }));
+    body.appendChild(byline);
+
     if (p.subtitle) body.appendChild(el('div', { className: 'card-subtitle', text: p.subtitle }));
+
     const ctaText = p.category === 'Interview' ? 'Read interview →'
       : p.category === 'Friday Four' ? 'Read dispatch →'
       : 'Read essay →';
     body.appendChild(el('span', { className: 'card-cta', text: ctaText }));
 
     card.appendChild(body);
+
+    // Foot: category chip (left) + date (right) — separated from body by a hairline.
+    const foot = el('div', { className: 'card-foot' });
+    foot.appendChild(el('span', { className: 'card-cat ' + categoryClass(p.category || 'Essay'), text: p.category || '' }));
+    if (p.date_pretty) foot.appendChild(el('span', { className: 'card-date', text: p.date_pretty }));
+    card.appendChild(foot);
+
     return card;
   }
 

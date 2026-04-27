@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>State of the Future — Lawrence Lundy-Bryan</title>
-<meta name="description" content="Essays, interviews, and Friday Four dispatches on the technology shaping the future.">
+<meta name="description" content="The full archive of essays, interviews, and Friday Four dispatches by Lawrence Lundy-Bryan.">
 <meta property="og:title" content="State of the Future">
-<meta property="og:description" content="Essays, interviews, and Friday Four dispatches on the technology shaping the future.">
+<meta property="og:description" content="The full archive of essays, interviews, and Friday Four dispatches by Lawrence Lundy-Bryan.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -22,21 +22,27 @@
         <span class="masthead-name">State of the Future</span>
       </a>
       <nav class="masthead-nav">
-        <a href="#archive">Archive</a>
+        <a href="https://stateofthefuture.substack.com/podcast">Podcast</a>
+        <a href="https://stateofthefuture.substack.com">Newsletter</a>
         <a href="https://stateofthefuture.substack.com/subscribe" class="subscribe-pill">Subscribe</a>
       </nav>
     </div>
   </div>
 </header>
 
-<section class="filterbar" id="archive">
-  <div class="container filterbar-inner">
-    <button class="filter-chip" data-filter="all" aria-pressed="true">All <span class="count" id="count-all"></span></button>
-    <button class="filter-chip" data-filter="Essay" aria-pressed="false">Essays <span class="count" id="count-Essay"></span></button>
-    <button class="filter-chip" data-filter="Interview" aria-pressed="false">Interviews <span class="count" id="count-Interview"></span></button>
-    <button class="filter-chip" data-filter="Friday Four" aria-pressed="false">Friday Four <span class="count" id="count-Friday-Four"></span></button>
-    <input type="search" id="search" class="search-input" placeholder="Search title or subtitle…">
-    <span class="result-count" id="result-count"></span>
+<section class="issue-bar" id="archive">
+  <div class="container issue-bar-inner">
+    <span class="label" id="issue-label">Archive</span>
+    <span class="sep">|</span>
+    <span class="label" id="issue-date">April 2026</span>
+    <div class="filter-list">
+      <button class="filter-chip" data-filter="all" aria-pressed="true">All <span class="count" id="count-all"></span></button>
+      <button class="filter-chip" data-filter="Essay" aria-pressed="false">Essays <span class="count" id="count-Essay"></span></button>
+      <button class="filter-chip" data-filter="Interview" aria-pressed="false">Interviews <span class="count" id="count-Interview"></span></button>
+      <button class="filter-chip" data-filter="Friday Four" aria-pressed="false">Friday Four <span class="count" id="count-Friday-Four"></span></button>
+      <input type="search" id="search" class="search-input" placeholder="Search">
+      <span class="result-count" id="result-count"></span>
+    </div>
   </div>
 </section>
 
@@ -48,9 +54,9 @@
 
 <footer class="site-footer">
   <div class="container">
-    <span class="mono">© <span id="year"></span> Lawrence Lundy-Bryan</span>
-    <span class="mono"><a href="https://stateofthefuture.substack.com/subscribe">Subscribe on Substack</a></span>
-    <span class="mono">stateofthefuture.io</span>
+    <span>© <span id="year"></span> Lawrence Lundy-Bryan</span>
+    <span><a href="https://stateofthefuture.substack.com/subscribe">Subscribe on Substack</a></span>
+    <span>stateofthefuture.io</span>
   </div>
 </footer>
 

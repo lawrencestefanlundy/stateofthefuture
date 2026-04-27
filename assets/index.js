@@ -103,12 +103,6 @@
   function buildCardBody(p) {
     const body = el('div', { className: 'card-body' });
     body.appendChild(el('div', { className: 'card-title', text: p.title || '' }));
-
-    const byline = el('div', { className: 'card-byline' });
-    byline.appendChild(el('span', { className: 'label', text: 'Words by ' }));
-    byline.appendChild(el('span', { className: 'name', text: 'Lawrence Lundy-Bryan' }));
-    body.appendChild(byline);
-
     if (p.subtitle) body.appendChild(el('div', { className: 'card-subtitle', text: p.subtitle }));
     body.appendChild(el('span', { className: 'card-cta', text: ctaFor(p.category) }));
     return body;

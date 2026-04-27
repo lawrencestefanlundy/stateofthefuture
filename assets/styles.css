@@ -60,13 +60,7 @@ a { color: var(--link); text-decoration: none; }
 }
 .masthead-title {
   text-decoration: none; color: inherit;
-  display: flex; flex-direction: column; gap: 0.4rem;
-}
-.masthead-eyebrow {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.72rem; font-weight: 400;
-  color: var(--ink-60);
-  text-transform: uppercase; letter-spacing: 0.06em;
+  display: flex; flex-direction: column; gap: 0.25rem;
 }
 .masthead-name {
   font-family: 'EB Garamond', Georgia, serif;
@@ -74,6 +68,14 @@ a { color: var(--link); text-decoration: none; }
   font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.025em; line-height: 0.95;
+}
+.masthead-byline {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink-60);
+  letter-spacing: 0.005em;
 }
 .masthead-nav {
   display: flex; gap: 0; align-items: stretch;

@@ -263,8 +263,8 @@ def render_post_page(post: dict, body_html: str) -> str:
   <div class="container">
     <div class="masthead-inner">
       <a href="../index.html" class="masthead-title">
-        <span class="masthead-eyebrow">Lawrence Lundy-Bryan</span>
         <span class="masthead-name">State of the Future</span>
+        <span class="masthead-byline">by Lawrence Lundy-Bryan</span>
       </a>
       <nav class="masthead-nav">
         <a href="https://stateofthefuture.substack.com/podcast">Podcast</a>
@@ -281,7 +281,6 @@ def render_post_page(post: dict, body_html: str) -> str:
     <div class="container article-header-inner">
       <div class="article-eyebrow">
         <span class="ae-label">{cat}</span>
-        <span class="ae-name">Lawrence Lundy-Bryan</span>
       </div>
       <h1 class="article-title">{title}</h1>
       <div class="article-date">{pretty_date}</div>

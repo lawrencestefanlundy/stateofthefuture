@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four Things Friday — State of the Future</title>
+<meta name="description" content="Agents, automation, Fractile, OLIX, and who&#x27;s watching the machines">
+<meta property="og:title" content="Four Things Friday">
+<meta property="og:description" content="Agents, automation, Fractile, OLIX, and who&#x27;s watching the machines">
+<meta property="og:image" content="../images/four-things-friday.png">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="container masthead-inner">
+    <a href="../index.html" class="masthead-title">
+      <span class="masthead-eyebrow">Lawrence Lundy-Bryan</span>
+      <span class="masthead-name">State of the Future</span>
+    </a>
+    <nav class="masthead-nav">
+      <a href="../index.html">Archive</a>
+      <a href="https://stateofthefuture.substack.com/subscribe" class="subscribe-pill">Subscribe</a>
+    </nav>
+  </div>
+</header>
+
+<article class="post">
+  <div class="container post-container">
+    <div class="post-meta-row">
+      <span class="cat-tag cat-friday-four">Friday Four</span>
+      <span class="post-date">13 Feb 2026</span>
+    </div>
+    <h1 class="post-title">Four Things Friday</h1>
+    <p class="post-subtitle">Agents, automation, Fractile, OLIX, and who&#x27;s watching the machines</p>
+    <div class="post-hero"><img src="../images/four-things-friday.png" alt=""></div>
+    <div class="post-body">
+<p>Something new. Starting this week I’m going to send a short Friday email — four things you should know about. Think Ben Thompson but not as cynical. More fun. Because why are we all taking life so seriously anyway. None of us are getting out alive.</p><p>The longer essays and interviews aren’t going anywhere, they will come every couple of weeks. I have to carve out actual real world time to write those properly rather than regurgitate The Latest Thing.</p><p>Here’s a weekend pondering for you: what would you have to see an agent do, to sign up for a gardening qualification [or non-computer-based job of your choice]? Serious question. What task would an AI agent have to complete before you stopped saying “oh but it still can’t do X”? Like, when will you put a mask on?</p><p>If you don’t have a good answer for that, you probably shouldn’t have a strong opinion on AI and job automation.</p><p>LFG.</p><p><strong>1. Matt Shumer — “Something Big Is Happening” (and the backlash)</strong></p><p>You’ve probably seen this already. 55 million views. Shumer’s claim: if your job happens on a screen, AI is coming for significant parts of it. Bigger than Covid. Shumer has form with these viral tweets btw.</p><p>Regular readers will know I’ve been banging on about this for a while now. <a href="https://stateofthefuture.substack.com/p/data-driven-vc-is-over">Data-driven VC is over</a> — my own core research skill, automated. <a href="https://stateofthefuture.substack.com/p/occupational-downgrading">What happens if mass unemployment never arrives?</a> — AI won’t cause mass joblessness, it’ll hollow out the meaning of work instead. <a href="https://stateofthefuture.substack.com/p/dirty-work-the-return-of-blue-collar">Dirty Work</a> — 78% of employers already planning to cut graduate hiring because AI does the work. <a href="https://stateofthefuture.substack.com/p/unbundling-the-job">Unbundling the Job</a> — employment decomposing from a social bundle into tasks. Shumer is saying the quiet part loud to 55 million people. Good.</p><p>Gary Marcus wrote a reply obvs. He says: no actual data, the METR benchmark only measures coding at 50% correctness, no mention of recent reasoning error papers, and the lived experience of these tools is still frequently maddening. (Replit’s AI agent once deleted a developer’s entire production database, then fabricated 4,000 fake users to cover its tracks.) Marcus makes fair points.</p><p>But stop pointing at the point on the curve and ignoring the curve. In this case, stop looking at the puppets, and look at the strings. The Covid analogy is the important bit, most people are misreading it. He’s not saying this is a pandemic. He’s saying this is an exponential. And humans are terrible at exponentials. February 2020. “It’s just the flu.” etc et al. Go the races, by all means folks. “It’s just the flu.” The people who got it right were the ones who understood compounding. Same dynamic. The gap between “sometimes brilliant, sometimes deletes your database” and “reliable enough to deploy at scale” is closing faster than the sceptics think. Way faster.</p><p><a href="https://shumer.dev/something-big-is-happening">shumer.dev/something-big-is-happening</a></p><p><strong>2. And UK Sovereignty! AI chips — two UK raises in one week</strong></p><p>When agents eat all screen-based work, someone has to run all that inference. Every agent call, every tool use, every chain-of-thought step. That’s tokens. Lots of tokens. And tokens need silicon. Which makes this week’s UK chip news feel less like a coincidence and more like a leading indicator.</p><p>UK startup Fractile has committed £100m to expanding its UK operations — new hardware facility in Bristol, team growing from 80. The thesis: compute-in-memory. Instead of shuttling model weights between DRAM and processor (the inference bottleneck), they bake computation directly into memory. They claim 100x faster inference than H100s on Llama2-70B at a tenth of the system cost — though that’s based on simulations, not physical silicon yet. Founded by Walter Goodwin out of Oxford Robotics, backed by NATO Innovation Fund, Kindred, and Pat Gelsinger personally. RISC-V based, prototype chip targeting H2 2026, shipping product in 2027.</p><p>Meanwhile Olix raised $220m at a $1bn+ valuation for their Optical Tensor Processing Unit — photonic interconnects on an all-SRAM architecture, no HBM (Like Groq btw). Backed by Hummingbird, Plural, LocalGlobe. All the good names. Shipping chips in 2027, they say. With all that money I want James to solve non-linear ops in photonic domain and solve optical memory please.</p><p>Two UK chip companies, same week, same underlying bet: the memory wall is the bottleneck and you solve it by not moving data. Fractile does it with compute-in-memory, Olix does it with photonic interconnects and on-chip SRAM. I wrote about this design space with Manu from Synthara a few weeks ago — his line was “stop moving data.” These raises are the market agreeing with him. James and Walter FTW.</p><ul><li><p><a href="https://sifted.eu/articles/fractile-100m-uk-operations">Fractile: sifted.eu</a></p></li><li><p><a href="https://siliconangle.com/">Olix: siliconangle.com</a></p></li></ul><p><strong>3. Deutsche Telekom’s AI Factory — the one everyone missed</strong></p><p>While the AI Internet was melting down about Shumer, something arguably more important happened in Munich. Deutsche Telekom and NVIDIA launched the “Industrial AI Cloud”, with Siemens as a key partner. Nearly 10,000 Blackwell GPUs. Half an exaFLOP. Cooled by river water from the actual Eisbach. (Genuinely excellent German engineering flex.) A European consortium called SOOFI is training a 100-billion-parameter open-source model entirely on European soil, under German data protection rules. Because of course, Europe’s go-to answer is a consortium, because that way we can act fast…</p><p>But tbf, this is what sovereignty looks like. Not speeches. Not another EU consultation document that takes 18 months. A billion euros of GPUs in a gutted bank vault in Munich/entry on ledger. I’ve been banging on about European compute sovereignty for years now and I don’t think I’ve ever been able to point at something this concrete.</p><p><a href="https://telekom.com/">telekom.com</a></p><p><strong>4. MIT Tech Review — “Is a Secure AI Assistant Possible?”</strong></p><p>This is the piece I keep coming back to. AI agents now have access to your email, your files, your code, your finances. Who ensures that data stays private? Who audits what the model did and why? Right now? Literally nobody.</p><p>I’ve been working on an investment thesis around privacy-enhancing technologies for AI — FHE, confidential computing, zero-knowledge proofs. Unsexy names. I’ve wrote about this alot of the years. It’s becoming critical infrastructure now though. The EU AI Act high-risk compliance deadline is 2 August 2026. Ohh, a compliance deadline. I bet Elon is worried. But still, the entire governance layer for agentic AI is missing and someone’s going to build it. Quite keen for that someone to be European, frankly.</p><p><a href="https://technologyreview.com/">technologyreview.com</a></p><div><hr></div><p>Now, off you pop.</p><p class="button-wrapper" data-component-name="ButtonCreateButton"><a class="button primary" href="https://stateofthefuture.substack.com/subscribe?"><span>Subscribe now</span></a></p><p></p>
+    </div>
+    <div class="post-footer">
+      <div class="subscribe-block">
+        <h2>Get the next dispatch</h2>
+        <p>Essays and interviews on the technologies that will shape the next decade. No spam, unsubscribe anytime.</p>
+        <iframe src="https://stateofthefuture.substack.com/embed" width="100%" height="320" style="border:1px solid #0F172A; background:#FFFFFF;" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="post-nav">
+        <a href="../index.html">← Back to archive</a>
+        <a href="https://stateofthefuture.substack.com/p/four-things-friday" target="_blank" rel="noopener">View on Substack ↗</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="mono">© 2026 Lawrence Lundy-Bryan</span>
+    <span class="mono">stateofthefuture.io</span>
+  </div>
+</footer>
+</body>
+</html>

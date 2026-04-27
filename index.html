@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State of the Future — Lawrence Lundy-Bryan</title>
+<meta name="description" content="Essays, interviews, and Friday Four dispatches on the technology shaping the future.">
+<meta property="og:title" content="State of the Future">
+<meta property="og:description" content="Essays, interviews, and Friday Four dispatches on the technology shaping the future.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-inner">
+      <a href="index.html" class="masthead-title">
+        <span class="masthead-eyebrow">Lawrence Lundy-Bryan</span>
+        <span class="masthead-name">State of the Future</span>
+      </a>
+      <nav class="masthead-nav">
+        <a href="#archive">Archive</a>
+        <a href="https://stateofthefuture.substack.com/subscribe" class="subscribe-pill">Subscribe</a>
+      </nav>
+    </div>
+    <p class="masthead-subtitle">Essays, interviews, and Friday Four dispatches on the technology shaping the future. An archive of every published piece.</p>
+    <div class="masthead-stats" id="masthead-stats">
+      <div class="masthead-stat"><div class="num" id="stat-total">—</div><div class="lbl">Posts</div></div>
+      <div class="masthead-stat"><div class="num" id="stat-essay">—</div><div class="lbl">Essays</div></div>
+      <div class="masthead-stat"><div class="num" id="stat-interview">—</div><div class="lbl">Interviews</div></div>
+      <div class="masthead-stat"><div class="num" id="stat-friday-four">—</div><div class="lbl">Friday Four</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="filterbar" id="archive">
+  <div class="container filterbar-inner">
+    <button class="filter-chip" data-filter="all" aria-pressed="true">All <span class="count" id="count-all"></span></button>
+    <button class="filter-chip" data-filter="Essay" aria-pressed="false">Essays <span class="count" id="count-Essay"></span></button>
+    <button class="filter-chip" data-filter="Interview" aria-pressed="false">Interviews <span class="count" id="count-Interview"></span></button>
+    <button class="filter-chip" data-filter="Friday Four" aria-pressed="false">Friday Four <span class="count" id="count-Friday-Four"></span></button>
+    <input type="search" id="search" class="search-input" placeholder="Search title or subtitle…">
+    <span class="result-count" id="result-count"></span>
+  </div>
+</section>
+
+<main class="grid-wrap">
+  <div class="container">
+    <div class="grid" id="grid"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="mono">© <span id="year"></span> Lawrence Lundy-Bryan</span>
+    <span class="mono"><a href="https://stateofthefuture.substack.com/subscribe">Subscribe on Substack</a></span>
+    <span class="mono">stateofthefuture.io</span>
+  </div>
+</footer>
+
+<script src="assets/index.js"></script>
+</body>
+</html>

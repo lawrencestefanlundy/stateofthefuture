@@ -202,12 +202,21 @@ def first_paragraph_text(post_html: str, max_chars: int = 220) -> str:
     return text
 
 
+def reading_time_minutes(post_html: str, wpm: int = 230) -> int:
+    """Rough read-time estimate. Strip tags and count words."""
+    text = re.sub(r"<[^>]+>", " ", post_html)
+    text = html.unescape(text)
+    words = len(text.split())
+    return max(1, round(words / wpm))
+
+
 # --- templating --------------------------------------------------------------
 
 def render_post_page(post: dict, body_html: str) -> str:
     cat = post["category"]
     cat_slug = category_slug(cat)
     pretty_date = post["date_pretty"]
+    read_min = reading_time_minutes(body_html)
     title = html.escape(post["title"])
     subtitle = html.escape(post["subtitle"]) if post["subtitle"] else ""
     # local paths in the manifest are relative to project root ("images/x.jpg");
@@ -221,7 +230,7 @@ def render_post_page(post: dict, body_html: str) -> str:
     else:
         hero_src = ""
     hero_html = (
-        f'<div class="post-hero"><img src="{html.escape(hero_src)}" alt=""></div>' if hero_src else ""
+        f'<div class="article-hero"><div class="container article-hero-inner"><img src="{html.escape(hero_src)}" alt=""></div></div>' if hero_src else ""
     )
     og_image = ""
     if hero_local:
@@ -230,6 +239,9 @@ def render_post_page(post: dict, body_html: str) -> str:
         og_image = f'<meta property="og:image" content="{html.escape(hero_remote)}">'
     subtitle_html = (
         f'<p class="post-subtitle">{subtitle}</p>' if subtitle else ""
+    )
+    excerpt_html = (
+        f'<div class="article-excerpt">{subtitle}</div>' if subtitle else ""
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -248,37 +260,51 @@ def render_post_page(post: dict, body_html: str) -> str:
 </head>
 <body>
 <header class="masthead">
-  <div class="container masthead-inner">
-    <a href="../index.html" class="masthead-title">
-      <span class="masthead-eyebrow">Lawrence Lundy-Bryan</span>
-      <span class="masthead-name">State of the Future</span>
-    </a>
-    <nav class="masthead-nav">
-      <a href="../index.html">Archive</a>
-      <a href="{SUBSTACK_URL}/subscribe" class="subscribe-pill">Subscribe</a>
-    </nav>
+  <div class="container">
+    <div class="masthead-inner">
+      <a href="../index.html" class="masthead-title">
+        <span class="masthead-eyebrow">Lawrence Lundy-Bryan</span>
+        <span class="masthead-name">State of the Future</span>
+      </a>
+      <nav class="masthead-nav">
+        <a href="https://stateofthefuture.substack.com/podcast">Podcast</a>
+        <a href="../index.html">Archive</a>
+        <a href="{SUBSTACK_URL}/subscribe" class="subscribe-pill">Subscribe</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<article class="post">
-  <div class="container post-container">
-    <div class="post-meta-row">
-      <span class="cat-tag cat-{cat_slug}">{cat}</span>
-      <span class="sep"></span>
-      <span class="post-date">{pretty_date}</span>
+<article class="article single-article">
+  {hero_html}
+  <div class="article-header">
+    <div class="container article-header-inner">
+      <div class="article-eyebrow">
+        <span class="ae-label">{cat}</span>
+        <span class="ae-name">Lawrence Lundy-Bryan</span>
+      </div>
+      <h1 class="article-title">{title}</h1>
+      <div class="article-date">{pretty_date}</div>
+      <div class="article-separator"></div>
+      <div class="article-reading-time">{read_min} min read</div>
     </div>
-    <h1 class="post-title">{title}</h1>
-    {subtitle_html}
-    <div class="post-byline">By <a href="https://stateofthefuture.substack.com" target="_blank" rel="noopener">Lawrence Lundy-Bryan</a></div>
-    {hero_html}
-    <div class="post-body">
+  </div>
+
+  <div class="article-content">
+    <div class="container article-content-inner">
+      {excerpt_html}
+      <div class="article-body">
 {body_html}
+      </div>
     </div>
-    <div class="post-footer">
+  </div>
+
+  <div class="article-footer">
+    <div class="container">
       <div class="subscribe-block">
         <h2>Get the next dispatch</h2>
         <p>Essays and interviews on the technologies that will shape the next decade. No spam, unsubscribe anytime.</p>
-        <iframe src="{SUBSTACK_URL}/embed" width="100%" height="320" style="border:none; background:#FFFFFF;" frameborder="0" scrolling="no"></iframe>
+        <iframe src="{SUBSTACK_URL}/embed" width="100%" height="320" style="border:none; background:#FFFAF6;" frameborder="0" scrolling="no"></iframe>
       </div>
       <div class="post-nav">
         <a href="../index.html">← Back to archive</a>

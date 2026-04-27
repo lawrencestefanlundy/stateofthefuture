@@ -259,6 +259,113 @@ a { color: var(--link); text-decoration: none; }
 
 /* hidden — image-bearing card variants are not used in the WiP-style grid */
 .card-image, .card-image.placeholder { display: none; }
+.card.spotlight .card-image,
+.card.spotlight .card-image.placeholder { display: block; }
+
+/* ── spotlight card ─────────────────────────────────────────────────── */
+/* The most-recent post (or first post in the current filter) renders as a
+   tall spotlight in column 1, rows 1-2 — image on top, deep teal panel
+   below. Mirrors the "Spotlight | Issue X" treatment on worksinprogress.co. */
+
+.card.spotlight {
+  grid-column: 1;
+  grid-row: span 2;
+  padding: 0;
+  display: flex; flex-direction: column;
+  background: var(--teal);
+  color: var(--bg);
+  min-height: 0;
+  overflow: hidden;
+}
+.card.spotlight:hover { background: var(--teal); }
+.card.spotlight .card-image {
+  display: block;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  background: var(--bg-soft);
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid var(--ink);
+  flex: 0 0 auto;
+}
+.card.spotlight .card-image img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: none;
+}
+.card.spotlight:hover .card-image img { transform: none; }
+.card.spotlight .spotlight-tags {
+  position: absolute; top: 0.85rem; left: 0.85rem;
+  display: flex; gap: 0.4rem; z-index: 2;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.74rem;
+}
+.card.spotlight .spotlight-tag {
+  padding: 0.35rem 0.65rem;
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+}
+.card.spotlight .spotlight-tag.tag-light {
+  background: var(--bg);
+  color: var(--ink);
+}
+.card.spotlight .card-body {
+  padding: 1.5rem 1.5rem 1.25rem;
+  color: var(--bg);
+  flex: 1 1 auto;
+}
+.card.spotlight .card-title {
+  color: var(--bg);
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.card.spotlight .card-byline {
+  color: rgba(255,255,255,0.7);
+}
+.card.spotlight .card-byline .name {
+  color: var(--bg); font-weight: 500;
+}
+.card.spotlight .card-subtitle {
+  color: rgba(255,255,255,0.85);
+  -webkit-line-clamp: 4;
+  margin-top: 0.85rem;
+}
+.card.spotlight .card-cta {
+  color: var(--bg);
+}
+.card.spotlight:hover .card-cta {
+  text-decoration: underline; text-underline-offset: 4px;
+}
+.card.spotlight .card-foot {
+  border-top: 1px solid rgba(255,255,255,0.25);
+  margin-top: 1.25rem; padding-top: 0.95rem;
+}
+.card.spotlight .card-cat {
+  background: transparent;
+  color: var(--bg);
+  border-color: var(--bg);
+}
+.card.spotlight .card-cat.cat-friday-four,
+.card.spotlight .card-cat.cat-interview,
+.card.spotlight .card-cat.cat-essay {
+  background: transparent; color: var(--bg); border-color: var(--bg);
+}
+.card.spotlight .card-date { color: rgba(255,255,255,0.7); }
+
+/* placeholder treatment for spotlight when no hero image is available */
+.card.spotlight .card-image.placeholder {
+  background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-tint) 100%);
+}
+
+@media (max-width: 1100px) {
+  .card.spotlight { grid-column: 1; grid-row: span 2; }
+}
+@media (max-width: 700px) {
+  .card.spotlight { grid-column: auto; grid-row: auto; }
+  .card.spotlight .card-image { aspect-ratio: 16 / 10; }
+}
 
 /* ── post page ──────────────────────────────────────────────────────── */
 

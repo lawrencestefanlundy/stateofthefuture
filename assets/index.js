@@ -94,12 +94,14 @@
     return 'cat-' + String(cat).toLowerCase().replace(/\s+/g, '-');
   }
 
-  function buildCard(p) {
-    const card = el('a', { className: 'card', attrs: { href: p.url || '#' } });
-    if (p.category) card.dataset.category = p.category;
+  function ctaFor(category) {
+    return category === 'Interview' ? 'Read interview →'
+      : category === 'Friday Four' ? 'Read dispatch →'
+      : 'Read essay →';
+  }
 
+  function buildCardBody(p) {
     const body = el('div', { className: 'card-body' });
-
     body.appendChild(el('div', { className: 'card-title', text: p.title || '' }));
 
     const byline = el('div', { className: 'card-byline' });
@@ -108,20 +110,46 @@
     body.appendChild(byline);
 
     if (p.subtitle) body.appendChild(el('div', { className: 'card-subtitle', text: p.subtitle }));
+    body.appendChild(el('span', { className: 'card-cta', text: ctaFor(p.category) }));
+    return body;
+  }
 
-    const ctaText = p.category === 'Interview' ? 'Read interview →'
-      : p.category === 'Friday Four' ? 'Read dispatch →'
-      : 'Read essay →';
-    body.appendChild(el('span', { className: 'card-cta', text: ctaText }));
-
-    card.appendChild(body);
-
-    // Foot: category chip (left) + date (right) — separated from body by a hairline.
+  function buildCardFoot(p) {
     const foot = el('div', { className: 'card-foot' });
     foot.appendChild(el('span', { className: 'card-cat ' + categoryClass(p.category || 'Essay'), text: p.category || '' }));
     if (p.date_pretty) foot.appendChild(el('span', { className: 'card-date', text: p.date_pretty }));
-    card.appendChild(foot);
+    return foot;
+  }
 
+  function buildCard(p) {
+    const card = el('a', { className: 'card', attrs: { href: p.url || '#' } });
+    if (p.category) card.dataset.category = p.category;
+    card.appendChild(buildCardBody(p));
+    card.appendChild(buildCardFoot(p));
+    return card;
+  }
+
+  function buildSpotlight(p) {
+    // Spotlight = first post of the current filter. Image on top with
+    // "Latest | Category" tags overlaid; deep teal panel below.
+    const card = el('a', { className: 'card spotlight', attrs: { href: p.url || '#' } });
+    if (p.category) card.dataset.category = p.category;
+
+    const heroSrc = p.hero_local || p.hero_remote;
+    const imageWrap = el('div', { className: heroSrc ? 'card-image' : 'card-image placeholder' });
+    const tags = el('div', { className: 'spotlight-tags' });
+    tags.appendChild(el('span', { className: 'spotlight-tag', text: 'Latest' }));
+    tags.appendChild(el('span', { className: 'spotlight-tag tag-light', text: p.category || '' }));
+    imageWrap.appendChild(tags);
+    if (heroSrc) {
+      const img = el('img', { attrs: { src: heroSrc, alt: '', loading: 'eager' } });
+      img.addEventListener('error', function () { img.remove(); });
+      imageWrap.appendChild(img);
+    }
+    card.appendChild(imageWrap);
+
+    card.appendChild(buildCardBody(p));
+    card.appendChild(buildCardFoot(p));
     return card;
   }
 
@@ -143,7 +171,9 @@
       grid.appendChild(el('div', { className: 'empty-state', text: 'Nothing matches that filter.' }));
     } else {
       const frag = document.createDocumentFragment();
-      filtered.forEach(function (p) { frag.appendChild(buildCard(p)); });
+      // First filtered post = spotlight (col 1, span 2 rows). Rest = regular cards.
+      frag.appendChild(buildSpotlight(filtered[0]));
+      for (let i = 1; i < filtered.length; i++) frag.appendChild(buildCard(filtered[i]));
       grid.appendChild(frag);
     }
     resultCount.textContent = filtered.length + ' ' + (filtered.length === 1 ? 'post' : 'posts');

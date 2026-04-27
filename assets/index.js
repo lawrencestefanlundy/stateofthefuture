@@ -112,8 +112,8 @@
     if (heroSrc) {
       const wrap = el('div', { className: 'card-image' });
       const img = el('img', { attrs: { src: heroSrc, alt: '', loading: 'lazy' } });
-      // If the image fails to load (404, 403, broken hot-link), swap the wrap
-      // for an editorial placeholder rather than show a broken-image icon.
+      // If the image fails to load, swap to the editorial placeholder rather
+      // than show a broken-image glyph.
       img.addEventListener('error', function () {
         const ph = buildPlaceholder(p);
         wrap.replaceWith(ph);
@@ -125,12 +125,24 @@
     }
 
     const body = el('div', { className: 'card-body' });
-    const meta = el('div', { className: 'card-meta' });
-    meta.appendChild(el('span', { className: 'cat-tag ' + categoryClass(p.category || 'Essay'), text: p.category || '' }));
-    meta.appendChild(el('span', { className: 'card-date', text: p.date_pretty || '' }));
-    body.appendChild(meta);
+
+    // Eyebrow: CATEGORY · DATE — small mono, separated by a dot.
+    const eyebrow = el('div', { className: 'card-eyebrow' });
+    eyebrow.appendChild(el('span', { className: 'cat-tag ' + categoryClass(p.category || 'Essay'), text: p.category || '' }));
+    if (p.date_pretty) {
+      eyebrow.appendChild(el('span', { className: 'sep' }));
+      eyebrow.appendChild(el('span', { text: p.date_pretty }));
+    }
+    body.appendChild(eyebrow);
+
     body.appendChild(el('div', { className: 'card-title', text: p.title || '' }));
+    body.appendChild(el('div', { className: 'card-byline', text: 'Lawrence Lundy-Bryan' }));
     if (p.subtitle) body.appendChild(el('div', { className: 'card-subtitle', text: p.subtitle }));
+    const ctaText = p.category === 'Interview' ? 'Read interview →'
+      : p.category === 'Friday Four' ? 'Read dispatch →'
+      : 'Read essay →';
+    body.appendChild(el('span', { className: 'card-cta', text: ctaText }));
+
     card.appendChild(body);
     return card;
   }

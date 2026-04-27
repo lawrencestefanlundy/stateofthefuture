@@ -264,10 +264,12 @@ def render_post_page(post: dict, body_html: str) -> str:
   <div class="container post-container">
     <div class="post-meta-row">
       <span class="cat-tag cat-{cat_slug}">{cat}</span>
+      <span class="sep"></span>
       <span class="post-date">{pretty_date}</span>
     </div>
     <h1 class="post-title">{title}</h1>
     {subtitle_html}
+    <div class="post-byline">By <a href="https://stateofthefuture.substack.com" target="_blank" rel="noopener">Lawrence Lundy-Bryan</a></div>
     {hero_html}
     <div class="post-body">
 {body_html}
@@ -276,7 +278,7 @@ def render_post_page(post: dict, body_html: str) -> str:
       <div class="subscribe-block">
         <h2>Get the next dispatch</h2>
         <p>Essays and interviews on the technologies that will shape the next decade. No spam, unsubscribe anytime.</p>
-        <iframe src="{SUBSTACK_URL}/embed" width="100%" height="320" style="border:1px solid #0F172A; background:#FFFFFF;" frameborder="0" scrolling="no"></iframe>
+        <iframe src="{SUBSTACK_URL}/embed" width="100%" height="320" style="border:none; background:#FFFFFF;" frameborder="0" scrolling="no"></iframe>
       </div>
       <div class="post-nav">
         <a href="../index.html">← Back to archive</a>

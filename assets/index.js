@@ -103,7 +103,8 @@
   function buildCardBody(p) {
     const body = el('div', { className: 'card-body' });
     body.appendChild(el('div', { className: 'card-title', text: p.title || '' }));
-    if (p.subtitle) body.appendChild(el('div', { className: 'card-subtitle', text: p.subtitle }));
+    const description = p.excerpt || p.subtitle;
+    if (description) body.appendChild(el('div', { className: 'card-subtitle', text: description }));
     body.appendChild(el('span', { className: 'card-cta', text: ctaFor(p.category) }));
     return body;
   }

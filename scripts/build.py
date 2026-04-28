@@ -202,6 +202,36 @@ def first_paragraph_text(post_html: str, max_chars: int = 220) -> str:
     return text
 
 
+def card_excerpt(subtitle: str, body_html: str, target_chars: int = 320) -> str:
+    """Description shown on archive cards. Returns the subtitle if it's
+    substantial; otherwise enriches it with body text up to ~target_chars
+    so every card has a meaningful blurb. Used in place of a thin one-line
+    subtitle (e.g. "Dispatch from 11th April 2026")."""
+    sub = (subtitle or "").strip()
+    if len(sub) >= 90:
+        return sub
+    # Pull plain-text body paragraphs in order, skipping very short ones
+    # (which are usually section markers like "—" or "Hello friends,").
+    paragraphs = []
+    for m in re.finditer(r"<p[^>]*>(.*?)</p>", body_html, re.DOTALL | re.IGNORECASE):
+        plain = re.sub(r"<[^>]+>", "", m.group(1))
+        plain = html.unescape(plain).strip()
+        if len(plain) >= 40:
+            paragraphs.append(plain)
+        if sum(len(p) for p in paragraphs) > target_chars * 1.5:
+            break
+    body_text = " ".join(paragraphs)
+    if not body_text:
+        return sub
+    if sub:
+        excerpt = sub.rstrip(".!? ") + ". " + body_text
+    else:
+        excerpt = body_text
+    if len(excerpt) > target_chars:
+        excerpt = excerpt[: target_chars - 1].rstrip() + "…"
+    return excerpt
+
+
 def reading_time_minutes(post_html: str, wpm: int = 230) -> int:
     """Rough read-time estimate. Strip tags and count words."""
     text = re.sub(r"<[^>]+>", " ", post_html)
@@ -377,11 +407,13 @@ def main(skip_images: bool = False) -> None:
 
         iso, pretty = parse_date(meta.get("post_date", ""))
         category = derive_category(slug, meta.get("title", ""))
+        subtitle = (meta.get("subtitle") or "").strip()
         post = {
             "id": post_id,
             "slug": slug,
             "title": meta["title"].strip(),
-            "subtitle": (meta.get("subtitle") or "").strip(),
+            "subtitle": subtitle,
+            "excerpt": card_excerpt(subtitle, post_html),
             "date": iso,
             "date_pretty": pretty,
             "category": category,

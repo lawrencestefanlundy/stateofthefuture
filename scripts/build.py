@@ -319,6 +319,110 @@ def mirror_image(url: str, slug: str) -> str | None:
         return None
 
 
+# --- image quality check (stdlib only) -------------------------------------
+
+import struct  # noqa: E402
+
+# Minimum acceptable hero width. Substack heroes are typically mirrored at
+# 1456w; anything well under 800w almost certainly looks blurry on a 3-col
+# spotlight or a 1080px-wide article hero.
+MIN_HERO_WIDTH = 800
+
+
+def _image_size(path: Path) -> tuple[int, int] | None:
+    """Return (width, height) for PNG/JPEG/GIF/WebP without external deps.
+    Returns None on unrecognised or malformed files."""
+    try:
+        with path.open("rb") as f:
+            head = f.read(32)
+            # PNG: 8-byte sig, then IHDR with width/height at offset 16.
+            if head[:8] == b"\x89PNG\r\n\x1a\n":
+                if len(head) < 24:
+                    return None
+                w, h = struct.unpack(">II", head[16:24])
+                return w, h
+            # GIF: width/height little-endian at offset 6.
+            if head[:6] in (b"GIF87a", b"GIF89a"):
+                w, h = struct.unpack("<HH", head[6:10])
+                return w, h
+            # WebP: RIFF .... WEBP, then VP8/VP8L/VP8X chunk.
+            if head[:4] == b"RIFF" and head[8:12] == b"WEBP":
+                chunk = head[12:16]
+                if chunk == b"VP8 ":
+                    # lossy: width/height at offset 26 (after frame tag).
+                    f.seek(26)
+                    w, h = struct.unpack("<HH", f.read(4))
+                    return w & 0x3FFF, h & 0x3FFF
+                if chunk == b"VP8L":
+                    f.seek(21)
+                    b1, b2, b3, b4 = f.read(4)
+                    w = 1 + (((b2 & 0x3F) << 8) | b1)
+                    h = 1 + (((b4 & 0x0F) << 10) | (b3 << 2) | ((b2 & 0xC0) >> 6))
+                    return w, h
+                if chunk == b"VP8X":
+                    f.seek(24)
+                    b = f.read(6)
+                    w = 1 + (b[0] | (b[1] << 8) | (b[2] << 16))
+                    h = 1 + (b[3] | (b[4] << 8) | (b[5] << 16))
+                    return w, h
+                return None
+            # JPEG: walk segment markers until we find a SOF.
+            if head[:2] == b"\xff\xd8":
+                f.seek(2)
+                while True:
+                    while True:
+                        b = f.read(1)
+                        if not b:
+                            return None
+                        if b == b"\xff":
+                            break
+                    while True:
+                        b = f.read(1)
+                        if not b:
+                            return None
+                        if b != b"\xff":
+                            break
+                    m = b[0]
+                    if m == 0x00 or m == 0xFF:
+                        continue
+                    # SOF markers (skip DHT/DQT/etc which use 0xC4/0xC8/0xCC).
+                    if 0xC0 <= m <= 0xCF and m not in (0xC4, 0xC8, 0xCC):
+                        f.read(3)  # segment length(2) + precision(1)
+                        bb = f.read(4)
+                        if len(bb) < 4:
+                            return None
+                        h, w = struct.unpack(">HH", bb)
+                        return w, h
+                    # Other segment: skip its payload.
+                    seg_len_raw = f.read(2)
+                    if len(seg_len_raw) < 2:
+                        return None
+                    seg_len = struct.unpack(">H", seg_len_raw)[0]
+                    if seg_len < 2:
+                        return None
+                    f.seek(seg_len - 2, 1)
+        return None
+    except (OSError, struct.error):
+        return None
+
+
+def hero_quality(local_path: str | None) -> dict:
+    """Return {width, height, ok, reason} describing a mirrored hero.
+    `ok` is False when the image is missing or under MIN_HERO_WIDTH."""
+    if not local_path:
+        return {"width": 0, "height": 0, "ok": False, "reason": "missing"}
+    p = ROOT / local_path
+    if not p.exists():
+        return {"width": 0, "height": 0, "ok": False, "reason": "missing"}
+    size = _image_size(p)
+    if not size:
+        return {"width": 0, "height": 0, "ok": False, "reason": "unreadable"}
+    w, h = size
+    if w < MIN_HERO_WIDTH:
+        return {"width": w, "height": h, "ok": False, "reason": f"low-res ({w}px wide)"}
+    return {"width": w, "height": h, "ok": True, "reason": ""}
+
+
 # --- post body cleanup -------------------------------------------------------
 
 # Remove the Substack-specific overlay buttons (restack, view-image) that are
@@ -613,6 +717,14 @@ def main(skip_images: bool = False) -> None:
         hero_local = None
         if hero_mirror_src and not skip_images:
             hero_local = mirror_image(hero_mirror_src, slug)
+        elif hero_mirror_src:
+            # --skip-images mode: we still surface an already-mirrored file if
+            # one exists, so the manifest stays accurate without hitting the CDN.
+            ext = ext_from_url(hero_mirror_src)
+            existing = IMAGES_OUT / f"{slug}{ext}"
+            if existing.exists() and existing.stat().st_size > 0:
+                hero_local = f"images/{existing.name}"
+        hq = hero_quality(hero_local)
 
         iso, pretty = parse_date(meta.get("post_date", ""))
         category = derive_category(slug, meta.get("title", ""))
@@ -637,6 +749,9 @@ def main(skip_images: bool = False) -> None:
             "featured": False,  # populated after the loop, once we know all slugs
             "hero_remote": hero_remote,
             "hero_local": hero_local,
+            "hero_width": hq["width"],
+            "hero_height": hq["height"],
+            "hero_ok": hq["ok"],
             "url": f"posts/{slug}.html",
             "substack_url": f"{SUBSTACK_URL}/p/{slug}",
         }
@@ -683,6 +798,24 @@ def main(skip_images: bool = False) -> None:
     for p in posts:
         counts[p["category"]] = counts.get(p["category"], 0) + 1
     print(f"\nbuilt {len(posts)} posts: {counts}")
+
+    # Hero image quality report — flag every post under MIN_HERO_WIDTH so the
+    # user knows where to drop in better artwork. Doesn't fail the build.
+    bad = []
+    for p in posts:
+        if p.get("hero_local") and not p.get("hero_ok", True):
+            w = p.get("hero_width") or 0
+            bad.append((p["slug"], w))
+    if bad:
+        print(f"\nhero quality: {len(bad)} post(s) below {MIN_HERO_WIDTH}px wide:")
+        for slug, w in sorted(bad, key=lambda x: x[1]):
+            print(f"  {w:5d}px  {slug}")
+        print("  → drop a higher-res image into images/<slug>.<ext> to fix.")
+    missing = [p["slug"] for p in posts if not p.get("hero_local")]
+    if missing:
+        print(f"\nhero quality: {len(missing)} post(s) with no hero image:")
+        for slug in missing:
+            print(f"          –  {slug}")
 
 
 if __name__ == "__main__":

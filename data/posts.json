@@ -2,7 +2,7 @@
   "site_title": "State of the Future",
   "tagline": "Essays, interviews, and Friday Four dispatches on the technology shaping the future.",
   "substack_url": "https://stateofthefuture.substack.com",
-  "generated_at": "2026-04-28T07:58:32.218845Z",
+  "generated_at": "2026-04-28T08:44:03.479317Z",
   "post_count": 84,
   "topics": [
     {
@@ -74,8 +74,8 @@
       "excerpt": "The protein detection problem, magnetic beads, and the path to ambient health. Proteins.1 is Cloudberry’s first investment. So I’m talking my book for the next 2000 words. Calibrate accordingly. Preventative health. You have a semiconductor and photonics fund and what’s the first deal you do? A bloody biosensor. Becau…",
       "date": "2026-04-22",
       "date_pretty": "22 Apr 2026",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "photonics",
         "health-bio"
@@ -86,9 +86,9 @@
       "url": "posts/detecting-proteins-in-blood-with.html",
       "substack_url": "https://stateofthefuture.substack.com/p/detecting-proteins-in-blood-with",
       "related": [
-        "the-photonic-foundry-fallacy",
-        "photonic-engines-for-data-centers",
-        "gallium-nitride-photonics-w-james"
+        "gallium-nitride-photonics-w-james",
+        "the-future-of-computing-is-glass",
+        "the-photonic-foundry-fallacy"
       ]
     },
     {
@@ -132,9 +132,9 @@
       "url": "posts/the-photonic-foundry-fallacy.html",
       "substack_url": "https://stateofthefuture.substack.com/p/the-photonic-foundry-fallacy",
       "related": [
-        "detecting-proteins-in-blood-with",
         "photonic-engines-for-data-centers",
-        "gallium-nitride-photonics-w-james"
+        "the-state-of-photonic-computing",
+        "e08-optical-computing"
       ]
     },
     {
@@ -179,8 +179,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/chips-for-the-brain-modular-semiconductors",
       "related": [
         "fungible-compute-mortal-computing",
-        "how-to-invest-in-ai-sovereignty-sovereign",
-        "ai-chips-computeram-and-the-future"
+        "lfg-for-semiconductors",
+        "a-specific-theory-of-sovereign-ai"
       ]
     },
     {
@@ -290,9 +290,9 @@
       "url": "posts/fungible-compute-mortal-computing.html",
       "substack_url": "https://stateofthefuture.substack.com/p/fungible-compute-mortal-computing",
       "related": [
-        "how-to-invest-in-ai-sovereignty-sovereign",
         "chips-for-the-brain-modular-semiconductors",
-        "ai-chips-computeram-and-the-future"
+        "lfg-for-semiconductors",
+        "a-specific-theory-of-sovereign-ai"
       ]
     },
     {
@@ -391,8 +391,8 @@
       "excerpt": "The Future of AI Runs on Chips We Haven't Built Yet. I’m Lawrence, a pleasure. I invest in people making the world (Europe? UK?) better for my children. pre-seed/seed. lawrence@cloudberry.vc. x x Good morgan! Something a bit different this week. My friend Andrew Bennett invited me on his podcast Sovereign Albion to ta…",
       "date": "2026-02-12",
       "date_pretty": "12 Feb 2026",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "ai-compute"
       ],
@@ -403,8 +403,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/how-to-invest-in-ai-sovereignty-sovereign",
       "related": [
         "ai-chips-computeram-and-the-future",
-        "fungible-compute-mortal-computing",
-        "chips-for-the-brain-modular-semiconductors"
+        "the-future-of-computing-is-glass",
+        "wen-babelfish-feat-aron-of-semron"
       ]
     },
     {
@@ -426,9 +426,9 @@
       "url": "posts/photonic-engines-for-data-centers.html",
       "substack_url": "https://stateofthefuture.substack.com/p/photonic-engines-for-data-centers",
       "related": [
-        "gallium-nitride-photonics-w-james",
-        "the-future-of-computing-is-glass",
-        "the-photonic-foundry-fallacy"
+        "the-photonic-foundry-fallacy",
+        "the-state-of-photonic-computing",
+        "e08-optical-computing"
       ]
     },
     {
@@ -439,8 +439,8 @@
       "excerpt": "Stop! Moving Data. “I’m tryna lead a nation, to leave to my little’ man’s. The scales was lopsided, I’m just restoring order” Hello friends, colleagues and enemies. Apologies for the delay, especially for my paying subscribers. I have failed to add as much value as I promised. And for that, I can only apologise. I mea…",
       "date": "2026-01-22",
       "date_pretty": "22 Jan 2026",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "ai-compute"
       ],
@@ -451,8 +451,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/ai-chips-computeram-and-the-future",
       "related": [
         "how-to-invest-in-ai-sovereignty-sovereign",
-        "lfg-for-semiconductors",
-        "fungible-compute-mortal-computing"
+        "the-future-of-computing-is-glass",
+        "wen-babelfish-feat-aron-of-semron"
       ]
     },
     {
@@ -474,9 +474,9 @@
       "url": "posts/lfg-for-semiconductors.html",
       "substack_url": "https://stateofthefuture.substack.com/p/lfg-for-semiconductors",
       "related": [
-        "the-future-of-computing-is-glass",
-        "ai-chips-computeram-and-the-future",
-        "how-to-invest-in-ai-sovereignty-sovereign"
+        "a-specific-theory-of-sovereign-ai",
+        "fungible-compute-mortal-computing",
+        "the-compute-gradient"
       ]
     },
     {
@@ -487,8 +487,8 @@
       "excerpt": "Compound semi in the UK? Silicon photonics is a hack? GaN ftw. I’m Lawrence, a pleasure. I invest in people making the world (Europe? UK?) better for my children. pre-seed/seed. lawrence@stateofthefuture.io. x x btw, you know you can, like, just give me money? Just expense it. Your VC pays. Or your LPs. Ultimately the…",
       "date": "2025-12-09",
       "date_pretty": "9 Dec 2025",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "photonics",
         "materials"
@@ -500,8 +500,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/gallium-nitride-photonics-w-james",
       "related": [
         "the-future-of-computing-is-glass",
-        "carbon-nanotubes-in-the-datacentre",
-        "photonic-engines-for-data-centers"
+        "detecting-proteins-in-blood-with",
+        "carbon-nanotubes-in-the-datacentre"
       ]
     },
     {
@@ -512,8 +512,8 @@
       "excerpt": "will photonic chips be put in glass. I’m Lawrence, a pleasure. I invest in people making the world better for my children. pre-seed/seed. About to launch Europe’s first dedicated semiconductor fund. More soon. msg: lawrence@cloudberry.vc. x x Andrea Rocchetto is the founder of Ephos, a company developing glass-based p…",
       "date": "2025-12-02",
       "date_pretty": "2 Dec 2025",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "ai-compute",
         "photonics"
@@ -525,8 +525,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/the-future-of-computing-is-glass",
       "related": [
         "gallium-nitride-photonics-w-james",
-        "lfg-for-semiconductors",
-        "ai-chips-computeram-and-the-future"
+        "ai-chips-computeram-and-the-future",
+        "how-to-invest-in-ai-sovereignty-sovereign"
       ]
     },
     {
@@ -548,9 +548,9 @@
       "url": "posts/carbon-nanotubes-in-the-datacentre.html",
       "substack_url": "https://stateofthefuture.substack.com/p/carbon-nanotubes-in-the-datacentre",
       "related": [
-        "gallium-nitride-photonics-w-james",
         "uk-opportunity-in-ai-compound-semiconductors",
-        "a-primer-carbon-nanotubes"
+        "a-primer-carbon-nanotubes",
+        "gallium-nitride-photonics-w-james"
       ]
     },
     {
@@ -598,7 +598,7 @@
       "related": [
         "the-compute-gradient",
         "uk-opportunity-in-ai-compound-semiconductors",
-        "the-future-of-computing-is-glass"
+        "lfg-for-semiconductors"
       ]
     },
     {
@@ -622,7 +622,7 @@
       "related": [
         "uk-opportunity-in-ai-compound-semiconductors",
         "a-specific-theory-of-sovereign-ai",
-        "the-future-of-computing-is-glass"
+        "lfg-for-semiconductors"
       ]
     },
     {
@@ -671,7 +671,7 @@
       "related": [
         "ai-and-junior-white-collar-automation",
         "unbundling-the-job",
-        "maybe-edtech-is-the-answer-feat-noam"
+        "dirty-work-the-return-of-blue-collar"
       ]
     },
     {
@@ -695,7 +695,7 @@
       "related": [
         "13-drop-in-employment-for-young-workers",
         "unbundling-the-job",
-        "maybe-edtech-is-the-answer-feat-noam"
+        "dirty-work-the-return-of-blue-collar"
       ]
     },
     {
@@ -718,8 +718,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/unbundling-the-job",
       "related": [
         "ai-and-junior-white-collar-automation",
-        "maybe-edtech-is-the-answer-feat-noam",
-        "13-drop-in-employment-for-young-workers"
+        "13-drop-in-employment-for-young-workers",
+        "dirty-work-the-return-of-blue-collar"
       ]
     },
     {
@@ -754,8 +754,8 @@
       "excerpt": "Why are we still educating children for an economy that won't exist when they graduate. Welcome. I’m Lawrence. Thanks for coming out tonight. You could have been anywhere in the world, and you’re here with me. I appreciate that. P.S. i invest in startups. So we have a youth unemployment problem. We need a fix. Likely…",
       "date": "2025-06-12",
       "date_pretty": "12 Jun 2025",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "labour-economy"
       ],
@@ -789,9 +789,9 @@
       "url": "posts/dirty-work-the-return-of-blue-collar.html",
       "substack_url": "https://stateofthefuture.substack.com/p/dirty-work-the-return-of-blue-collar",
       "related": [
-        "maybe-edtech-is-the-answer-feat-noam",
         "young-people-cant-get-jobs-now-what",
-        "unbundling-the-job"
+        "unbundling-the-job",
+        "ai-and-junior-white-collar-automation"
       ]
     },
     {
@@ -814,8 +814,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/young-people-cant-get-jobs-now-what",
       "related": [
         "dirty-work-the-return-of-blue-collar",
-        "maybe-edtech-is-the-answer-feat-noam",
-        "on-educating-our-children-in-the"
+        "on-educating-our-children-in-the",
+        "unbundling-the-job"
       ]
     },
     {
@@ -839,7 +839,7 @@
       "related": [
         "what-if-ai-can-already-feel",
         "project-mayhem-ai-inward-collapse",
-        "wen-babelfish-feat-aron-of-semron"
+        "fund-frontier-expeditions-otherwise"
       ]
     },
     {
@@ -863,7 +863,7 @@
       "related": [
         "has-the-time-come-to-take-mortal",
         "project-mayhem-ai-inward-collapse",
-        "wen-babelfish-feat-aron-of-semron"
+        "fund-frontier-expeditions-otherwise"
       ]
     },
     {
@@ -885,9 +885,9 @@
       "url": "posts/the-state-of-photonic-computing.html",
       "substack_url": "https://stateofthefuture.substack.com/p/the-state-of-photonic-computing",
       "related": [
-        "the-future-of-computing-is-glass",
-        "gallium-nitride-photonics-w-james",
-        "photonic-engines-for-data-centers"
+        "photonic-engines-for-data-centers",
+        "the-photonic-foundry-fallacy",
+        "e08-optical-computing"
       ]
     },
     {
@@ -933,9 +933,9 @@
       "url": "posts/project-mayhem-ai-inward-collapse.html",
       "substack_url": "https://stateofthefuture.substack.com/p/project-mayhem-ai-inward-collapse",
       "related": [
-        "wen-babelfish-feat-aron-of-semron",
-        "you-like-ai-agents-you-are-gonna",
-        "what-if-ai-can-already-feel"
+        "what-if-ai-can-already-feel",
+        "has-the-time-come-to-take-mortal",
+        "fund-frontier-expeditions-otherwise"
       ]
     },
     {
@@ -994,8 +994,8 @@
       "excerpt": "ai inference will have to move to the edge, when it does, what chips will we use. Edge AI is a thing. Sure we can build Stargate, but some of our AI will need to run locally on glasses, earphones, watches, smartphones, robots, cars, drones, etc, and et al. But startups have been trying to do AI on small devices for a…",
       "date": "2025-02-12",
       "date_pretty": "12 Feb 2025",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "ai-compute"
       ],
@@ -1006,8 +1006,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/wen-babelfish-feat-aron-of-semron",
       "related": [
         "you-like-ai-agents-you-are-gonna",
-        "project-mayhem-ai-inward-collapse",
-        "fund-frontier-expeditions-otherwise"
+        "the-future-of-computing-is-glass",
+        "ai-chips-computeram-and-the-future"
       ]
     },
     {
@@ -1018,8 +1018,8 @@
       "excerpt": "Everything you need to know about Decentralised Agents w/ Richard Blythman of Naptha #crypto #ai",
       "date": "2025-02-05",
       "date_pretty": "5 Feb 2025",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "ai-compute"
       ],
@@ -1030,8 +1030,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/you-like-ai-agents-you-are-gonna",
       "related": [
         "wen-babelfish-feat-aron-of-semron",
-        "fund-frontier-expeditions-otherwise",
-        "project-mayhem-ai-inward-collapse"
+        "the-future-of-computing-is-glass",
+        "ai-chips-computeram-and-the-future"
       ]
     },
     {
@@ -1042,8 +1042,8 @@
       "excerpt": "AI is going to change everything. Will it accelerate nuclear fusion. When the scale-pilled think about powering out 100GW datacentres, obviousy the short-term answer is SMRs (also gas, let’s be honest, it will be gas, but we can’t talk about that). The long-term answer is fusion. In Nuclear Fusion: The State of Play I…",
       "date": "2025-01-27",
       "date_pretty": "27 Jan 2025",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "fusion-nuclear"
       ],
@@ -1076,8 +1076,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/the-end-of-zero-marginal-costs-the",
       "related": [
         "fund-frontier-expeditions-otherwise",
-        "ai-for-nuclear-fusion-feat-martin",
-        "you-like-ai-agents-you-are-gonna"
+        "data-driven-vc-is-over",
+        "occupational-downgrading"
       ]
     },
     {
@@ -1100,9 +1100,9 @@
       "url": "posts/fund-frontier-expeditions-otherwise.html",
       "substack_url": "https://stateofthefuture.substack.com/p/fund-frontier-expeditions-otherwise",
       "related": [
-        "you-like-ai-agents-you-are-gonna",
-        "wen-babelfish-feat-aron-of-semron",
-        "data-driven-vc-is-over"
+        "data-driven-vc-is-over",
+        "project-mayhem-ai-inward-collapse",
+        "deploy-intelligence-too-cheap-to"
       ]
     },
     {
@@ -1113,8 +1113,8 @@
       "excerpt": "The future is closer, but more expensive than you thought. After the Google Willow announcement and my interview with Semiqon of silicon spin, I wanted to share a quick state of play on quantum. First, Google hit a major milestone by getting error rates below the fault-tolerance threshold, which is crucial for quantum…",
       "date": "2024-12-16",
       "date_pretty": "16 Dec 2024",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "quantum"
       ],
@@ -1125,8 +1125,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/willow-and-the-race-to-quantum-advantage",
       "related": [
         "cubits-in-a-fridge-why-is-nobody",
-        "fund-frontier-expeditions-otherwise",
-        "nuclear-fusion-the-state-of-play"
+        "ai-for-nuclear-fusion-feat-martin",
+        "you-like-ai-agents-you-are-gonna"
       ]
     },
     {
@@ -1137,8 +1137,8 @@
       "excerpt": "What if research.. was marketing all along. So, quantum computing. With everything about AI, whatever happened to quantum computing you might rightly ask. Back in 1981, physicist Richard Feynman proposed a revolutionary idea: using quantum mechanics to build computers that could solve problems impossible for classical…",
       "date": "2024-12-04",
       "date_pretty": "4 Dec 2024",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "quantum"
       ],
@@ -1149,8 +1149,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/cubits-in-a-fridge-why-is-nobody",
       "related": [
         "willow-and-the-race-to-quantum-advantage",
-        "nuclear-fusion-the-state-of-play",
-        "atomic-energy-can-nuclear-power-our"
+        "ai-for-nuclear-fusion-feat-martin",
+        "you-like-ai-agents-you-are-gonna"
       ]
     },
     {
@@ -1173,8 +1173,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/nuclear-fusion-the-state-of-play",
       "related": [
         "atomic-energy-can-nuclear-power-our",
-        "ai-for-nuclear-fusion-feat-martin",
-        "three-overrated-technologies-from"
+        "three-overrated-technologies-from",
+        "ai-for-nuclear-fusion-feat-martin"
       ]
     },
     {
@@ -1197,8 +1197,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/atomic-energy-can-nuclear-power-our",
       "related": [
         "nuclear-fusion-the-state-of-play",
-        "ai-for-nuclear-fusion-feat-martin",
-        "three-overrated-technologies-from"
+        "three-overrated-technologies-from",
+        "ai-for-nuclear-fusion-feat-martin"
       ]
     },
     {
@@ -1220,9 +1220,9 @@
       "url": "posts/confidential-ai-the-dog-that-didnt.html",
       "substack_url": "https://stateofthefuture.substack.com/p/confidential-ai-the-dog-that-didnt",
       "related": [
-        "e20-the-state-of-privacy-enhancing",
-        "e19-trusted-execution-environments",
-        "e07-decentralised-ai"
+        "e07-decentralised-ai",
+        "why-privacy-tech-is-actually-collaborative",
+        "e20-the-state-of-privacy-enhancing"
       ]
     },
     {
@@ -1245,8 +1245,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/deploy-intelligence-too-cheap-to",
       "related": [
         "fund-frontier-expeditions-otherwise",
-        "you-like-ai-agents-you-are-gonna",
-        "wen-babelfish-feat-aron-of-semron"
+        "project-mayhem-ai-inward-collapse",
+        "what-if-ai-can-already-feel"
       ]
     },
     {
@@ -1290,9 +1290,9 @@
       "url": "posts/e21-can-we-make-enough-ai-chips.html",
       "substack_url": "https://stateofthefuture.substack.com/p/e21-can-we-make-enough-ai-chips",
       "related": [
+        "e18-the-state-of-silent-speech-and",
         "e14-the-real-ai-bottleneck-high-bandwidth",
-        "e13-chiplets-how-chip-lego-is-driving",
-        "e10-pushing-moores-law-to-the-limit"
+        "e13-chiplets-how-chip-lego-is-driving"
       ]
     },
     {
@@ -1303,8 +1303,8 @@
       "excerpt": "Why privacy-enhancing technologies like MPC, ZKP, and FHE struggle for adoption; why selective encryption is important, and and why the Era of \"Shift-Up\" in data security is coming",
       "date": "2023-10-19",
       "date_pretty": "19 Oct 2023",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "privacy"
       ],
@@ -1315,8 +1315,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/e20-the-state-of-privacy-enhancing",
       "related": [
         "e19-trusted-execution-environments",
-        "e07-decentralised-ai",
-        "confidential-ai-the-dog-that-didnt"
+        "interview-jordan-brandt-ceo-of-inpher",
+        "interview-rick-hao-partner-at-speedinvest"
       ]
     },
     {
@@ -1327,8 +1327,8 @@
       "excerpt": "The most important bit of hardware, you've never heard of. I’m Lawrence Lundy-Bryan. I do research for Lunar Ventures, a deep tech venture fund. We invest €500k-€1m at pre-seed & seed to turn science fiction into science reality. Get in touch at lawrence@lunar.vc. I curate State of the Future, a deep tech tracker and…",
       "date": "2023-10-13",
       "date_pretty": "13 Oct 2023",
-      "category": "Essay",
-      "category_slug": "essay",
+      "category": "Interview",
+      "category_slug": "interview",
       "topics": [
         "privacy"
       ],
@@ -1339,8 +1339,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/e19-trusted-execution-environments",
       "related": [
         "e20-the-state-of-privacy-enhancing",
-        "e07-decentralised-ai",
-        "confidential-ai-the-dog-that-didnt"
+        "interview-jordan-brandt-ceo-of-inpher",
+        "interview-rick-hao-partner-at-speedinvest"
       ]
     },
     {
@@ -1353,16 +1353,18 @@
       "date_pretty": "6 Oct 2023",
       "category": "Essay",
       "category_slug": "essay",
-      "topics": [],
+      "topics": [
+        "ai-compute"
+      ],
       "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/1ae0256a-957c-4212-a1aa-07a01021b8c2_948x632.jpeg",
       "hero_local": null,
       "url": "posts/e18-the-state-of-silent-speech-and.html",
       "substack_url": "https://stateofthefuture.substack.com/p/e18-the-state-of-silent-speech-and",
       "related": [
-        "e19-trusted-execution-environments",
-        "e20-the-state-of-privacy-enhancing",
-        "e14-the-real-ai-bottleneck-high-bandwidth"
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e21-can-we-make-enough-ai-chips"
       ]
     },
     {
@@ -1384,7 +1386,7 @@
       "related": [
         "e16-in-conversation-with-john-waite",
         "e15-in-conversation-with-wisear-on",
-        "e11-in-conversation-with-lux-capital"
+        "e19-trusted-execution-environments"
       ]
     },
     {
@@ -1406,7 +1408,7 @@
       "related": [
         "e16-in-conversation-with-shiv-malik",
         "e15-in-conversation-with-wisear-on",
-        "e11-in-conversation-with-lux-capital"
+        "e19-trusted-execution-environments"
       ]
     },
     {
@@ -1419,16 +1421,18 @@
       "date_pretty": "18 Sep 2023",
       "category": "Interview",
       "category_slug": "interview",
-      "topics": [],
+      "topics": [
+        "ai-compute"
+      ],
       "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/3f386fba-2b31-4658-bd51-b6d6d2e8c588_480x480.gif",
       "hero_local": null,
       "url": "posts/e15-in-conversation-with-wisear-on.html",
       "substack_url": "https://stateofthefuture.substack.com/p/e15-in-conversation-with-wisear-on",
       "related": [
-        "e16-in-conversation-with-john-waite",
-        "e16-in-conversation-with-shiv-malik",
-        "e11-in-conversation-with-lux-capital"
+        "interview-ben-mildenhall-co-inventor",
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "ai-chips-computeram-and-the-future"
       ]
     },
     {
@@ -1451,8 +1455,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/e14-the-real-ai-bottleneck-high-bandwidth",
       "related": [
         "e13-chiplets-how-chip-lego-is-driving",
-        "e10-pushing-moores-law-to-the-limit",
-        "e06-the-model-t-moment-for-bits-llms"
+        "e18-the-state-of-silent-speech-and",
+        "e10-pushing-moores-law-to-the-limit"
       ]
     },
     {
@@ -1476,7 +1480,7 @@
       "related": [
         "e14-the-real-ai-bottleneck-high-bandwidth",
         "e10-pushing-moores-law-to-the-limit",
-        "e06-the-model-t-moment-for-bits-llms"
+        "e18-the-state-of-silent-speech-and"
       ]
     },
     {
@@ -1590,9 +1594,9 @@
       "url": "posts/e08-optical-computing.html",
       "substack_url": "https://stateofthefuture.substack.com/p/e08-optical-computing",
       "related": [
-        "detecting-proteins-in-blood-with",
         "the-photonic-foundry-fallacy",
-        "photonic-engines-for-data-centers"
+        "photonic-engines-for-data-centers",
+        "the-state-of-photonic-computing"
       ]
     },
     {
@@ -1614,9 +1618,9 @@
       "url": "posts/e07-decentralised-ai.html",
       "substack_url": "https://stateofthefuture.substack.com/p/e07-decentralised-ai",
       "related": [
-        "e19-trusted-execution-environments",
-        "e20-the-state-of-privacy-enhancing",
-        "confidential-ai-the-dog-that-didnt"
+        "confidential-ai-the-dog-that-didnt",
+        "why-privacy-tech-is-actually-collaborative",
+        "interview-jordan-brandt-ceo-of-inpher"
       ]
     },
     {
@@ -1708,9 +1712,9 @@
       "url": "posts/three-overrated-technologies-from.html",
       "substack_url": "https://stateofthefuture.substack.com/p/three-overrated-technologies-from",
       "related": [
-        "ai-for-nuclear-fusion-feat-martin",
         "nuclear-fusion-the-state-of-play",
-        "atomic-energy-can-nuclear-power-our"
+        "atomic-energy-can-nuclear-power-our",
+        "ai-for-nuclear-fusion-feat-martin"
       ]
     },
     {
@@ -1754,9 +1758,9 @@
       "url": "posts/interview-ben-mildenhall-co-inventor.html",
       "substack_url": "https://stateofthefuture.substack.com/p/interview-ben-mildenhall-co-inventor",
       "related": [
-        "e05-the-future-of-edge-ai-brain-inspired",
-        "e06-the-model-t-moment-for-bits-llms",
-        "e10-pushing-moores-law-to-the-limit"
+        "e15-in-conversation-with-wisear-on",
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "ai-chips-computeram-and-the-future"
       ]
     },
     {
@@ -2014,8 +2018,8 @@
       "substack_url": "https://stateofthefuture.substack.com/p/why-privacy-tech-is-actually-collaborative",
       "related": [
         "confidential-ai-the-dog-that-didnt",
-        "e20-the-state-of-privacy-enhancing",
-        "e19-trusted-execution-environments"
+        "e07-decentralised-ai",
+        "e20-the-state-of-privacy-enhancing"
       ]
     }
   ]

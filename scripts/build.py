@@ -35,6 +35,26 @@ SUBSTACK_URL = "https://stateofthefuture.substack.com"
 
 # --- category derivation -----------------------------------------------------
 
+# Title-level heuristics for interviews where the slug doesn't have a clear
+# "interview-" / "in-conversation-with-" marker. Catches:
+#   "(feat. Noam …)"            — feat. with parenthesis
+#   "w/ Andrew Bennett"          — w/ followed by a capitalised name
+#   "Conversation with Manu, …"  — explicit conversation phrasing
+#   "with Prateek of Proteins1"  — "with X of/at/from/," style introducing a guest
+INTERVIEW_TITLE_PATTERNS = [
+    re.compile(r"\(\s*feat\.?\s", re.IGNORECASE),
+    re.compile(r"\bw/\s+[A-Z]"),
+    re.compile(r"Conversation with\s+[A-Z]", re.IGNORECASE),
+    re.compile(r"\swith\s+[A-Z]\w+(?:\s+(?:of|at|from|,|—|–))"),
+]
+
+
+def looks_like_interview_title(title: str) -> bool:
+    if not title:
+        return False
+    return any(p.search(title) for p in INTERVIEW_TITLE_PATTERNS)
+
+
 def derive_category(slug: str, title: str = "") -> str:
     s = slug.lower()
     t = (title or "").lower()
@@ -43,6 +63,8 @@ def derive_category(slug: str, title: str = "") -> str:
     if "friday four" in t or t.startswith("four things"):
         return "Friday Four"
     if "in-conversation-with" in s or s.startswith("interview-"):
+        return "Interview"
+    if looks_like_interview_title(title):
         return "Interview"
     return "Essay"
 
@@ -64,6 +86,9 @@ TOPICS: list[tuple[str, str, list[str]]] = [
         "modular-semiconductors", "the-real-ai-bottleneck", "data-movement",
         "the-future-of-computing", "uk-opportunity-in-ai", "lfg-for-semiconductors",
         "ai-compound-semiconductors", "neural", "wen-babelfish",
+        # BCIs / wearable AI / silent speech are AI & compute hardware
+        "hearable", "brain computer", "brain-computer", "augmented reality",
+        "silent speech", "silent-speech", "neural radiance", "nerf",
     ]),
     ("Photonics",        "photonics", [
         "photonic", "photonics", "optical-computing", "gallium-nitride",

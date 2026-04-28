@@ -545,6 +545,86 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
     excerpt_html = (
         f'<div class="article-excerpt">{subtitle}</div>' if subtitle else ""
     )
+
+    # Social share row — sits below the excerpt, above the body. URL points
+    # to the canonical site; X / LinkedIn / email open share intents.
+    canonical_url = f"https://stateofthefuture.io/{post['url']}"
+    share_url_enc = urllib.parse.quote(canonical_url, safe="")
+    share_title_enc = urllib.parse.quote(post['title'], safe="")
+    share_html = (
+        '<div class="article-share">'
+        '<span class="share-label">Share</span>'
+        f'<a href="https://twitter.com/intent/tweet?url={share_url_enc}&text={share_title_enc}" target="_blank" rel="noopener" aria-label="Share on X">X</a>'
+        f'<a href="https://www.linkedin.com/sharing/share-offsite/?url={share_url_enc}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">LinkedIn</a>'
+        f'<a href="mailto:?subject={share_title_enc}&body={share_url_enc}" aria-label="Email this post">Email</a>'
+        f'<button type="button" class="share-copy" data-copy="{html.escape(canonical_url)}" aria-label="Copy link">Copy link</button>'
+        '</div>'
+    )
+
+    # Auto table of contents — only render when the essay has h2 headings
+    # AND is long enough to benefit (>=8 min read). Headings are pulled
+    # from the cleaned body html with a simple regex; href slugs are
+    # generated from the heading text.
+    toc_html = ""
+    if read_min >= 8:
+        toc_items = []
+        seen_slugs: dict[str, int] = {}
+        for m in re.finditer(r"<h2[^>]*>(.*?)</h2>", body_html, re.DOTALL | re.IGNORECASE):
+            heading_text = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+            heading_text = html.unescape(heading_text)
+            if not heading_text:
+                continue
+            base_slug = re.sub(r"[^a-z0-9]+", "-", heading_text.lower()).strip("-")[:60]
+            if not base_slug:
+                continue
+            count = seen_slugs.get(base_slug, 0)
+            seen_slugs[base_slug] = count + 1
+            anchor = base_slug if count == 0 else f"{base_slug}-{count + 1}"
+            toc_items.append((anchor, heading_text))
+        if len(toc_items) >= 3:
+            items_html = "".join(
+                f'<li><a href="#{html.escape(a)}">{html.escape(t)}</a></li>'
+                for a, t in toc_items
+            )
+            toc_html = (
+                '<aside class="article-toc" aria-label="Contents">'
+                '<div class="article-toc-label">Contents</div>'
+                f'<ol>{items_html}</ol>'
+                '</aside>'
+            )
+            # Inject ids into the body's h2s so anchor links work.
+            i = [0]
+            def _stamp(match: re.Match) -> str:
+                tag_open = match.group(0)
+                if i[0] >= len(toc_items):
+                    return tag_open
+                anchor = toc_items[i[0]][0]
+                i[0] += 1
+                # Insert id attr right after <h2 (preserves any existing attrs).
+                return re.sub(r"^<h2", f'<h2 id="{anchor}"', tag_open, count=1, flags=re.IGNORECASE)
+            body_html = re.sub(r"<h2[^>]*>", _stamp, body_html, flags=re.IGNORECASE)
+
+    # Previous / next post by date — populated by the caller via post['prev'] / post['next'].
+    prevnext_parts = []
+    prev_post = post.get("_prev")
+    next_post = post.get("_next")
+    if prev_post:
+        prevnext_parts.append(
+            f'<a class="post-nav-prev" href="../{prev_post["url"]}">'
+            f'<span class="post-nav-arrow">←</span>'
+            f'<span class="post-nav-meta">Older</span>'
+            f'<span class="post-nav-title">{html.escape(prev_post["title"])}</span>'
+            f'</a>'
+        )
+    if next_post:
+        prevnext_parts.append(
+            f'<a class="post-nav-next" href="../{next_post["url"]}">'
+            f'<span class="post-nav-meta">Newer</span>'
+            f'<span class="post-nav-title">{html.escape(next_post["title"])}</span>'
+            f'<span class="post-nav-arrow">→</span>'
+            f'</a>'
+        )
+    prevnext_html = "".join(prevnext_parts)
     topic_chips_html = ""
     if topic_labels:
         chips = "".join(
@@ -632,9 +712,11 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
   <div class="article-content">
     <div class="container article-content-inner">
       {excerpt_html}
+      {share_html}
       <div class="article-body">
 {body_html}
       </div>
+      {toc_html}
     </div>
   </div>
 
@@ -649,7 +731,7 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
       </div>
       <div class="post-nav">
         <a href="../index.html">← Back to archive</a>
-        <a href="{SUBSTACK_URL}/p/{post['slug']}" target="_blank" rel="noopener">View on Substack ↗</a>
+        {prevnext_html}
       </div>
     </div>
   </div>
@@ -661,6 +743,33 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
     <span class="mono">stateofthefuture.io</span>
   </div>
 </footer>
+<script>
+  // Copy-link share button. Falls back to a tiny visible "Copied" hint.
+  (function () {{
+    var btn = document.querySelector('.share-copy');
+    if (!btn) return;
+    btn.addEventListener('click', function () {{
+      var url = btn.getAttribute('data-copy') || window.location.href;
+      var done = function () {{
+        var prev = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(function () {{ btn.textContent = prev; }}, 1400);
+      }};
+      if (navigator.clipboard && navigator.clipboard.writeText) {{
+        navigator.clipboard.writeText(url).then(done, function () {{
+          btn.textContent = 'Copy failed';
+        }});
+      }} else {{
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        document.body.appendChild(ta);
+        ta.select();
+        try {{ document.execCommand('copy'); done(); }} catch (e) {{ btn.textContent = 'Copy failed'; }}
+        document.body.removeChild(ta);
+      }}
+    }});
+  }})();
+</script>
 </body>
 </html>
 """
@@ -772,13 +881,19 @@ def main(skip_images: bool = False) -> None:
         for p in posts:
             p["featured"] = p["slug"] in featured_slugs
 
-    # Render post pages (now that related posts can be computed against the full set).
-    for post in posts:
+    # Render post pages. posts is sorted newest-first; for prev/next chronological
+    # nav, "Older" = next in the array, "Newer" = previous in the array.
+    for idx, post in enumerate(posts):
         body = post.pop("_body")
         related = compute_related(post, posts, limit=3)
         post["related"] = [r["slug"] for r in related]
+        post["_prev"] = posts[idx + 1] if idx + 1 < len(posts) else None
+        post["_next"] = posts[idx - 1] if idx > 0 else None
         out_path = POSTS_OUT / f"{post['slug']}.html"
         out_path.write_text(render_post_page(post, body, related), encoding="utf-8")
+        # Don't keep _prev/_next on the manifest entries (transient render hint).
+        post.pop("_prev", None)
+        post.pop("_next", None)
 
     manifest = {
         "site_title": SITE_TITLE,

@@ -17,6 +17,7 @@
   let topics = [];
   let activeFilter = 'all';
   let activeTopic = '';        // '' = all topics
+  let activeSort = 'newest';   // 'newest' | 'oldest'
   let featuredOnly = false;
   let query = '';
 
@@ -64,6 +65,28 @@
   document.getElementById('count-Interview').textContent = '(' + (totals['Interview'] || 0) + ')';
   document.getElementById('count-Friday-Four').textContent = '(' + (totals['Friday Four'] || 0) + ')';
 
+  // Compute scope label dynamically: "84 posts since YYYY".
+  const earliestYear = posts.reduce(function (acc, p) {
+    if (!p.date) return acc;
+    const y = parseInt(p.date.substring(0, 4), 10);
+    return (acc === null || y < acc) ? y : acc;
+  }, null);
+  const scopeEl = document.getElementById('issue-scope');
+  if (scopeEl) {
+    scopeEl.textContent = totals.all + ' posts since ' + (earliestYear || new Date().getFullYear());
+  }
+
+  // Featured CTA — show count of curated picks. Hide the banner if none.
+  const featuredCount = posts.filter(function (p) { return p.featured; }).length;
+  const featuredCountEl = document.getElementById('featured-count');
+  const featuredBanner = document.querySelector('.featured-banner');
+  if (featuredCount > 0 && featuredCountEl) {
+    const wordMap = { 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine', 10: 'ten' };
+    featuredCountEl.textContent = wordMap[featuredCount] || String(featuredCount);
+  } else if (featuredBanner) {
+    featuredBanner.style.display = 'none';
+  }
+
   // Build topic chips dynamically from manifest.topics + counts.
   const topicCounts = posts.reduce(function (acc, p) {
     (p.topics || []).forEach(function (t) { acc[t] = (acc[t] || 0) + 1; });
@@ -91,7 +114,11 @@
     });
   }
   const topicChips = Array.from(document.querySelectorAll('[data-topic]'));
-  const featuredBtn = document.querySelector('[data-filter-featured]');
+  const featuredBtn = document.querySelector('button.filter-chip[data-filter-featured]');
+  const featuredCta = document.querySelector('.featured-cta');
+  const sortBtns = Array.from(document.querySelectorAll('.sort-btn'));
+  const topicToggle = document.getElementById('topic-toggle');
+  const topicBar = document.querySelector('.topic-bar');
 
   // -- URL hash <-> state sync --------------------------------------------
 
@@ -103,12 +130,14 @@
     const q = params.get('q');
     const t = params.get('topic');
     const f2 = params.get('featured');
+    const s = params.get('sort');
     if (f === 'all' || f === 'Essay' || f === 'Interview' || f === 'Friday Four') {
       activeFilter = f;
     }
     if (t && topics.some(function (x) { return x.slug === t; })) {
       activeTopic = t;
     }
+    if (s === 'oldest' || s === 'newest') activeSort = s;
     featuredOnly = f2 === '1';
     if (q) {
       query = q;
@@ -120,6 +149,7 @@
     const params = new URLSearchParams();
     if (activeFilter !== 'all') params.set('filter', activeFilter);
     if (activeTopic) params.set('topic', activeTopic);
+    if (activeSort !== 'newest') params.set('sort', activeSort);
     if (featuredOnly) params.set('featured', '1');
     if (query) params.set('q', query);
     const next = params.toString();
@@ -200,13 +230,23 @@
       return hay.indexOf(q) !== -1;
     });
 
+    if (activeSort === 'oldest') {
+      filtered.sort(function (a, b) { return (a.date || '').localeCompare(b.date || ''); });
+    } else {
+      filtered.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+    }
+
     chips.forEach(function (c) {
       c.setAttribute('aria-pressed', String(c.dataset.filter === activeFilter));
     });
     topicChips.forEach(function (c) {
       c.setAttribute('aria-pressed', String((c.dataset.topic || '') === activeTopic));
     });
+    sortBtns.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.sort === activeSort));
+    });
     if (featuredBtn) featuredBtn.setAttribute('aria-pressed', String(featuredOnly));
+    if (featuredCta) featuredCta.setAttribute('aria-pressed', String(featuredOnly));
 
     clear(grid);
     if (filtered.length === 0) {
@@ -238,10 +278,24 @@
     });
   });
 
-  if (featuredBtn) {
-    featuredBtn.addEventListener('click', function () {
-      featuredOnly = !featuredOnly;
+  function toggleFeatured() {
+    featuredOnly = !featuredOnly;
+    render();
+  }
+  if (featuredBtn) featuredBtn.addEventListener('click', toggleFeatured);
+  if (featuredCta) featuredCta.addEventListener('click', toggleFeatured);
+
+  sortBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      activeSort = b.dataset.sort || 'newest';
       render();
+    });
+  });
+
+  if (topicToggle && topicBar) {
+    topicToggle.addEventListener('click', function () {
+      const open = topicBar.classList.toggle('is-open');
+      topicToggle.setAttribute('aria-expanded', String(open));
     });
   }
 

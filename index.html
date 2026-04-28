@@ -23,24 +23,37 @@
       </a>
       <nav class="masthead-nav">
         <a href="https://stateofthefuture.substack.com/podcast">Podcast</a>
-        <a href="https://stateofthefuture.substack.com">Newsletter</a>
+        <a href="https://stateofthefuture.substack.com" target="_blank" rel="noopener">Substack ↗</a>
         <a href="https://stateofthefuture.substack.com/subscribe" class="subscribe-pill">Subscribe</a>
       </nav>
     </div>
   </div>
 </header>
 
+<section class="featured-banner">
+  <div class="container featured-banner-inner">
+    <button class="featured-cta" data-filter-featured="1" aria-pressed="false">
+      <span class="featured-cta-label">★ New here?</span>
+      <span class="featured-cta-text">Start with these <span id="featured-count">six</span> essays →</span>
+    </button>
+  </div>
+</section>
+
 <section class="issue-bar" id="archive">
   <div class="container issue-bar-inner">
     <span class="label" id="issue-label">Archive</span>
-    <span class="sep">|</span>
-    <span class="label" id="issue-date">April 2026</span>
+    <span class="sep">·</span>
+    <span class="label" id="issue-scope">84 posts since 2021</span>
     <div class="filter-list">
-      <button class="filter-chip filter-chip-featured" data-filter-featured="1" aria-pressed="false" title="Curated picks for first-time readers">★ Start here</button>
       <button class="filter-chip" data-filter="all" aria-pressed="true">All <span class="count" id="count-all"></span></button>
       <button class="filter-chip" data-filter="Essay" aria-pressed="false">Essays <span class="count" id="count-Essay"></span></button>
       <button class="filter-chip" data-filter="Interview" aria-pressed="false">Interviews <span class="count" id="count-Interview"></span></button>
       <button class="filter-chip" data-filter="Friday Four" aria-pressed="false">Friday Four <span class="count" id="count-Friday-Four"></span></button>
+      <span class="sort-toggle">
+        <span class="sort-label">Sort</span>
+        <button class="sort-btn" data-sort="newest" aria-pressed="true">Newest ↓</button>
+        <button class="sort-btn" data-sort="oldest" aria-pressed="false">Oldest ↑</button>
+      </span>
       <input type="search" id="search" class="search-input" placeholder="Search">
       <span class="result-count" id="result-count"></span>
     </div>
@@ -49,7 +62,8 @@
 
 <section class="topic-bar">
   <div class="container topic-bar-inner">
-    <span class="topic-bar-label">Topics</span>
+    <button class="topic-toggle" id="topic-toggle" aria-expanded="false" aria-controls="topic-list">Topics ▾</button>
+    <span class="topic-bar-label" title="Posts can carry multiple topics; Friday Fours span all themes and aren't topic-tagged.">Topics</span>
     <div class="topic-list" id="topic-list"></div>
   </div>
 </section>

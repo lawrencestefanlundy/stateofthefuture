@@ -1,23 +1,28 @@
 #!/usr/bin/env python3
-"""Generate one-paragraph card summaries for every post via Claude Haiku.
+"""Generate one-paragraph card summaries via Claude Haiku.
 
-Reads data/source/posts-html/<id>.<slug>.html (the original Substack export),
-strips HTML, sends the body + a cached editorial-voice system prompt to
-Claude Haiku 4.5, and writes the results to data/summaries.json keyed by slug.
+Body source order:
+  1. data/source/posts-html/<id>.<slug>.html (Substack export — local rebuilds)
+  2. posts/<slug>.html (rendered page in the repo — works in CI / cron)
 
-Run: python3 scripts/summarize.py            # summarises every post once,
-                                             # skipping ones already in
-                                             # summaries.json.
-     python3 scripts/summarize.py --redo     # force-regenerate all summaries.
-     python3 scripts/summarize.py --slug X   # regenerate just one slug.
+Sends the cleaned body + a cached editorial-voice system prompt to Claude
+Haiku 4.5 and writes results to data/summaries.json keyed by slug.
 
-ANTHROPIC_API_KEY must be set in the environment.
+After generating new summaries this script also patches the affected post
+pages and the manifest so the new dek is reflected immediately, without
+needing a full build.py rerun (full build needs data/source/, which is
+gitignored and absent in CI).
+
+Run: python3 scripts/summarize.py            # summarise posts not yet done
+     python3 scripts/summarize.py --redo     # force-regenerate all summaries
+     python3 scripts/summarize.py --slug X   # regenerate one slug
+
+ANTHROPIC_API_KEY (preferred) or CLAUDE_CODE_OAUTH_TOKEN must be in env.
 """
 
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import os
 import re
@@ -29,10 +34,15 @@ from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "data" / "source"
-HTML_DIR = SRC / "posts-html"
-CSV_PATH = SRC / "posts.csv"
+SRC_HTML_DIR = ROOT / "data" / "source" / "posts-html"
+RENDERED_POSTS_DIR = ROOT / "posts"
+MANIFEST_PATH = ROOT / "data" / "posts.json"
 OUT_PATH = ROOT / "data" / "summaries.json"
+
+# Reuse build.py's render_post_page so a post page can be re-rendered with
+# the new summary in place without a full build.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import build  # noqa: E402
 
 API_URL = "https://api.anthropic.com/v1/messages"
 MODEL = "claude-haiku-4-5-20251001"
@@ -70,23 +80,36 @@ def strip_html(s: str) -> str:
     return s
 
 
-def load_posts_index() -> dict[str, dict]:
-    """slug -> {title, subtitle}"""
-    out: dict[str, dict] = {}
-    with CSV_PATH.open() as f:
-        for row in csv.DictReader(f):
-            if row.get("is_published") != "true":
-                continue
-            stem = row["post_id"]
-            if "." not in stem:
-                continue
-            _, slug = stem.split(".", 1)
-            out[slug] = {
-                "title": (row.get("title") or "").strip(),
-                "subtitle": (row.get("subtitle") or "").strip(),
-                "stem": stem,
-            }
-    return out
+# Match the inner content of either <div class="article-body"> or the older
+# <div class="post-body">, allowing nested divs.
+_ARTICLE_BODY_RE = re.compile(
+    r'<div class="(?:article|post)-body"[^>]*>(.*?)</div>\s*(?:<div class="(?:post|article)-(?:footer|nav))',
+    re.DOTALL,
+)
+
+
+def body_for_slug(slug: str, manifest_post: dict) -> str | None:
+    """Return raw body HTML for a post. Prefers the local Substack export
+    (full original markup), falls back to the rendered post page (works in CI)."""
+    stem = f"{manifest_post.get('id', '')}.{slug}"
+    src = SRC_HTML_DIR / f"{stem}.html"
+    if src.exists():
+        return src.read_text(encoding="utf-8")
+    rendered = RENDERED_POSTS_DIR / f"{slug}.html"
+    if rendered.exists():
+        page = rendered.read_text(encoding="utf-8")
+        m = _ARTICLE_BODY_RE.search(page)
+        if m:
+            return m.group(1)
+        # Last resort: strip the masthead and return the rest.
+        return page
+    return None
+
+
+def render_with_summary(post: dict, body_html: str, related: list[dict]) -> str:
+    """Render the post page using build.render_post_page so the article-body
+    in the rendered HTML reflects whatever's in the manifest's `excerpt`."""
+    return build.render_post_page(post, build.clean_body(body_html), related)
 
 
 def call_haiku(auth_header: tuple[str, str], system_prompt: str, user_text: str, max_retries: int = 4) -> str:
@@ -154,28 +177,33 @@ def main() -> int:
     else:
         existing = {}
 
-    posts = load_posts_index()
-    targets = []
-    for slug, meta in posts.items():
-        html_path = HTML_DIR / f"{meta['stem']}.html"
-        if not html_path.exists():
-            continue
+    if not MANIFEST_PATH.exists():
+        sys.exit("missing data/posts.json — run scripts/build.py first")
+    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    posts_by_slug = {p["slug"]: p for p in manifest["posts"]}
+
+    targets: list[tuple[str, dict, str]] = []
+    for slug, post in posts_by_slug.items():
         if args.slug and slug != args.slug:
             continue
         if not args.redo and not args.slug and slug in existing and existing[slug].get("summary"):
             continue
-        targets.append((slug, meta, html_path))
+        body_html = body_for_slug(slug, post)
+        if body_html is None:
+            print(f"  - skip {slug} (no body found)", file=sys.stderr)
+            continue
+        targets.append((slug, post, body_html))
 
     print(f"summarising {len(targets)} posts …")
-    written = 0
-    for slug, meta, html_path in targets:
-        body = strip_html(html_path.read_text(encoding="utf-8"))
-        if len(body) > MAX_BODY_CHARS:
-            body = body[:MAX_BODY_CHARS]
+    affected_slugs: set[str] = set()
+    for slug, post, body_html in targets:
+        body_text = strip_html(body_html)
+        if len(body_text) > MAX_BODY_CHARS:
+            body_text = body_text[:MAX_BODY_CHARS]
         user_text = (
-            f"Title: {meta['title']}\n"
-            f"Subtitle: {meta['subtitle']}\n\n"
-            f"Body:\n{body}"
+            f"Title: {post.get('title', '')}\n"
+            f"Subtitle: {post.get('subtitle', '')}\n\n"
+            f"Body:\n{body_text}"
         )
         try:
             summary = call_haiku(auth, SYSTEM_PROMPT, user_text)
@@ -186,12 +214,50 @@ def main() -> int:
             print(f"  ! {slug}: empty summary", file=sys.stderr)
             continue
         existing[slug] = {"summary": summary, "model": MODEL}
-        written += 1
+        affected_slugs.add(slug)
         print(f"  + {slug}: {summary[:120]}{'…' if len(summary) > 120 else ''}")
         # Persist after every call so we don't lose work on interruption.
         OUT_PATH.write_text(json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    print(f"\nwrote {written} new summaries to {OUT_PATH}")
+    if not affected_slugs:
+        print("\nno new summaries.")
+        return 0
+
+    # Patch the manifest entries with the new summaries + excerpt fallback.
+    for slug in affected_slugs:
+        post = posts_by_slug[slug]
+        post["summary"] = existing[slug]["summary"]
+        post["excerpt"] = existing[slug]["summary"]
+
+    MANIFEST_PATH.write_text(
+        json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+    # Re-render the affected post pages so they pick up any header changes
+    # tied to the updated manifest entry. Related posts list comes from
+    # whatever's currently stored on the post (computed by build/sync).
+    for slug in affected_slugs:
+        post = posts_by_slug[slug]
+        body_html = body_for_slug(slug, post)
+        if body_html is None:
+            continue
+        related = []
+        for r_slug in post.get("related", []):
+            r = posts_by_slug.get(r_slug)
+            if r:
+                related.append({
+                    "slug": r["slug"],
+                    "title": r["title"],
+                    "subtitle": r.get("subtitle", ""),
+                    "date_pretty": r.get("date_pretty", ""),
+                    "category": r["category"],
+                    "category_slug": r["category_slug"],
+                    "url": r["url"],
+                })
+        out_path = RENDERED_POSTS_DIR / f"{slug}.html"
+        out_path.write_text(render_with_summary(post, body_html, related), encoding="utf-8")
+
+    print(f"\nwrote {len(affected_slugs)} new summaries; updated manifest + post pages.")
     return 0
 
 

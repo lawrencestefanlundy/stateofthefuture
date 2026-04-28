@@ -51,6 +51,136 @@ def category_slug(category: str) -> str:
     return category.lower().replace(" ", "-")
 
 
+# Topic taxonomy — each topic has a list of substring patterns checked against
+# slug + title. A post can carry multiple topics. Friday Fours skip topic tagging
+# (they're roundups by nature). Order here also drives the chip ordering in the UI.
+TOPICS: list[tuple[str, str, list[str]]] = [
+    ("AI & compute",     "ai-compute", [
+        "ai-chips", "computeram", "compute-gradient", "fungible-compute",
+        "mortal-computing", "mortal", "model-t", "moores-law", "chiplets",
+        "hbm", "high-bandwidth", "model", "inference", "deploy", "frontier",
+        "edge-ai", "agents", "agent", "deepseek", "sovereign", "babelfish",
+        "what-if-ai", "ai-chips-computeram", "inward-collapse",
+        "modular-semiconductors", "the-real-ai-bottleneck", "data-movement",
+        "the-future-of-computing", "uk-opportunity-in-ai", "lfg-for-semiconductors",
+        "ai-compound-semiconductors", "neural", "wen-babelfish",
+    ]),
+    ("Photonics",        "photonics", [
+        "photonic", "photonics", "optical-computing", "gallium-nitride",
+        "the-future-of-computing-is-glass", "silicon-photonic", "light-based",
+    ]),
+    ("Labour & economy", "labour-economy", [
+        "employment", "young-workers", "young-people", "white-collar",
+        "junior", "occupational-downgrading", "unbundling-the-job",
+        "blue-collar", "dirty-work", "edtech", "educating", "labour",
+        "jobs", "panic-stage", "tragic-twenties",
+    ]),
+    ("Quantum",          "quantum", [
+        "quantum", "qubit", "qubits", "willow", "cubits-in-a-fridge",
+    ]),
+    ("Fusion & nuclear", "fusion-nuclear", [
+        "fusion", "nuclear", "atomic-energy", "atomic",
+    ]),
+    ("Privacy",          "privacy", [
+        "privacy", "confidential-ai", "trusted-execution", "decentralised-ai",
+        "private", "data-privacy", "encrypted",
+    ]),
+    ("Materials",        "materials", [
+        "carbon-nanotube", "nanotube", "gallium-nitride", "advanced-materials",
+        "compound-semiconductors",
+    ]),
+    ("VC & investing",   "vc", [
+        "consensus-capital", "data-driven-vc", "venture-capital",
+        "fund-frontier", "lux-capital", "speedinvest", "doing-research-in",
+        "expeditions",
+    ]),
+    ("Health & bio",     "health-bio", [
+        "proteins", "blood", "ambient-health", "detecting-proteins",
+    ]),
+]
+
+
+def derive_topics(slug: str, title: str = "", category: str = "") -> list[str]:
+    """Return a list of topic_slug values matching this post.
+    Friday Fours are intentionally not topic-tagged — they're roundups
+    spanning multiple topics by design."""
+    if category == "Friday Four":
+        return []
+    haystack = (slug + " " + (title or "")).lower()
+    matches = []
+    for label, tslug, patterns in TOPICS:
+        if any(p in haystack for p in patterns):
+            matches.append(tslug)
+    return matches
+
+
+def topic_label(tslug: str) -> str:
+    for label, slug, _ in TOPICS:
+        if slug == tslug:
+            return label
+    return tslug
+
+
+def topic_slug_list() -> list[tuple[str, str]]:
+    return [(label, slug) for label, slug, _ in TOPICS]
+
+
+def load_featured(root: Path) -> set[str]:
+    """Read data/featured.txt — one post slug per line, hash-comments allowed.
+    Posts in this file get featured=true in the manifest."""
+    path = root / "data" / "featured.txt"
+    if not path.exists():
+        return set()
+    out: set[str] = set()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.split("#", 1)[0].strip()
+        if line:
+            out.add(line)
+    return out
+
+
+def compute_related(post: dict, all_posts: list[dict], limit: int = 3) -> list[dict]:
+    """Return up to `limit` related posts. Score = topic overlap (heaviest) +
+    same category bonus + temporal proximity (within ~6 months tiebreaker)."""
+    if not all_posts:
+        return []
+    target_topics = set(post.get("topics", []))
+    target_cat = post["category"]
+    target_date = post["date"]
+    scored: list[tuple[float, dict]] = []
+    for other in all_posts:
+        if other["slug"] == post["slug"]:
+            continue
+        score = 0.0
+        overlap = len(target_topics & set(other.get("topics", [])))
+        score += overlap * 3
+        if other["category"] == target_cat:
+            score += 1
+        # Temporal proximity tiebreaker: closer date = higher score.
+        try:
+            t1 = datetime.fromisoformat(target_date)
+            t2 = datetime.fromisoformat(other["date"])
+            days = abs((t1 - t2).days)
+            score += max(0, 1 - days / 365)  # within a year contributes up to +1
+        except Exception:
+            pass
+        if score > 0:
+            scored.append((score, other))
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return [
+        {
+            "slug": o["slug"],
+            "title": o["title"],
+            "subtitle": o.get("subtitle", ""),
+            "date_pretty": o.get("date_pretty", ""),
+            "category": o["category"],
+            "category_slug": o["category_slug"],
+            "url": o["url"],
+        }
+        for _, o in scored[:limit]
+    ]
+
+
 # --- hero image extraction ---------------------------------------------------
 
 # Match the FIRST <img ... src="..."> in the document — Substack puts the hero
@@ -242,13 +372,15 @@ def reading_time_minutes(post_html: str, wpm: int = 230) -> int:
 
 # --- templating --------------------------------------------------------------
 
-def render_post_page(post: dict, body_html: str) -> str:
+def render_post_page(post: dict, body_html: str, related: list[dict] | None = None) -> str:
     cat = post["category"]
     cat_slug = category_slug(cat)
     pretty_date = post["date_pretty"]
     read_min = reading_time_minutes(body_html)
     title = html.escape(post["title"])
     subtitle = html.escape(post["subtitle"]) if post["subtitle"] else ""
+    related = related or []
+    topic_labels = [topic_label(t) for t in post.get("topics", [])]
     # local paths in the manifest are relative to project root ("images/x.jpg");
     # post pages live at /posts/, so prepend ../. Remote URLs go through unchanged.
     hero_local = post.get("hero_local")
@@ -273,6 +405,43 @@ def render_post_page(post: dict, body_html: str) -> str:
     excerpt_html = (
         f'<div class="article-excerpt">{subtitle}</div>' if subtitle else ""
     )
+    topic_chips_html = ""
+    if topic_labels:
+        chips = "".join(
+            f'<a class="ae-topic" href="../index.html#topic={html.escape(t_slug)}">{html.escape(t_label)}</a>'
+            for t_label, t_slug in zip(
+                topic_labels,
+                [s for s in post.get("topics", [])],
+            )
+        )
+        topic_chips_html = f'<div class="ae-topics">{chips}</div>'
+
+    related_html = ""
+    if related:
+        cards = []
+        for r in related:
+            r_title = html.escape(r["title"])
+            r_subtitle = html.escape(r.get("subtitle") or "")
+            r_date = html.escape(r.get("date_pretty") or "")
+            r_cat = html.escape(r["category"])
+            r_cat_slug = html.escape(r["category_slug"])
+            sub_html = f'<div class="related-card-subtitle">{r_subtitle}</div>' if r_subtitle else ""
+            cards.append(
+                f'''<a class="related-card" href="../{r['url']}">
+  <div class="related-card-cat cat-{r_cat_slug}">{r_cat}</div>
+  <h3 class="related-card-title">{r_title}</h3>
+  {sub_html}
+  <div class="related-card-date">{r_date}</div>
+</a>'''
+            )
+        related_html = (
+            '<section class="related-posts">'
+            '<div class="container">'
+            '<div class="related-head"><span class="related-label">Read next</span></div>'
+            f'<div class="related-grid">{"".join(cards)}</div>'
+            '</div>'
+            '</section>'
+        )
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -311,6 +480,7 @@ def render_post_page(post: dict, body_html: str) -> str:
     <div class="container article-header-inner">
       <div class="article-eyebrow">
         <span class="ae-label">{cat}</span>
+        {topic_chips_html}
       </div>
       <h1 class="article-title">{title}</h1>
       <div class="article-date">{pretty_date}</div>
@@ -327,6 +497,8 @@ def render_post_page(post: dict, body_html: str) -> str:
       </div>
     </div>
   </div>
+
+  {related_html}
 
   <div class="article-footer">
     <div class="container">
@@ -408,6 +580,7 @@ def main(skip_images: bool = False) -> None:
         iso, pretty = parse_date(meta.get("post_date", ""))
         category = derive_category(slug, meta.get("title", ""))
         subtitle = (meta.get("subtitle") or "").strip()
+        topics = derive_topics(slug, meta.get("title", ""), category)
         post = {
             "id": post_id,
             "slug": slug,
@@ -418,19 +591,37 @@ def main(skip_images: bool = False) -> None:
             "date_pretty": pretty,
             "category": category,
             "category_slug": category_slug(category),
+            "topics": topics,
+            "featured": False,  # populated after the loop, once we know all slugs
             "hero_remote": hero_remote,
             "hero_local": hero_local,
             "url": f"posts/{slug}.html",
             "substack_url": f"{SUBSTACK_URL}/p/{slug}",
         }
 
-        body = clean_body(post_html)
-        out_path = POSTS_OUT / f"{slug}.html"
-        out_path.write_text(render_post_page(post, body), encoding="utf-8")
+        # Defer rendering until after the loop so related-posts can see all peers.
+        post["_body"] = clean_body(post_html)
         posts.append(post)
         print(f"  + {category:11s} {iso}  {slug}")
 
     posts.sort(key=lambda p: p["date"], reverse=True)
+
+    # Featured / "Start here" picks — read from data/featured.txt if present.
+    featured_slugs = load_featured(ROOT)
+    if featured_slugs:
+        unknown = featured_slugs - {p["slug"] for p in posts}
+        if unknown:
+            print(f"  ! featured.txt references unknown slugs: {sorted(unknown)}", file=sys.stderr)
+        for p in posts:
+            p["featured"] = p["slug"] in featured_slugs
+
+    # Render post pages (now that related posts can be computed against the full set).
+    for post in posts:
+        body = post.pop("_body")
+        related = compute_related(post, posts, limit=3)
+        post["related"] = [r["slug"] for r in related]
+        out_path = POSTS_OUT / f"{post['slug']}.html"
+        out_path.write_text(render_post_page(post, body, related), encoding="utf-8")
 
     manifest = {
         "site_title": SITE_TITLE,
@@ -438,6 +629,8 @@ def main(skip_images: bool = False) -> None:
         "substack_url": SUBSTACK_URL,
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "post_count": len(posts),
+        "topics": [{"label": l, "slug": s} for l, s in topic_slug_list()],
+        "featured_count": sum(1 for p in posts if p.get("featured")),
         "posts": posts,
     }
     (DATA_OUT / "posts.json").write_text(

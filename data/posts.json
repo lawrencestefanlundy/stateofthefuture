@@ -2,8 +2,47 @@
   "site_title": "State of the Future",
   "tagline": "Essays, interviews, and Friday Four dispatches on the technology shaping the future.",
   "substack_url": "https://stateofthefuture.substack.com",
-  "generated_at": "2026-04-28T07:28:37.012440Z",
+  "generated_at": "2026-04-28T07:58:32.218845Z",
   "post_count": 84,
+  "topics": [
+    {
+      "label": "AI & compute",
+      "slug": "ai-compute"
+    },
+    {
+      "label": "Photonics",
+      "slug": "photonics"
+    },
+    {
+      "label": "Labour & economy",
+      "slug": "labour-economy"
+    },
+    {
+      "label": "Quantum",
+      "slug": "quantum"
+    },
+    {
+      "label": "Fusion & nuclear",
+      "slug": "fusion-nuclear"
+    },
+    {
+      "label": "Privacy",
+      "slug": "privacy"
+    },
+    {
+      "label": "Materials",
+      "slug": "materials"
+    },
+    {
+      "label": "VC & investing",
+      "slug": "vc"
+    },
+    {
+      "label": "Health & bio",
+      "slug": "health-bio"
+    }
+  ],
+  "featured_count": 6,
   "posts": [
     {
       "id": "194494407",
@@ -15,10 +54,17 @@
       "date_pretty": "24 Apr 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/48f2e15e-796c-4043-850e-20cdee7fd002_2816x1536.png",
       "hero_local": null,
       "url": "posts/state-of-the-future-friday-four-002.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-002"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-002",
+      "related": [
+        "state-of-the-future-friday-four-67c",
+        "state-of-the-future-friday-four-551",
+        "state-of-the-future-friday-four-251"
+      ]
     },
     {
       "id": "194779163",
@@ -30,10 +76,20 @@
       "date_pretty": "22 Apr 2026",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "photonics",
+        "health-bio"
+      ],
+      "featured": true,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/f04c57af-f0e8-4dd1-b72d-a3a506f632e7_2816x1536.png",
       "hero_local": null,
       "url": "posts/detecting-proteins-in-blood-with.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/detecting-proteins-in-blood-with"
+      "substack_url": "https://stateofthefuture.substack.com/p/detecting-proteins-in-blood-with",
+      "related": [
+        "the-photonic-foundry-fallacy",
+        "photonic-engines-for-data-centers",
+        "gallium-nitride-photonics-w-james"
+      ]
     },
     {
       "id": "194502326",
@@ -45,10 +101,17 @@
       "date_pretty": "17 Apr 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/1b7f4968-3fd7-4b23-b670-7a1351d69461_2752x1536.png",
       "hero_local": null,
       "url": "posts/state-of-the-future-friday-four-67c.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-67c"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-67c",
+      "related": [
+        "state-of-the-future-friday-four-002",
+        "state-of-the-future-friday-four-551",
+        "state-of-the-future-friday-four-251"
+      ]
     },
     {
       "id": "194168177",
@@ -60,10 +123,19 @@
       "date_pretty": "14 Apr 2026",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "photonics"
+      ],
+      "featured": true,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/eb8b3d0d-6344-4433-8bad-a84f49feb7e1_1952x2146.png",
       "hero_local": null,
       "url": "posts/the-photonic-foundry-fallacy.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/the-photonic-foundry-fallacy"
+      "substack_url": "https://stateofthefuture.substack.com/p/the-photonic-foundry-fallacy",
+      "related": [
+        "detecting-proteins-in-blood-with",
+        "photonic-engines-for-data-centers",
+        "gallium-nitride-photonics-w-james"
+      ]
     },
     {
       "id": "193784653",
@@ -75,10 +147,17 @@
       "date_pretty": "10 Apr 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/3a6aa510-4612-4305-8f64-ba61aea6217c_1376x768.png",
       "hero_local": null,
       "url": "posts/state-of-the-future-friday-four-551.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-551"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-551",
+      "related": [
+        "state-of-the-future-friday-four-67c",
+        "state-of-the-future-friday-four-251",
+        "state-of-the-future-friday-four-002"
+      ]
     },
     {
       "id": "192209354",
@@ -90,10 +169,19 @@
       "date_pretty": "7 Apr 2026",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/7cc5c36d-17bc-4023-8ed6-cd75b128b40b_1824x2336.png",
       "hero_local": null,
       "url": "posts/chips-for-the-brain-modular-semiconductors.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/chips-for-the-brain-modular-semiconductors"
+      "substack_url": "https://stateofthefuture.substack.com/p/chips-for-the-brain-modular-semiconductors",
+      "related": [
+        "fungible-compute-mortal-computing",
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "ai-chips-computeram-and-the-future"
+      ]
     },
     {
       "id": "193054236",
@@ -105,10 +193,17 @@
       "date_pretty": "3 Apr 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/958dcc1e-23ab-4c8a-82b2-e7435c674842_2752x1536.png",
       "hero_local": null,
       "url": "posts/state-of-the-future-friday-four-251.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-251"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-251",
+      "related": [
+        "state-of-the-future-friday-four-551",
+        "state-of-the-future-friday-four-d68",
+        "state-of-the-future-friday-four-67c"
+      ]
     },
     {
       "id": "192302400",
@@ -120,10 +215,17 @@
       "date_pretty": "27 Mar 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/daa0da69-4298-48f8-8499-f87dacc670a2_2752x1536.png",
       "hero_local": null,
       "url": "posts/state-of-the-future-friday-four-d68.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-d68"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-d68",
+      "related": [
+        "state-of-the-future-friday-four-251",
+        "state-of-the-future-friday-four-03a",
+        "state-of-the-future-friday-four-551"
+      ]
     },
     {
       "id": "191587719",
@@ -135,10 +237,17 @@
       "date_pretty": "20 Mar 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/e2cd8c8e-fa3b-4b8f-821d-07b40841751e_2752x1536.png",
       "hero_local": null,
       "url": "posts/state-of-the-future-friday-four-03a.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-03a"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-03a",
+      "related": [
+        "state-of-the-future-friday-four-d68",
+        "state-of-the-future-friday-four-be4",
+        "state-of-the-future-friday-four-251"
+      ]
     },
     {
       "id": "190828943",
@@ -150,10 +259,17 @@
       "date_pretty": "13 Mar 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/6b1f2c4d-1be2-4b0f-9536-c851e65efb6b_2966x1854.png",
       "hero_local": null,
       "url": "posts/state-of-the-future-friday-four-be4.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-be4"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-be4",
+      "related": [
+        "state-of-the-future-friday-four-03a",
+        "state-of-the-future-friday-four",
+        "state-of-the-future-friday-four-d68"
+      ]
     },
     {
       "id": "190373577",
@@ -165,10 +281,19 @@
       "date_pretty": "10 Mar 2026",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": true,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/9d67c27d-5543-4df8-aaa2-57863bb98054_2816x1536.png",
       "hero_local": null,
       "url": "posts/fungible-compute-mortal-computing.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/fungible-compute-mortal-computing"
+      "substack_url": "https://stateofthefuture.substack.com/p/fungible-compute-mortal-computing",
+      "related": [
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "chips-for-the-brain-modular-semiconductors",
+        "ai-chips-computeram-and-the-future"
+      ]
     },
     {
       "id": "190095047",
@@ -180,10 +305,17 @@
       "date_pretty": "6 Mar 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/b86dc66a-424c-49fb-bf2c-8604d5c02251_2752x1536.png",
       "hero_local": null,
       "url": "posts/state-of-the-future-friday-four.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four",
+      "related": [
+        "state-of-the-future-friday-four-be4",
+        "four-things-what-do-these-people",
+        "state-of-the-future-friday-four-03a"
+      ]
     },
     {
       "id": "189337881",
@@ -195,10 +327,17 @@
       "date_pretty": "27 Feb 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/5240dcdd-489b-4077-b0f1-9a4b284f9899_1408x768.png",
       "hero_local": null,
       "url": "posts/four-things-what-do-these-people.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/four-things-what-do-these-people"
+      "substack_url": "https://stateofthefuture.substack.com/p/four-things-what-do-these-people",
+      "related": [
+        "state-of-the-future-friday-four",
+        "four-things-friday-575",
+        "state-of-the-future-friday-four-be4"
+      ]
     },
     {
       "id": "188607333",
@@ -210,10 +349,17 @@
       "date_pretty": "20 Feb 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/5cf1012d-bfd3-4a87-9b06-d05fb8bd4218_1024x1024.png",
       "hero_local": null,
       "url": "posts/four-things-friday-575.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/four-things-friday-575"
+      "substack_url": "https://stateofthefuture.substack.com/p/four-things-friday-575",
+      "related": [
+        "four-things-what-do-these-people",
+        "four-things-friday",
+        "state-of-the-future-friday-four"
+      ]
     },
     {
       "id": "187833698",
@@ -225,10 +371,17 @@
       "date_pretty": "13 Feb 2026",
       "category": "Friday Four",
       "category_slug": "friday-four",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/e618f4b0-7163-4812-b994-65969b088000_2816x1536.png",
       "hero_local": null,
       "url": "posts/four-things-friday.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/four-things-friday"
+      "substack_url": "https://stateofthefuture.substack.com/p/four-things-friday",
+      "related": [
+        "four-things-friday-575",
+        "four-things-what-do-these-people",
+        "state-of-the-future-friday-four"
+      ]
     },
     {
       "id": "187649479",
@@ -240,10 +393,19 @@
       "date_pretty": "12 Feb 2026",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/df90744d-cf51-4bec-9128-acbe8c2724b2_1024x1024.png",
       "hero_local": null,
       "url": "posts/how-to-invest-in-ai-sovereignty-sovereign.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/how-to-invest-in-ai-sovereignty-sovereign"
+      "substack_url": "https://stateofthefuture.substack.com/p/how-to-invest-in-ai-sovereignty-sovereign",
+      "related": [
+        "ai-chips-computeram-and-the-future",
+        "fungible-compute-mortal-computing",
+        "chips-for-the-brain-modular-semiconductors"
+      ]
     },
     {
       "id": "185417418",
@@ -255,10 +417,19 @@
       "date_pretty": "2 Feb 2026",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "photonics"
+      ],
+      "featured": false,
       "hero_remote": null,
       "hero_local": null,
       "url": "posts/photonic-engines-for-data-centers.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/photonic-engines-for-data-centers"
+      "substack_url": "https://stateofthefuture.substack.com/p/photonic-engines-for-data-centers",
+      "related": [
+        "gallium-nitride-photonics-w-james",
+        "the-future-of-computing-is-glass",
+        "the-photonic-foundry-fallacy"
+      ]
     },
     {
       "id": "184011679",
@@ -270,10 +441,19 @@
       "date_pretty": "22 Jan 2026",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": null,
       "hero_local": null,
       "url": "posts/ai-chips-computeram-and-the-future.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/ai-chips-computeram-and-the-future"
+      "substack_url": "https://stateofthefuture.substack.com/p/ai-chips-computeram-and-the-future",
+      "related": [
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "lfg-for-semiconductors",
+        "fungible-compute-mortal-computing"
+      ]
     },
     {
       "id": "179925051",
@@ -285,10 +465,19 @@
       "date_pretty": "19 Dec 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/f691e146-8d3e-41a3-b7a6-14bdff00f13f_1024x1024.png",
       "hero_local": null,
       "url": "posts/lfg-for-semiconductors.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/lfg-for-semiconductors"
+      "substack_url": "https://stateofthefuture.substack.com/p/lfg-for-semiconductors",
+      "related": [
+        "the-future-of-computing-is-glass",
+        "ai-chips-computeram-and-the-future",
+        "how-to-invest-in-ai-sovereignty-sovereign"
+      ]
     },
     {
       "id": "180409214",
@@ -300,10 +489,20 @@
       "date_pretty": "9 Dec 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "photonics",
+        "materials"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/f6df3c4b-0f7f-4979-a0c4-ed12989dd937_686x330.png",
       "hero_local": null,
       "url": "posts/gallium-nitride-photonics-w-james.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/gallium-nitride-photonics-w-james"
+      "substack_url": "https://stateofthefuture.substack.com/p/gallium-nitride-photonics-w-james",
+      "related": [
+        "the-future-of-computing-is-glass",
+        "carbon-nanotubes-in-the-datacentre",
+        "photonic-engines-for-data-centers"
+      ]
     },
     {
       "id": "179937765",
@@ -315,10 +514,20 @@
       "date_pretty": "2 Dec 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute",
+        "photonics"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/5a0c1d2f-77af-4392-b983-e18aef4774ed_1342x1124.jpeg",
       "hero_local": null,
       "url": "posts/the-future-of-computing-is-glass.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/the-future-of-computing-is-glass"
+      "substack_url": "https://stateofthefuture.substack.com/p/the-future-of-computing-is-glass",
+      "related": [
+        "gallium-nitride-photonics-w-james",
+        "lfg-for-semiconductors",
+        "ai-chips-computeram-and-the-future"
+      ]
     },
     {
       "id": "179338105",
@@ -330,10 +539,19 @@
       "date_pretty": "25 Nov 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "materials"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/253055eb-1e4f-418a-8698-9df5631d2140_1024x1024.jpeg",
       "hero_local": null,
       "url": "posts/carbon-nanotubes-in-the-datacentre.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/carbon-nanotubes-in-the-datacentre"
+      "substack_url": "https://stateofthefuture.substack.com/p/carbon-nanotubes-in-the-datacentre",
+      "related": [
+        "gallium-nitride-photonics-w-james",
+        "uk-opportunity-in-ai-compound-semiconductors",
+        "a-primer-carbon-nanotubes"
+      ]
     },
     {
       "id": "178069287",
@@ -345,10 +563,19 @@
       "date_pretty": "5 Nov 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "vc"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/1339c634-21cb-438f-90a3-bd83eef4a654_1240x1118.avif",
       "hero_local": null,
       "url": "posts/consensus-capital.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/consensus-capital"
+      "substack_url": "https://stateofthefuture.substack.com/p/consensus-capital",
+      "related": [
+        "data-driven-vc-is-over",
+        "fund-frontier-expeditions-otherwise",
+        "im-doing-research-in-venture-capital"
+      ]
     },
     {
       "id": "175602947",
@@ -360,10 +587,19 @@
       "date_pretty": "9 Oct 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/8bf5b06c-82c6-48ac-8bab-e41819e528ce_1536x1024.png",
       "hero_local": null,
       "url": "posts/a-specific-theory-of-sovereign-ai.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/a-specific-theory-of-sovereign-ai"
+      "substack_url": "https://stateofthefuture.substack.com/p/a-specific-theory-of-sovereign-ai",
+      "related": [
+        "the-compute-gradient",
+        "uk-opportunity-in-ai-compound-semiconductors",
+        "the-future-of-computing-is-glass"
+      ]
     },
     {
       "id": "174321235",
@@ -375,10 +611,19 @@
       "date_pretty": "23 Sep 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/94aff599-77b2-4330-be5c-66d7b775daa8_1482x989.png",
       "hero_local": null,
       "url": "posts/the-compute-gradient.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/the-compute-gradient"
+      "substack_url": "https://stateofthefuture.substack.com/p/the-compute-gradient",
+      "related": [
+        "uk-opportunity-in-ai-compound-semiconductors",
+        "a-specific-theory-of-sovereign-ai",
+        "the-future-of-computing-is-glass"
+      ]
     },
     {
       "id": "172153057",
@@ -390,10 +635,20 @@
       "date_pretty": "10 Sep 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute",
+        "materials"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/46488d7f-7416-45a0-aa30-7c26d9b4d894_2072x1530.png",
       "hero_local": null,
       "url": "posts/uk-opportunity-in-ai-compound-semiconductors.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/uk-opportunity-in-ai-compound-semiconductors"
+      "substack_url": "https://stateofthefuture.substack.com/p/uk-opportunity-in-ai-compound-semiconductors",
+      "related": [
+        "the-compute-gradient",
+        "a-specific-theory-of-sovereign-ai",
+        "a-primer-carbon-nanotubes"
+      ]
     },
     {
       "id": "172099621",
@@ -405,10 +660,19 @@
       "date_pretty": "2 Sep 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "labour-economy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/ea484e1b-67fb-4e27-9aae-5adec45459bb_1536x1024.jpeg",
       "hero_local": null,
       "url": "posts/13-drop-in-employment-for-young-workers.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/13-drop-in-employment-for-young-workers"
+      "substack_url": "https://stateofthefuture.substack.com/p/13-drop-in-employment-for-young-workers",
+      "related": [
+        "ai-and-junior-white-collar-automation",
+        "unbundling-the-job",
+        "maybe-edtech-is-the-answer-feat-noam"
+      ]
     },
     {
       "id": "170762895",
@@ -420,10 +684,19 @@
       "date_pretty": "12 Aug 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "labour-economy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/1615b8e9-bb4e-407f-889f-0cd423b89f8a_1924x1082.png",
       "hero_local": null,
       "url": "posts/ai-and-junior-white-collar-automation.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/ai-and-junior-white-collar-automation"
+      "substack_url": "https://stateofthefuture.substack.com/p/ai-and-junior-white-collar-automation",
+      "related": [
+        "13-drop-in-employment-for-young-workers",
+        "unbundling-the-job",
+        "maybe-edtech-is-the-answer-feat-noam"
+      ]
     },
     {
       "id": "168841247",
@@ -435,10 +708,19 @@
       "date_pretty": "22 Jul 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "labour-economy"
+      ],
+      "featured": true,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/e3e4e0c6-4eca-4d9b-a836-369d76f89d96_848x1306.png",
       "hero_local": null,
       "url": "posts/unbundling-the-job.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/unbundling-the-job"
+      "substack_url": "https://stateofthefuture.substack.com/p/unbundling-the-job",
+      "related": [
+        "ai-and-junior-white-collar-automation",
+        "maybe-edtech-is-the-answer-feat-noam",
+        "13-drop-in-employment-for-young-workers"
+      ]
     },
     {
       "id": "166390850",
@@ -450,10 +732,19 @@
       "date_pretty": "1 Jul 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "materials"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/98e944d7-ceaf-440f-8078-c61ecdeff493_466x471.gif",
       "hero_local": null,
       "url": "posts/a-primer-carbon-nanotubes.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/a-primer-carbon-nanotubes"
+      "substack_url": "https://stateofthefuture.substack.com/p/a-primer-carbon-nanotubes",
+      "related": [
+        "uk-opportunity-in-ai-compound-semiconductors",
+        "carbon-nanotubes-in-the-datacentre",
+        "gallium-nitride-photonics-w-james"
+      ]
     },
     {
       "id": "164996185",
@@ -465,10 +756,19 @@
       "date_pretty": "12 Jun 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "labour-economy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/4ef7f7ef-e883-4393-9e9a-bf297fce035d_480x480.gif",
       "hero_local": null,
       "url": "posts/maybe-edtech-is-the-answer-feat-noam.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/maybe-edtech-is-the-answer-feat-noam"
+      "substack_url": "https://stateofthefuture.substack.com/p/maybe-edtech-is-the-answer-feat-noam",
+      "related": [
+        "dirty-work-the-return-of-blue-collar",
+        "young-people-cant-get-jobs-now-what",
+        "unbundling-the-job"
+      ]
     },
     {
       "id": "165081761",
@@ -480,10 +780,19 @@
       "date_pretty": "4 Jun 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "labour-economy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/a1db1423-1b4a-47c8-b2c4-92409f1c5897_1024x1536.jpeg",
       "hero_local": null,
       "url": "posts/dirty-work-the-return-of-blue-collar.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/dirty-work-the-return-of-blue-collar"
+      "substack_url": "https://stateofthefuture.substack.com/p/dirty-work-the-return-of-blue-collar",
+      "related": [
+        "maybe-edtech-is-the-answer-feat-noam",
+        "young-people-cant-get-jobs-now-what",
+        "unbundling-the-job"
+      ]
     },
     {
       "id": "163038483",
@@ -495,10 +804,19 @@
       "date_pretty": "15 May 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "labour-economy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/bf63b806-5c10-4903-b3b0-8210852c5879_1268x918.jpeg",
       "hero_local": null,
       "url": "posts/young-people-cant-get-jobs-now-what.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/young-people-cant-get-jobs-now-what"
+      "substack_url": "https://stateofthefuture.substack.com/p/young-people-cant-get-jobs-now-what",
+      "related": [
+        "dirty-work-the-return-of-blue-collar",
+        "maybe-edtech-is-the-answer-feat-noam",
+        "on-educating-our-children-in-the"
+      ]
     },
     {
       "id": "160061768",
@@ -510,10 +828,19 @@
       "date_pretty": "30 Apr 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/bd560080-ed51-4122-9fa3-2f8c2bb17915_1522x1133.png",
       "hero_local": null,
       "url": "posts/has-the-time-come-to-take-mortal.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/has-the-time-come-to-take-mortal"
+      "substack_url": "https://stateofthefuture.substack.com/p/has-the-time-come-to-take-mortal",
+      "related": [
+        "what-if-ai-can-already-feel",
+        "project-mayhem-ai-inward-collapse",
+        "wen-babelfish-feat-aron-of-semron"
+      ]
     },
     {
       "id": "161917371",
@@ -525,10 +852,19 @@
       "date_pretty": "23 Apr 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/ae564321-77db-4842-8079-3e01471c648b_533x800.png",
       "hero_local": null,
       "url": "posts/what-if-ai-can-already-feel.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/what-if-ai-can-already-feel"
+      "substack_url": "https://stateofthefuture.substack.com/p/what-if-ai-can-already-feel",
+      "related": [
+        "has-the-time-come-to-take-mortal",
+        "project-mayhem-ai-inward-collapse",
+        "wen-babelfish-feat-aron-of-semron"
+      ]
     },
     {
       "id": "160794551",
@@ -540,10 +876,19 @@
       "date_pretty": "16 Apr 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "photonics"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/43d4bea7-2962-4a92-a4d3-50ae61a902a9_512x512.gif",
       "hero_local": null,
       "url": "posts/the-state-of-photonic-computing.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/the-state-of-photonic-computing"
+      "substack_url": "https://stateofthefuture.substack.com/p/the-state-of-photonic-computing",
+      "related": [
+        "the-future-of-computing-is-glass",
+        "gallium-nitride-photonics-w-james",
+        "photonic-engines-for-data-centers"
+      ]
     },
     {
       "id": "159554211",
@@ -555,10 +900,19 @@
       "date_pretty": "26 Mar 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "labour-economy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/cdd77427-1047-4bed-ab62-694c4ac6931b_1024x1536.png",
       "hero_local": null,
       "url": "posts/on-educating-our-children-in-the.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/on-educating-our-children-in-the"
+      "substack_url": "https://stateofthefuture.substack.com/p/on-educating-our-children-in-the",
+      "related": [
+        "occupational-downgrading",
+        "young-people-cant-get-jobs-now-what",
+        "dirty-work-the-return-of-blue-collar"
+      ]
     },
     {
       "id": "158908795",
@@ -570,10 +924,19 @@
       "date_pretty": "12 Mar 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/4e6ea5e1-0ca4-4e83-b06a-e307aa17726c_1024x1024.png",
       "hero_local": null,
       "url": "posts/project-mayhem-ai-inward-collapse.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/project-mayhem-ai-inward-collapse"
+      "substack_url": "https://stateofthefuture.substack.com/p/project-mayhem-ai-inward-collapse",
+      "related": [
+        "wen-babelfish-feat-aron-of-semron",
+        "you-like-ai-agents-you-are-gonna",
+        "what-if-ai-can-already-feel"
+      ]
     },
     {
       "id": "158377688",
@@ -585,10 +948,19 @@
       "date_pretty": "5 Mar 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "labour-economy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/2b3d4752-9871-4ff9-bc22-7c04345f730a_1024x1024.webp",
       "hero_local": null,
       "url": "posts/occupational-downgrading.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/occupational-downgrading"
+      "substack_url": "https://stateofthefuture.substack.com/p/occupational-downgrading",
+      "related": [
+        "on-educating-our-children-in-the",
+        "young-people-cant-get-jobs-now-what",
+        "dirty-work-the-return-of-blue-collar"
+      ]
     },
     {
       "id": "157313461",
@@ -600,10 +972,19 @@
       "date_pretty": "25 Feb 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "vc"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/6a5e99e9-8b8b-4ded-94d1-ec47dbd62b19_1280x1690.jpeg",
       "hero_local": null,
       "url": "posts/data-driven-vc-is-over.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/data-driven-vc-is-over"
+      "substack_url": "https://stateofthefuture.substack.com/p/data-driven-vc-is-over",
+      "related": [
+        "fund-frontier-expeditions-otherwise",
+        "consensus-capital",
+        "im-doing-research-in-venture-capital"
+      ]
     },
     {
       "id": "156669323",
@@ -615,10 +996,19 @@
       "date_pretty": "12 Feb 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/5ebd695f-6e35-49b2-a25f-4ff96e6b5aa3_1024x1024.jpeg",
       "hero_local": null,
       "url": "posts/wen-babelfish-feat-aron-of-semron.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/wen-babelfish-feat-aron-of-semron"
+      "substack_url": "https://stateofthefuture.substack.com/p/wen-babelfish-feat-aron-of-semron",
+      "related": [
+        "you-like-ai-agents-you-are-gonna",
+        "project-mayhem-ai-inward-collapse",
+        "fund-frontier-expeditions-otherwise"
+      ]
     },
     {
       "id": "156517596",
@@ -630,10 +1020,19 @@
       "date_pretty": "5 Feb 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/4a5ca75f-42f7-402e-a28a-6006575b42d5_1024x1024.heic",
       "hero_local": null,
       "url": "posts/you-like-ai-agents-you-are-gonna.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/you-like-ai-agents-you-are-gonna"
+      "substack_url": "https://stateofthefuture.substack.com/p/you-like-ai-agents-you-are-gonna",
+      "related": [
+        "wen-babelfish-feat-aron-of-semron",
+        "fund-frontier-expeditions-otherwise",
+        "project-mayhem-ai-inward-collapse"
+      ]
     },
     {
       "id": "155425320",
@@ -645,10 +1044,19 @@
       "date_pretty": "27 Jan 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "fusion-nuclear"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/39c81614-45f5-4538-a767-9bd102a94e4b_1024x1024.jpeg",
       "hero_local": null,
       "url": "posts/ai-for-nuclear-fusion-feat-martin.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/ai-for-nuclear-fusion-feat-martin"
+      "substack_url": "https://stateofthefuture.substack.com/p/ai-for-nuclear-fusion-feat-martin",
+      "related": [
+        "nuclear-fusion-the-state-of-play",
+        "atomic-energy-can-nuclear-power-our",
+        "three-overrated-technologies-from"
+      ]
     },
     {
       "id": "152839987",
@@ -660,10 +1068,17 @@
       "date_pretty": "15 Jan 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/bf9a1706-1e9b-429c-94ef-30f491c45790_1024x1024.jpeg",
       "hero_local": null,
       "url": "posts/the-end-of-zero-marginal-costs-the.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/the-end-of-zero-marginal-costs-the"
+      "substack_url": "https://stateofthefuture.substack.com/p/the-end-of-zero-marginal-costs-the",
+      "related": [
+        "fund-frontier-expeditions-otherwise",
+        "ai-for-nuclear-fusion-feat-martin",
+        "you-like-ai-agents-you-are-gonna"
+      ]
     },
     {
       "id": "151693497",
@@ -675,10 +1090,20 @@
       "date_pretty": "7 Jan 2025",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute",
+        "vc"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/60d835b2-b88d-44d0-935c-e2f14ca060d1_1024x1024.jpeg",
       "hero_local": null,
       "url": "posts/fund-frontier-expeditions-otherwise.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/fund-frontier-expeditions-otherwise"
+      "substack_url": "https://stateofthefuture.substack.com/p/fund-frontier-expeditions-otherwise",
+      "related": [
+        "you-like-ai-agents-you-are-gonna",
+        "wen-babelfish-feat-aron-of-semron",
+        "data-driven-vc-is-over"
+      ]
     },
     {
       "id": "153199055",
@@ -690,10 +1115,19 @@
       "date_pretty": "16 Dec 2024",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "quantum"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/22deb4bb-1271-402d-93fa-09c451129e4c_1024x1024.jpeg",
       "hero_local": null,
       "url": "posts/willow-and-the-race-to-quantum-advantage.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/willow-and-the-race-to-quantum-advantage"
+      "substack_url": "https://stateofthefuture.substack.com/p/willow-and-the-race-to-quantum-advantage",
+      "related": [
+        "cubits-in-a-fridge-why-is-nobody",
+        "fund-frontier-expeditions-otherwise",
+        "nuclear-fusion-the-state-of-play"
+      ]
     },
     {
       "id": "152133987",
@@ -705,10 +1139,19 @@
       "date_pretty": "4 Dec 2024",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "quantum"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/a6fae6b8-5151-43f0-9657-4a7a4dba421d_1200x800.webp",
       "hero_local": null,
       "url": "posts/cubits-in-a-fridge-why-is-nobody.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/cubits-in-a-fridge-why-is-nobody"
+      "substack_url": "https://stateofthefuture.substack.com/p/cubits-in-a-fridge-why-is-nobody",
+      "related": [
+        "willow-and-the-race-to-quantum-advantage",
+        "nuclear-fusion-the-state-of-play",
+        "atomic-energy-can-nuclear-power-our"
+      ]
     },
     {
       "id": "151868563",
@@ -720,10 +1163,19 @@
       "date_pretty": "20 Nov 2024",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "fusion-nuclear"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/1a8c0276-9c7f-4cdd-a559-ea2fe8cfb513_600x427.jpeg",
       "hero_local": null,
       "url": "posts/nuclear-fusion-the-state-of-play.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/nuclear-fusion-the-state-of-play"
+      "substack_url": "https://stateofthefuture.substack.com/p/nuclear-fusion-the-state-of-play",
+      "related": [
+        "atomic-energy-can-nuclear-power-our",
+        "ai-for-nuclear-fusion-feat-martin",
+        "three-overrated-technologies-from"
+      ]
     },
     {
       "id": "151496594",
@@ -735,10 +1187,19 @@
       "date_pretty": "12 Nov 2024",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "fusion-nuclear"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/2e47bd2d-f4eb-4a44-b107-58b475504845_658x1024.webp",
       "hero_local": null,
       "url": "posts/atomic-energy-can-nuclear-power-our.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/atomic-energy-can-nuclear-power-our"
+      "substack_url": "https://stateofthefuture.substack.com/p/atomic-energy-can-nuclear-power-our",
+      "related": [
+        "nuclear-fusion-the-state-of-play",
+        "ai-for-nuclear-fusion-feat-martin",
+        "three-overrated-technologies-from"
+      ]
     },
     {
       "id": "151205286",
@@ -750,10 +1211,19 @@
       "date_pretty": "5 Nov 2024",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/1b6e945c-22fb-4520-b302-f5269e6ae526_1766x1002.png",
       "hero_local": null,
       "url": "posts/confidential-ai-the-dog-that-didnt.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/confidential-ai-the-dog-that-didnt"
+      "substack_url": "https://stateofthefuture.substack.com/p/confidential-ai-the-dog-that-didnt",
+      "related": [
+        "e20-the-state-of-privacy-enhancing",
+        "e19-trusted-execution-environments",
+        "e07-decentralised-ai"
+      ]
     },
     {
       "id": "150706899",
@@ -765,10 +1235,19 @@
       "date_pretty": "29 Oct 2024",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/cc119ba8-5e7e-47e4-84fc-14e049d6207c_2500x1340.png",
       "hero_local": null,
       "url": "posts/deploy-intelligence-too-cheap-to.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/deploy-intelligence-too-cheap-to"
+      "substack_url": "https://stateofthefuture.substack.com/p/deploy-intelligence-too-cheap-to",
+      "related": [
+        "fund-frontier-expeditions-otherwise",
+        "you-like-ai-agents-you-are-gonna",
+        "wen-babelfish-feat-aron-of-semron"
+      ]
     },
     {
       "id": "149298227",
@@ -780,10 +1259,17 @@
       "date_pretty": "22 Oct 2024",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/15d77f50-d7c8-4063-86a5-837e7fe15ef1_220x221.gif",
       "hero_local": null,
       "url": "posts/state-of-the-future-part-deux.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-part-deux"
+      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-part-deux",
+      "related": [
+        "deploy-intelligence-too-cheap-to",
+        "confidential-ai-the-dog-that-didnt",
+        "atomic-energy-can-nuclear-power-our"
+      ]
     },
     {
       "id": "138916580",
@@ -795,10 +1281,19 @@
       "date_pretty": "20 Nov 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": true,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/7f2c9569-a2f0-47d6-8078-5f3f3f0cd2e2_1280x886.png",
       "hero_local": null,
       "url": "posts/e21-can-we-make-enough-ai-chips.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e21-can-we-make-enough-ai-chips"
+      "substack_url": "https://stateofthefuture.substack.com/p/e21-can-we-make-enough-ai-chips",
+      "related": [
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e10-pushing-moores-law-to-the-limit"
+      ]
     },
     {
       "id": "138069745",
@@ -810,10 +1305,19 @@
       "date_pretty": "19 Oct 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/a41b8e1d-6166-4e48-90c4-02dddf7a976e.heic",
       "hero_local": null,
       "url": "posts/e20-the-state-of-privacy-enhancing.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e20-the-state-of-privacy-enhancing"
+      "substack_url": "https://stateofthefuture.substack.com/p/e20-the-state-of-privacy-enhancing",
+      "related": [
+        "e19-trusted-execution-environments",
+        "e07-decentralised-ai",
+        "confidential-ai-the-dog-that-didnt"
+      ]
     },
     {
       "id": "136842377",
@@ -825,10 +1329,19 @@
       "date_pretty": "13 Oct 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/afe8acaf-6cb6-42c9-aa5d-fd66a84e95d5_794x459.png",
       "hero_local": null,
       "url": "posts/e19-trusted-execution-environments.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e19-trusted-execution-environments"
+      "substack_url": "https://stateofthefuture.substack.com/p/e19-trusted-execution-environments",
+      "related": [
+        "e20-the-state-of-privacy-enhancing",
+        "e07-decentralised-ai",
+        "confidential-ai-the-dog-that-didnt"
+      ]
     },
     {
       "id": "137719264",
@@ -840,10 +1353,17 @@
       "date_pretty": "6 Oct 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/1ae0256a-957c-4212-a1aa-07a01021b8c2_948x632.jpeg",
       "hero_local": null,
       "url": "posts/e18-the-state-of-silent-speech-and.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e18-the-state-of-silent-speech-and"
+      "substack_url": "https://stateofthefuture.substack.com/p/e18-the-state-of-silent-speech-and",
+      "related": [
+        "e19-trusted-execution-environments",
+        "e20-the-state-of-privacy-enhancing",
+        "e14-the-real-ai-bottleneck-high-bandwidth"
+      ]
     },
     {
       "id": "137221578",
@@ -855,10 +1375,17 @@
       "date_pretty": "28 Sep 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/b1915748-28e1-4c71-91da-f9f8697ab9c1_800x450.jpeg",
       "hero_local": null,
       "url": "posts/e16-in-conversation-with-shiv-malik.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e16-in-conversation-with-shiv-malik"
+      "substack_url": "https://stateofthefuture.substack.com/p/e16-in-conversation-with-shiv-malik",
+      "related": [
+        "e16-in-conversation-with-john-waite",
+        "e15-in-conversation-with-wisear-on",
+        "e11-in-conversation-with-lux-capital"
+      ]
     },
     {
       "id": "137143566",
@@ -870,10 +1397,17 @@
       "date_pretty": "24 Sep 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/d568c455-6b34-4771-86a4-ac74f519bdd6_721x420.jpeg",
       "hero_local": null,
       "url": "posts/e16-in-conversation-with-john-waite.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e16-in-conversation-with-john-waite"
+      "substack_url": "https://stateofthefuture.substack.com/p/e16-in-conversation-with-john-waite",
+      "related": [
+        "e16-in-conversation-with-shiv-malik",
+        "e15-in-conversation-with-wisear-on",
+        "e11-in-conversation-with-lux-capital"
+      ]
     },
     {
       "id": "136928323",
@@ -885,10 +1419,17 @@
       "date_pretty": "18 Sep 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/3f386fba-2b31-4658-bd51-b6d6d2e8c588_480x480.gif",
       "hero_local": null,
       "url": "posts/e15-in-conversation-with-wisear-on.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e15-in-conversation-with-wisear-on"
+      "substack_url": "https://stateofthefuture.substack.com/p/e15-in-conversation-with-wisear-on",
+      "related": [
+        "e16-in-conversation-with-john-waite",
+        "e16-in-conversation-with-shiv-malik",
+        "e11-in-conversation-with-lux-capital"
+      ]
     },
     {
       "id": "136781001",
@@ -900,10 +1441,19 @@
       "date_pretty": "8 Sep 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/00a0380e-8177-4953-b240-5bea393c6955_678x451.webp",
       "hero_local": null,
       "url": "posts/e14-the-real-ai-bottleneck-high-bandwidth.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e14-the-real-ai-bottleneck-high-bandwidth"
+      "substack_url": "https://stateofthefuture.substack.com/p/e14-the-real-ai-bottleneck-high-bandwidth",
+      "related": [
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e10-pushing-moores-law-to-the-limit",
+        "e06-the-model-t-moment-for-bits-llms"
+      ]
     },
     {
       "id": "136066484",
@@ -915,10 +1465,19 @@
       "date_pretty": "31 Aug 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/a0efccc6-ddea-4033-8fd9-ce0c483f20be_1252x738.webp",
       "hero_local": null,
       "url": "posts/e13-chiplets-how-chip-lego-is-driving.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e13-chiplets-how-chip-lego-is-driving"
+      "substack_url": "https://stateofthefuture.substack.com/p/e13-chiplets-how-chip-lego-is-driving",
+      "related": [
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e10-pushing-moores-law-to-the-limit",
+        "e06-the-model-t-moment-for-bits-llms"
+      ]
     },
     {
       "id": "136066736",
@@ -930,10 +1489,17 @@
       "date_pretty": "25 Aug 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/83c8bbbe-39b4-4ebb-938b-16650285e6e6_800x850.jpeg",
       "hero_local": null,
       "url": "posts/e12-nanomechanical-computing-gears.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e12-nanomechanical-computing-gears"
+      "substack_url": "https://stateofthefuture.substack.com/p/e12-nanomechanical-computing-gears",
+      "related": [
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e10-pushing-moores-law-to-the-limit"
+      ]
     },
     {
       "id": "136056443",
@@ -945,10 +1511,19 @@
       "date_pretty": "18 Aug 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [
+        "vc"
+      ],
+      "featured": false,
       "hero_remote": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/65b925d8-5ba5-47c8-8d02-860abf28e91a_350x350.png",
       "hero_local": null,
       "url": "posts/e11-in-conversation-with-lux-capital.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e11-in-conversation-with-lux-capital"
+      "substack_url": "https://stateofthefuture.substack.com/p/e11-in-conversation-with-lux-capital",
+      "related": [
+        "interview-rick-hao-partner-at-speedinvest",
+        "im-doing-research-in-venture-capital",
+        "consensus-capital"
+      ]
     },
     {
       "id": "135397730",
@@ -960,10 +1535,19 @@
       "date_pretty": "27 Jul 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/c0fd4cdd-0c87-46c2-b49e-112c3df043d8_841x1176.jpeg",
       "hero_local": null,
       "url": "posts/e10-pushing-moores-law-to-the-limit.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e10-pushing-moores-law-to-the-limit"
+      "substack_url": "https://stateofthefuture.substack.com/p/e10-pushing-moores-law-to-the-limit",
+      "related": [
+        "e06-the-model-t-moment-for-bits-llms",
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "e13-chiplets-how-chip-lego-is-driving"
+      ]
     },
     {
       "id": "134839886",
@@ -975,10 +1559,17 @@
       "date_pretty": "23 Jul 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/7a1ba648-bc42-4fe5-a7aa-20e6fdf89c6f_704x396.jpeg",
       "hero_local": null,
       "url": "posts/analog-computing-the-once-and-future.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/analog-computing-the-once-and-future"
+      "substack_url": "https://stateofthefuture.substack.com/p/analog-computing-the-once-and-future",
+      "related": [
+        "e10-pushing-moores-law-to-the-limit",
+        "e08-optical-computing",
+        "e07-decentralised-ai"
+      ]
     },
     {
       "id": "134469100",
@@ -990,10 +1581,19 @@
       "date_pretty": "14 Jul 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "photonics"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1550275994-2bc88dc68637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHwxOXx8bGlnaHR8ZW58MHx8fHwxNjg5MzMwMTM3fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/e08-optical-computing.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e08-optical-computing"
+      "substack_url": "https://stateofthefuture.substack.com/p/e08-optical-computing",
+      "related": [
+        "detecting-proteins-in-blood-with",
+        "the-photonic-foundry-fallacy",
+        "photonic-engines-for-data-centers"
+      ]
     },
     {
       "id": "132969110",
@@ -1005,10 +1605,19 @@
       "date_pretty": "6 Jul 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/8521f3f2-606d-4e4a-b11f-b78a3de1b596_2048x1365.webp",
       "hero_local": null,
       "url": "posts/e07-decentralised-ai.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e07-decentralised-ai"
+      "substack_url": "https://stateofthefuture.substack.com/p/e07-decentralised-ai",
+      "related": [
+        "e19-trusted-execution-environments",
+        "e20-the-state-of-privacy-enhancing",
+        "confidential-ai-the-dog-that-didnt"
+      ]
     },
     {
       "id": "131852877",
@@ -1020,10 +1629,19 @@
       "date_pretty": "30 Jun 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/f0555640-9b2c-4c8a-8c11-e764112acbd8_480x254.gif",
       "hero_local": null,
       "url": "posts/e06-the-model-t-moment-for-bits-llms.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e06-the-model-t-moment-for-bits-llms"
+      "substack_url": "https://stateofthefuture.substack.com/p/e06-the-model-t-moment-for-bits-llms",
+      "related": [
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "e10-pushing-moores-law-to-the-limit",
+        "e13-chiplets-how-chip-lego-is-driving"
+      ]
     },
     {
       "id": "129929851",
@@ -1035,10 +1653,19 @@
       "date_pretty": "23 Jun 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1664447973006-ac31f9fdfac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHw1fHxuZXVyb3xlbnwwfHx8fDE2ODc1MDczNTh8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/e05-the-future-of-edge-ai-brain-inspired.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e05-the-future-of-edge-ai-brain-inspired"
+      "substack_url": "https://stateofthefuture.substack.com/p/e05-the-future-of-edge-ai-brain-inspired",
+      "related": [
+        "e06-the-model-t-moment-for-bits-llms",
+        "e10-pushing-moores-law-to-the-limit",
+        "e13-chiplets-how-chip-lego-is-driving"
+      ]
     },
     {
       "id": "128220793",
@@ -1050,10 +1677,17 @@
       "date_pretty": "15 Jun 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/aefa4dd2-0c91-457c-802c-236125a28586_240x245.gif",
       "hero_local": null,
       "url": "posts/e04-no10-downing-street-and-vector.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/e04-no10-downing-street-and-vector"
+      "substack_url": "https://stateofthefuture.substack.com/p/e04-no10-downing-street-and-vector",
+      "related": [
+        "three-overrated-technologies-from",
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "e06-the-model-t-moment-for-bits-llms"
+      ]
     },
     {
       "id": "126596611",
@@ -1065,10 +1699,19 @@
       "date_pretty": "8 Jun 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "fusion-nuclear"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1606411312124-21322f0a23ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHwzOXx8aHlwZXxlbnwwfHx8fDE2ODYxMzg1NjV8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/three-overrated-technologies-from.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/three-overrated-technologies-from"
+      "substack_url": "https://stateofthefuture.substack.com/p/three-overrated-technologies-from",
+      "related": [
+        "ai-for-nuclear-fusion-feat-martin",
+        "nuclear-fusion-the-state-of-play",
+        "atomic-energy-can-nuclear-power-our"
+      ]
     },
     {
       "id": "123974227",
@@ -1080,10 +1723,17 @@
       "date_pretty": "31 May 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/5dc22f27-4053-47ab-b095-8b94c2b135a7_7200x7200.jpeg",
       "hero_local": null,
       "url": "posts/three-underrated-technologies-from.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/three-underrated-technologies-from"
+      "substack_url": "https://stateofthefuture.substack.com/p/three-underrated-technologies-from",
+      "related": [
+        "launching-state-of-the-future",
+        "three-overrated-technologies-from",
+        "e04-no10-downing-street-and-vector"
+      ]
     },
     {
       "id": "125256591",
@@ -1095,10 +1745,19 @@
       "date_pretty": "25 May 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [
+        "ai-compute"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1590126141992-d6a613152c77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHwyfHxhdWdtZW50ZWR8ZW58MHx8fHwxNjg1OTY1MTgwfDA&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/interview-ben-mildenhall-co-inventor.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/interview-ben-mildenhall-co-inventor"
+      "substack_url": "https://stateofthefuture.substack.com/p/interview-ben-mildenhall-co-inventor",
+      "related": [
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "e06-the-model-t-moment-for-bits-llms",
+        "e10-pushing-moores-law-to-the-limit"
+      ]
     },
     {
       "id": "121584493",
@@ -1110,10 +1769,17 @@
       "date_pretty": "24 May 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": true,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/2e8ee33d-69cf-45f2-a0ff-0dc67a0d66f1_2264x2252.png",
       "hero_local": null,
       "url": "posts/launching-state-of-the-future.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/launching-state-of-the-future"
+      "substack_url": "https://stateofthefuture.substack.com/p/launching-state-of-the-future",
+      "related": [
+        "three-underrated-technologies-from",
+        "three-overrated-technologies-from",
+        "e04-no10-downing-street-and-vector"
+      ]
     },
     {
       "id": "125257179",
@@ -1125,10 +1791,19 @@
       "date_pretty": "20 May 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1655720033654-a4239dd42d10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHwyfHxhaXxlbnwwfHx8fDE2ODU5MTMyMzl8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/interview-jordan-brandt-ceo-of-inpher.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/interview-jordan-brandt-ceo-of-inpher"
+      "substack_url": "https://stateofthefuture.substack.com/p/interview-jordan-brandt-ceo-of-inpher",
+      "related": [
+        "interview-rick-hao-partner-at-speedinvest",
+        "interview-stijn-christiaens-ceo-of",
+        "interview-dr-hyoduk-shin-professor"
+      ]
     },
     {
       "id": "125257155",
@@ -1140,10 +1815,20 @@
       "date_pretty": "5 May 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [
+        "privacy",
+        "vc"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1664447963491-862c3c0fc91e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHwxMjl8fGFpfGVufDB8fHx8MTY4NTkxOTIxOXww&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/interview-rick-hao-partner-at-speedinvest.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/interview-rick-hao-partner-at-speedinvest"
+      "substack_url": "https://stateofthefuture.substack.com/p/interview-rick-hao-partner-at-speedinvest",
+      "related": [
+        "interview-jordan-brandt-ceo-of-inpher",
+        "interview-stijn-christiaens-ceo-of",
+        "interview-dr-hyoduk-shin-professor"
+      ]
     },
     {
       "id": "125257070",
@@ -1155,10 +1840,19 @@
       "date_pretty": "5 Apr 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/728df74d-cf96-4c45-b009-ac800cf5a57b_1922x1172.png",
       "hero_local": null,
       "url": "posts/interview-stijn-christiaens-ceo-of.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/interview-stijn-christiaens-ceo-of"
+      "substack_url": "https://stateofthefuture.substack.com/p/interview-stijn-christiaens-ceo-of",
+      "related": [
+        "interview-rick-hao-partner-at-speedinvest",
+        "interview-dr-hyoduk-shin-professor",
+        "interview-jordan-brandt-ceo-of-inpher"
+      ]
     },
     {
       "id": "112636543",
@@ -1170,10 +1864,17 @@
       "date_pretty": "4 Apr 2023",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/096f3f79-ff95-47cd-94d0-90576af7e79b_1400x933.jpeg",
       "hero_local": null,
       "url": "posts/learnings-from-a-deep-tech-horizon.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/learnings-from-a-deep-tech-horizon"
+      "substack_url": "https://stateofthefuture.substack.com/p/learnings-from-a-deep-tech-horizon",
+      "related": [
+        "launching-state-of-the-future",
+        "three-underrated-technologies-from",
+        "three-overrated-technologies-from"
+      ]
     },
     {
       "id": "125257111",
@@ -1185,10 +1886,19 @@
       "date_pretty": "5 Mar 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1664448027922-f017a91ff392?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHwxfHxhaXxlbnwwfHx8fDE2ODU5MTMyMzl8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/interview-dr-hyoduk-shin-professor.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/interview-dr-hyoduk-shin-professor"
+      "substack_url": "https://stateofthefuture.substack.com/p/interview-dr-hyoduk-shin-professor",
+      "related": [
+        "interview-flavio-bergamaschi-private",
+        "interview-stijn-christiaens-ceo-of",
+        "interview-christine-huang-data-privacy"
+      ]
     },
     {
       "id": "125256952",
@@ -1200,10 +1910,19 @@
       "date_pretty": "5 Feb 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1618588845382-4267677cfc11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHwyMHx8bG9ja3xlbnwwfHx8fDE2ODU5NjM0NDd8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/interview-flavio-bergamaschi-private.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/interview-flavio-bergamaschi-private"
+      "substack_url": "https://stateofthefuture.substack.com/p/interview-flavio-bergamaschi-private",
+      "related": [
+        "interview-dr-hyoduk-shin-professor",
+        "interview-christine-huang-data-privacy",
+        "interview-stijn-christiaens-ceo-of"
+      ]
     },
     {
       "id": "125257046",
@@ -1215,10 +1934,19 @@
       "date_pretty": "5 Jan 2023",
       "category": "Interview",
       "category_slug": "interview",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://images.unsplash.com/photo-1604178737169-001c71f9d6b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMDAzMzh8MHwxfHNlYXJjaHwyOXx8cHJpdmFjeXxlbnwwfHx8fDE2ODU5NjMzMTl8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "hero_local": null,
       "url": "posts/interview-christine-huang-data-privacy.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/interview-christine-huang-data-privacy"
+      "substack_url": "https://stateofthefuture.substack.com/p/interview-christine-huang-data-privacy",
+      "related": [
+        "interview-flavio-bergamaschi-private",
+        "interview-dr-hyoduk-shin-professor",
+        "interview-stijn-christiaens-ceo-of"
+      ]
     },
     {
       "id": "90853024",
@@ -1230,10 +1958,19 @@
       "date_pretty": "15 Dec 2022",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "vc"
+      ],
+      "featured": false,
       "hero_remote": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/b8d58246-c5d6-455f-b1c6-b99eac4bd062_600x414.jpeg",
       "hero_local": null,
       "url": "posts/im-doing-research-in-venture-capital.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/im-doing-research-in-venture-capital"
+      "substack_url": "https://stateofthefuture.substack.com/p/im-doing-research-in-venture-capital",
+      "related": [
+        "consensus-capital",
+        "data-driven-vc-is-over",
+        "fund-frontier-expeditions-otherwise"
+      ]
     },
     {
       "id": "90853562",
@@ -1245,10 +1982,17 @@
       "date_pretty": "15 Dec 2022",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [],
+      "featured": false,
       "hero_remote": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ab567140-a346-402e-8e57-e27212785016_1400x1050.jpeg",
       "hero_local": null,
       "url": "posts/unbundling-the-database.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/unbundling-the-database"
+      "substack_url": "https://stateofthefuture.substack.com/p/unbundling-the-database",
+      "related": [
+        "im-doing-research-in-venture-capital",
+        "learnings-from-a-deep-tech-horizon",
+        "launching-state-of-the-future"
+      ]
     },
     {
       "id": "39018321",
@@ -1260,10 +2004,19 @@
       "date_pretty": "21 Jul 2021",
       "category": "Essay",
       "category_slug": "essay",
+      "topics": [
+        "privacy"
+      ],
+      "featured": false,
       "hero_remote": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/fd2bf128-d04a-4e0f-8606-3b0009077547_800x601.webp",
       "hero_local": null,
       "url": "posts/why-privacy-tech-is-actually-collaborative.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/why-privacy-tech-is-actually-collaborative"
+      "substack_url": "https://stateofthefuture.substack.com/p/why-privacy-tech-is-actually-collaborative",
+      "related": [
+        "confidential-ai-the-dog-that-didnt",
+        "e20-the-state-of-privacy-enhancing",
+        "e19-trusted-execution-environments"
+      ]
     }
   ]
 }

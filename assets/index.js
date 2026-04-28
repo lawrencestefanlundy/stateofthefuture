@@ -9,12 +9,15 @@
   const grid = document.getElementById('grid');
   const search = document.getElementById('search');
   const resultCount = document.getElementById('result-count');
-  const chips = Array.from(document.querySelectorAll('.filter-chip'));
+  const chips = Array.from(document.querySelectorAll('.filter-chip[data-filter]'));
 
   document.getElementById('year').textContent = String(new Date().getFullYear());
 
   let posts = [];
+  let topics = [];
   let activeFilter = 'all';
+  let activeTopic = '';        // '' = all topics
+  let featuredOnly = false;
   let query = '';
 
   function el(tag, opts) {
@@ -42,6 +45,7 @@
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const manifest = await res.json();
     posts = Array.isArray(manifest.posts) ? manifest.posts : [];
+    topics = Array.isArray(manifest.topics) ? manifest.topics : [];
   } catch (err) {
     clear(grid);
     grid.appendChild(el('div', { className: 'empty-state', text: 'Could not load archive — ' + err.message }));
@@ -60,6 +64,35 @@
   document.getElementById('count-Interview').textContent = '(' + (totals['Interview'] || 0) + ')';
   document.getElementById('count-Friday-Four').textContent = '(' + (totals['Friday Four'] || 0) + ')';
 
+  // Build topic chips dynamically from manifest.topics + counts.
+  const topicCounts = posts.reduce(function (acc, p) {
+    (p.topics || []).forEach(function (t) { acc[t] = (acc[t] || 0) + 1; });
+    return acc;
+  }, {});
+  const topicList = document.getElementById('topic-list');
+  if (topicList) {
+    clear(topicList);
+    const allTopicChip = el('button', {
+      className: 'filter-chip',
+      attrs: { 'data-topic': '', 'aria-pressed': 'true', 'type': 'button' },
+      text: 'All topics',
+    });
+    topicList.appendChild(allTopicChip);
+    topics.forEach(function (t) {
+      const c = topicCounts[t.slug] || 0;
+      if (c === 0) return;
+      const chip = el('button', {
+        className: 'filter-chip',
+        attrs: { 'data-topic': t.slug, 'aria-pressed': 'false', 'type': 'button' },
+      });
+      chip.appendChild(document.createTextNode(t.label + ' '));
+      chip.appendChild(el('span', { className: 'count', text: '(' + c + ')' }));
+      topicList.appendChild(chip);
+    });
+  }
+  const topicChips = Array.from(document.querySelectorAll('[data-topic]'));
+  const featuredBtn = document.querySelector('[data-filter-featured]');
+
   // -- URL hash <-> state sync --------------------------------------------
 
   function readHash() {
@@ -68,9 +101,15 @@
     const params = new URLSearchParams(h);
     const f = params.get('filter');
     const q = params.get('q');
+    const t = params.get('topic');
+    const f2 = params.get('featured');
     if (f === 'all' || f === 'Essay' || f === 'Interview' || f === 'Friday Four') {
       activeFilter = f;
     }
+    if (t && topics.some(function (x) { return x.slug === t; })) {
+      activeTopic = t;
+    }
+    featuredOnly = f2 === '1';
     if (q) {
       query = q;
       search.value = q;
@@ -80,6 +119,8 @@
   function writeHash() {
     const params = new URLSearchParams();
     if (activeFilter !== 'all') params.set('filter', activeFilter);
+    if (activeTopic) params.set('topic', activeTopic);
+    if (featuredOnly) params.set('featured', '1');
     if (query) params.set('q', query);
     const next = params.toString();
     const target = next ? '#' + next : '#archive';
@@ -152,14 +193,20 @@
     const q = query.trim().toLowerCase();
     const filtered = posts.filter(function (p) {
       if (activeFilter !== 'all' && p.category !== activeFilter) return false;
+      if (activeTopic && !(p.topics || []).includes(activeTopic)) return false;
+      if (featuredOnly && !p.featured) return false;
       if (!q) return true;
-      const hay = (p.title + ' ' + (p.subtitle || '')).toLowerCase();
+      const hay = (p.title + ' ' + (p.subtitle || '') + ' ' + (p.excerpt || '')).toLowerCase();
       return hay.indexOf(q) !== -1;
     });
 
     chips.forEach(function (c) {
       c.setAttribute('aria-pressed', String(c.dataset.filter === activeFilter));
     });
+    topicChips.forEach(function (c) {
+      c.setAttribute('aria-pressed', String((c.dataset.topic || '') === activeTopic));
+    });
+    if (featuredBtn) featuredBtn.setAttribute('aria-pressed', String(featuredOnly));
 
     clear(grid);
     if (filtered.length === 0) {
@@ -183,6 +230,20 @@
       render();
     });
   });
+
+  topicChips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      activeTopic = c.dataset.topic || '';
+      render();
+    });
+  });
+
+  if (featuredBtn) {
+    featuredBtn.addEventListener('click', function () {
+      featuredOnly = !featuredOnly;
+      render();
+    });
+  }
 
   let searchTimer = null;
   search.addEventListener('input', function () {

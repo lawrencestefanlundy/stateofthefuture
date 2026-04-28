@@ -36,6 +36,7 @@
     <span class="sep">|</span>
     <span class="label" id="issue-date">April 2026</span>
     <div class="filter-list">
+      <button class="filter-chip filter-chip-featured" data-filter-featured="1" aria-pressed="false" title="Curated picks for first-time readers">★ Start here</button>
       <button class="filter-chip" data-filter="all" aria-pressed="true">All <span class="count" id="count-all"></span></button>
       <button class="filter-chip" data-filter="Essay" aria-pressed="false">Essays <span class="count" id="count-Essay"></span></button>
       <button class="filter-chip" data-filter="Interview" aria-pressed="false">Interviews <span class="count" id="count-Interview"></span></button>
@@ -43,6 +44,13 @@
       <input type="search" id="search" class="search-input" placeholder="Search">
       <span class="result-count" id="result-count"></span>
     </div>
+  </div>
+</section>
+
+<section class="topic-bar">
+  <div class="container topic-bar-inner">
+    <span class="topic-bar-label">Topics</span>
+    <div class="topic-list" id="topic-list"></div>
   </div>
 </section>
 

@@ -151,6 +151,35 @@ a { color: var(--link); text-decoration: none; }
   color: var(--ink-50);
 }
 
+/* Topic bar — secondary chip row below the issue ribbon. */
+.topic-bar {
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.7rem 0;
+}
+.topic-bar-inner {
+  display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75rem;
+}
+.topic-bar-label {
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--ink-50);
+  margin-right: 0.25rem;
+}
+.topic-list {
+  display: flex; gap: 1rem 1.1rem; flex-wrap: wrap;
+}
+
+/* "Start here" chip — distinguished from the format chips by a leading star
+   and a faint amber tint when active. */
+.filter-chip-featured {
+  color: var(--ink); font-weight: 500;
+}
+.filter-chip-featured[aria-pressed="true"] {
+  color: var(--ink); border-bottom-color: var(--ink);
+}
+
 /* ── card grid (boxed, text-only à la WiP) ─────────────────────────── */
 
 .grid-wrap { padding: 1.75rem 0 4rem; }
@@ -570,6 +599,98 @@ a { color: var(--link); text-decoration: none; }
 .article-body .view-image { display: none !important; }
 .article-body .captioned-image-container a.image-link {
   pointer-events: none; cursor: default;
+}
+
+/* Topic chips inside the article eyebrow. */
+.ae-topics {
+  grid-column: 1 / -1;
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  margin-top: 0.85rem;
+}
+.ae-topic {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--ink);
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--ink-25);
+  background: transparent;
+  transition: all 0.12s;
+}
+.ae-topic:hover {
+  background: var(--ink); color: var(--bg); border-color: var(--ink);
+}
+
+/* Related posts ("Read next") — three-card row above the subscribe block. */
+.related-posts {
+  background: var(--bg-tint);
+  padding: 2.5rem 0 3rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--ink);
+}
+.related-head {
+  margin-bottom: 1.5rem;
+}
+.related-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 0.4rem;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+@media (max-width: 900px)  { .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px)  { .related-grid { grid-template-columns: minmax(0, 1fr); } }
+.related-card {
+  display: flex; flex-direction: column;
+  padding: 1.25rem 1.25rem 1rem;
+  border: 1px solid var(--ink);
+  background: var(--bg);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s;
+  min-height: 200px;
+}
+.related-card:hover { background: var(--paper); }
+.related-card-cat {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+  align-self: flex-start;
+  padding: 0.18rem 0.5rem;
+  border: 1px solid var(--ink);
+}
+.related-card-cat.cat-friday-four { background: var(--teal); color: var(--bg); border-color: var(--teal); }
+.related-card-cat.cat-interview { background: var(--ink); color: var(--bg); }
+.related-card-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.25rem; font-weight: 700;
+  letter-spacing: -0.012em; line-height: 1.2;
+  margin: 0;
+}
+.related-card-subtitle {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.92rem; color: var(--ink-80); line-height: 1.45;
+  margin-top: 0.5rem;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+.related-card-date {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--ink-50);
+  margin-top: 0.85rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--rule);
 }
 
 /* Article footer: subscribe + post nav, in article body width. */

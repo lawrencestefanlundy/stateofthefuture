@@ -1,0 +1,11 @@
+# Start here — curated picks for first-time visitors.
+# One slug per line (must match a post slug exactly). Lines starting with # are ignored.
+# Edit this file then run `python3 scripts/build.py` to regenerate the manifest.
+
+# A few defaults to demonstrate the feature — replace with your own picks.
+the-photonic-foundry-fallacy
+e21-can-we-make-enough-ai-chips
+unbundling-the-job
+detecting-proteins-in-blood-with
+fungible-compute-mortal-computing
+launching-state-of-the-future

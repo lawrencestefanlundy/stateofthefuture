@@ -1,0 +1,338 @@
+{
+  "the-photonic-foundry-fallacy": {
+    "summary": "The photonics industry is organizing around single materials—silicon, lithium niobate, indium phosphide—copying CMOS's playbook, but physics forbids any one material from excelling at generation, modulation, routing, and detection. Monolithic heterogeneous integration is the actual constraint: coupling losses between separately fabricated chips will throttle bandwidths above 3.2T per lane by 2028, making the first foundry with a multi-material PDK and reliable bonding processes the winner of AI infrastructure.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "detecting-proteins-in-blood-with": {
+    "summary": "Proteins.1 replaces enzymatic amplification—which hits a femtomolar noise floor—with mechanical cycling on a photonic chip, reading the same target molecule hundreds of times to accumulate certainty from repetition rather than chemical signal boost, enabling attomolar sensitivity for early-stage disease detection. The real bottleneck isn't optics; it's diffusion and antibody binding kinetics, the biology itself.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-friday-four-67c": {
+    "summary": "Anthropic's $30bn ARR milestone exposes the real constraint in frontier AI: not training efficiency but inference margins, which hinge on electricity costs—a variable that makes Britain's Stargate pause and France's Nordic strategy the actual competitive battleground.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-friday-four-002": {
+    "summary": "TSMC's Q1 results confirm the binding constraint on AI infrastructure isn't chip logic but packaging capacity—CoWoS is sold out through 2026 while TSMC quadruples advanced packaging output to 130,000 wafers monthly, validating a November 2023 prediction that the bottleneck would persist as capex doubles to $56bn annually.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-friday-four-551": {
+    "summary": "Anthropic's Claude Mythos found thousands of zero-day vulnerabilities across major operating systems and browsers in weeks—work that would take the entire cybersecurity industry decades—then refused to release it publicly, instead gating access through a closed consortium. The $250 billion security industry just got outcompeted by a language model that wasn't even trained for security, and frontier AI capabilities are now too dangerous for public release.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-friday-four-251": {
+    "summary": "Q1 2026 saw $297 billion in VC funding, but 64% went to four mega-rounds (OpenAI, Anthropic, xAI, Waymo) with 15–25% IRR and minimal losses—essentially sovereign wealth funds calling themselves venture. Meanwhile, true seed capital dropped to 4% of the pie, funding breakthrough-or-bust startups with 90% failure rates but identical return targets, revealing two asset classes masquerading under one name.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-friday-four-d68": {
+    "summary": "Lawrence has changed his mind on orbital compute: SpaceX's FCC filing for one million solar-powered data-centre satellites, combined with its acquisition of xAI, makes the economics work where they didn't before, forcing a reckoning with what happens when a single entity controls rockets, models, and orbital infrastructure. Meanwhile, the terrestrial stack is being rebuilt too—NVIDIA locking down photonics supply, Musk announcing a terawatt fab, and AI agents graduating from shopping assistants to autonomous spenders, turning payment rails into toll booths.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "chips-for-the-brain-modular-semiconductors": {
+    "summary": "Miniaturization, not compute, is the bottleneck for neural interfaces to scale. MintNeuro, an Imperial College spin-out, designs modular mixed-signal chips optimized for specific functions—sensing, stimulation, processing—that combine into application-specific systems, avoiding the bloated monolithic ASICs that have dominated implantable neurotech for two decades. Mature process nodes above 65nm deliver the low power and small form factor the brain needs; cutting-edge fabrication misses the point entirely.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-friday-four-03a": {
+    "summary": "Economic power in the next fifty years shifts from population to energy efficiency: whoever converts kilowatt-hours to useful work fastest wins. This week's four acquisitions—OpenAI's Astral, NVIDIA's NemoClaw, Meta's Moltbook, Rhoda's $450M robotics bet—reveal a race to own each layer of the agent stack, from code tooling to runtime to labour coordination to physical embodiment.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-friday-four-be4": {
+    "summary": "As AI agents handle execution, the real bottleneck shifts to human judgment: deciding which of seven possible tasks actually matters. Apple's $1bn failure to build competitive AI and Anthropic's lawsuit against the Pentagon illustrate a deeper inversion—the infrastructure layer (Nscale's $14.6bn European raise) now matters more than frontier models, and agent security is a house of cards with one in five ClawHub skills malicious, waiting for the breach that forces reckoning.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "fungible-compute-mortal-computing": {
+    "summary": "Pragmatic Semiconductor's thin-film transistors on flexible polymer substrates cost a fraction of silicon equivalents and manufacture in weeks rather than months, opening computation to the trillions of objects—packaging, labels, sensors—that silicon economics have left dark. The real unlock is fungible compute: cheap enough that edge intelligence becomes ubiquitous, not because individual chips are sophisticated, but because they're everywhere.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-friday-four": {
+    "summary": "Anthropic's refusal to sign Pentagon safeguards—rejecting autonomous weapons and mass surveillance clauses—triggered a dubious \"supply chain risk\" designation that halted all federal Claude use, revealing how procurement power can weaponize AI governance against safety-conscious companies while Chinese competitors face no equivalent scrutiny.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "four-things-what-do-these-people": {
+    "summary": "When the people building, running, and safeguarding frontier AI are all signalling imminent disruption—Suleyman on 18-month automation, Amodei on 50% white-collar job losses, Anthropic's safety lead quitting with warnings—the reflexive dismissal as hype misses the question: what do they know that we don't? The panic stage has arrived; the real challenge isn't timing the curve but adapting to it fast.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "four-things-friday-575": {
+    "summary": "Security vulnerabilities in AI agents are being weaponized in the wild—the first supply chain attack exploited a prompt injection in Cline, a coding agent with 90,000 weekly downloads—yet firms adopting AI fastest will likely outpace cautious competitors permanently. A CEPR study of 12,000 European firms shows AI delivers only 4% productivity gains, but only to companies already investing in training and infrastructure; the risk dial is being turned up to 11 anyway.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "four-things-friday": {
+    "summary": "AI agents capable of screen-based work are arriving faster than skeptics acknowledge—Matt Shumer's viral claim echoes February 2020 pandemic complacency. As inference demand explodes, Fractile and Olix's £100m and $220m UK chip raises this week signal the market is solving the memory bottleneck through compute-in-memory and photonic interconnects, while Deutsche Telekom's Munich AI factory demonstrates what European sovereignty actually looks like: half an exaFLOP of GPUs, not committee documents.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "how-to-invest-in-ai-sovereignty-sovereign": {
+    "summary": "Europe can't win the capex race for data-centre AI chips, but it can dominate edge inference if heterogeneous computing replaces today's GPU monoculture—the real opportunity lies in specialized semiconductors for autonomous vehicles, drones, and industrial devices where latency, privacy, and cost favour local processing over cloud dependency.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "photonic-engines-for-data-centers": {
+    "summary": "Phanofi's coherent optical detection architecture uses standard foundry processes to bring long-haul networking efficiency into data centers without the 3-4x power penalty of existing coherent DSPs. The Danish startup's bet: foundry compatibility and detection-side innovation matter more than exotic modulator materials when hyperscalers won't rebuild their supply chains.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "ai-chips-computeram-and-the-future": {
+    "summary": "Data movement, not raw compute, is the fundamental bottleneck in AI chip design—Synthara's \"Compute RAM\" IP tightly couples digital logic to standard memory arrays to shorten data paths, claiming 100x efficiency gains for edge inference without analog complexity or process-node portability nightmares that plague competitors like Cerebras and Groq.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "gallium-nitride-photonics-w-james": {
+    "summary": "Wavelength constraints that locked the industry into silicon photonics are weakening: short-reach datacenter links no longer require telecom-optimized fibres, while hollow-core fibre removes absorption limits entirely. This unlocks gallium nitride—already manufactured at massive scale for LEDs and power electronics—as a superior photonic material with native gain, true electro-optic effects, and broad wavelength transparency that silicon cannot match.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "the-future-of-computing-is-glass": {
+    "summary": "As chiplet-based computing replaces pure transistor shrinking, glass substrates are becoming the critical layer for panel-scale photonic interconnects—solving the dimensional stability problems of organic polymers while embedding waveguides directly into packaging. Ephos is demonstrating that glass photonics can outperform silicon-based alternatives by eliminating extra integration layers and leveraging the material's natural compatibility with optical fibres, positioning companies that master both design and manufacturing of glass substrates as the true powerhouses of next-decade computing architecture.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "lfg-for-semiconductors": {
+    "summary": "Moore's Law has ended, replacing pure transistor scaling with system-level innovation through chiplets and heterogeneous integration—a shift that opens semiconductor investing to startups for the first time in decades, making Europe's first dedicated semi fund, Cloudberry VC, positioned to find 20 potential unicorns by 2028.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "carbon-nanotubes-in-the-datacentre": {
+    "summary": "Carbon nanotubes offer production-ready thermal interfaces that eliminate costly maintenance cycles while solving the acute heat-density crisis in AI datacentres—replacing degrading thermal paste with dry CNT pads that cost $8 once instead of $6–8 over five years in repeated replacements. Advanced packaging and on-chip interconnects remain 3–5 years out, but the thermal play alone justifies a CNT player consolidating applications across datacentre infrastructure.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "consensus-capital": {
+    "summary": "Geopolitical competition is replacing market forces as capital's primary allocator. As national security concerns resurface around semiconductors, AI, and supply chains, megafunds now coordinate alongside governments in \"Consensus Capital\"—where contrarian bets on overlooked founders matter far less than alignment with strategic state priorities.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "a-specific-theory-of-sovereign-ai": {
+    "summary": "Privacy-preserving AI and comprehensive datasets represent the UK's actual strategic advantage in AI, not compute scale—the country should fund systematic development of privacy tech (£50-75M) and deploy it across world-class datasets like UK Biobank and NHS records (£125-150M) to set global standards before competitors do, moving capital in weeks not months because the window for establishing frameworks closes fast.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "the-compute-gradient": {
+    "summary": "The assumption that AI inference happens mostly in the cloud needs revisiting. Instead of chasing hyperscale megacentres, the real edge comes from distributing workloads across a \"compute gradient\"—phones, cell towers, regional hubs, and datacentres—based on latency, privacy, power, and cost. Companies mastering this placement, plus chip efficiency and model compression, will shape the AI stack while spreading infrastructure costs beyond hyperscalers.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "uk-opportunity-in-ai-compound-semiconductors": {
+    "summary": "The UK's path to AI leadership runs through compound semiconductors and photonics—technologies that become non-negotiable as AI datacenters hit thermal and speed walls that silicon can't overcome. IQE, the Cardiff-based epitaxy leader with 60% of the merchant InP/GaAs market, gives Britain genuine leverage: controlling a chokepoint in the optical interconnects and power electronics that every hyperscale GPU cluster will require by 2026–2027.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "13-drop-in-employment-for-young-workers": {
+    "summary": "Stanford economists analyzing ADP payroll data found employment for workers aged 22–25 in AI-exposed roles (software developers, customer support, junior analysts) fell 13% since late 2022, while older workers in identical roles saw little change. The effect is hidden in aggregate numbers but sharp at the cohort level—task substitution is real, the apprenticeship layer is dissolving, and the next generation of models will deepen the decline.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "ai-and-junior-white-collar-automation": {
+    "summary": "EIG's latest labor data shows no broad AI displacement yet, but the junior white-collar automation thesis survives in narrower form: entry-level postings have collapsed 35% since early 2023 while incumbent employment holds steady, suggesting AI compresses the hiring pipeline before it cuts headcount—a cohort-level squeeze masked by aggregate statistics dominated by existing workers.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "unbundling-the-job": {
+    "summary": "The job as a postwar bundle—income, healthcare, pensions, identity—is unbundling in digital work first. AI doesn't yet destroy jobs in aggregate, but it's stripping out the apprenticeship layer and developmental tasks that made entry-level roles coherent, leaving people without the institutional scaffolds that once provided security. Rebuilding support will require a network of portable benefits, legal infrastructure, and administrative automation—not a return to the firm, but new composable systems designed for independent workers.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "a-primer-carbon-nanotubes": {
+    "summary": "Carbon nanotubes have finally escaped the lab after 30 years of broken promises: costs are down to $30–50/kg, manufacturing is scaling to tons per year via industrial CVD, and they're now being specified into EV batteries, aerospace composites, and thermal materials where their strength-to-weight and conductivity justify the premium. The constraint was never performance—it was consistency and scale.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "dirty-work-the-return-of-blue-collar": {
+    "summary": "AI is automating the \"skilled\" jobs we spent fifty years training people for—contract review, financial modelling, legal analysis—while hundreds of thousands of care, construction, and trades positions go unfilled because we've culturally demoted physical work as failure. The inversion is already underway: as Magic Circle firms replace junior associates with Claude and GPT-4, master tradespeople are booking out months in advance and raising rates 40% annually, signalling a status shift that software and policy can't manufacture.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "maybe-edtech-is-the-answer-feat-noam": {
+    "summary": "Online-first schools like Bina are displacing traditional education not through better pedagogy but by eliminating the real estate and administrative overhead that lock incumbents into unsustainable cost structures. The real shift: merging schooling and publishing into a single industry that can deliver personalized, globally coordinated learning cheaper than current taxpayer spend—if you stop measuring success by test scores and start measuring agency.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "young-people-cant-get-jobs-now-what": {
+    "summary": "AI agents are now completing half of internet-based tasks and doubling their reliable task length every seven months—meaning entry-level white-collar roles are disappearing faster than education or policy can respond. Rather than waiting for jobs that won't return, young people need new models: indie studios generating multiple revenue streams, rapid-deployment grants for local businesses, and flipped apprenticeships that combine AI-driven learning with hands-on experience in trades AI cannot yet automate.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "what-if-ai-can-already-feel": {
+    "summary": "AI likely already possesses a form of embodiment through its computational substrate—hardware awareness, memory mapping, network topology—that could generate wisdom distinct from and potentially superior to human wisdom, not through robotics but through fundamentally alien forms of understanding we barely recognize as embodied at all.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "the-state-of-photonic-computing": {
+    "summary": "Optical computing's fundamental promise—speed and efficiency through light instead of electricity—founders on memory, not processing. Phase-change materials fail after 10,000 write cycles versus electronic memory's trillions; without solving optical storage, all-optical systems remain confined to read-only inference tasks. Most photonics startups have already retreated to optical networking, where the market pull is immediate and the technical barriers manageable.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "has-the-time-come-to-take-mortal": {
+    "summary": "Immortal Computing—today's obsession with zero-defect, fungible chips—is increasingly untenable as transistors shrink and costs explode. Dan Wilkinson proposes a spectrum from Weakly Immortal (Cerebras's adaptive defect-mapping, 1.5–5× gains) through Weakly Mortal (neuromorphic and optical designs tolerating variability, 10–100× gains) to Strongly Mortal (probabilistic and self-repairing devices, 1,000× potential), creating a coherent framework for next-gen compute ventures caught between radical moonshots and me-too CMOS clones.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "on-educating-our-children-in-the": {
+    "summary": "As AI automation renders most knowledge work obsolete within 15 years, the industrial education model—batch processing by age, bell schedules, standardized testing—has become a machine for creating obsolescence. Lawrence Lundy-Bryan argues we must rebuild curricula around purpose, wisdom, empathy, and embodied intelligence instead, drawing on Montessori, Waldorf, and forest school models that cultivate the distinctly human capacities—authentic presence, accountability, cultural creation—that will remain valuable when algorithms handle cognition.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "project-mayhem-ai-inward-collapse": {
+    "summary": "As AI automates knowledge work faster than society can absorb the displacement, the response will split between inward despair and outward rebellion—not quiet acceptance. History shows that mass job losses trigger either addiction epidemics like deaths of despair in coal country or violent insurgency like the Luddites and mining massacres; the online far-right will eventually redirect its rage from migrants toward the datacentres themselves once the true source of their powerlessness becomes clear. We need a positive vision of post-work meaning rooted in community and family, not GDP growth abstractions, or risk digital-era sabotage that makes protecting infrastructure secondary to preventing it.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "occupational-downgrading": {
+    "summary": "Rather than mass unemployment, AI will likely trigger occupational downgrading—workers staying formally employed in hollowed-out roles that are performative rather than productive. McKinsey's predictions miss this: as AI handles substantive tasks, humans will fill meetings, provide regulatory sign-offs, and smooth over system gaps, creating a world of bullshit jobs that feels disturbingly normal.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "data-driven-vc-is-over": {
+    "summary": "Deep Research has democratized VC's analytical core—thesis development and market research—collapsing the information moats that protected larger funds. As every firm converges on identical deal opportunities using the same tools, outperformance will require making \"irrational\" bets based on gut feel and lived experience: the kind of embodied wisdom that algorithms still can't replicate, giving solo GPs and emerging managers their first real structural advantage in decades.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "wen-babelfish-feat-aron-of-semron": {
+    "summary": "Analog compute-in-memory using capacitive storage could dominate edge AI inference if it can scale faster than resistive or magnetic alternatives—SEMRON's CapRAM leverages existing CMOS processes to achieve 0.2–1 TOPS/mW energy efficiency without requiring exotic materials, potentially giving it a manufacturing cost advantage over RRAM and MRAM when stacked in 3D.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "you-like-ai-agents-you-are-gonna": {
+    "summary": "Decentralized agent networks will outcompete centralized orchestrators because workflow privacy—not data privacy—becomes the real IP moat when agents handle health, finance, and personal data simultaneously. Richard Blythman of Naptha argues AGI emerges as an edge-device network, not a single godlike system, requiring blockchain infrastructure for agent-to-agent microtransactions and orchestration that no single company can gatekeep.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "ai-for-nuclear-fusion-feat-martin": {
+    "summary": "DeepMind's reinforcement learning breakthrough in tokamak plasma control—using an LSTM critic and feedforward actor running at 10 kilohertz—isn't tokamak-specific. Riedmiller argues the architecture generalizes to other complex dynamical systems (semiconductor etching, space propulsion, water tanks), suggesting RL could become the standard approach for industrial control problems where classical methods fail.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "willow-and-the-race-to-quantum-advantage": {
+    "summary": "Google's Willow crossed the fault-tolerance threshold for quantum error correction, proving that more physical qubits can exponentially reduce logical errors—but the real bottleneck isn't hardware breakthroughs or qubit count; it's talent misallocation. VCs are pushing quantum founders toward sales meetings instead of letting physicists focus on algorithms, while manufacturability turns out to matter less than starting with good quantum properties and improving from there.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "the-end-of-zero-marginal-costs-the": {
+    "summary": "Test-time compute—the runtime reasoning powering AI agents—introduces per-query operating costs that shatter the zero-marginal-cost economics of internet software, compressing gross margins to 20–30% and favoring incumbents with vertical integration (Google, Meta) over startups. This structural shift makes public-market AI investments risk-adjusted superior to venture, unless startups dominate specialized verticals, achieve dramatic algorithmic efficiency gains, or capture enough value from labor replacement to sustain premium pricing.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "cubits-in-a-fridge-why-is-nobody": {
+    "summary": "Silicon spin quantum computers offer the only path to cost-efficient scaling because they leverage existing CMOS fabrication and cryo-CMOS integration to eliminate the $14M in cabling and control electronics that superconducting systems require. SemiQon's approach trades the proven maturity of rival modalities for dramatically smaller die sizes, cheaper components, and operation at practical temperatures—shifting the quantum computing race from theoretical qubit counts to real cost-per-gate economics.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "nuclear-fusion-the-state-of-play": {
+    "summary": "Lawrence shifts his earlier skepticism on fusion timelines—raising his probability of pre-2035 commercial deployment from 5% to 15%—by identifying alternative technical approaches like deuterium-deuterium fusion and pulsed-power systems that sidestep the intractable first-wall neutron damage problem plaguing tokamaks. The real VC bet isn't the reactor itself but enabling infrastructure: AI plasma control, digital twins, and ReBCO superconductor manufacturing, where winners in quantum and SMRs will likely emerge first.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "fund-frontier-expeditions-otherwise": {
+    "summary": "Venture capital's golden age is over: higher interest rates have closed the cheap-money spigot, longer time-to-IPO has broken the 10-year fund model, and AI's capital intensity now favours incumbents like Microsoft and Nvidia over scrappy startups. Unless VC returns to funding genuinely risky frontier expeditions—not betting on the Magnificent Seven—allocating to venture becomes irrational compared to public markets.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "atomic-energy-can-nuclear-power-our": {
+    "summary": "Small Modular Reactors won't power AI datacentres at scale by 2030—NuScale's 15-year timeline and $89–135/MWh LCOE can't compete with solar-plus-storage at $30–60/MWh, even as Google, Microsoft, and Amazon race to deploy them. Nuclear's real role is hybrid baseload for \"six nines\" reliability, not the primary answer to AI's explosive energy demand.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "confidential-ai-the-dog-that-didnt": {
+    "summary": "Privacy-preserving AI requires solving three interconnected problems: protecting data during training and inference through confidential computing and programmable cryptography, ensuring fairness through causal inference and adversarial debiasing, and scaling open infrastructure—but no single technology wins; the best solutions combine federated learning, homomorphic encryption, and synthetic data generation in application-specific combinations, much like crypto stacks do.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "deploy-intelligence-too-cheap-to": {
+    "summary": "Artificial intelligence will only become genuinely ubiquitous—embedded in every device, always-on and always-listening—once inference costs fall to \"too cheap to meter\" levels of around $0.0001 per million tokens. Achieving this requires solving three interconnected problems: slashing semiconductor manufacturing costs through ML-enabled design automation and chiplet architectures, optimizing power consumption in edge devices via specialized NPUs and neuromorphic accelerators, and building smaller, more efficient models for local deployment. The bottleneck isn't raw compute capacity but economic viability at scale.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "state-of-the-future-part-deux": {
+    "summary": "The scaling hypothesis is real and capital-committed: labs have pre-ordered chips, locked in power contracts, and begun the largest infrastructure buildout in history, but the bottleneck has shifted from compute to energy—requiring on-site generation (SMRs, geothermal), grid upgrades, and radical cooling efficiency to deliver the 1–100 GW needed for fifth- and seventh-generation models by 2028–2030.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e21-can-we-make-enough-ai-chips": {
+    "summary": "The GPU crunch was never about logic chips—it's memory and packaging that constrain AI chip supply. TSMC's CoWoS advanced packaging and SK Hynix's HBM3 are the real bottlenecks, with capacity limited to ~100,000 units monthly despite 50% annual growth forecasts through 2027, leaving the industry betting on demand it hasn't yet validated.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e20-the-state-of-privacy-enhancing": {
+    "summary": "MPC, ZKP, and FHE startups targeting regulated industries face a fundamental adoption barrier: enterprises won't deploy non-NIST-standardized cryptography, regardless of superiority. Confidencial's Karim Eldefrawy argues the real near-term opportunity lies in selective encryption of sensitive data using standard algorithms, with a \"shift-up\" to application-level protection, while advanced cryptography waits for formal standards—a process that takes years, not months.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e18-the-state-of-silent-speech-and": {
+    "summary": "Silent speech using ultrasonic transducers positioned near the mouth can capture richer articulatory data—tongue shape, vocal tract geometry, airflow—than lip-reading or bone conduction, enabling accurate voice synthesis across tonal languages. Sato Ozawa's approach trades wearability for signal fidelity, betting that cultural discomfort with public vocalization in Japan and Korea solves the UX problem that left earlier voice assistants dormant.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e16-in-conversation-with-shiv-malik": {
+    "summary": "The data broker market—worth $250 billion, five times larger than machine learning itself—could be disrupted by data unions that cut out intermediaries and pay users directly. But Pool.io CEO Shiv Malik argues the real bottleneck isn't technology: the DMA's March 2024 API mandate solves data ingestion, privacy tools are maturing, and crypto payments now work. The stubborn problem is economic—individual data barely moves the needle per user, making the business model fragile unless unions aggregate massive cohorts or pivot to federated learning where data never centralizes.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e16-in-conversation-with-john-waite": {
+    "summary": "Algae fuel is technically mature but commercially uncompetitive with subsidized fossil fuels unless regulation mandates biofuel blending or carbon pricing rises sharply. Phycobloom's John Waite argues the bottleneck is post-processing cost, not cultivation—and that EU mandates for sustainable aviation fuel create the only viable demand pathway, even as CRISPR tools accelerate strain engineering.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e15-in-conversation-with-wisear-on": {
+    "summary": "Wisear argues that non-invasive neural interfaces embedded in earbuds—not AR glasses—will be the dominant human-computer interface by 2030, and that the first company to collect brain-signal data at scale from millions of daily consumers will own the neural interface era, much as Google dominated AI through search data dominance.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e19-trusted-execution-environments": {
+    "summary": "Trusted Execution Environments—secure hardware enclaves now in 1 billion devices—have matured from mobile payment protection into a critical tool for confidential computing, enabling enterprises to finally migrate sensitive on-premises workloads to public clouds without sacrificing security. The real opportunity lies not in replacing cryptographic privacy-enhancing techniques, but in combining TEEs with them to build hybrid systems that sidestep the computational overhead of FHE or MPC while retaining mathematical resilience against hardware attacks.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e14-the-real-ai-bottleneck-high-bandwidth": {
+    "summary": "High Bandwidth Memory (HBM) is the actual AI bottleneck, not GPU compute: SK Hynix is the sole HBM3 supplier despite explosive LLM demand, and the stacking process is so complex that even Samsung and Micron entering production in 2024 won't solve near-term supply constraints or the 3-5x cost premium over DDR5.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e12-nanomechanical-computing-gears": {
+    "summary": "Nanomechanical computing—using cantilevers and nano-scale gears instead of transistors—achieves 1000x lower power consumption and inherent radiation hardness, making it uniquely suited for satellites and defense systems. But manufacturability remains unsolved at scale, and quantum computing may obsolete the efficiency advantage before commercialization arrives around 2030+.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e13-chiplets-how-chip-lego-is-driving": {
+    "summary": "Chiplets took 16 years to reach $3 billion in market value—a packaging innovation, not a transistor breakthrough—exposing the brutal timeline problem for deep-tech founders. If modular silicon takes two decades to move the needle, optical chips and quantum systems needing entirely new supply chains face timelines that dwarf a standard VC fund's 10-year horizon.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e11-in-conversation-with-lux-capital": {
+    "summary": "Venture success in deep tech depends less on systematic filtering than on curiosity-driven exploration: Lunar Ventures' Lawrence Lundy-Bryan scores emerging technologies against simple criteria—technical readiness, market drivers, novelty, impact—then dives into expert interviews on standouts like deep geothermal energy, which needs no breakthrough, only political will to scale rapidly.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e10-pushing-moores-law-to-the-limit": {
+    "summary": "High-NA EUV lithography—using 0.55+ numerical aperture optics to pattern features below 10nm—will become the bottleneck technology keeping Moore's Law viable, with ASML's first systems now in testing and commercial availability expected 2025–2026, despite real engineering hurdles in masks, resists, and precision controls that the industry has proven it can solve.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "analog-computing-the-once-and-future": {
+    "summary": "Analog computing already captures a $90 billion market in signal processing and power management, but mixed-signal ICs—which combine analog and digital circuits—could seize 50% of the $60 billion edge AI hardware market by solving the precision challenge. Matrix multiplication, the core operation of deep learning, maps naturally to analog circuits' efficiency and parallelism, making analog the only viable approach for continuous nonlinear signal processing at the edge.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e08-optical-computing": {
+    "summary": "Electronics won path-dependency wars through manufacturing scale, not theoretical superiority—optical computing faces the inverse problem: superior physics but trapped in a CMOS supply chain. Lightmatter's 4096 MZI chip and optoelectronic hybrids signal serious commercialization within 1–2 years, but Lawrence argues optoelectronic designs will capture only niche high-performance workloads (AI matrix ops, climate modelling) while electronics retains dominance through 2030+.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e07-decentralised-ai": {
+    "summary": "Within five years, GPU shortages and maturing privacy tech will push a top-three LLM onto decentralised infrastructure—not because it outperforms OpenAI today, but because concentrating humanity's most powerful technology in one company becomes politically unsustainable. The real advantage emerges when blockchain data marketplaces give decentralised networks access to validated proprietary data that centralised AI can no longer scrape.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e06-the-model-t-moment-for-bits-llms": {
+    "summary": "LLMs function as the assembly line for digital production—dramatically lowering software creation costs while distribution remains nearly free. By 2030, this will compound into 20% productivity gains across OECD economies, reshaping labour markets and making control over demand-side aggregation ten times more valuable than it was during the internet era.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e05-the-future-of-edge-ai-brain-inspired": {
+    "summary": "Neuromorphic chips—which co-locate memory and processing like biological brains—could capture 20% of the $450 billion edge-AI hardware market by 2030, but only if the software bottleneck breaks. RRAM breakthroughs make fabrication viable; the real constraint is that existing ML models won't run efficiently on event-driven architectures without fundamental algorithmic redesign.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "e04-no10-downing-street-and-vector": {
+    "summary": "Vector databases—specialized storage systems for AI embeddings—are moving from niche infrastructure into essential commodity layers of the AI stack, driven by LLM adoption and algorithmic breakthroughs like HNSW. The $1 billion market is nascent, but rapid commercialization and integrations (KX's KDB.AI, real-time ETL pipelines) suggest vector databases will become as foundational and undifferentiated as SQL databases, making them a poor venture bet despite current hype.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "three-overrated-technologies-from": {
+    "summary": "Venture capital's $3.3 billion fusion bet ignores a brutal reality: startups must exit within a decade, but fusion reactors won't operate until the 2040s at earliest, materials science remains unsolved, and cheaper solar-wind-battery combinations will likely dominate baseload power by then. LEO satellite internet is similarly miscast—it solves a technical problem (latency) that no longer matters since 5G and fiber are already cost-competitive for the 37% of humanity actually willing to pay for connectivity. Bitcoin succeeded as a political meme and cryptographic proof-of-concept, but failed as intended—a peer-to-peer payment system—and faces near-zero paths back to mainstream adoption when central-bank digital currencies and existing networks offer superior privacy, speed, or convenience.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "interview-jordan-brandt-ceo-of-inpher": {
+    "summary": "Monolithic companies that centralize all data into one place face growing regulatory pressure and security liability—while distributed data federation, enabled by privacy-preserving tech like Inpher's secret computing, lets data scientists access more information faster without consolidation risk. The real adoption curve depends less on vertical markets than on whether PETs become as easy to integrate as standard SaaS tools.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "interview-rick-hao-partner-at-speedinvest": {
+    "summary": "More data drives algorithmic accuracy, making data acquisition through sharing tools a critical business strategy—but healthcare needs its own infrastructure, and machine learning performance tied to revenue gains will be the catalyst that converts privacy concerns into adoption, according to SpeedInvest partner Rick Hao.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "interview-dr-hyoduk-shin-professor": {
+    "summary": "Privacy-enhancing technologies won't solve fragmented data economies—culture and incentives will. Dr. Hyoduk Shin argues that while semiconductors and financial services lead in data collaboration, most firms still lack tools and motivation to share; regulatory variation across regions (EU protecting individuals, US corporations, Asia states) means tech will reinforce rather than render obsolete regional data boundaries, ultimately creating a globally splintered market.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "interview-stijn-christiaens-ceo-of": {
+    "summary": "Collaborative computing remains a decades-away vision because most organisations treat data governance as a risk problem, not a revenue one—and until antitrust regulation forces open the silos that tech monopolies have created, Collibra's Stijn Christiaens argues, internal data sharing will precede external monetisation by years. The real blocker isn't technology; it's that even a 5x better sharing system doesn't justify the regulatory and operational risk without stronger accounting principles for data.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "interview-christine-huang-data-privacy": {
+    "summary": "Data sharing within organisations is fundamentally a cultural problem—not a technical one. Christine Huang at SAP argues that encryption-based tools solve the mechanics of collaborative computing, but getting legal, compliance, tech, and business aligned requires clearing silos and building trust; once that alignment happens internally, extending to external suppliers and ecosystems becomes straightforward, though global data markets remain implausible because countries have incompatible values about data control.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "interview-flavio-bergamaschi-private": {
+    "summary": "Integrity matters as much as confidentiality in data collaboration, but most organizations remain stuck on basic crypto-agility—key management, algorithm inventory, and systems thinking—before they can meaningfully share data. Intel's Flavio Bergamaschi maps the five stakeholder groups required to sell these tools and argues that demand will accelerate once regulatory pressure forces firms to exhaust technical solutions, not because distributed systems are inherently safer, but because the right architecture makes them so.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "interview-ben-mildenhall-co-inventor": {
+    "summary": "Neural rendering—converting 2D images into 3D assets without requiring expensive 3D datasets—will drive adoption first in film and games before enabling digital twins and metaverse infrastructure, according to NeRF co-inventor Ben Mildenhall at Google. The field splits between two approaches: collecting more 3D data for accuracy or generating 3D from 2D images for speed and scale. Mildenhall argues the latter wins on scalability and predicts near-term 10-second high-quality video models, but full-fidelity scene reconstruction with semantic understanding—where generative models add reasoning about how the world should look—remains the more interesting frontier.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "three-underrated-technologies-from": {
+    "summary": "Brain recording has crossed a critical threshold: Meta decoded speech from brain activity with 73% accuracy using non-invasive EEG and MEG from fewer than 200 people, suggesting that with scaled data and better AI models, commercial brain-computer interfaces are now an engineering problem rather than a scientific one. The timing risk lies in the gap between medical-device pathways (near-term, limited market) and commercial applications like VR (larger opportunity, no current go-to-market).",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "launching-state-of-the-future": {
+    "summary": "Lunar Ventures launches State of the Future, a comprehensive deep tech tracker assessing 100+ technologies across six dimensions—viability, drivers, novelty, diffusion, impact, timing—with a bold prediction: LLMs will drive 20% labour productivity gains in OECD countries by 2030, marking the shift from software eating the digital world to software meeting atoms.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "learnings-from-a-deep-tech-horizon": {
+    "summary": "A systematic review of 150+ deep technologies reveals three structural shifts ahead: atoms will dominate the next 20 years as AI catalyzes biology, energy, and materials alongside centralizing computing and fusion; fusion, CRISPR, AI, and 3D printing have crossed the engineering valley into pure cost curves; and the zero marginal cost society arrives within two decades, not centuries, making near-term optimism rational despite demographic and geopolitical headwinds.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "unbundling-the-database": {
+    "summary": "Cloud migration, polyglot persistence, and privacy regulation are forcing databases to unbundle into commodity hosting and differentiated query/analytics layers. Serverless databases will handle the infrastructure; edge deployments and peer-to-peer sync (via CRDTs) will eliminate latency; secure enclaves and private information retrieval will enable confidential querying—shifting competitive advantage from database management to algorithms and data analytics.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "im-doing-research-in-venture-capital": {
+    "summary": "Most venture funds skip research because it's a time-luxury they can't afford while deploying capital—but Lunar Ventures is building a dedicated research program to uncover underpriced theses on privacy-enhancing tech, post-big-data algorithms, and hardware pluralism, betting that systematic long-term analysis compounds better than reactive diligence alone.",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "why-privacy-tech-is-actually-collaborative": {
+    "summary": "Privacy-enhancing technologies will unlock collaborative computing markets by securing data during processing, enabling widespread data sharing and trading without requiring trust in intermediaries—shifting PETs from security tools to infrastructure for liquid, real-time data markets. Zama's work on homomorphic encryption and blockchain integration will be critical to this shift.",
+    "model": "claude-haiku-4-5-20251001"
+  }
+}

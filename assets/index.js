@@ -250,7 +250,15 @@
 
     clear(grid);
     if (filtered.length === 0) {
-      grid.appendChild(el('div', { className: 'empty-state', text: 'Nothing matches that filter.' }));
+      // Friendlier empty-state explaining the FF + topic intersection,
+      // which is the only combination that's structurally always zero.
+      let msg = 'Nothing matches that filter.';
+      if (activeFilter === 'Friday Four' && activeTopic) {
+        msg = 'Friday Four dispatches cover multiple topics by design and aren’t topic-tagged. Pick a different category or clear the topic.';
+      } else if (query) {
+        msg = 'No posts match “' + query + '”. Try a shorter or different search term.';
+      }
+      grid.appendChild(el('div', { className: 'empty-state', text: msg }));
     } else {
       const frag = document.createDocumentFragment();
       // First filtered post = spotlight (col 1, span 2 rows). Rest = regular cards.
@@ -267,6 +275,10 @@
   chips.forEach(function (c) {
     c.addEventListener('click', function () {
       activeFilter = c.dataset.filter;
+      // Friday Fours are intentionally not topic-tagged (they span topics
+      // by design). Selecting FF while a topic is active would yield zero
+      // results, so clear the topic when switching to FF.
+      if (activeFilter === 'Friday Four') activeTopic = '';
       render();
     });
   });
@@ -274,6 +286,9 @@
   topicChips.forEach(function (c) {
     c.addEventListener('click', function () {
       activeTopic = c.dataset.topic || '';
+      // Symmetric: picking a topic clears the FF filter so the user
+      // doesn't land in an empty grid.
+      if (activeTopic && activeFilter === 'Friday Four') activeFilter = 'all';
       render();
     });
   });

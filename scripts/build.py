@@ -686,8 +686,9 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
         <span class="masthead-byline">by Lawrence Lundy-Bryan</span>
       </a>
       <nav class="masthead-nav">
-        <a href="https://stateofthefuture.substack.com/podcast">Podcast</a>
         <a href="../index.html">Archive</a>
+        <a href="../ecosystem/index.html">UK Ecosystem</a>
+        <a href="{SUBSTACK_URL}/podcast">Podcast</a>
         <a href="{SUBSTACK_URL}/subscribe" class="subscribe-pill">Subscribe</a>
       </nav>
     </div>

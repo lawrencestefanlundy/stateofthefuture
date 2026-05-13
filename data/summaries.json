@@ -334,5 +334,17 @@
   "why-privacy-tech-is-actually-collaborative": {
     "summary": "Privacy-enhancing technologies will unlock collaborative computing markets by securing data during processing, enabling widespread data sharing and trading without requiring trust in intermediaries—shifting PETs from security tools to infrastructure for liquid, real-time data markets. Zama's work on homomorphic encryption and blockchain integration will be critical to this shift.",
     "model": "claude-haiku-4-5-20251001"
+  },
+  "consensus-capital-national-ai-stacks": {
+    "summary": "SpaceX wants $55bn for Terafab, a US semiconductor facility co-developed with Intel on the 14A node, with Tesla, Optimus, and its own data centres as the captive customers. The hyperscaler-as-vertical-bundle — rockets to satellites to compute to models — is becoming the dominant shape of AI, and European sovereignty plays like Cohere's $20bn Aleph Alpha acquisition show the alternative doesn't yet exist.",
+    "model": "manual-editorial-2026-05-13"
+  },
+  "state-of-the-future-friday-four-7b7": {
+    "summary": "Anthropic's $900bn target valuation looks chunky at 30× revenue but cheap at 0.10 PEG-R against its own 4× forward growth — tighter than Meta or TSMC on a growth-adjusted basis. Plus: Cohere buying Aleph Alpha at a combined $20bn (sovereignty as bailout?), and what Zuck and Satya figured out about AI talent that governments still haven't.",
+    "model": "manual-editorial-2026-05-13"
+  },
+  "making-ai-inference-cheap-with-analog": {
+    "summary": "GPT-5.5 just doubled in price, agentic workloads burn 20K–200K tokens per task, and the bill keeps rising even as per-token cost falls. EnCharge AI's Shwetank Kumar argues the fix isn't software — it's compute-in-memory analog silicon that does the multiplication inside the SRAM array, claiming 10–20× efficiency at the same node. Their first chip, EN100, is coming back from fab now.",
+    "model": "manual-editorial-2026-05-13"
   }
 }

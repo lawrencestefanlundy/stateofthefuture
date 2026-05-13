@@ -89,19 +89,29 @@ def main() -> int:
 
         canonical, mirror_src = build.extract_hero(body_html)
         hero_local = build.mirror_image(mirror_src, slug) if mirror_src else None
+        hq = build.hero_quality(hero_local)
 
         category = build.derive_category(slug, title)
+        topics = build.derive_topics(slug, title, category)
+        excerpt = build.card_excerpt(subtitle, body_html)
         post = {
             "id": slug,  # numeric ID isn't in the RSS; use slug as a stable proxy
             "slug": slug,
             "title": title,
             "subtitle": subtitle,
+            "excerpt": excerpt,
+            "summary": "",  # filled in later by summarize.py
             "date": iso,
             "date_pretty": pretty,
             "category": category,
             "category_slug": build.category_slug(category),
+            "topics": topics,
+            "featured": False,
             "hero_remote": canonical,
             "hero_local": hero_local,
+            "hero_width": hq["width"],
+            "hero_height": hq["height"],
+            "hero_ok": hq["ok"],
             "url": f"posts/{slug}.html",
             "substack_url": f"https://stateofthefuture.substack.com/p/{slug}",
         }

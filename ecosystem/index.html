@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UK Semiconductor, Photonics & Quantum Ecosystem</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <style>
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -249,34 +250,236 @@ a.acq-name:hover { color: #0F172A; }
   table { font-size: 0.82rem; }
   td, th { padding: 0.5rem 0.55rem; }
 }
+
+/* ── SotF integration overrides ──────────────────────────────────────
+   Remap the dashboard's slate/stone palette onto the cream + ink
+   homepage palette so the page reads as another section of State of
+   the Future rather than a different site. Specificity-only — no
+   structural changes to the dashboard's own components. */
+
+:root {
+  --sotf-ink: #121212;
+  --sotf-bg: #fff7f4;
+  --sotf-paper: #fffaf6;
+  --sotf-soft: #fff0ea;
+  --sotf-teal: #073429;
+  --sotf-rule: #1212121f;
+}
+
+body { background: var(--sotf-bg); color: var(--sotf-ink); }
+.serif { color: var(--sotf-ink); }
+
+/* The dashboard hero — title + dek + stats, cream version of the old
+   dark gradient. */
+.dashboard-hero { padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--sotf-ink); }
+.dashboard-hero-inner { display: flex; flex-direction: column; gap: 1.5rem; }
+.dashboard-eyebrow {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem; font-weight: 400;
+  color: rgba(18,18,18,0.6);
+  text-transform: uppercase; letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+.dashboard-eyebrow::before { content: ""; width: 18px; height: 1px; background: rgba(18,18,18,0.4); }
+.dashboard-h1 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: clamp(2rem, 4.4vw, 3rem);
+  font-weight: 700;
+  color: var(--sotf-ink);
+  letter-spacing: -0.022em; line-height: 1.05;
+  margin-bottom: 0.5rem;
+}
+.dashboard-dek {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: rgba(18,18,18,0.7);
+  max-width: 640px;
+  line-height: 1.4;
+}
+
+/* Hero stats row */
+.hero-stats {
+  border-top: 1px solid var(--sotf-rule);
+  padding-top: 1.25rem;
+  margin-top: 0.5rem;
+  display: grid; grid-template-columns: repeat(4, auto); gap: 2rem;
+}
+.hero-stat .num {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.85rem; font-weight: 700;
+  color: var(--sotf-ink);
+  letter-spacing: -0.02em; line-height: 1;
+}
+.hero-stat .num .unit { color: rgba(18,18,18,0.5); font-size: 1rem; font-weight: 600; }
+.hero-stat .label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.68rem; font-weight: 500;
+  color: rgba(18,18,18,0.6);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin-top: 0.4rem;
+}
+.hero-stat.accent-teal .num { color: var(--sotf-teal); }
+.hero-stat.accent-blue .num,
+.hero-stat.accent-amber .num { color: var(--sotf-ink); }
+
+@media (max-width: 700px) {
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+}
+
+/* Section cards, chart wrappers — ink borders + cream paper */
+.section, .chart-wrap, .strategic-panel {
+  border-color: var(--sotf-ink);
+  background: var(--sotf-paper);
+}
+.chart-wrap h2,
+.takeaway,
+.funding-compare .compare-title {
+  color: var(--sotf-ink);
+}
+.callout, .callout-sub {
+  background: var(--sotf-soft);
+  border-left-color: var(--sotf-teal);
+  color: rgba(18,18,18,0.85);
+}
+.callout strong { color: var(--sotf-ink); }
+
+/* Funding panel items */
+.fund-item {
+  border-color: var(--sotf-ink);
+  background: var(--sotf-paper);
+}
+.fund-item:hover { background: var(--sotf-bg); }
+.fund-name, .fund-amt { color: var(--sotf-ink); }
+.fund-note { color: rgba(18,18,18,0.6); }
+
+/* GTR stats grid */
+.gtr-stat {
+  border-color: var(--sotf-ink);
+  border-left-color: var(--sotf-ink);
+  background: var(--sotf-paper);
+}
+.gtr-stat .gtr-num { color: var(--sotf-ink); }
+.gtr-stat .gtr-lbl { color: rgba(18,18,18,0.6); }
+
+/* Table */
+table thead { background: var(--sotf-paper); }
+th {
+  background: var(--sotf-paper);
+  border-top-color: var(--sotf-ink);
+  border-bottom-color: var(--sotf-ink);
+  color: rgba(18,18,18,0.7);
+}
+td { color: rgba(18,18,18,0.85); border-bottom-color: var(--sotf-rule); }
+tr:hover td { background: rgba(18,18,18,0.025); }
+.company-name { color: var(--sotf-ink); }
+.company-name a { color: var(--sotf-ink); }
+.desc-cell, .origin-cell { color: rgba(18,18,18,0.6); }
+.gtr-cell .gtr-val { color: var(--sotf-ink); }
+
+/* Filters */
+.filters { border-bottom-color: var(--sotf-rule); }
+.filter-input {
+  border-color: var(--sotf-ink);
+  background: var(--sotf-paper);
+  color: var(--sotf-ink);
+}
+.filter-input::placeholder { color: rgba(18,18,18,0.5); }
+.clear-btn { color: rgba(18,18,18,0.65); }
+.clear-btn:hover { background: rgba(18,18,18,0.06); color: var(--sotf-ink); }
+
+/* Cluster map */
+.uk-outline { fill: var(--sotf-paper); stroke: rgba(18,18,18,0.18); }
+.cluster-bubble { fill: var(--sotf-ink); stroke: var(--sotf-bg); }
+.cluster-row:hover, .cluster-row.active { background: rgba(18,18,18,0.04); }
+.cluster-row .cr-name { color: var(--sotf-ink); }
+.cluster-row .cr-count { color: rgba(18,18,18,0.7); }
+.cluster-row .cr-raised { color: var(--sotf-ink); }
+.cluster-row .cr-bar { background: rgba(18,18,18,0.08); }
+.cluster-row .cr-bar-fill { background: var(--sotf-ink); }
+
+/* Value chain */
+.vc-strong { background: var(--sotf-ink); color: var(--sotf-bg); border-color: var(--sotf-ink); }
+.vc-moderate { background: var(--sotf-bg); color: var(--sotf-ink); border-color: var(--sotf-ink); }
+.vc-gap { color: rgba(18,18,18,0.5); border-color: rgba(18,18,18,0.3); }
+.vc-item { color: rgba(18,18,18,0.85); border-bottom-color: var(--sotf-rule); }
+.vc-anchors { color: rgba(18,18,18,0.5); }
+
+/* Acquisitions list */
+.acq-item { border-bottom-color: var(--sotf-rule); color: rgba(18,18,18,0.85); }
+.acq-name { color: var(--sotf-ink); }
+.acq-buyer { color: rgba(18,18,18,0.6); }
+.acq-year { color: rgba(18,18,18,0.5); }
+
+/* Bars (global comparison) */
+.global-bar .bar-track { background: rgba(18,18,18,0.08); }
+.global-bar.uk .bar-fill { background: var(--sotf-ink); }
+.global-bar:not(.uk) .bar-fill { background: rgba(18,18,18,0.25); }
+.global-bar:not(.uk) .bar-val { color: rgba(18,18,18,0.7); }
+
+/* Subcategory + tag chips */
+.subcat-badge { color: rgba(18,18,18,0.7); border-color: rgba(18,18,18,0.25); }
+.subcat-badge:hover { background: var(--sotf-ink); color: var(--sotf-bg); border-color: var(--sotf-ink); }
+.tag-chip { color: rgba(18,18,18,0.65); border-color: rgba(18,18,18,0.18); }
+.tag-chip:hover { background: var(--sotf-ink); color: var(--sotf-bg); border-color: var(--sotf-ink); }
+
+/* Download / dl button */
+.dl-btn { background: var(--sotf-ink); color: var(--sotf-bg); border-color: var(--sotf-ink); }
+.dl-btn:hover { background: rgba(18,18,18,0.85); }
+
+/* Footer */
+.footer-toggle { color: rgba(18,18,18,0.55); }
+.footer-toggle:hover { color: rgba(18,18,18,0.85); }
+.footer-sources { color: rgba(18,18,18,0.6); }
+
+/* Tooltips remain dark (over the map) — leave as-is; legible already. */
 </style>
 </head>
 <body>
 
-<div style="background:#0F172A;border-bottom:1px solid #1E293B;">
-<div class="container" style="padding-top:0.6rem;padding-bottom:0.6rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;">
-  <a href="../index.html" style="color:#94A3B8;text-decoration:none;">← State of the Future</a>
-  <span style="color:#64748B;">A research dashboard from Lawrence Lundy-Bryan</span>
-</div>
-</div>
-<div class="header">
-<div class="container">
-<div class="header-inner">
-  <div class="header-title">
-    <span class="header-eyebrow">United Kingdom &middot; Deep Tech Sovereignty</span>
-    <h1>Semiconductor, Photonics &amp; Quantum Ecosystem</h1>
-    <span class="subtitle">A snapshot of the UK companies building the hardware underpinning AI, defence and critical infrastructure.</span>
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-inner">
+      <a href="../index.html" class="masthead-title">
+        <span class="masthead-name">State of the Future</span>
+        <span class="masthead-byline">by Lawrence Lundy-Bryan</span>
+      </a>
+      <nav class="masthead-nav">
+        <a href="../index.html">Archive</a>
+        <a href="index.html" aria-current="page">UK Ecosystem</a>
+        <a href="https://stateofthefuture.substack.com/podcast">Podcast</a>
+        <a href="https://stateofthefuture.substack.com/subscribe" class="subscribe-pill">Subscribe</a>
+      </nav>
+    </div>
   </div>
-  <span class="header-meta"><span class="pulse"></span>Updated 13 April 2026</span>
-</div>
-<div class="hero-stats">
-  <div class="hero-stat"><div class="num" id="heroCount">213</div><div class="label">Active companies</div></div>
-  <div class="hero-stat accent-teal"><div class="num" id="heroRaised">&mdash;</div><div class="label">Total raised</div></div>
-  <div class="hero-stat accent-blue"><div class="num" id="heroSpinouts">&mdash;</div><div class="label">University spinouts</div></div>
-  <div class="hero-stat accent-amber"><div class="num" id="heroAcquired">7<span class="unit"></span></div><div class="label">Acquired / Foreign-owned</div></div>
-</div>
-</div>
-</div>
+</header>
+
+<section class="issue-bar">
+  <div class="container issue-bar-inner">
+    <span class="label">UK Ecosystem</span>
+    <span class="sep">·</span>
+    <span class="label">213 companies · updated 13 Apr 2026</span>
+  </div>
+</section>
+
+<section class="dashboard-hero">
+  <div class="container">
+    <div class="dashboard-hero-inner">
+      <div class="dashboard-hero-title">
+        <span class="dashboard-eyebrow">United Kingdom · Deep Tech Sovereignty</span>
+        <h1 class="dashboard-h1">Semiconductor, Photonics &amp; Quantum Ecosystem</h1>
+        <p class="dashboard-dek">A snapshot of the UK companies building the hardware underpinning AI, defence and critical infrastructure.</p>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num" id="heroCount">213</div><div class="label">Active companies</div></div>
+        <div class="hero-stat accent-teal"><div class="num" id="heroRaised">&mdash;</div><div class="label">Total raised</div></div>
+        <div class="hero-stat accent-blue"><div class="num" id="heroSpinouts">&mdash;</div><div class="label">University spinouts</div></div>
+        <div class="hero-stat accent-amber"><div class="num" id="heroAcquired">7<span class="unit"></span></div><div class="label">Acquired / Foreign-owned</div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <div class="container">
 

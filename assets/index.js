@@ -63,7 +63,8 @@
   document.getElementById('count-all').textContent = '(' + totals.all + ')';
   document.getElementById('count-Essay').textContent = '(' + (totals['Essay'] || 0) + ')';
   document.getElementById('count-Interview').textContent = '(' + (totals['Interview'] || 0) + ')';
-  document.getElementById('count-Friday-Four').textContent = '(' + (totals['Friday Four'] || 0) + ')';
+  // Newsletter is the renamed category formerly known as "Friday Four".
+  document.getElementById('count-Newsletter').textContent = '(' + (totals['Newsletter'] || 0) + ')';
 
   // Compute scope label dynamically: "84 posts since YYYY".
   const earliestYear = posts.reduce(function (acc, p) {
@@ -131,8 +132,12 @@
     const t = params.get('topic');
     const f2 = params.get('featured');
     const s = params.get('sort');
-    if (f === 'all' || f === 'Essay' || f === 'Interview' || f === 'Friday Four') {
+    // Accept the new "Newsletter" label and the legacy "Friday Four"
+    // (so old shared links keep resolving).
+    if (f === 'all' || f === 'Essay' || f === 'Interview' || f === 'Newsletter') {
       activeFilter = f;
+    } else if (f === 'Friday Four') {
+      activeFilter = 'Newsletter';
     }
     if (t && topics.some(function (x) { return x.slug === t; })) {
       activeTopic = t;
@@ -167,7 +172,7 @@
 
   function ctaFor(category) {
     return category === 'Interview' ? 'Read interview →'
-      : category === 'Friday Four' ? 'Read dispatch →'
+      : category === 'Newsletter' ? 'Read dispatch →'
       : 'Read essay →';
   }
 
@@ -248,13 +253,21 @@
     if (featuredBtn) featuredBtn.setAttribute('aria-pressed', String(featuredOnly));
     if (featuredCta) featuredCta.setAttribute('aria-pressed', String(featuredOnly));
 
+    // Topics are only meaningful once the reader has narrowed by format —
+    // hide the row on the default "All" view to keep the homepage cleaner.
+    // Newsletter posts are intentionally untagged, so hide it there too.
+    if (topicBar) {
+      const showTopics = activeFilter === 'Essay' || activeFilter === 'Interview';
+      topicBar.style.display = showTopics ? '' : 'none';
+    }
+
     clear(grid);
     if (filtered.length === 0) {
-      // Friendlier empty-state explaining the FF + topic intersection,
-      // which is the only combination that's structurally always zero.
+      // Friendlier empty-state for the Newsletter + topic intersection,
+      // which is structurally always zero.
       let msg = 'Nothing matches that filter.';
-      if (activeFilter === 'Friday Four' && activeTopic) {
-        msg = 'Friday Four dispatches cover multiple topics by design and aren’t topic-tagged. Pick a different category or clear the topic.';
+      if (activeFilter === 'Newsletter' && activeTopic) {
+        msg = 'Newsletter dispatches cover multiple topics by design and aren’t topic-tagged. Pick a different category or clear the topic.';
       } else if (query) {
         msg = 'No posts match “' + query + '”. Try a shorter or different search term.';
       }
@@ -275,10 +288,10 @@
   chips.forEach(function (c) {
     c.addEventListener('click', function () {
       activeFilter = c.dataset.filter;
-      // Friday Fours are intentionally not topic-tagged (they span topics
-      // by design). Selecting FF while a topic is active would yield zero
-      // results, so clear the topic when switching to FF.
-      if (activeFilter === 'Friday Four') activeTopic = '';
+      // Newsletters are intentionally not topic-tagged (they span topics
+      // by design). Selecting Newsletter while a topic is active would
+      // yield zero results, so clear the topic when switching to it.
+      if (activeFilter === 'Newsletter') activeTopic = '';
       render();
     });
   });
@@ -286,9 +299,9 @@
   topicChips.forEach(function (c) {
     c.addEventListener('click', function () {
       activeTopic = c.dataset.topic || '';
-      // Symmetric: picking a topic clears the FF filter so the user
-      // doesn't land in an empty grid.
-      if (activeTopic && activeFilter === 'Friday Four') activeFilter = 'all';
+      // Symmetric: picking a topic clears the Newsletter filter so the
+      // user doesn't land in an empty grid.
+      if (activeTopic && activeFilter === 'Newsletter') activeFilter = 'all';
       render();
     });
   });

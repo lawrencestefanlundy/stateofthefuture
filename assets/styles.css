@@ -326,7 +326,7 @@ a { color: var(--link); text-decoration: none; }
   background: var(--bg);
   white-space: nowrap;
 }
-.card-cat.cat-friday-four { color: var(--bg); background: var(--teal); border-color: var(--teal); }
+.card-cat.cat-newsletter { color: var(--bg); background: var(--teal); border-color: var(--teal); }
 .card-cat.cat-interview   { color: var(--bg); background: var(--ink); }
 .card-cat.cat-essay       { color: var(--ink); background: var(--bg); }
 .card-date {
@@ -450,7 +450,7 @@ a { color: var(--link); text-decoration: none; }
   color: var(--bg);
   border-color: var(--bg);
 }
-.card.spotlight .card-cat.cat-friday-four,
+.card.spotlight .card-cat.cat-newsletter,
 .card.spotlight .card-cat.cat-interview,
 .card.spotlight .card-cat.cat-essay {
   background: transparent; color: var(--bg); border-color: var(--bg);
@@ -846,7 +846,7 @@ a { color: var(--link); text-decoration: none; }
   padding: 0.18rem 0.5rem;
   border: 1px solid var(--ink);
 }
-.related-card-cat.cat-friday-four { background: var(--teal); color: var(--bg); border-color: var(--teal); }
+.related-card-cat.cat-newsletter { background: var(--teal); color: var(--bg); border-color: var(--teal); }
 .related-card-cat.cat-interview { background: var(--ink); color: var(--bg); }
 .related-card-title {
   font-family: 'EB Garamond', Georgia, serif;

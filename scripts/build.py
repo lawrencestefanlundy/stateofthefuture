@@ -59,9 +59,9 @@ def derive_category(slug: str, title: str = "") -> str:
     s = slug.lower()
     t = (title or "").lower()
     if "friday-four" in s or s.startswith("four-things"):
-        return "Friday Four"
+        return "Newsletter"
     if "friday four" in t or t.startswith("four things"):
-        return "Friday Four"
+        return "Newsletter"
     if "in-conversation-with" in s or s.startswith("interview-"):
         return "Interview"
     if looks_like_interview_title(title):
@@ -123,9 +123,9 @@ TOPICS: list[tuple[str, str, list[str]]] = [
 
 def derive_topics(slug: str, title: str = "", category: str = "") -> list[str]:
     """Return a list of topic_slug values matching this post.
-    Friday Fours are intentionally not topic-tagged — they're roundups
-    spanning multiple topics by design."""
-    if category == "Friday Four":
+    Newsletter (formerly Friday Four) dispatches are intentionally not
+    topic-tagged — they're roundups spanning multiple topics by design."""
+    if category in ("Newsletter", "Friday Four"):
         return []
     haystack = (slug + " " + (title or "")).lower()
     matches = []

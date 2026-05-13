@@ -681,12 +681,14 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
         <span class="masthead-name">State of the Future</span>
         <span class="masthead-byline">by Lawrence Lundy-Bryan</span>
       </a>
+      <div class="masthead-affiliations">
+        <a href="https://cloudberry.vc" target="_blank" rel="noopener" class="affiliation-pill">Cloudberry</a>
+        <a href="https://lunar.vc" target="_blank" rel="noopener" class="affiliation-pill">Lunar Ventures</a>
+      </div>
       <nav class="masthead-nav">
         <a href="../index.html">Archive</a>
         <a href="../ecosystem/index.html">UK Ecosystem</a>
         <a href="{SUBSTACK_URL}/podcast">Podcast</a>
-        <a href="https://cloudberry.vc" target="_blank" rel="noopener" class="affiliation-pill">Cloudberry</a>
-        <a href="https://lunar.vc" target="_blank" rel="noopener" class="affiliation-pill">Lunar Ventures</a>
         <a href="{SUBSTACK_URL}/subscribe" class="subscribe-pill">Subscribe</a>
       </nav>
     </div>

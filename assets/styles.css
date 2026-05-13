@@ -54,9 +54,36 @@ a { color: var(--link); text-decoration: none; }
 }
 .masthead-inner {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto auto 1fr auto;
   align-items: end;
-  gap: 1.5rem;
+  gap: 1.25rem;
+}
+@media (max-width: 900px) {
+  .masthead-inner { grid-template-columns: 1fr; gap: 0.6rem; }
+}
+
+/* Affiliation pills inline with the title — slightly smaller font and
+   tighter padding than the right-hand nav so they read as a secondary
+   credit, not another menu item. */
+.masthead-affiliations {
+  display: flex; gap: 0.6rem; align-items: end;
+  padding-bottom: 0.25rem;  /* aligns the pills with the byline baseline */
+}
+.masthead-affiliations .affiliation-pill {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--ink);
+  background: var(--bg);
+  color: var(--ink) !important;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0;
+  transition: background 0.12s, color 0.12s;
+}
+.masthead-affiliations .affiliation-pill:hover {
+  background: var(--ink);
+  color: var(--bg) !important;
 }
 .masthead-title {
   text-decoration: none; color: inherit;
@@ -94,18 +121,8 @@ a { color: var(--link); text-decoration: none; }
 }
 .subscribe-pill:hover { background: var(--bg) !important; color: var(--ink) !important; outline: 1px solid var(--ink); outline-offset: -1px; }
 
-/* Affiliation pills — outlined boxes for Cloudberry / Lunar Ventures
-   that visually separate the firm links from the inline nav items. */
-.masthead-nav a.affiliation-pill {
-  border: 1px solid var(--ink);
-  background: var(--bg);
-  color: var(--ink) !important;
-  transition: background 0.12s, color 0.12s;
-}
-.masthead-nav a.affiliation-pill:hover {
-  background: var(--ink);
-  color: var(--bg) !important;
-}
+/* (Affiliation pills now live in .masthead-affiliations next to the title,
+   not in the right-hand nav — styles below the .masthead-inner block.) */
 
 /* Featured "New here?" banner — sits above the issue ribbon as the
    single first-screen affordance for first-time readers. */

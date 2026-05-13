@@ -50,7 +50,7 @@ a { color: var(--link); text-decoration: none; }
 
 .masthead {
   background: var(--bg);
-  padding: 1.25rem 0 1.4rem;
+  padding: 0.85rem 0 1rem;
 }
 .masthead-inner {
   display: grid;
@@ -64,7 +64,7 @@ a { color: var(--link); text-decoration: none; }
 }
 .masthead-name {
   font-family: 'EB Garamond', Georgia, serif;
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-size: clamp(1.85rem, 3.6vw, 2.6rem);
   font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.025em; line-height: 0.95;
@@ -72,7 +72,7 @@ a { color: var(--link); text-decoration: none; }
 .masthead-byline {
   font-family: 'EB Garamond', Georgia, serif;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--ink-60);
   letter-spacing: 0.005em;

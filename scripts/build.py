@@ -867,6 +867,36 @@ def main(skip_images: bool = False) -> None:
         posts.append(post)
         print(f"  + {category:11s} {iso}  {slug}")
 
+    # Preserve any posts already in the manifest that aren't in the export.
+    # RSS-synced posts (sync.py) only live in the manifest + posts/<slug>.html;
+    # the export under data/source/ never contains them. Without this merge,
+    # a full rebuild would drop every RSS-synced post. Derived fields (topics,
+    # category) are refreshed against the current taxonomy; the post page
+    # itself stays in place since its body html doesn't live under data/source.
+    manifest_path = DATA_OUT / "posts.json"
+    if manifest_path.exists():
+        try:
+            existing = json.loads(manifest_path.read_text(encoding="utf-8"))
+            existing_posts = existing.get("posts", []) if isinstance(existing, dict) else []
+        except Exception:
+            existing_posts = []
+        built_slugs = {p["slug"] for p in posts}
+        preserved = 0
+        for ep in existing_posts:
+            slug = ep.get("slug")
+            if not slug or slug in built_slugs:
+                continue
+            title = ep.get("title", "")
+            cat = derive_category(slug, title)
+            ep["category"] = cat
+            ep["category_slug"] = category_slug(cat)
+            ep["topics"] = derive_topics(slug, title, cat)
+            ep["_rss_only"] = True  # skip re-render in the loop below
+            posts.append(ep)
+            preserved += 1
+        if preserved:
+            print(f"\n  preserved {preserved} RSS-only post(s) from existing manifest")
+
     posts.sort(key=lambda p: p["date"], reverse=True)
 
     # Featured / "Start here" picks — read from data/featured.txt if present.
@@ -880,10 +910,14 @@ def main(skip_images: bool = False) -> None:
 
     # Render post pages. posts is sorted newest-first; for prev/next chronological
     # nav, "Older" = next in the array, "Newer" = previous in the array.
+    # RSS-only posts have no _body (their HTML lives only in posts/) — recompute
+    # related links and leave the rendered page as-is.
     for idx, post in enumerate(posts):
-        body = post.pop("_body")
         related = compute_related(post, posts, limit=3)
         post["related"] = [r["slug"] for r in related]
+        if post.pop("_rss_only", False):
+            continue
+        body = post.pop("_body")
         post["_prev"] = posts[idx + 1] if idx + 1 < len(posts) else None
         post["_next"] = posts[idx - 1] if idx > 0 else None
         out_path = POSTS_OUT / f"{post['slug']}.html"

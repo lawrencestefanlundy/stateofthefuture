@@ -89,6 +89,9 @@ TOPICS: list[tuple[str, str, list[str]]] = [
         # BCIs / wearable AI / silent speech are AI & compute hardware
         "hearable", "brain computer", "brain-computer", "augmented reality",
         "silent speech", "silent-speech", "neural radiance", "nerf",
+        # Carbon nanotubes and compound semiconductors are compute substrates;
+        # they used to live under the Materials topic which has been retired.
+        "carbon-nanotube", "nanotube", "advanced-materials", "compound-semiconductor",
     ]),
     ("Photonics",        "photonics", [
         "photonic", "photonics", "optical-computing", "gallium-nitride",
@@ -110,17 +113,10 @@ TOPICS: list[tuple[str, str, list[str]]] = [
         "privacy", "confidential-ai", "trusted-execution", "decentralised-ai",
         "private", "data-privacy", "encrypted",
     ]),
-    ("Materials",        "materials", [
-        "carbon-nanotube", "nanotube", "gallium-nitride", "advanced-materials",
-        "compound-semiconductors",
-    ]),
     ("VC & investing",   "vc", [
         "consensus-capital", "data-driven-vc", "venture-capital",
         "fund-frontier", "lux-capital", "speedinvest", "doing-research-in",
         "expeditions",
-    ]),
-    ("Health & bio",     "health-bio", [
-        "proteins", "blood", "ambient-health", "detecting-proteins",
     ]),
 ]
 

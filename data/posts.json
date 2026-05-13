@@ -2,8 +2,8 @@
   "site_title": "State of the Future",
   "tagline": "Essays, interviews, and Friday Four dispatches on the technology shaping the future.",
   "substack_url": "https://stateofthefuture.substack.com",
-  "generated_at": "2026-05-13T08:38:29.396745Z",
-  "post_count": 87,
+  "generated_at": "2026-05-13T08:50:33.763084Z",
+  "post_count": 84,
   "topics": [
     {
       "label": "AI & compute",
@@ -30,87 +30,12 @@
       "slug": "privacy"
     },
     {
-      "label": "Materials",
-      "slug": "materials"
-    },
-    {
       "label": "VC & investing",
       "slug": "vc"
-    },
-    {
-      "label": "Health & bio",
-      "slug": "health-bio"
     }
   ],
   "featured_count": 6,
   "posts": [
-    {
-      "id": "consensus-capital-national-ai-stacks",
-      "slug": "consensus-capital-national-ai-stacks",
-      "title": "Consensus Capital: National AI Stacks Taking Shape",
-      "subtitle": "State of the Future: Dispatch from 8th May 2026: Directionally Very Bad",
-      "excerpt": "State of the Future: Dispatch from 8th May 2026: Directionally Very Bad. Hey folks, how you living? You alright? Greetings from Helsinki. I like the sauna, I do not like the karaoke. That’s my take. More travel musings as they come in. Joined the etn boys again this week who wanted to know why memory stocks were stonk…",
-      "summary": "",
-      "date": "2026-05-08",
-      "date_pretty": "8 May 2026",
-      "category": "Essay",
-      "category_slug": "essay",
-      "topics": [
-        "vc"
-      ],
-      "featured": false,
-      "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/9406409c-330b-41b7-b53a-87b2a1a3f12c_2816x1536.png",
-      "hero_local": "images/consensus-capital-national-ai-stacks.png",
-      "hero_width": 1456,
-      "hero_height": 794,
-      "hero_ok": true,
-      "url": "posts/consensus-capital-national-ai-stacks.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/consensus-capital-national-ai-stacks"
-    },
-    {
-      "id": "state-of-the-future-friday-four-7b7",
-      "slug": "state-of-the-future-friday-four-7b7",
-      "title": "State of the Future: Friday Four",
-      "subtitle": "Dispatch from 1st May 2026: Anthropic is Cheap at 0.10 PEG-R",
-      "excerpt": "Dispatch from 1st May 2026: Anthropic is Cheap at 0.10 PEG-R. good morning, everyone. i hope you’ve had a nice week. this week i interviewed  of EnCharge AI about how analog chips will make inference cheap. Absolutely no reason for you not to read it made me take a moment and have a bloody good think about the ai labs…",
-      "summary": "",
-      "date": "2026-05-01",
-      "date_pretty": "1 May 2026",
-      "category": "Friday Four",
-      "category_slug": "friday-four",
-      "topics": [],
-      "featured": false,
-      "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/7e6e589e-71e0-4ff3-b76b-26941c009ed6_765x443.png",
-      "hero_local": "images/state-of-the-future-friday-four-7b7.png",
-      "hero_width": 765,
-      "hero_height": 443,
-      "hero_ok": false,
-      "url": "posts/state-of-the-future-friday-four-7b7.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/state-of-the-future-friday-four-7b7"
-    },
-    {
-      "id": "making-ai-inference-cheap-with-analog",
-      "slug": "making-ai-inference-cheap-with-analog",
-      "title": "Making AI inference Cheap with Analog Computing w/ Shwetank Kumar @ EnCharge AI",
-      "subtitle": "What happens when Investors stop subsidizing inference?",
-      "excerpt": "What happens when Investors stop subsidizing inference. The starting point for today’s interview is that AI inference is getting more expensive, not cheaper. GPT-5.5 doubled price last week: input went from $2.50 to $5.00, output from $15 to $30 per million tokens. The Pro tier is six times that. Anthropic kept Opus 4…",
-      "summary": "",
-      "date": "2026-04-28",
-      "date_pretty": "28 Apr 2026",
-      "category": "Interview",
-      "category_slug": "interview",
-      "topics": [
-        "ai-compute"
-      ],
-      "featured": false,
-      "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/2d439d99-5547-4091-a8fa-3bb5627506b6_2752x1536.png",
-      "hero_local": "images/making-ai-inference-cheap-with-analog.png",
-      "hero_width": 1456,
-      "hero_height": 813,
-      "hero_ok": true,
-      "url": "posts/making-ai-inference-cheap-with-analog.html",
-      "substack_url": "https://stateofthefuture.substack.com/p/making-ai-inference-cheap-with-analog"
-    },
     {
       "id": "194494407",
       "slug": "state-of-the-future-friday-four-002",
@@ -149,8 +74,7 @@
       "category": "Interview",
       "category_slug": "interview",
       "topics": [
-        "photonics",
-        "health-bio"
+        "photonics"
       ],
       "featured": true,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/f04c57af-f0e8-4dd1-b72d-a3a506f632e7_2816x1536.png",
@@ -271,7 +195,7 @@
       "related": [
         "fungible-compute-mortal-computing",
         "lfg-for-semiconductors",
-        "a-specific-theory-of-sovereign-ai"
+        "carbon-nanotubes-in-the-datacentre"
       ]
     },
     {
@@ -403,7 +327,7 @@
       "related": [
         "chips-for-the-brain-modular-semiconductors",
         "lfg-for-semiconductors",
-        "a-specific-theory-of-sovereign-ai"
+        "carbon-nanotubes-in-the-datacentre"
       ]
     },
     {
@@ -617,9 +541,9 @@
       "url": "posts/lfg-for-semiconductors.html",
       "substack_url": "https://stateofthefuture.substack.com/p/lfg-for-semiconductors",
       "related": [
+        "carbon-nanotubes-in-the-datacentre",
         "a-specific-theory-of-sovereign-ai",
-        "fungible-compute-mortal-computing",
-        "the-compute-gradient"
+        "fungible-compute-mortal-computing"
       ]
     },
     {
@@ -634,8 +558,7 @@
       "category": "Interview",
       "category_slug": "interview",
       "topics": [
-        "photonics",
-        "materials"
+        "photonics"
       ],
       "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/f6df3c4b-0f7f-4979-a0c4-ed12989dd937_686x330.png",
@@ -648,7 +571,7 @@
       "related": [
         "the-future-of-computing-is-glass",
         "detecting-proteins-in-blood-with",
-        "carbon-nanotubes-in-the-datacentre"
+        "photonic-engines-for-data-centers"
       ]
     },
     {
@@ -692,7 +615,7 @@
       "category": "Essay",
       "category_slug": "essay",
       "topics": [
-        "materials"
+        "ai-compute"
       ],
       "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/253055eb-1e4f-418a-8698-9df5631d2140_1024x1024.jpeg",
@@ -703,9 +626,9 @@
       "url": "posts/carbon-nanotubes-in-the-datacentre.html",
       "substack_url": "https://stateofthefuture.substack.com/p/carbon-nanotubes-in-the-datacentre",
       "related": [
-        "uk-opportunity-in-ai-compound-semiconductors",
-        "a-primer-carbon-nanotubes",
-        "gallium-nitride-photonics-w-james"
+        "lfg-for-semiconductors",
+        "a-specific-theory-of-sovereign-ai",
+        "the-compute-gradient"
       ]
     },
     {
@@ -761,7 +684,7 @@
       "related": [
         "the-compute-gradient",
         "uk-opportunity-in-ai-compound-semiconductors",
-        "lfg-for-semiconductors"
+        "carbon-nanotubes-in-the-datacentre"
       ]
     },
     {
@@ -789,7 +712,7 @@
       "related": [
         "uk-opportunity-in-ai-compound-semiconductors",
         "a-specific-theory-of-sovereign-ai",
-        "lfg-for-semiconductors"
+        "carbon-nanotubes-in-the-datacentre"
       ]
     },
     {
@@ -804,8 +727,7 @@
       "category": "Essay",
       "category_slug": "essay",
       "topics": [
-        "ai-compute",
-        "materials"
+        "ai-compute"
       ],
       "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/46488d7f-7416-45a0-aa30-7c26d9b4d894_2072x1530.png",
@@ -917,7 +839,7 @@
       "category": "Essay",
       "category_slug": "essay",
       "topics": [
-        "materials"
+        "ai-compute"
       ],
       "featured": false,
       "hero_remote": "https://substack-post-media.s3.amazonaws.com/public/images/98e944d7-ceaf-440f-8078-c61ecdeff493_466x471.gif",
@@ -928,9 +850,9 @@
       "url": "posts/a-primer-carbon-nanotubes.html",
       "substack_url": "https://stateofthefuture.substack.com/p/a-primer-carbon-nanotubes",
       "related": [
-        "uk-opportunity-in-ai-compound-semiconductors",
-        "carbon-nanotubes-in-the-datacentre",
-        "gallium-nitride-photonics-w-james"
+        "has-the-time-come-to-take-mortal",
+        "what-if-ai-can-already-feel",
+        "uk-opportunity-in-ai-compound-semiconductors"
       ]
     },
     {
@@ -1042,7 +964,7 @@
       "related": [
         "what-if-ai-can-already-feel",
         "project-mayhem-ai-inward-collapse",
-        "fund-frontier-expeditions-otherwise"
+        "a-primer-carbon-nanotubes"
       ]
     },
     {
@@ -1070,7 +992,7 @@
       "related": [
         "has-the-time-come-to-take-mortal",
         "project-mayhem-ai-inward-collapse",
-        "fund-frontier-expeditions-otherwise"
+        "a-primer-carbon-nanotubes"
       ]
     },
     {

@@ -389,8 +389,10 @@ a { color: var(--link); text-decoration: none; }
 }
 .card.spotlight:hover .card-image img { transform: none; }
 .card.spotlight .spotlight-tags {
-  position: absolute; top: 0.85rem; left: 0.85rem;
-  display: flex; gap: 0.4rem; z-index: 2;
+  /* Inset to match the body padding (1.75rem) so tags align with the
+     title beneath rather than crowding the card edge. */
+  position: absolute; top: 1.4rem; left: 1.75rem;
+  display: flex; gap: 0.5rem; z-index: 2;
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 0.74rem;
 }
@@ -405,7 +407,9 @@ a { color: var(--link); text-decoration: none; }
   color: var(--ink);
 }
 .card.spotlight .card-body {
-  padding: 1.5rem 1.75rem 1.75rem;
+  /* Match the inset of a regular card (1.5rem 1.4rem 1.25rem) plus a
+     bit more breathing room because the dark teal panel is denser. */
+  padding: 1.6rem 1.75rem 1.4rem;
   color: var(--bg);
   flex: 0 0 auto;
 }
@@ -433,8 +437,13 @@ a { color: var(--link); text-decoration: none; }
   text-decoration: underline; text-underline-offset: 4px;
 }
 .card.spotlight .card-foot {
+  /* .card-foot is a SIBLING of .card-body, not a child. Regular cards
+     inherit `.card { padding }` so the foot is inset; spotlight has
+     padding:0 to let the image fill the top edge, so we add the inset
+     here explicitly. */
   border-top: 1px solid rgba(255,255,255,0.25);
-  margin-top: 1.25rem; padding-top: 0.95rem;
+  margin: 0;
+  padding: 0.95rem 1.75rem 1.4rem;
 }
 .card.spotlight .card-cat {
   background: transparent;

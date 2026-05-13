@@ -269,6 +269,11 @@ a.acq-name:hover { color: #0F172A; }
 body { background: var(--sotf-bg); color: var(--sotf-ink); }
 .serif { color: var(--sotf-ink); }
 
+/* Match container width to the homepage so the "State of the Future"
+   masthead lines up identically across pages. The dashboard's inline
+   CSS declared a 1800px-wide container; the homepage uses 1360px. */
+.container { max-width: 1360px; padding: 0 clamp(1rem, 2.5vw, 2.25rem); }
+
 /* The dashboard hero — title + dek + stats, cream version of the old
    dark gradient. */
 .dashboard-hero { padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--sotf-ink); }

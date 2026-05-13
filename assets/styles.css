@@ -94,6 +94,19 @@ a { color: var(--link); text-decoration: none; }
 }
 .subscribe-pill:hover { background: var(--bg) !important; color: var(--ink) !important; outline: 1px solid var(--ink); outline-offset: -1px; }
 
+/* Affiliation pills — outlined boxes for Cloudberry / Lunar Ventures
+   that visually separate the firm links from the inline nav items. */
+.masthead-nav a.affiliation-pill {
+  border: 1px solid var(--ink);
+  background: var(--bg);
+  color: var(--ink) !important;
+  transition: background 0.12s, color 0.12s;
+}
+.masthead-nav a.affiliation-pill:hover {
+  background: var(--ink);
+  color: var(--bg) !important;
+}
+
 /* Featured "New here?" banner — sits above the issue ribbon as the
    single first-screen affordance for first-time readers. */
 .featured-banner {

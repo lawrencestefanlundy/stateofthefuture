@@ -502,27 +502,26 @@ a { color: var(--link); text-decoration: none; }
 
 /* ── article (post) page ────────────────────────────────────────────── */
 
-/* Hero band — cream strip, image centred at a sensible max width and shown
-   at natural aspect ratio. No cover-crop: Substack hero images vary wildly
-   (16:9 photographic, 4:3 diagrams, irregular illustrations) and cropping
-   in CSS lops off composition. */
+/* Hero band — cream strip, image centred at the article body width so the
+   hero sits in the same column as the text below it (editorial column,
+   not magazine full-bleed). No cover-crop: Substack hero images vary
+   wildly and cropping in CSS lops off composition. */
 .article-hero {
   background: var(--bg);
   padding: 2rem 0 0;
 }
 .article-hero-inner {
   width: 100%;
-  max-width: 1080px;     /* cap so the image doesn't dominate on wide screens */
+  max-width: 760px;      /* matches .article-content-inner */
   margin: 0 auto;
 }
 .article-hero-inner img {
   width: 100%;
   height: auto;
   display: block;
-  /* Soft cap for unusually tall images so we don't push the title 2k px
-     down on a portrait hero. object-fit:contain preserves the whole image
-     when this kicks in. */
-  max-height: 80vh;
+  /* Soft cap on tall images so a portrait hero doesn't push the title
+     half a viewport down. object-fit:contain preserves the whole image. */
+  max-height: 60vh;
   object-fit: contain;
 }
 

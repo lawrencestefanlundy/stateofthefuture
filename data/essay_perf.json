@@ -1,0 +1,1490 @@
+{
+  "generated_at": "2026-05-30",
+  "today_price": {
+    "000660.KS": 2333000.0,
+    "005930.KS": 317000.0,
+    "8035.T": 52420.0,
+    "ADI": 413.85,
+    "AMAT": 450.06,
+    "AMD": 516.1,
+    "ARM": 353.29,
+    "ASML": 1612.76,
+    "AVGO": 446.77,
+    "CCJ": 112.7,
+    "CDNS": 374.93,
+    "CEG": 287.75,
+    "COHR": 361.47,
+    "CRWD": 731.0,
+    "IBM": 297.8,
+    "IFX.DE": 81.11,
+    "INTC": 114.68,
+    "IONQ": 72.07,
+    "IQE.L": 47.5,
+    "LITE": 854.96,
+    "LRCX": 318.18,
+    "MRVL": 205.0,
+    "MTSI": 364.64,
+    "MU": 971.0,
+    "NVDA": 211.14,
+    "ON": 120.62,
+    "PANW": 281.69,
+    "QBTS": 30.14,
+    "QCOM": 251.02,
+    "RGTI": 25.54,
+    "SMR": 12.67,
+    "SNPS": 475.62,
+    "SONY": 21.57,
+    "STM": 69.31,
+    "TSM": 418.45,
+    "TXN": 305.68,
+    "WOLF": 59.28
+  },
+  "since_publish": {
+    "ai-chips-computeram-and-the-future": {
+      "000660.KS": {
+        "publish_date": "2026-01-22",
+        "publish_price": 753483.44,
+        "today_price": 2333000.0,
+        "pct": 209.6
+      },
+      "005930.KS": {
+        "publish_date": "2026-01-22",
+        "publish_price": 151985.42,
+        "today_price": 317000.0,
+        "pct": 108.6
+      },
+      "ADI": {
+        "publish_date": "2026-01-22",
+        "publish_price": 307.56,
+        "today_price": 413.85,
+        "pct": 34.6
+      },
+      "AMD": {
+        "publish_date": "2026-01-22",
+        "publish_price": 253.73,
+        "today_price": 516.1,
+        "pct": 103.4
+      },
+      "CDNS": {
+        "publish_date": "2026-01-22",
+        "publish_price": 317.09,
+        "today_price": 374.93,
+        "pct": 18.2
+      },
+      "IFX.DE": {
+        "publish_date": "2026-01-22",
+        "publish_price": 42.26,
+        "today_price": 81.11,
+        "pct": 91.9
+      },
+      "INTC": {
+        "publish_date": "2026-01-22",
+        "publish_price": 54.32,
+        "today_price": 114.68,
+        "pct": 111.1
+      },
+      "NVDA": {
+        "publish_date": "2026-01-22",
+        "publish_price": 184.83,
+        "today_price": 211.14,
+        "pct": 14.2
+      },
+      "QCOM": {
+        "publish_date": "2026-01-22",
+        "publish_price": 156.79,
+        "today_price": 251.02,
+        "pct": 60.1
+      },
+      "TSM": {
+        "publish_date": "2026-01-22",
+        "publish_price": 326.45,
+        "today_price": 418.45,
+        "pct": 28.2
+      }
+    },
+    "e14-the-real-ai-bottleneck-high-bandwidth": {
+      "000660.KS": {
+        "publish_date": "2023-09-08",
+        "publish_price": 111259.17,
+        "today_price": 2333000.0,
+        "pct": 1996.9
+      },
+      "005930.KS": {
+        "publish_date": "2023-09-08",
+        "publish_price": 66556.42,
+        "today_price": 317000.0,
+        "pct": 376.3
+      },
+      "AMD": {
+        "publish_date": "2023-09-08",
+        "publish_price": 106.09,
+        "today_price": 516.1,
+        "pct": 386.5
+      },
+      "MU": {
+        "publish_date": "2023-09-08",
+        "publish_price": 69.42,
+        "today_price": 971.0,
+        "pct": 1298.8
+      },
+      "NVDA": {
+        "publish_date": "2023-09-08",
+        "publish_price": 45.54,
+        "today_price": 211.14,
+        "pct": 363.6
+      },
+      "SNPS": {
+        "publish_date": "2023-09-08",
+        "publish_price": 459.14,
+        "today_price": 475.62,
+        "pct": 3.6
+      },
+      "TSM": {
+        "publish_date": "2023-09-08",
+        "publish_price": 86.11,
+        "today_price": 418.45,
+        "pct": 385.9
+      }
+    },
+    "e21-can-we-make-enough-ai-chips": {
+      "000660.KS": {
+        "publish_date": "2023-11-20",
+        "publish_price": 128909.73,
+        "today_price": 2333000.0,
+        "pct": 1709.8
+      },
+      "005930.KS": {
+        "publish_date": "2023-11-20",
+        "publish_price": 69188.52,
+        "today_price": 317000.0,
+        "pct": 358.2
+      },
+      "AMD": {
+        "publish_date": "2023-11-20",
+        "publish_price": 121.53,
+        "today_price": 516.1,
+        "pct": 324.7
+      },
+      "AVGO": {
+        "publish_date": "2023-11-20",
+        "publish_price": 96.72,
+        "today_price": 446.77,
+        "pct": 361.9
+      },
+      "MU": {
+        "publish_date": "2023-11-20",
+        "publish_price": 77.89,
+        "today_price": 971.0,
+        "pct": 1146.6
+      },
+      "NVDA": {
+        "publish_date": "2023-11-20",
+        "publish_price": 50.37,
+        "today_price": 211.14,
+        "pct": 319.1
+      },
+      "TSM": {
+        "publish_date": "2023-11-20",
+        "publish_price": 96.53,
+        "today_price": 418.45,
+        "pct": 333.5
+      }
+    },
+    "state-of-the-future-friday-four-251": {
+      "000660.KS": {
+        "publish_date": "2026-04-03",
+        "publish_price": 875853.56,
+        "today_price": 2333000.0,
+        "pct": 166.4
+      },
+      "005930.KS": {
+        "publish_date": "2026-04-03",
+        "publish_price": 186200.0,
+        "today_price": 317000.0,
+        "pct": 70.2
+      },
+      "NVDA": {
+        "publish_date": "2026-04-02",
+        "publish_price": 177.39,
+        "today_price": 211.14,
+        "pct": 19.0
+      }
+    },
+    "consensus-capital": {
+      "005930.KS": {
+        "publish_date": "2025-11-05",
+        "publish_price": 99906.55,
+        "today_price": 317000.0,
+        "pct": 217.3
+      },
+      "INTC": {
+        "publish_date": "2025-11-05",
+        "publish_price": 38.38,
+        "today_price": 114.68,
+        "pct": 198.8
+      },
+      "NVDA": {
+        "publish_date": "2025-11-05",
+        "publish_price": 195.19,
+        "today_price": 211.14,
+        "pct": 8.2
+      },
+      "TSM": {
+        "publish_date": "2025-11-05",
+        "publish_price": 292.03,
+        "today_price": 418.45,
+        "pct": 43.3
+      }
+    },
+    "e10-pushing-moores-law-to-the-limit": {
+      "005930.KS": {
+        "publish_date": "2023-07-27",
+        "publish_price": 67881.88,
+        "today_price": 317000.0,
+        "pct": 367.0
+      },
+      "ASML": {
+        "publish_date": "2023-07-27",
+        "publish_price": 690.09,
+        "today_price": 1612.76,
+        "pct": 133.7
+      },
+      "INTC": {
+        "publish_date": "2023-07-27",
+        "publish_price": 33.86,
+        "today_price": 114.68,
+        "pct": 238.7
+      },
+      "ON": {
+        "publish_date": "2023-07-27",
+        "publish_price": 102.11,
+        "today_price": 120.62,
+        "pct": 18.1
+      },
+      "TSM": {
+        "publish_date": "2023-07-27",
+        "publish_price": 95.44,
+        "today_price": 418.45,
+        "pct": 338.4
+      }
+    },
+    "e19-trusted-execution-environments": {
+      "005930.KS": {
+        "publish_date": "2023-10-13",
+        "publish_price": 64715.54,
+        "today_price": 317000.0,
+        "pct": 389.8
+      },
+      "AMD": {
+        "publish_date": "2023-10-13",
+        "publish_price": 105.09,
+        "today_price": 516.1,
+        "pct": 391.1
+      },
+      "ARM": {
+        "publish_date": "2023-10-13",
+        "publish_price": 50.78,
+        "today_price": 353.29,
+        "pct": 595.7
+      },
+      "IBM": {
+        "publish_date": "2023-10-13",
+        "publish_price": 127.14,
+        "today_price": 297.8,
+        "pct": 134.2
+      },
+      "INTC": {
+        "publish_date": "2023-10-13",
+        "publish_price": 35.38,
+        "today_price": 114.68,
+        "pct": 224.2
+      },
+      "NVDA": {
+        "publish_date": "2023-10-13",
+        "publish_price": 45.43,
+        "today_price": 211.14,
+        "pct": 364.8
+      },
+      "QCOM": {
+        "publish_date": "2023-10-13",
+        "publish_price": 102.91,
+        "today_price": 251.02,
+        "pct": 143.9
+      },
+      "TSM": {
+        "publish_date": "2023-10-13",
+        "publish_price": 87.35,
+        "today_price": 418.45,
+        "pct": 379.0
+      }
+    },
+    "interview-ben-mildenhall-co-inventor": {
+      "005930.KS": {
+        "publish_date": "2023-05-25",
+        "publish_price": 64812.86,
+        "today_price": 317000.0,
+        "pct": 389.1
+      }
+    },
+    "lfg-for-semiconductors": {
+      "005930.KS": {
+        "publish_date": "2025-12-19",
+        "publish_price": 105567.25,
+        "today_price": 317000.0,
+        "pct": 200.3
+      },
+      "ARM": {
+        "publish_date": "2025-12-19",
+        "publish_price": 114.03,
+        "today_price": 353.29,
+        "pct": 209.8
+      },
+      "ASML": {
+        "publish_date": "2025-12-19",
+        "publish_price": 1052.33,
+        "today_price": 1612.76,
+        "pct": 53.3
+      },
+      "AVGO": {
+        "publish_date": "2025-12-19",
+        "publish_price": 339.0,
+        "today_price": 446.77,
+        "pct": 31.8
+      },
+      "IFX.DE": {
+        "publish_date": "2025-12-19",
+        "publish_price": 35.54,
+        "today_price": 81.11,
+        "pct": 128.2
+      },
+      "INTC": {
+        "publish_date": "2025-12-19",
+        "publish_price": 36.82,
+        "today_price": 114.68,
+        "pct": 211.5
+      },
+      "NVDA": {
+        "publish_date": "2025-12-19",
+        "publish_price": 180.98,
+        "today_price": 211.14,
+        "pct": 16.7
+      },
+      "STM": {
+        "publish_date": "2025-12-19",
+        "publish_price": 25.75,
+        "today_price": 69.31,
+        "pct": 169.2
+      },
+      "TSM": {
+        "publish_date": "2025-12-19",
+        "publish_price": 288.14,
+        "today_price": 418.45,
+        "pct": 45.2
+      }
+    },
+    "wen-babelfish-feat-aron-of-semron": {
+      "005930.KS": {
+        "publish_date": "2025-02-12",
+        "publish_price": 54509.03,
+        "today_price": 317000.0,
+        "pct": 481.6
+      },
+      "AMD": {
+        "publish_date": "2025-02-12",
+        "publish_price": 111.72,
+        "today_price": 516.1,
+        "pct": 362.0
+      },
+      "INTC": {
+        "publish_date": "2025-02-12",
+        "publish_price": 22.48,
+        "today_price": 114.68,
+        "pct": 410.1
+      },
+      "QCOM": {
+        "publish_date": "2025-02-12",
+        "publish_price": 165.5,
+        "today_price": 251.02,
+        "pct": 51.7
+      },
+      "TSM": {
+        "publish_date": "2025-02-12",
+        "publish_price": 203.06,
+        "today_price": 418.45,
+        "pct": 106.1
+      }
+    },
+    "uk-opportunity-in-ai-compound-semiconductors": {
+      "8035.T": {
+        "publish_date": "2025-09-10",
+        "publish_price": 20745.66,
+        "today_price": 52420.0,
+        "pct": 152.7
+      },
+      "AMAT": {
+        "publish_date": "2025-09-10",
+        "publish_price": 162.69,
+        "today_price": 450.06,
+        "pct": 176.6
+      },
+      "ARM": {
+        "publish_date": "2025-09-10",
+        "publish_price": 154.14,
+        "today_price": 353.29,
+        "pct": 129.2
+      },
+      "ASML": {
+        "publish_date": "2025-09-10",
+        "publish_price": 788.97,
+        "today_price": 1612.76,
+        "pct": 104.4
+      },
+      "AVGO": {
+        "publish_date": "2025-09-10",
+        "publish_price": 367.46,
+        "today_price": 446.77,
+        "pct": 21.6
+      },
+      "COHR": {
+        "publish_date": "2025-09-10",
+        "publish_price": 103.49,
+        "today_price": 361.47,
+        "pct": 249.3
+      },
+      "IQE.L": {
+        "publish_date": "2025-09-10",
+        "publish_price": 7.6,
+        "today_price": 47.5,
+        "pct": 525.0
+      },
+      "LRCX": {
+        "publish_date": "2025-09-10",
+        "publish_price": 106.84,
+        "today_price": 318.18,
+        "pct": 197.8
+      },
+      "NVDA": {
+        "publish_date": "2025-09-10",
+        "publish_price": 177.3,
+        "today_price": 211.14,
+        "pct": 19.1
+      },
+      "TSM": {
+        "publish_date": "2025-09-10",
+        "publish_price": 258.19,
+        "today_price": 418.45,
+        "pct": 62.1
+      }
+    },
+    "analog-computing-the-once-and-future": {
+      "ADI": {
+        "publish_date": "2023-07-21",
+        "publish_price": 183.38,
+        "today_price": 413.85,
+        "pct": 125.7
+      },
+      "IFX.DE": {
+        "publish_date": "2023-07-21",
+        "publish_price": 35.9,
+        "today_price": 81.11,
+        "pct": 125.9
+      },
+      "STM": {
+        "publish_date": "2023-07-21",
+        "publish_price": 49.19,
+        "today_price": 69.31,
+        "pct": 40.9
+      },
+      "TXN": {
+        "publish_date": "2023-07-21",
+        "publish_price": 168.84,
+        "today_price": 305.68,
+        "pct": 81.1
+      }
+    },
+    "a-specific-theory-of-sovereign-ai": {
+      "AMD": {
+        "publish_date": "2025-10-09",
+        "publish_price": 232.89,
+        "today_price": 516.1,
+        "pct": 121.6
+      },
+      "COHR": {
+        "publish_date": "2025-10-09",
+        "publish_price": 122.35,
+        "today_price": 361.47,
+        "pct": 195.4
+      },
+      "IQE.L": {
+        "publish_date": "2025-10-09",
+        "publish_price": 6.8,
+        "today_price": 47.5,
+        "pct": 598.5
+      },
+      "NVDA": {
+        "publish_date": "2025-10-09",
+        "publish_price": 192.55,
+        "today_price": 211.14,
+        "pct": 9.7
+      }
+    },
+    "consensus-capital-national-ai-stacks": {
+      "AMD": {
+        "publish_date": "2026-05-08",
+        "publish_price": 455.19,
+        "today_price": 516.1,
+        "pct": 13.4
+      },
+      "ARM": {
+        "publish_date": "2026-05-08",
+        "publish_price": 213.27,
+        "today_price": 353.29,
+        "pct": 65.7
+      },
+      "ASML": {
+        "publish_date": "2026-05-08",
+        "publish_price": 1592.02,
+        "today_price": 1612.76,
+        "pct": 1.3
+      },
+      "COHR": {
+        "publish_date": "2026-05-08",
+        "publish_price": 335.26,
+        "today_price": 361.47,
+        "pct": 7.8
+      },
+      "IFX.DE": {
+        "publish_date": "2026-05-08",
+        "publish_price": 61.66,
+        "today_price": 81.11,
+        "pct": 31.5
+      },
+      "INTC": {
+        "publish_date": "2026-05-08",
+        "publish_price": 124.92,
+        "today_price": 114.68,
+        "pct": -8.2
+      },
+      "MRVL": {
+        "publish_date": "2026-05-08",
+        "publish_price": 170.13,
+        "today_price": 205.0,
+        "pct": 20.5
+      },
+      "MTSI": {
+        "publish_date": "2026-05-08",
+        "publish_price": 359.88,
+        "today_price": 364.64,
+        "pct": 1.3
+      },
+      "NVDA": {
+        "publish_date": "2026-05-08",
+        "publish_price": 215.2,
+        "today_price": 211.14,
+        "pct": -1.9
+      },
+      "STM": {
+        "publish_date": "2026-05-08",
+        "publish_price": 59.17,
+        "today_price": 69.31,
+        "pct": 17.1
+      },
+      "TSM": {
+        "publish_date": "2026-05-08",
+        "publish_price": 411.68,
+        "today_price": 418.45,
+        "pct": 1.6
+      }
+    },
+    "e13-chiplets-how-chip-lego-is-driving": {
+      "AMD": {
+        "publish_date": "2023-08-31",
+        "publish_price": 105.72,
+        "today_price": 516.1,
+        "pct": 388.2
+      },
+      "INTC": {
+        "publish_date": "2023-08-31",
+        "publish_price": 34.56,
+        "today_price": 114.68,
+        "pct": 231.8
+      },
+      "MRVL": {
+        "publish_date": "2023-08-31",
+        "publish_price": 57.73,
+        "today_price": 205.0,
+        "pct": 255.1
+      },
+      "NVDA": {
+        "publish_date": "2023-08-31",
+        "publish_price": 49.32,
+        "today_price": 211.14,
+        "pct": 328.1
+      },
+      "QCOM": {
+        "publish_date": "2023-08-31",
+        "publish_price": 108.47,
+        "today_price": 251.02,
+        "pct": 131.4
+      },
+      "TSM": {
+        "publish_date": "2023-08-31",
+        "publish_price": 89.89,
+        "today_price": 418.45,
+        "pct": 365.5
+      }
+    },
+    "state-of-the-future-part-deux": {
+      "AMD": {
+        "publish_date": "2024-10-22",
+        "publish_price": 154.09,
+        "today_price": 516.1,
+        "pct": 234.9
+      },
+      "AVGO": {
+        "publish_date": "2024-10-22",
+        "publish_price": 176.93,
+        "today_price": 446.77,
+        "pct": 152.5
+      },
+      "COHR": {
+        "publish_date": "2024-10-22",
+        "publish_price": 96.77,
+        "today_price": 361.47,
+        "pct": 273.5
+      },
+      "INTC": {
+        "publish_date": "2024-10-22",
+        "publish_price": 22.4,
+        "today_price": 114.68,
+        "pct": 412.0
+      },
+      "NVDA": {
+        "publish_date": "2024-10-22",
+        "publish_price": 143.53,
+        "today_price": 211.14,
+        "pct": 47.1
+      },
+      "ON": {
+        "publish_date": "2024-10-22",
+        "publish_price": 66.54,
+        "today_price": 120.62,
+        "pct": 81.3
+      }
+    },
+    "the-future-of-computing-is-glass": {
+      "AMD": {
+        "publish_date": "2025-12-02",
+        "publish_price": 215.24,
+        "today_price": 516.1,
+        "pct": 139.8
+      },
+      "AVGO": {
+        "publish_date": "2025-12-02",
+        "publish_price": 380.04,
+        "today_price": 446.77,
+        "pct": 17.6
+      },
+      "INTC": {
+        "publish_date": "2025-12-02",
+        "publish_price": 43.47,
+        "today_price": 114.68,
+        "pct": 163.8
+      },
+      "NVDA": {
+        "publish_date": "2025-12-02",
+        "publish_price": 181.44,
+        "today_price": 211.14,
+        "pct": 16.4
+      }
+    },
+    "how-to-invest-in-ai-sovereignty-sovereign": {
+      "ARM": {
+        "publish_date": "2026-02-12",
+        "publish_price": 122.19,
+        "today_price": 353.29,
+        "pct": 189.1
+      },
+      "ASML": {
+        "publish_date": "2026-02-12",
+        "publish_price": 1403.8,
+        "today_price": 1612.76,
+        "pct": 14.9
+      },
+      "NVDA": {
+        "publish_date": "2026-02-12",
+        "publish_price": 186.93,
+        "today_price": 211.14,
+        "pct": 13.0
+      },
+      "QCOM": {
+        "publish_date": "2026-02-12",
+        "publish_price": 137.59,
+        "today_price": 251.02,
+        "pct": 82.4
+      },
+      "TSM": {
+        "publish_date": "2026-02-12",
+        "publish_price": 367.07,
+        "today_price": 418.45,
+        "pct": 14.0
+      }
+    },
+    "four-things-friday-575": {
+      "ASML": {
+        "publish_date": "2026-02-20",
+        "publish_price": 1466.39,
+        "today_price": 1612.76,
+        "pct": 10.0
+      },
+      "NVDA": {
+        "publish_date": "2026-02-20",
+        "publish_price": 189.81,
+        "today_price": 211.14,
+        "pct": 11.2
+      }
+    },
+    "gallium-nitride-photonics-w-james": {
+      "ASML": {
+        "publish_date": "2025-12-09",
+        "publish_price": 1107.56,
+        "today_price": 1612.76,
+        "pct": 45.6
+      },
+      "AVGO": {
+        "publish_date": "2025-12-09",
+        "publish_price": 404.67,
+        "today_price": 446.77,
+        "pct": 10.4
+      },
+      "COHR": {
+        "publish_date": "2025-12-09",
+        "publish_price": 192.73,
+        "today_price": 361.47,
+        "pct": 87.6
+      },
+      "INTC": {
+        "publish_date": "2025-12-09",
+        "publish_price": 40.5,
+        "today_price": 114.68,
+        "pct": 183.2
+      },
+      "IQE.L": {
+        "publish_date": "2025-12-09",
+        "publish_price": 5.03,
+        "today_price": 47.5,
+        "pct": 844.3
+      },
+      "MU": {
+        "publish_date": "2025-12-09",
+        "publish_price": 252.21,
+        "today_price": 971.0,
+        "pct": 285.0
+      },
+      "NVDA": {
+        "publish_date": "2025-12-09",
+        "publish_price": 184.96,
+        "today_price": 211.14,
+        "pct": 14.2
+      }
+    },
+    "state-of-the-future-friday-four": {
+      "ASML": {
+        "publish_date": "2026-03-06",
+        "publish_price": 1289.98,
+        "today_price": 1612.76,
+        "pct": 25.0
+      },
+      "COHR": {
+        "publish_date": "2026-03-06",
+        "publish_price": 235.72,
+        "today_price": 361.47,
+        "pct": 53.3
+      }
+    },
+    "state-of-the-future-friday-four-67c": {
+      "ASML": {
+        "publish_date": "2026-04-17",
+        "publish_price": 1456.62,
+        "today_price": 1612.76,
+        "pct": 10.7
+      },
+      "NVDA": {
+        "publish_date": "2026-04-17",
+        "publish_price": 201.68,
+        "today_price": 211.14,
+        "pct": 4.7
+      },
+      "TSM": {
+        "publish_date": "2026-04-17",
+        "publish_price": 370.5,
+        "today_price": 418.45,
+        "pct": 12.9
+      }
+    },
+    "state-of-the-future-friday-four-7b7": {
+      "ASML": {
+        "publish_date": "2026-05-01",
+        "publish_price": 1427.02,
+        "today_price": 1612.76,
+        "pct": 13.0
+      },
+      "IFX.DE": {
+        "publish_date": "2026-04-30",
+        "publish_price": 57.13,
+        "today_price": 81.11,
+        "pct": 42.0
+      },
+      "INTC": {
+        "publish_date": "2026-05-01",
+        "publish_price": 99.62,
+        "today_price": 114.68,
+        "pct": 15.1
+      },
+      "NVDA": {
+        "publish_date": "2026-05-01",
+        "publish_price": 198.45,
+        "today_price": 211.14,
+        "pct": 6.4
+      },
+      "STM": {
+        "publish_date": "2026-05-01",
+        "publish_price": 55.75,
+        "today_price": 69.31,
+        "pct": 24.3
+      },
+      "TSM": {
+        "publish_date": "2026-05-01",
+        "publish_price": 397.67,
+        "today_price": 418.45,
+        "pct": 5.2
+      },
+      "WOLF": {
+        "publish_date": "2026-05-01",
+        "publish_price": 36.76,
+        "today_price": 59.28,
+        "pct": 61.3
+      }
+    },
+    "photonic-engines-for-data-centers": {
+      "AVGO": {
+        "publish_date": "2026-02-02",
+        "publish_price": 330.42,
+        "today_price": 446.77,
+        "pct": 35.2
+      },
+      "COHR": {
+        "publish_date": "2026-02-02",
+        "publish_price": 222.44,
+        "today_price": 361.47,
+        "pct": 62.5
+      },
+      "NVDA": {
+        "publish_date": "2026-02-02",
+        "publish_price": 185.6,
+        "today_price": 211.14,
+        "pct": 13.8
+      },
+      "TSM": {
+        "publish_date": "2026-02-02",
+        "publish_price": 340.4,
+        "today_price": 418.45,
+        "pct": 22.9
+      }
+    },
+    "state-of-the-future-friday-four-d68": {
+      "AVGO": {
+        "publish_date": "2026-03-27",
+        "publish_price": 300.68,
+        "today_price": 446.77,
+        "pct": 48.6
+      },
+      "CDNS": {
+        "publish_date": "2026-03-27",
+        "publish_price": 271.77,
+        "today_price": 374.93,
+        "pct": 38.0
+      },
+      "COHR": {
+        "publish_date": "2026-03-27",
+        "publish_price": 243.48,
+        "today_price": 361.47,
+        "pct": 48.5
+      },
+      "LITE": {
+        "publish_date": "2026-03-27",
+        "publish_price": 702.73,
+        "today_price": 854.96,
+        "pct": 21.7
+      },
+      "NVDA": {
+        "publish_date": "2026-03-27",
+        "publish_price": 167.52,
+        "today_price": 211.14,
+        "pct": 26.0
+      },
+      "QCOM": {
+        "publish_date": "2026-03-27",
+        "publish_price": 127.11,
+        "today_price": 251.02,
+        "pct": 97.5
+      },
+      "TSM": {
+        "publish_date": "2026-03-27",
+        "publish_price": 326.74,
+        "today_price": 418.45,
+        "pct": 28.1
+      }
+    },
+    "the-photonic-foundry-fallacy": {
+      "AVGO": {
+        "publish_date": "2026-04-14",
+        "publish_price": 380.78,
+        "today_price": 446.77,
+        "pct": 17.3
+      },
+      "COHR": {
+        "publish_date": "2026-04-14",
+        "publish_price": 313.42,
+        "today_price": 361.47,
+        "pct": 15.3
+      },
+      "INTC": {
+        "publish_date": "2026-04-14",
+        "publish_price": 63.81,
+        "today_price": 114.68,
+        "pct": 79.7
+      },
+      "LITE": {
+        "publish_date": "2026-04-14",
+        "publish_price": 852.79,
+        "today_price": 854.96,
+        "pct": 0.3
+      },
+      "MRVL": {
+        "publish_date": "2026-04-14",
+        "publish_price": 133.83,
+        "today_price": 205.0,
+        "pct": 53.2
+      },
+      "MU": {
+        "publish_date": "2026-04-14",
+        "publish_price": 465.66,
+        "today_price": 971.0,
+        "pct": 108.5
+      },
+      "NVDA": {
+        "publish_date": "2026-04-14",
+        "publish_price": 196.51,
+        "today_price": 211.14,
+        "pct": 7.4
+      },
+      "TSM": {
+        "publish_date": "2026-04-14",
+        "publish_price": 379.89,
+        "today_price": 418.45,
+        "pct": 10.2
+      }
+    },
+    "the-state-of-photonic-computing": {
+      "AVGO": {
+        "publish_date": "2025-04-16",
+        "publish_price": 173.21,
+        "today_price": 446.77,
+        "pct": 157.9
+      },
+      "COHR": {
+        "publish_date": "2025-04-16",
+        "publish_price": 55.45,
+        "today_price": 361.47,
+        "pct": 551.9
+      },
+      "IBM": {
+        "publish_date": "2025-04-16",
+        "publish_price": 231.08,
+        "today_price": 297.8,
+        "pct": 28.9
+      },
+      "INTC": {
+        "publish_date": "2025-04-16",
+        "publish_price": 19.23,
+        "today_price": 114.68,
+        "pct": 496.4
+      },
+      "NVDA": {
+        "publish_date": "2025-04-16",
+        "publish_price": 104.47,
+        "today_price": 211.14,
+        "pct": 102.1
+      },
+      "TSM": {
+        "publish_date": "2025-04-16",
+        "publish_price": 149.81,
+        "today_price": 418.45,
+        "pct": 179.3
+      }
+    },
+    "atomic-energy-can-nuclear-power-our": {
+      "CCJ": {
+        "publish_date": "2024-11-12",
+        "publish_price": 54.2,
+        "today_price": 112.7,
+        "pct": 107.9
+      },
+      "CEG": {
+        "publish_date": "2024-11-12",
+        "publish_price": 226.41,
+        "today_price": 287.75,
+        "pct": 27.1
+      },
+      "SMR": {
+        "publish_date": "2024-11-12",
+        "publish_price": 23.24,
+        "today_price": 12.67,
+        "pct": -45.5
+      }
+    },
+    "deploy-intelligence-too-cheap-to": {
+      "CDNS": {
+        "publish_date": "2024-10-29",
+        "publish_price": 284.45,
+        "today_price": 374.93,
+        "pct": 31.8
+      },
+      "NVDA": {
+        "publish_date": "2024-10-29",
+        "publish_price": 141.19,
+        "today_price": 211.14,
+        "pct": 49.5
+      },
+      "SNPS": {
+        "publish_date": "2024-10-29",
+        "publish_price": 529.21,
+        "today_price": 475.62,
+        "pct": -10.1
+      },
+      "TSM": {
+        "publish_date": "2024-10-29",
+        "publish_price": 193.16,
+        "today_price": 418.45,
+        "pct": 116.6
+      }
+    },
+    "e05-the-future-of-edge-ai-brain-inspired": {
+      "CDNS": {
+        "publish_date": "2023-06-23",
+        "publish_price": 225.32,
+        "today_price": 374.93,
+        "pct": 66.4
+      },
+      "IBM": {
+        "publish_date": "2023-06-23",
+        "publish_price": 117.49,
+        "today_price": 297.8,
+        "pct": 153.5
+      },
+      "INTC": {
+        "publish_date": "2023-06-23",
+        "publish_price": 32.34,
+        "today_price": 114.68,
+        "pct": 254.6
+      },
+      "NVDA": {
+        "publish_date": "2023-06-23",
+        "publish_price": 42.18,
+        "today_price": 211.14,
+        "pct": 400.6
+      },
+      "SNPS": {
+        "publish_date": "2023-06-23",
+        "publish_price": 419.56,
+        "today_price": 475.62,
+        "pct": 13.4
+      }
+    },
+    "chips-for-the-brain-modular-semiconductors": {
+      "COHR": {
+        "publish_date": "2026-04-07",
+        "publish_price": 255.1,
+        "today_price": 361.47,
+        "pct": 41.7
+      },
+      "NVDA": {
+        "publish_date": "2026-04-07",
+        "publish_price": 178.1,
+        "today_price": 211.14,
+        "pct": 18.6
+      },
+      "TSM": {
+        "publish_date": "2026-04-07",
+        "publish_price": 345.32,
+        "today_price": 418.45,
+        "pct": 21.2
+      }
+    },
+    "e08-optical-computing": {
+      "COHR": {
+        "publish_date": "2023-07-14",
+        "publish_price": 50.46,
+        "today_price": 361.47,
+        "pct": 616.3
+      }
+    },
+    "e16-in-conversation-with-shiv-malik": {
+      "COHR": {
+        "publish_date": "2023-09-28",
+        "publish_price": 32.11,
+        "today_price": 361.47,
+        "pct": 1025.7
+      }
+    },
+    "fungible-compute-mortal-computing": {
+      "COHR": {
+        "publish_date": "2026-03-10",
+        "publish_price": 260.64,
+        "today_price": 361.47,
+        "pct": 38.7
+      },
+      "TSM": {
+        "publish_date": "2026-03-10",
+        "publish_price": 346.11,
+        "today_price": 418.45,
+        "pct": 20.9
+      }
+    },
+    "has-the-time-come-to-take-mortal": {
+      "COHR": {
+        "publish_date": "2025-04-30",
+        "publish_price": 64.32,
+        "today_price": 361.47,
+        "pct": 462.0
+      },
+      "SNPS": {
+        "publish_date": "2025-04-30",
+        "publish_price": 459.01,
+        "today_price": 475.62,
+        "pct": 3.6
+      }
+    },
+    "unbundling-the-job": {
+      "COHR": {
+        "publish_date": "2025-07-22",
+        "publish_price": 97.02,
+        "today_price": 361.47,
+        "pct": 272.6
+      }
+    },
+    "state-of-the-future-friday-four-551": {
+      "CRWD": {
+        "publish_date": "2026-04-10",
+        "publish_price": 379.02,
+        "today_price": 731.0,
+        "pct": 92.9
+      },
+      "NVDA": {
+        "publish_date": "2026-04-10",
+        "publish_price": 188.63,
+        "today_price": 211.14,
+        "pct": 11.9
+      },
+      "PANW": {
+        "publish_date": "2026-04-10",
+        "publish_price": 155.73,
+        "today_price": 281.69,
+        "pct": 80.9
+      }
+    },
+    "a-primer-carbon-nanotubes": {
+      "IBM": {
+        "publish_date": "2025-07-01",
+        "publish_price": 283.94,
+        "today_price": 297.8,
+        "pct": 4.9
+      },
+      "ON": {
+        "publish_date": "2025-07-01",
+        "publish_price": 53.6,
+        "today_price": 120.62,
+        "pct": 125.0
+      }
+    },
+    "confidential-ai-the-dog-that-didnt": {
+      "IBM": {
+        "publish_date": "2024-11-05",
+        "publish_price": 198.16,
+        "today_price": 297.8,
+        "pct": 50.3
+      },
+      "INTC": {
+        "publish_date": "2024-11-05",
+        "publish_price": 23.32,
+        "today_price": 114.68,
+        "pct": 391.8
+      },
+      "NVDA": {
+        "publish_date": "2024-11-05",
+        "publish_price": 139.85,
+        "today_price": 211.14,
+        "pct": 51.0
+      }
+    },
+    "cubits-in-a-fridge-why-is-nobody": {
+      "IBM": {
+        "publish_date": "2024-12-04",
+        "publish_price": 224.67,
+        "today_price": 297.8,
+        "pct": 32.6
+      },
+      "INTC": {
+        "publish_date": "2024-12-04",
+        "publish_price": 21.96,
+        "today_price": 114.68,
+        "pct": 422.2
+      },
+      "QBTS": {
+        "publish_date": "2024-12-04",
+        "publish_price": 2.97,
+        "today_price": 30.14,
+        "pct": 914.8
+      },
+      "TSM": {
+        "publish_date": "2024-12-04",
+        "publish_price": 196.84,
+        "today_price": 418.45,
+        "pct": 112.6
+      }
+    },
+    "fund-frontier-expeditions-otherwise": {
+      "IBM": {
+        "publish_date": "2025-01-07",
+        "publish_price": 215.5,
+        "today_price": 297.8,
+        "pct": 38.2
+      },
+      "INTC": {
+        "publish_date": "2025-01-07",
+        "publish_price": 20.01,
+        "today_price": 114.68,
+        "pct": 473.1
+      },
+      "NVDA": {
+        "publish_date": "2025-01-07",
+        "publish_price": 140.09,
+        "today_price": 211.14,
+        "pct": 50.7
+      }
+    },
+    "making-ai-inference-cheap-with-analog": {
+      "IBM": {
+        "publish_date": "2026-04-28",
+        "publish_price": 231.34,
+        "today_price": 297.8,
+        "pct": 28.7
+      },
+      "INTC": {
+        "publish_date": "2026-04-28",
+        "publish_price": 84.52,
+        "today_price": 114.68,
+        "pct": 35.7
+      }
+    },
+    "e12-nanomechanical-computing-gears": {
+      "IFX.DE": {
+        "publish_date": "2023-08-25",
+        "publish_price": 31.11,
+        "today_price": 81.11,
+        "pct": 160.7
+      },
+      "STM": {
+        "publish_date": "2023-08-25",
+        "publish_price": 44.96,
+        "today_price": 69.31,
+        "pct": 54.2
+      },
+      "TXN": {
+        "publish_date": "2023-08-25",
+        "publish_price": 154.79,
+        "today_price": 305.68,
+        "pct": 97.5
+      }
+    },
+    "interview-christine-huang-data-privacy": {
+      "INTC": {
+        "publish_date": "2023-01-05",
+        "publish_price": 26.58,
+        "today_price": 114.68,
+        "pct": 331.5
+      }
+    },
+    "interview-dr-hyoduk-shin-professor": {
+      "INTC": {
+        "publish_date": "2023-03-03",
+        "publish_price": 25.77,
+        "today_price": 114.68,
+        "pct": 345.1
+      }
+    },
+    "interview-flavio-bergamaschi-private": {
+      "INTC": {
+        "publish_date": "2023-02-03",
+        "publish_price": 29.24,
+        "today_price": 114.68,
+        "pct": 292.2
+      }
+    },
+    "three-overrated-technologies-from": {
+      "INTC": {
+        "publish_date": "2023-06-08",
+        "publish_price": 31.18,
+        "today_price": 114.68,
+        "pct": 267.7
+      },
+      "SMR": {
+        "publish_date": "2023-06-08",
+        "publish_price": 8.21,
+        "today_price": 12.67,
+        "pct": 54.3
+      }
+    },
+    "unbundling-the-database": {
+      "INTC": {
+        "publish_date": "2022-12-15",
+        "publish_price": 26.18,
+        "today_price": 114.68,
+        "pct": 338.0
+      }
+    },
+    "willow-and-the-race-to-quantum-advantage": {
+      "IONQ": {
+        "publish_date": "2024-12-16",
+        "publish_price": 41.81,
+        "today_price": 72.07,
+        "pct": 72.4
+      },
+      "NVDA": {
+        "publish_date": "2024-12-16",
+        "publish_price": 131.96,
+        "today_price": 211.14,
+        "pct": 60.0
+      },
+      "QBTS": {
+        "publish_date": "2024-12-16",
+        "publish_price": 7.23,
+        "today_price": 30.14,
+        "pct": 316.9
+      },
+      "RGTI": {
+        "publish_date": "2024-12-16",
+        "publish_price": 8.43,
+        "today_price": 25.54,
+        "pct": 203.0
+      }
+    },
+    "carbon-nanotubes-in-the-datacentre": {
+      "MU": {
+        "publish_date": "2025-11-25",
+        "publish_price": 224.35,
+        "today_price": 971.0,
+        "pct": 332.8
+      },
+      "NVDA": {
+        "publish_date": "2025-11-25",
+        "publish_price": 177.8,
+        "today_price": 211.14,
+        "pct": 18.8
+      },
+      "ON": {
+        "publish_date": "2025-11-25",
+        "publish_price": 48.31,
+        "today_price": 120.62,
+        "pct": 149.7
+      }
+    },
+    "e04-no10-downing-street-and-vector": {
+      "NVDA": {
+        "publish_date": "2023-06-15",
+        "publish_price": 42.62,
+        "today_price": 211.14,
+        "pct": 395.4
+      }
+    },
+    "e06-the-model-t-moment-for-bits-llms": {
+      "NVDA": {
+        "publish_date": "2023-06-30",
+        "publish_price": 42.27,
+        "today_price": 211.14,
+        "pct": 399.5
+      }
+    },
+    "four-things-friday": {
+      "NVDA": {
+        "publish_date": "2026-02-13",
+        "publish_price": 182.8,
+        "today_price": 211.14,
+        "pct": 15.5
+      }
+    },
+    "state-of-the-future-friday-four-002": {
+      "NVDA": {
+        "publish_date": "2026-04-24",
+        "publish_price": 208.27,
+        "today_price": 211.14,
+        "pct": 1.4
+      },
+      "TSM": {
+        "publish_date": "2026-04-24",
+        "publish_price": 402.46,
+        "today_price": 418.45,
+        "pct": 4.0
+      }
+    },
+    "state-of-the-future-friday-four-03a": {
+      "NVDA": {
+        "publish_date": "2026-03-20",
+        "publish_price": 172.7,
+        "today_price": 211.14,
+        "pct": 22.3
+      }
+    },
+    "state-of-the-future-friday-four-be4": {
+      "NVDA": {
+        "publish_date": "2026-03-13",
+        "publish_price": 180.25,
+        "today_price": 211.14,
+        "pct": 17.1
+      }
+    },
+    "the-compute-gradient": {
+      "NVDA": {
+        "publish_date": "2025-09-23",
+        "publish_price": 178.41,
+        "today_price": 211.14,
+        "pct": 18.3
+      }
+    },
+    "nuclear-fusion-the-state-of-play": {
+      "SMR": {
+        "publish_date": "2024-11-20",
+        "publish_price": 25.74,
+        "today_price": 12.67,
+        "pct": -50.8
+      }
+    },
+    "detecting-proteins-in-blood-with": {
+      "SONY": {
+        "publish_date": "2026-04-22",
+        "publish_price": 20.84,
+        "today_price": 21.57,
+        "pct": 3.5
+      }
+    },
+    "e15-in-conversation-with-wisear-on": {
+      "SONY": {
+        "publish_date": "2023-09-18",
+        "publish_price": 17.13,
+        "today_price": 21.57,
+        "pct": 25.9
+      }
+    }
+  }
+}

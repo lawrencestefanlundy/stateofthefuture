@@ -353,3 +353,50 @@
 @media (max-width: 700px) {
   .basket-grid { grid-template-columns: 1fr; }
 }
+
+/* Recent quarters panel on per-stock pages (Phase 2 surface). */
+.stock-quarters { margin-bottom: 3rem; }
+.stock-quarters h2 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 0.5rem;
+}
+.quarter-entry {
+  padding: 1.25rem 1.25rem 1rem;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  margin-bottom: 1rem;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+.quarter-entry h3.quarter-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: var(--ink);
+}
+.quarter-entry ul {
+  list-style: none;
+  padding: 0; margin: 0.4rem 0;
+}
+.quarter-entry li {
+  padding-left: 1.1rem;
+  position: relative;
+  margin: 0.3rem 0;
+}
+.quarter-entry li::before {
+  content: "·"; position: absolute; left: 0.4rem; color: var(--ink-60);
+}
+.quarter-entry strong { color: var(--ink); font-weight: 600; }
+.quarter-entry blockquote {
+  border-left: 2px solid var(--teal);
+  padding: 0.3rem 0.85rem;
+  margin: 0.6rem 0;
+  font-style: italic;
+  color: var(--ink-80);
+}

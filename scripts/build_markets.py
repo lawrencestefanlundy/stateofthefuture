@@ -294,6 +294,42 @@ def render_stock(t):
     ticker = t["ticker"]
     themes_str = " · ".join(t["sotf_theme_labels"])
 
+    # Recent quarters block — populated by ingest_earnings.py + sync
+    quarters_html = ""
+    qs = t.get("quarters_md") or []
+    if qs:
+        # Render the first 4 quarters (most recent) as collapsible markdown.
+        # Each entry is already a "### Q1 2026 — reported … " block; we wrap
+        # in a styled container and convert markdown bold + bullet points to HTML.
+        import re as _re
+        rendered = []
+        for q in qs[:4]:
+            body = q.replace("### ", "<h3 class='quarter-title'>", 1).replace("\n", "</h3>", 1) if q.startswith("### ") else q
+            # Markdown bold → <strong>
+            body = _re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", body)
+            # Markdown bullet lines starting with "- " or "- > "
+            lines = body.split("\n")
+            out_lines = []
+            in_ul = False
+            for ln in lines:
+                if ln.startswith("- "):
+                    if not in_ul:
+                        out_lines.append("<ul>"); in_ul = True
+                    out_lines.append("<li>" + ln[2:] + "</li>")
+                else:
+                    if in_ul:
+                        out_lines.append("</ul>"); in_ul = False
+                    out_lines.append(ln)
+            if in_ul:
+                out_lines.append("</ul>")
+            rendered.append(f'<div class="quarter-entry">{"".join(out_lines)}</div>')
+        quarters_html = f"""<section class="stock-quarters">
+  <h2>Recent quarters</h2>
+  <div class="quarters-list">
+    {"".join(rendered)}
+  </div>
+</section>"""
+
     # Recent essays block
     essays_html = ""
     if t.get("essays"):
@@ -381,6 +417,8 @@ def render_stock(t):
         {market_block}
       </div>
     </section>
+
+    {quarters_html}
 
     {essays_html}
 

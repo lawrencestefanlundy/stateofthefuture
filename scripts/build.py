@@ -509,6 +509,7 @@ def reading_time_minutes(post_html: str, wpm: int = 230) -> int:
 # --- templating --------------------------------------------------------------
 
 _STOCKS_CACHE: dict[str, dict] | None = None
+_PERF_CACHE: dict | None = None
 
 def _stocks_lookup() -> dict[str, dict]:
     """Lazy-load data/stocks.json once and index by ticker for the
@@ -522,6 +523,19 @@ def _stocks_lookup() -> dict[str, dict]:
         else:
             _STOCKS_CACHE = {}
     return _STOCKS_CACHE
+
+
+def _essay_perf() -> dict:
+    """Lazy-load data/essay_perf.json — since-publish % change per
+    (essay, ticker) pair. Populated by ~/kb/scripts/compute_essay_perf.py."""
+    global _PERF_CACHE
+    if _PERF_CACHE is None:
+        path = ROOT / "data" / "essay_perf.json"
+        if path.exists():
+            _PERF_CACHE = json.loads(path.read_text(encoding="utf-8"))
+        else:
+            _PERF_CACHE = {"since_publish": {}}
+    return _PERF_CACHE
 
 
 def render_post_page(post: dict, body_html: str, related: list[dict] | None = None) -> str:
@@ -653,6 +667,7 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
     discussed = post.get("stocks_discussed") or []
     if discussed:
         lookup = _stocks_lookup()
+        perf_data = _essay_perf()["since_publish"].get(post["slug"], {})
         items = []
         for tk in discussed:
             s = lookup.get(tk)
@@ -668,10 +683,20 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
             else:
                 mcap_str = "—"
             fname = tk.replace(".", "_").replace(":", "_").lower() + ".html"
+            # Since-publish % change — the prediction-scoring layer.
+            perf = perf_data.get(tk)
+            perf_block = ""
+            if perf and perf.get("pct") is not None:
+                pct = perf["pct"]
+                perf_class = "up" if pct > 0 else "down" if pct < 0 else ""
+                sign = "+" if pct >= 0 else ""
+                pub_date = perf.get("publish_date", "")
+                perf_block = f'<span class="stock-chip-perf {perf_class}" title="Since publish ({pub_date})">{sign}{pct:.0f}%</span>'
             items.append(
                 f'<a class="stock-chip" href="../markets/{html.escape(fname)}">'
                 f'<span class="stock-chip-ticker">{html.escape(tk)}</span>'
                 f'<span class="stock-chip-name">{html.escape(s["name"])}</span>'
+                f'{perf_block}'
                 f'<span class="stock-chip-mcap">{mcap_str}</span>'
                 f'</a>'
             )
@@ -679,7 +704,7 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
             stocks_html = (
                 '<section class="article-stocks">'
                 '<div class="container">'
-                '<div class="stocks-label">Stocks discussed</div>'
+                '<div class="stocks-label">Stocks discussed · since publish</div>'
                 f'<div class="stocks-row">{"".join(items)}</div>'
                 '</div>'
                 '</section>'

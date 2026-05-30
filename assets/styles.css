@@ -1035,3 +1035,16 @@ a { color: var(--link); text-decoration: none; }
 .stock-chip .stock-chip-mcap { color: var(--ink-60); font-variant-numeric: tabular-nums; }
 .stock-chip:hover .stock-chip-name,
 .stock-chip:hover .stock-chip-mcap { color: var(--bg); }
+
+/* Since-publish performance badge on stock chips (Phase 3 prediction scoring) */
+.stock-chip-perf {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+}
+.stock-chip-perf.up   { color: #fff; background: #1a6f3a; }
+.stock-chip-perf.down { color: #fff; background: #a03030; }
+.stock-chip:hover .stock-chip-perf.up   { background: #155a30; }
+.stock-chip:hover .stock-chip-perf.down { background: #862828; }

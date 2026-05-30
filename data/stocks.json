@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T12:21:25.220676+00:00",
+  "generated_at": "2026-05-30T13:48:15.513265+00:00",
   "market_data_refreshed_at": "2026-05-30T10:15:19Z",
   "stock_count": 75,
   "essays_with_mentions": 60,
@@ -133,7 +133,8 @@
         "the-state-of-photonic-computing",
         "uk-opportunity-in-ai-compound-semiconductors",
         "willow-and-the-race-to-quantum-advantage"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "TSM",
@@ -188,7 +189,8 @@
         "the-state-of-photonic-computing",
         "uk-opportunity-in-ai-compound-semiconductors",
         "wen-babelfish-feat-aron-of-semron"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "AVGO",
@@ -232,7 +234,8 @@
         "the-photonic-foundry-fallacy",
         "the-state-of-photonic-computing",
         "uk-opportunity-in-ai-compound-semiconductors"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "005930.KS",
@@ -274,7 +277,8 @@
         "lfg-for-semiconductors",
         "state-of-the-future-friday-four-251",
         "wen-babelfish-feat-aron-of-semron"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "000660.KS",
@@ -310,7 +314,8 @@
         "e14-the-real-ai-bottleneck-high-bandwidth",
         "e21-can-we-make-enough-ai-chips",
         "state-of-the-future-friday-four-251"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "MU",
@@ -347,7 +352,8 @@
         "e21-can-we-make-enough-ai-chips",
         "gallium-nitride-photonics-w-james",
         "the-photonic-foundry-fallacy"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "AMD",
@@ -389,7 +395,8 @@
         "state-of-the-future-part-deux",
         "the-future-of-computing-is-glass",
         "wen-babelfish-feat-aron-of-semron"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "ASML",
@@ -433,7 +440,8 @@
         "state-of-the-future-friday-four-67c",
         "state-of-the-future-friday-four-7b7",
         "uk-opportunity-in-ai-compound-semiconductors"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "INTC",
@@ -491,7 +499,8 @@
         "three-overrated-technologies-from",
         "unbundling-the-database",
         "wen-babelfish-feat-aron-of-semron"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "LRCX",
@@ -524,7 +533,8 @@
       "recommendation_key": "buy",
       "essays": [
         "uk-opportunity-in-ai-compound-semiconductors"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "ARM",
@@ -561,7 +571,8 @@
         "how-to-invest-in-ai-sovereignty-sovereign",
         "lfg-for-semiconductors",
         "uk-opportunity-in-ai-compound-semiconductors"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "AMAT",
@@ -596,7 +607,8 @@
       "recommendation_key": "strong_buy",
       "essays": [
         "uk-opportunity-in-ai-compound-semiconductors"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "IBM",
@@ -638,7 +650,8 @@
         "fund-frontier-expeditions-otherwise",
         "making-ai-inference-cheap-with-analog",
         "the-state-of-photonic-computing"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "TXN",
@@ -672,7 +685,8 @@
       "essays": [
         "analog-computing-the-once-and-future",
         "e12-nanomechanical-computing-gears"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "QCOM",
@@ -710,7 +724,8 @@
         "how-to-invest-in-ai-sovereignty-sovereign",
         "state-of-the-future-friday-four-d68",
         "wen-babelfish-feat-aron-of-semron"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "GEV",
@@ -741,7 +756,8 @@
       "analyst_mean_target": 1215.8585,
       "analyst_count": 33,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "KLAC",
@@ -772,7 +788,8 @@
       "analyst_mean_target": 1855.138,
       "analyst_count": 29,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "PANW",
@@ -805,7 +822,8 @@
       "recommendation_key": "buy",
       "essays": [
         "state-of-the-future-friday-four-551"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "2454.TW",
@@ -836,7 +854,8 @@
       "analyst_mean_target": 3928.5217,
       "analyst_count": 23,
       "recommendation_key": "strong_buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "ADI",
@@ -870,7 +889,8 @@
       "essays": [
         "ai-chips-computeram-and-the-future",
         "analog-computing-the-once-and-future"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "CRWD",
@@ -903,7 +923,8 @@
       "recommendation_key": "buy",
       "essays": [
         "state-of-the-future-friday-four-551"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "MRVL",
@@ -940,7 +961,8 @@
         "consensus-capital-national-ai-stacks",
         "e13-chiplets-how-chip-lego-is-driving",
         "the-photonic-foundry-fallacy"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "GLW",
@@ -971,7 +993,8 @@
       "analyst_mean_target": 197.66667,
       "analyst_count": 15,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "8035.T",
@@ -1004,7 +1027,8 @@
       "recommendation_key": "buy",
       "essays": [
         "uk-opportunity-in-ai-compound-semiconductors"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "SONY",
@@ -1038,7 +1062,8 @@
       "essays": [
         "detecting-proteins-in-blood-with",
         "e15-in-conversation-with-wisear-on"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "IFX.DE",
@@ -1076,7 +1101,8 @@
         "e12-nanomechanical-computing-gears",
         "lfg-for-semiconductors",
         "state-of-the-future-friday-four-7b7"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "688256.SS",
@@ -1107,7 +1133,8 @@
       "analyst_mean_target": null,
       "analyst_count": null,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "6857.T",
@@ -1138,7 +1165,8 @@
       "analyst_mean_target": 32695.0,
       "analyst_count": 20,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "CEG",
@@ -1171,7 +1199,8 @@
       "recommendation_key": "buy",
       "essays": [
         "atomic-energy-can-nuclear-power-our"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "CDNS",
@@ -1207,7 +1236,8 @@
         "deploy-intelligence-too-cheap-to",
         "e05-the-future-of-edge-ai-brain-inspired",
         "state-of-the-future-friday-four-d68"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "SNPS",
@@ -1243,7 +1273,8 @@
         "e05-the-future-of-edge-ai-brain-inspired",
         "e14-the-real-ai-bottleneck-high-bandwidth",
         "has-the-time-come-to-take-mortal"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "ASX",
@@ -1274,7 +1305,8 @@
       "analyst_mean_target": 38.64756,
       "analyst_count": 3,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "0981.HK",
@@ -1305,7 +1337,8 @@
       "analyst_mean_target": 79.99005,
       "analyst_count": 21,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "CIEN",
@@ -1338,7 +1371,8 @@
       "analyst_mean_target": 457.90585,
       "analyst_count": 19,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "COHR",
@@ -1388,7 +1422,8 @@
         "the-state-of-photonic-computing",
         "uk-opportunity-in-ai-compound-semiconductors",
         "unbundling-the-job"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "LITE",
@@ -1424,7 +1459,8 @@
       "essays": [
         "state-of-the-future-friday-four-d68",
         "the-photonic-foundry-fallacy"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "STM",
@@ -1463,7 +1499,8 @@
         "e12-nanomechanical-computing-gears",
         "lfg-for-semiconductors",
         "state-of-the-future-friday-four-7b7"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "ALAB",
@@ -1494,7 +1531,8 @@
       "analyst_mean_target": 244.96773,
       "analyst_count": 22,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "VST",
@@ -1525,7 +1563,8 @@
       "analyst_mean_target": 225.29411,
       "analyst_count": 17,
       "recommendation_key": "strong_buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "CCJ",
@@ -1558,7 +1597,8 @@
       "recommendation_key": "buy",
       "essays": [
         "atomic-energy-can-nuclear-power-our"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "ON",
@@ -1596,7 +1636,8 @@
         "carbon-nanotubes-in-the-datacentre",
         "e10-pushing-moores-law-to-the-limit",
         "state-of-the-future-part-deux"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "TDY",
@@ -1627,7 +1668,8 @@
       "analyst_mean_target": 736.8461,
       "analyst_count": 13,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "MTSI",
@@ -1662,7 +1704,8 @@
       "recommendation_key": "buy",
       "essays": [
         "consensus-capital-national-ai-stacks"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "IONQ",
@@ -1695,7 +1738,8 @@
       "recommendation_key": "strong_buy",
       "essays": [
         "willow-and-the-race-to-quantum-advantage"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "ZS",
@@ -1726,7 +1770,8 @@
       "analyst_mean_target": 194.4625,
       "analyst_count": 44,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "MKSI",
@@ -1759,7 +1804,8 @@
       "analyst_mean_target": 359.91666,
       "analyst_count": 12,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "BWXT",
@@ -1790,7 +1836,8 @@
       "analyst_mean_target": 239.27274,
       "analyst_count": 11,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "AAOI",
@@ -1821,7 +1868,8 @@
       "analyst_mean_target": 151.3,
       "analyst_count": 5,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "QBTS",
@@ -1855,7 +1903,8 @@
       "essays": [
         "cubits-in-a-fridge-why-is-nobody",
         "willow-and-the-race-to-quantum-advantage"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "CGNX",
@@ -1886,7 +1935,8 @@
       "analyst_mean_target": 76.25,
       "analyst_count": 20,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "RGTI",
@@ -1919,7 +1969,8 @@
       "recommendation_key": "none",
       "essays": [
         "willow-and-the-race-to-quantum-advantage"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "AXTI",
@@ -1950,7 +2001,8 @@
       "analyst_mean_target": 87.75,
       "analyst_count": 4,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "NVTS",
@@ -1981,7 +2033,8 @@
       "analyst_mean_target": 13.5875,
       "analyst_count": 8,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "LPL",
@@ -2012,7 +2065,8 @@
       "analyst_mean_target": 4.415,
       "analyst_count": 2,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "6965.T",
@@ -2045,7 +2099,8 @@
       "analyst_mean_target": 1878.5714,
       "analyst_count": 7,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "IPGP",
@@ -2076,7 +2131,8 @@
       "analyst_mean_target": 130.5,
       "analyst_count": 7,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "SMR",
@@ -2111,7 +2167,8 @@
         "atomic-energy-can-nuclear-power-our",
         "nuclear-fusion-the-state-of-play",
         "three-overrated-technologies-from"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "OLED",
@@ -2142,7 +2199,8 @@
       "analyst_mean_target": 128.11111,
       "analyst_count": 9,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "LASR",
@@ -2173,7 +2231,8 @@
       "analyst_mean_target": 86.42857,
       "analyst_count": 7,
       "recommendation_key": "strong_buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "FR.PA",
@@ -2204,7 +2263,8 @@
       "analyst_mean_target": 12.84667,
       "analyst_count": 15,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "HIMX",
@@ -2235,7 +2295,8 @@
       "analyst_mean_target": 23.7,
       "analyst_count": 2,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "HSAI",
@@ -2266,7 +2327,8 @@
       "analyst_mean_target": 30.289324,
       "analyst_count": 21,
       "recommendation_key": "strong_buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "OUST",
@@ -2297,7 +2359,8 @@
       "analyst_mean_target": 42.16667,
       "analyst_count": 6,
       "recommendation_key": "strong_buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "WOLF",
@@ -2331,7 +2394,8 @@
       "essays": [
         "state-of-the-future-friday-four-7b7",
         "uk-opportunity-in-ai-compound-semiconductors"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "AMS.SW",
@@ -2362,7 +2426,8 @@
       "analyst_mean_target": 14.977959,
       "analyst_count": 9,
       "recommendation_key": "hold",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "POET",
@@ -2393,7 +2458,8 @@
       "analyst_mean_target": 8.2,
       "analyst_count": 2,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "AEVA",
@@ -2424,7 +2490,8 @@
       "analyst_mean_target": 24.1,
       "analyst_count": 5,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "INDI",
@@ -2455,7 +2522,8 @@
       "analyst_mean_target": 6.10714,
       "analyst_count": 7,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "LBIRD.PA",
@@ -2486,7 +2554,8 @@
       "analyst_mean_target": 29.5,
       "analyst_count": 3,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "ARQQ",
@@ -2519,7 +2588,8 @@
       "analyst_mean_target": 60.0,
       "analyst_count": 1,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "MVIS",
@@ -2550,7 +2620,8 @@
       "analyst_mean_target": null,
       "analyst_count": null,
       "recommendation_key": "none",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "INVZ",
@@ -2581,7 +2652,8 @@
       "analyst_mean_target": 2.025,
       "analyst_count": 2,
       "recommendation_key": "buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "LIDR",
@@ -2612,7 +2684,8 @@
       "analyst_mean_target": 5.16667,
       "analyst_count": 3,
       "recommendation_key": "strong_buy",
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     },
     {
       "ticker": "IQE.L",
@@ -2647,7 +2720,8 @@
         "a-specific-theory-of-sovereign-ai",
         "gallium-nitride-photonics-w-james",
         "uk-opportunity-in-ai-compound-semiconductors"
-      ]
+      ],
+      "quarters_md": []
     },
     {
       "ticker": "LAZR",
@@ -2678,7 +2752,8 @@
       "analyst_mean_target": null,
       "analyst_count": null,
       "recommendation_key": null,
-      "essays": []
+      "essays": [],
+      "quarters_md": []
     }
   ]
 }

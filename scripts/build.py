@@ -508,6 +508,22 @@ def reading_time_minutes(post_html: str, wpm: int = 230) -> int:
 
 # --- templating --------------------------------------------------------------
 
+_STOCKS_CACHE: dict[str, dict] | None = None
+
+def _stocks_lookup() -> dict[str, dict]:
+    """Lazy-load data/stocks.json once and index by ticker for the
+    `stocks_discussed` footer rendering."""
+    global _STOCKS_CACHE
+    if _STOCKS_CACHE is None:
+        path = ROOT / "data" / "stocks.json"
+        if path.exists():
+            data = json.loads(path.read_text(encoding="utf-8"))
+            _STOCKS_CACHE = {t["ticker"]: t for t in data.get("tickers", [])}
+        else:
+            _STOCKS_CACHE = {}
+    return _STOCKS_CACHE
+
+
 def render_post_page(post: dict, body_html: str, related: list[dict] | None = None) -> str:
     cat = post["category"]
     cat_slug = category_slug(cat)
@@ -632,6 +648,43 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
         )
         topic_chips_html = f'<div class="ae-topics">{chips}</div>'
 
+    # Stocks discussed — pulled from data/stocks.json (Phase 4 KB integration).
+    stocks_html = ""
+    discussed = post.get("stocks_discussed") or []
+    if discussed:
+        lookup = _stocks_lookup()
+        items = []
+        for tk in discussed:
+            s = lookup.get(tk)
+            if not s:
+                continue
+            mcap = s.get("market_cap_usd")
+            if mcap and mcap >= 1e12:
+                mcap_str = f"${mcap/1e12:.1f}T"
+            elif mcap and mcap >= 1e9:
+                mcap_str = f"${mcap/1e9:.0f}B"
+            elif mcap:
+                mcap_str = f"${mcap/1e6:.0f}M"
+            else:
+                mcap_str = "—"
+            fname = tk.replace(".", "_").replace(":", "_").lower() + ".html"
+            items.append(
+                f'<a class="stock-chip" href="../markets/{html.escape(fname)}">'
+                f'<span class="stock-chip-ticker">{html.escape(tk)}</span>'
+                f'<span class="stock-chip-name">{html.escape(s["name"])}</span>'
+                f'<span class="stock-chip-mcap">{mcap_str}</span>'
+                f'</a>'
+            )
+        if items:
+            stocks_html = (
+                '<section class="article-stocks">'
+                '<div class="container">'
+                '<div class="stocks-label">Stocks discussed</div>'
+                f'<div class="stocks-row">{"".join(items)}</div>'
+                '</div>'
+                '</section>'
+            )
+
     related_html = ""
     if related:
         cards = []
@@ -688,6 +741,7 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
       <nav class="masthead-nav">
         <a href="../index.html">Archive</a>
         <a href="../ecosystem/index.html">UK Ecosystem</a>
+        <a href="../markets/index.html">Markets</a>
         <a href="{SUBSTACK_URL}/podcast">Podcast</a>
         <a href="{SUBSTACK_URL}/subscribe" class="subscribe-pill">Subscribe</a>
       </nav>
@@ -720,6 +774,8 @@ def render_post_page(post: dict, body_html: str, related: list[dict] | None = No
       {toc_html}
     </div>
   </div>
+
+  {stocks_html}
 
   {related_html}
 
@@ -799,6 +855,18 @@ def main(skip_images: bool = False) -> None:
         sys.exit(f"missing {csv_path}")
 
     summaries = load_summaries(ROOT)
+
+    # Preserve fields written by external tools (Phase 3 essay-stock linker,
+    # Phase 4 markets integration). build.py rebuilds the manifest from the
+    # export and would otherwise blow these away on every run.
+    prev_manifest: dict[str, dict] = {}
+    prev_path = ROOT / "data" / "posts.json"
+    if prev_path.exists():
+        try:
+            existing = json.loads(prev_path.read_text(encoding="utf-8"))
+            prev_manifest = {p["slug"]: p for p in existing.get("posts", [])}
+        except Exception:
+            prev_manifest = {}
     by_stem: dict[str, dict] = {}
     with csv_path.open() as f:
         for row in csv.DictReader(f):
@@ -859,6 +927,7 @@ def main(skip_images: bool = False) -> None:
             "featured": False,  # populated after the loop, once we know all slugs
             "hero_remote": hero_remote,
             "hero_local": hero_local,
+            "stocks_discussed": prev_manifest.get(slug, {}).get("stocks_discussed", []),
             "hero_width": hq["width"],
             "hero_height": hq["height"],
             "hero_ok": hq["ok"],

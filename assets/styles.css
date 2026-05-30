@@ -991,3 +991,47 @@ a { color: var(--link); text-decoration: none; }
   .topic-bar.is-open .topic-list { display: flex; }
   .topic-bar.is-open .topic-toggle::after { content: ' (close)'; opacity: 0.7; }
 }
+
+/* ── Stocks discussed footer on article pages (Phase 4) ────────────── */
+.article-stocks {
+  background: var(--bg);
+  padding: 2rem 0 0.5rem;
+  margin-top: 1rem;
+}
+.article-stocks .container { max-width: 920px; }
+.stocks-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-60);
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+.stocks-row {
+  display: flex; flex-wrap: wrap; gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+.stock-chip {
+  display: inline-flex; align-items: baseline; gap: 0.6rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  transition: background 0.12s, color 0.12s;
+}
+.stock-chip:hover { background: var(--ink); color: var(--bg); }
+.stock-chip .stock-chip-ticker { font-weight: 600; }
+.stock-chip .stock-chip-name {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+.stock-chip .stock-chip-mcap { color: var(--ink-60); font-variant-numeric: tabular-nums; }
+.stock-chip:hover .stock-chip-name,
+.stock-chip:hover .stock-chip-mcap { color: var(--bg); }

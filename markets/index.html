@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markets — State of the Future</title>
+<meta name="description" content="Public companies with exposure to the State of the Future themes — semiconductors, photonics, AI compute, quantum, fusion-nuclear, privacy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/markets.css">
+</head>
+<body class="page-markets">
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-inner">
+      <a href="../index.html" class="masthead-title">
+        <span class="masthead-name">State of the Future</span>
+        <span class="masthead-byline">by Lawrence Lundy-Bryan</span>
+      </a>
+      <div class="masthead-affiliations">
+        <a href="https://cloudberry.vc" target="_blank" rel="noopener" class="affiliation-pill">Cloudberry</a>
+        <a href="https://lunar.vc" target="_blank" rel="noopener" class="affiliation-pill">Lunar Ventures</a>
+      </div>
+      <nav class="masthead-nav">
+        <a href="../index.html">Archive</a>
+        <a href="../ecosystem/index.html">UK Ecosystem</a>
+        <a href="index.html" aria-current="page">Markets</a>
+        <a href="https://stateofthefuture.substack.com/podcast">Podcast</a>
+        <a href="https://stateofthefuture.substack.com/subscribe" class="subscribe-pill">Subscribe</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="issue-bar">
+  <div class="container issue-bar-inner">
+    <span class="label">Markets</span>
+    <span class="sep">·</span>
+    <span class="label">75 stocks tied to the SotF themes</span>
+    <span class="sep">·</span>
+    <span class="label muted">refreshed 30 May 2026</span>
+  </div>
+</section>
+
+<section class="topic-bar">
+  <div class="container topic-bar-inner">
+    <span class="topic-bar-label">Themes</span>
+    <div class="topic-list" id="theme-list">
+      <button class="filter-chip" data-theme="" aria-pressed="true">All themes <span class="count">(75)</span></button>
+      <button class="filter-chip" data-theme="ai-compute" aria-pressed="false">AI &amp; compute <span class="count">(37)</span></button><button class="filter-chip" data-theme="photonics" aria-pressed="false">Photonics <span class="count">(37)</span></button><button class="filter-chip" data-theme="quantum" aria-pressed="false">Quantum <span class="count">(6)</span></button><button class="filter-chip" data-theme="fusion-nuclear" aria-pressed="false">Fusion &amp; nuclear <span class="count">(6)</span></button><button class="filter-chip" data-theme="privacy" aria-pressed="false">Privacy <span class="count">(4)</span></button>
+    </div>
+  </div>
+</section>
+
+<main class="markets-wrap">
+  <div class="container">
+    <div class="stock-table" id="stock-table">
+      <div class="stock-head">
+        <div class="col-ticker">Ticker</div>
+        <div class="col-name">Company</div>
+        <div class="col-themes">Themes</div>
+        <div class="col-mcap sortable" data-sort="market_cap_usd">Market cap</div>
+        <div class="col-pe sortable" data-sort="trailing_pe">P/E (T)</div>
+        <div class="col-fwdpe sortable" data-sort="forward_pe">P/E (F)</div>
+        <div class="col-chg sortable" data-sort="fifty_two_week_change">52w Δ</div>
+        <div class="col-essays">Coverage</div>
+      </div>
+      <a class="stock-row" href="nvda.html" data-themes="ai-compute">
+  <div class="col-ticker">NVDA</div>
+  <div class="col-name"><span class="name">NVIDIA</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$5.11T</div>
+  <div class="col-pe">32.4</div>
+  <div class="col-fwdpe">16.7</div>
+  <div class="col-chg up">+53.7%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 37 essays">37 essays</span></div>
+</a><a class="stock-row" href="tsm.html" data-themes="ai-compute">
+  <div class="col-ticker">TSM</div>
+  <div class="col-name"><span class="name">TSMC</span><span class="country">🇹🇼 Taiwan</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$2.17T</div>
+  <div class="col-pe">35.9</div>
+  <div class="col-fwdpe">21.4</div>
+  <div class="col-chg up">+114.8%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 23 essays">23 essays</span></div>
+</a><a class="stock-row" href="avgo.html" data-themes="ai-compute photonics">
+  <div class="col-ticker">AVGO</div>
+  <div class="col-name"><span class="name">Broadcom</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute · Photonics</div>
+  <div class="col-mcap">$2.12T</div>
+  <div class="col-pe">86.9</div>
+  <div class="col-fwdpe">24.2</div>
+  <div class="col-chg up">+79.6%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 10 essays">10 essays</span></div>
+</a><a class="stock-row" href="005930_ks.html" data-themes="ai-compute">
+  <div class="col-ticker">005930.KS</div>
+  <div class="col-name"><span class="name">Samsung Electronics</span><span class="country">🇰🇷 South Korea</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$1.38T</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">5.9</div>
+  <div class="col-chg up">+458.1%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 10 essays">10 essays</span></div>
+</a><a class="stock-row" href="000660_ks.html" data-themes="ai-compute">
+  <div class="col-ticker">000660.KS</div>
+  <div class="col-name"><span class="name">SK Hynix</span><span class="country">🇰🇷 South Korea</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$1.10T</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">6.1</div>
+  <div class="col-chg up">+1024.3%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 4 essays">4 essays</span></div>
+</a><a class="stock-row" href="mu.html" data-themes="ai-compute">
+  <div class="col-ticker">MU</div>
+  <div class="col-name"><span class="name">Micron</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$1.10T</div>
+  <div class="col-pe">45.9</div>
+  <div class="col-fwdpe">9.2</div>
+  <div class="col-chg up">+889.0%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 5 essays">5 essays</span></div>
+</a><a class="stock-row" href="amd.html" data-themes="ai-compute">
+  <div class="col-ticker">AMD</div>
+  <div class="col-name"><span class="name">AMD</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$841.6B</div>
+  <div class="col-pe">173</div>
+  <div class="col-fwdpe">39.8</div>
+  <div class="col-chg up">+350.2%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 10 essays">10 essays</span></div>
+</a><a class="stock-row" href="asml.html" data-themes="ai-compute photonics">
+  <div class="col-ticker">ASML</div>
+  <div class="col-name"><span class="name">ASML Holding</span><span class="country">🇳🇱 Netherlands</span></div>
+  <div class="col-themes">AI &amp; compute · Photonics</div>
+  <div class="col-mcap">$621.6B</div>
+  <div class="col-pe">53.8</div>
+  <div class="col-fwdpe">33.9</div>
+  <div class="col-chg up">+116.0%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 10 essays">10 essays</span></div>
+</a><a class="stock-row" href="intc.html" data-themes="ai-compute photonics">
+  <div class="col-ticker">INTC</div>
+  <div class="col-name"><span class="name">Intel</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute · Photonics</div>
+  <div class="col-mcap">$576.4B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">74.5</div>
+  <div class="col-chg up">+481.0%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 24 essays">24 essays</span></div>
+</a><a class="stock-row" href="lrcx.html" data-themes="ai-compute">
+  <div class="col-ticker">LRCX</div>
+  <div class="col-name"><span class="name">Lam Research</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$397.9B</div>
+  <div class="col-pe">60.3</div>
+  <div class="col-fwdpe">40.1</div>
+  <div class="col-chg up">+285.8%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="arm.html" data-themes="ai-compute">
+  <div class="col-ticker">ARM</div>
+  <div class="col-name"><span class="name">Arm</span><span class="country">🇬🇧 UK</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$377.3B</div>
+  <div class="col-pe">416</div>
+  <div class="col-fwdpe">116</div>
+  <div class="col-chg up">+180.3%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 5 essays">5 essays</span></div>
+</a><a class="stock-row" href="amat.html" data-themes="ai-compute photonics">
+  <div class="col-ticker">AMAT</div>
+  <div class="col-name"><span class="name">Applied Materials</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute · Photonics</div>
+  <div class="col-mcap">$357.3B</div>
+  <div class="col-pe">42.4</div>
+  <div class="col-fwdpe">27.8</div>
+  <div class="col-chg up">+186.2%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="ibm.html" data-themes="ai-compute quantum">
+  <div class="col-ticker">IBM</div>
+  <div class="col-name"><span class="name">IBM</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute · Quantum</div>
+  <div class="col-mcap">$279.9B</div>
+  <div class="col-pe">26.4</div>
+  <div class="col-fwdpe">22.1</div>
+  <div class="col-chg up">+12.8%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 8 essays">8 essays</span></div>
+</a><a class="stock-row" href="txn.html" data-themes="ai-compute">
+  <div class="col-ticker">TXN</div>
+  <div class="col-name"><span class="name">Texas Instruments</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$278.2B</div>
+  <div class="col-pe">52.3</div>
+  <div class="col-fwdpe">32.5</div>
+  <div class="col-chg up">+65.9%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 2 essays">2 essays</span></div>
+</a><a class="stock-row" href="qcom.html" data-themes="ai-compute">
+  <div class="col-ticker">QCOM</div>
+  <div class="col-name"><span class="name">Qualcomm</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$264.6B</div>
+  <div class="col-pe">27.0</div>
+  <div class="col-fwdpe">23.6</div>
+  <div class="col-chg up">+71.2%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 6 essays">6 essays</span></div>
+</a><a class="stock-row" href="gev.html" data-themes="fusion-nuclear">
+  <div class="col-ticker">GEV</div>
+  <div class="col-name"><span class="name">GE Vernova</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Fusion &amp; nuclear</div>
+  <div class="col-mcap">$260.2B</div>
+  <div class="col-pe">28.3</div>
+  <div class="col-fwdpe">39.5</div>
+  <div class="col-chg up">+99.6%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="klac.html" data-themes="ai-compute">
+  <div class="col-ticker">KLAC</div>
+  <div class="col-name"><span class="name">KLA</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$251.0B</div>
+  <div class="col-pe">54.3</div>
+  <div class="col-fwdpe">38.5</div>
+  <div class="col-chg up">+152.0%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="panw.html" data-themes="privacy">
+  <div class="col-ticker">PANW</div>
+  <div class="col-name"><span class="name">Palo Alto Networks</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Privacy</div>
+  <div class="col-mcap">$228.5B</div>
+  <div class="col-pe">156</div>
+  <div class="col-fwdpe">70.8</div>
+  <div class="col-chg up">+44.6%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="2454_tw.html" data-themes="ai-compute">
+  <div class="col-ticker">2454.TW</div>
+  <div class="col-name"><span class="name">MediaTek</span><span class="country">🇹🇼 Taiwan</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$219.0B</div>
+  <div class="col-pe">65.4</div>
+  <div class="col-fwdpe">36.1</div>
+  <div class="col-chg up">+242.1%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="adi.html" data-themes="ai-compute">
+  <div class="col-ticker">ADI</div>
+  <div class="col-name"><span class="name">Analog Devices</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$201.6B</div>
+  <div class="col-pe">61.8</div>
+  <div class="col-fwdpe">28.0</div>
+  <div class="col-chg up">+92.1%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 2 essays">2 essays</span></div>
+</a><a class="stock-row" href="crwd.html" data-themes="privacy">
+  <div class="col-ticker">CRWD</div>
+  <div class="col-name"><span class="name">CrowdStrike</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Privacy</div>
+  <div class="col-mcap">$186.1B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">118</div>
+  <div class="col-chg up">+52.6%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="mrvl.html" data-themes="ai-compute photonics">
+  <div class="col-ticker">MRVL</div>
+  <div class="col-name"><span class="name">Marvell Technology</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute · Photonics</div>
+  <div class="col-mcap">$179.5B</div>
+  <div class="col-pe">70.4</div>
+  <div class="col-fwdpe">34.0</div>
+  <div class="col-chg up">+233.5%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 3 essays">3 essays</span></div>
+</a><a class="stock-row" href="glw.html" data-themes="photonics">
+  <div class="col-ticker">GLW</div>
+  <div class="col-name"><span class="name">Corning</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$155.9B</div>
+  <div class="col-pe">87.1</div>
+  <div class="col-fwdpe">42.9</div>
+  <div class="col-chg up">+262.0%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="8035_t.html" data-themes="ai-compute">
+  <div class="col-ticker">8035.T</div>
+  <div class="col-name"><span class="name">Tokyo Electron</span><span class="country">🇯🇵 Japan</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$150.4B</div>
+  <div class="col-pe">41.8</div>
+  <div class="col-fwdpe">40.9</div>
+  <div class="col-chg up">+131.9%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="sony.html" data-themes="photonics">
+  <div class="col-ticker">SONY</div>
+  <div class="col-name"><span class="name">Sony Group</span><span class="country">🇯🇵 Japan</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$127.4B</div>
+  <div class="col-pe">20.2</div>
+  <div class="col-fwdpe">18.1</div>
+  <div class="col-chg down">-19.8%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 2 essays">2 essays</span></div>
+</a><a class="stock-row" href="ifx_de.html" data-themes="ai-compute">
+  <div class="col-ticker">IFX.DE</div>
+  <div class="col-name"><span class="name">Infineon</span><span class="country">🇩🇪 Germany</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$122.9B</div>
+  <div class="col-pe">98.9</div>
+  <div class="col-fwdpe">31.6</div>
+  <div class="col-chg up">+136.8%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 6 essays">6 essays</span></div>
+</a><a class="stock-row" href="688256_ss.html" data-themes="ai-compute">
+  <div class="col-ticker">688256.SS</div>
+  <div class="col-name"><span class="name">Cambricon</span><span class="country">🇨🇳 China</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$121.7B</div>
+  <div class="col-pe">303</div>
+  <div class="col-fwdpe">58.2</div>
+  <div class="col-chg up">+223.3%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="6857_t.html" data-themes="ai-compute">
+  <div class="col-ticker">6857.T</div>
+  <div class="col-name"><span class="name">Advantest</span><span class="country">🇯🇵 Japan</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$119.2B</div>
+  <div class="col-pe">51.0</div>
+  <div class="col-fwdpe">110</div>
+  <div class="col-chg up">+269.1%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="ceg.html" data-themes="fusion-nuclear">
+  <div class="col-ticker">CEG</div>
+  <div class="col-name"><span class="name">Constellation Energy</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Fusion &amp; nuclear</div>
+  <div class="col-mcap">$103.9B</div>
+  <div class="col-pe">25.0</div>
+  <div class="col-fwdpe">21.2</div>
+  <div class="col-chg down">-8.2%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="cdns.html" data-themes="ai-compute">
+  <div class="col-ticker">CDNS</div>
+  <div class="col-name"><span class="name">Cadence Design Systems</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$103.4B</div>
+  <div class="col-pe">87.8</div>
+  <div class="col-fwdpe">39.9</div>
+  <div class="col-chg up">+28.2%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 4 essays">4 essays</span></div>
+</a><a class="stock-row" href="snps.html" data-themes="ai-compute">
+  <div class="col-ticker">SNPS</div>
+  <div class="col-name"><span class="name">Synopsys</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$91.1B</div>
+  <div class="col-pe">109</div>
+  <div class="col-fwdpe">27.6</div>
+  <div class="col-chg up">+2.0%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 4 essays">4 essays</span></div>
+</a><a class="stock-row" href="asx.html" data-themes="ai-compute">
+  <div class="col-ticker">ASX</div>
+  <div class="col-name"><span class="name">ASE Technology</span><span class="country">🇹🇼 Taiwan</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$84.1B</div>
+  <div class="col-pe">59.0</div>
+  <div class="col-fwdpe">24.2</div>
+  <div class="col-chg up">+306.7%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="0981_hk.html" data-themes="ai-compute">
+  <div class="col-ticker">0981.HK</div>
+  <div class="col-name"><span class="name">SMIC</span><span class="country">🇨🇳 China</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$83.4B</div>
+  <div class="col-pe">117</div>
+  <div class="col-fwdpe">59.4</div>
+  <div class="col-chg up">+103.5%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="cien.html" data-themes="photonics ai-compute">
+  <div class="col-ticker">CIEN</div>
+  <div class="col-name"><span class="name">Ciena</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics · AI &amp; compute</div>
+  <div class="col-mcap">$82.0B</div>
+  <div class="col-pe">377</div>
+  <div class="col-fwdpe">66.4</div>
+  <div class="col-chg up">+609.8%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="cohr.html" data-themes="photonics ai-compute">
+  <div class="col-ticker">COHR</div>
+  <div class="col-name"><span class="name">Coherent Corp</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics · AI &amp; compute</div>
+  <div class="col-mcap">$70.7B</div>
+  <div class="col-pe">172</div>
+  <div class="col-fwdpe">44.6</div>
+  <div class="col-chg up">+370.8%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 16 essays">16 essays</span></div>
+</a><a class="stock-row" href="lite.html" data-themes="photonics ai-compute">
+  <div class="col-ticker">LITE</div>
+  <div class="col-name"><span class="name">Lumentum</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics · AI &amp; compute</div>
+  <div class="col-mcap">$66.5B</div>
+  <div class="col-pe">152</div>
+  <div class="col-fwdpe">47.2</div>
+  <div class="col-chg up">+1027.0%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 2 essays">2 essays</span></div>
+</a><a class="stock-row" href="stm.html" data-themes="photonics ai-compute">
+  <div class="col-ticker">STM</div>
+  <div class="col-name"><span class="name">STMicroelectronics</span><span class="country">🇨🇭 Switzerland</span></div>
+  <div class="col-themes">Photonics · AI &amp; compute</div>
+  <div class="col-mcap">$61.6B</div>
+  <div class="col-pe">433</div>
+  <div class="col-fwdpe">31.1</div>
+  <div class="col-chg up">+176.7%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 5 essays">5 essays</span></div>
+</a><a class="stock-row" href="alab.html" data-themes="ai-compute">
+  <div class="col-ticker">ALAB</div>
+  <div class="col-name"><span class="name">Astera Labs</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$58.8B</div>
+  <div class="col-pe">233</div>
+  <div class="col-fwdpe">81.5</div>
+  <div class="col-chg up">+269.0%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="vst.html" data-themes="fusion-nuclear">
+  <div class="col-ticker">VST</div>
+  <div class="col-name"><span class="name">Vistra</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Fusion &amp; nuclear</div>
+  <div class="col-mcap">$54.0B</div>
+  <div class="col-pe">26.8</div>
+  <div class="col-fwdpe">14.6</div>
+  <div class="col-chg down">-4.3%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="ccj.html" data-themes="fusion-nuclear">
+  <div class="col-ticker">CCJ</div>
+  <div class="col-name"><span class="name">Cameco</span><span class="country">🇨🇦 Canada</span></div>
+  <div class="col-themes">Fusion &amp; nuclear</div>
+  <div class="col-mcap">$49.1B</div>
+  <div class="col-pe">105</div>
+  <div class="col-fwdpe">58.6</div>
+  <div class="col-chg up">+93.7%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="on.html" data-themes="photonics ai-compute">
+  <div class="col-ticker">ON</div>
+  <div class="col-name"><span class="name">ON Semiconductor</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics · AI &amp; compute</div>
+  <div class="col-mcap">$46.9B</div>
+  <div class="col-pe">88.7</div>
+  <div class="col-fwdpe">28.4</div>
+  <div class="col-chg up">+183.5%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 4 essays">4 essays</span></div>
+</a><a class="stock-row" href="tdy.html" data-themes="photonics">
+  <div class="col-ticker">TDY</div>
+  <div class="col-name"><span class="name">Teledyne Technologies</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$28.7B</div>
+  <div class="col-pe">31.4</div>
+  <div class="col-fwdpe">23.8</div>
+  <div class="col-chg up">+25.4%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="mtsi.html" data-themes="photonics ai-compute">
+  <div class="col-ticker">MTSI</div>
+  <div class="col-name"><span class="name">MACOM</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics · AI &amp; compute</div>
+  <div class="col-mcap">$27.8B</div>
+  <div class="col-pe">156</div>
+  <div class="col-fwdpe">53.3</div>
+  <div class="col-chg up">+194.7%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="ionq.html" data-themes="quantum">
+  <div class="col-ticker">IONQ</div>
+  <div class="col-name"><span class="name">IonQ</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Quantum</div>
+  <div class="col-mcap">$26.9B</div>
+  <div class="col-pe">185</div>
+  <div class="col-fwdpe">-69.1</div>
+  <div class="col-chg up">+77.6%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="zs.html" data-themes="privacy">
+  <div class="col-ticker">ZS</div>
+  <div class="col-name"><span class="name">Zscaler</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Privacy</div>
+  <div class="col-mcap">$22.6B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">30.4</div>
+  <div class="col-chg down">-52.3%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="mksi.html" data-themes="photonics ai-compute">
+  <div class="col-ticker">MKSI</div>
+  <div class="col-name"><span class="name">MKS Instruments</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics · AI &amp; compute</div>
+  <div class="col-mcap">$21.9B</div>
+  <div class="col-pe">68.0</div>
+  <div class="col-fwdpe">21.7</div>
+  <div class="col-chg up">+293.1%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="bwxt.html" data-themes="fusion-nuclear">
+  <div class="col-ticker">BWXT</div>
+  <div class="col-name"><span class="name">BWX Technologies</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Fusion &amp; nuclear</div>
+  <div class="col-mcap">$17.9B</div>
+  <div class="col-pe">52.4</div>
+  <div class="col-fwdpe">37.7</div>
+  <div class="col-chg up">+55.3%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="aaoi.html" data-themes="photonics">
+  <div class="col-ticker">AAOI</div>
+  <div class="col-name"><span class="name">Applied Optoelectronics</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$12.7B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">33.2</div>
+  <div class="col-chg up">+921.0%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="qbts.html" data-themes="quantum">
+  <div class="col-ticker">QBTS</div>
+  <div class="col-name"><span class="name">D-Wave Quantum</span><span class="country">🇨🇦 Canada</span></div>
+  <div class="col-themes">Quantum</div>
+  <div class="col-mcap">$11.2B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-79.6</div>
+  <div class="col-chg up">+76.2%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 2 essays">2 essays</span></div>
+</a><a class="stock-row" href="cgnx.html" data-themes="photonics">
+  <div class="col-ticker">CGNX</div>
+  <div class="col-name"><span class="name">Cognex</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$11.0B</div>
+  <div class="col-pe">77.5</div>
+  <div class="col-fwdpe">37.4</div>
+  <div class="col-chg up">+121.9%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="rgti.html" data-themes="quantum">
+  <div class="col-ticker">RGTI</div>
+  <div class="col-name"><span class="name">Rigetti Computing</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Quantum</div>
+  <div class="col-mcap">$8.5B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-125.6</div>
+  <div class="col-chg up">+108.3%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 1 essay">1 essay</span></div>
+</a><a class="stock-row" href="axti.html" data-themes="photonics">
+  <div class="col-ticker">AXTI</div>
+  <div class="col-name"><span class="name">AXT Inc</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$6.7B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">137</div>
+  <div class="col-chg up">+6470.7%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="nvts.html" data-themes="ai-compute">
+  <div class="col-ticker">NVTS</div>
+  <div class="col-name"><span class="name">Navitas Semiconductor</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$6.3B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-185.3</div>
+  <div class="col-chg up">+381.9%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="lpl.html" data-themes="photonics">
+  <div class="col-ticker">LPL</div>
+  <div class="col-name"><span class="name">LG Display</span><span class="country">🇰🇷 South Korea</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$5.6B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">52.4</div>
+  <div class="col-chg up">+77.9%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="6965_t.html" data-themes="photonics quantum">
+  <div class="col-ticker">6965.T</div>
+  <div class="col-name"><span class="name">Hamamatsu Photonics</span><span class="country">🇯🇵 Japan</span></div>
+  <div class="col-themes">Photonics · Quantum</div>
+  <div class="col-mcap">$5.2B</div>
+  <div class="col-pe">62.5</div>
+  <div class="col-fwdpe">33.9</div>
+  <div class="col-chg up">+85.5%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="ipgp.html" data-themes="photonics">
+  <div class="col-ticker">IPGP</div>
+  <div class="col-name"><span class="name">IPG Photonics</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$4.9B</div>
+  <div class="col-pe">168</div>
+  <div class="col-fwdpe">49.5</div>
+  <div class="col-chg up">+72.3%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="smr.html" data-themes="fusion-nuclear">
+  <div class="col-ticker">SMR</div>
+  <div class="col-name"><span class="name">NuScale Power</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Fusion &amp; nuclear</div>
+  <div class="col-mcap">$4.4B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-18.9</div>
+  <div class="col-chg down">-60.4%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 3 essays">3 essays</span></div>
+</a><a class="stock-row" href="oled.html" data-themes="photonics">
+  <div class="col-ticker">OLED</div>
+  <div class="col-name"><span class="name">Universal Display</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$4.3B</div>
+  <div class="col-pe">20.5</div>
+  <div class="col-fwdpe">18.5</div>
+  <div class="col-chg down">-37.1%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="lasr.html" data-themes="photonics">
+  <div class="col-ticker">LASR</div>
+  <div class="col-name"><span class="name">nLIGHT</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$4.2B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">110</div>
+  <div class="col-chg up">+375.4%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="fr_pa.html" data-themes="photonics">
+  <div class="col-ticker">FR.PA</div>
+  <div class="col-name"><span class="name">Valeo</span><span class="country">🇫🇷 France</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$3.8B</div>
+  <div class="col-pe">16.4</div>
+  <div class="col-fwdpe">6.1</div>
+  <div class="col-chg up">+48.4%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="himx.html" data-themes="photonics">
+  <div class="col-ticker">HIMX</div>
+  <div class="col-name"><span class="name">Himax Technologies</span><span class="country">🇹🇼 Taiwan</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$3.6B</div>
+  <div class="col-pe">108</div>
+  <div class="col-fwdpe">20.6</div>
+  <div class="col-chg up">+147.5%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="hsai.html" data-themes="photonics">
+  <div class="col-ticker">HSAI</div>
+  <div class="col-name"><span class="name">Hesai</span><span class="country">🇨🇳 China</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$3.0B</div>
+  <div class="col-pe">40.2</div>
+  <div class="col-fwdpe">20.9</div>
+  <div class="col-chg up">+1.3%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="oust.html" data-themes="photonics">
+  <div class="col-ticker">OUST</div>
+  <div class="col-name"><span class="name">Ouster</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$2.9B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-1023.3</div>
+  <div class="col-chg up">+260.0%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="wolf.html" data-themes="ai-compute">
+  <div class="col-ticker">WOLF</div>
+  <div class="col-name"><span class="name">Wolfspeed</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">AI &amp; compute</div>
+  <div class="col-mcap">$2.9B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-11.8</div>
+  <div class="col-chg up">+168.2%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 2 essays">2 essays</span></div>
+</a><a class="stock-row" href="ams_sw.html" data-themes="photonics">
+  <div class="col-ticker">AMS.SW</div>
+  <div class="col-name"><span class="name">ams-OSRAM</span><span class="country">🇨🇭 Switzerland</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$2.6B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">22.9</div>
+  <div class="col-chg up">+159.5%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="poet.html" data-themes="photonics">
+  <div class="col-ticker">POET</div>
+  <div class="col-name"><span class="name">POET Technologies</span><span class="country">🇨🇦 Canada</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$2.1B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">inf</div>
+  <div class="col-chg up">+194.0%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="aeva.html" data-themes="photonics">
+  <div class="col-ticker">AEVA</div>
+  <div class="col-name"><span class="name">Aeva Technologies</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$1.8B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-18.3</div>
+  <div class="col-chg up">+62.7%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="indi.html" data-themes="photonics">
+  <div class="col-ticker">INDI</div>
+  <div class="col-name"><span class="name">indie Semiconductor</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$1.1B</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">34.8</div>
+  <div class="col-chg up">+91.2%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="lbird_pa.html" data-themes="photonics">
+  <div class="col-ticker">LBIRD.PA</div>
+  <div class="col-name"><span class="name">Lumibird</span><span class="country">🇫🇷 France</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$689M</div>
+  <div class="col-pe">41.9</div>
+  <div class="col-fwdpe">22.9</div>
+  <div class="col-chg up">+88.7%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="arqq.html" data-themes="privacy quantum">
+  <div class="col-ticker">ARQQ</div>
+  <div class="col-name"><span class="name">Arqit Quantum</span><span class="country">🇬🇧 UK</span></div>
+  <div class="col-themes">Privacy · Quantum</div>
+  <div class="col-mcap">$287M</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-15.6</div>
+  <div class="col-chg down">-26.5%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="mvis.html" data-themes="photonics">
+  <div class="col-ticker">MVIS</div>
+  <div class="col-name"><span class="name">MicroVision</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$201M</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-3.2</div>
+  <div class="col-chg down">-45.0%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="invz.html" data-themes="photonics">
+  <div class="col-ticker">INVZ</div>
+  <div class="col-name"><span class="name">Innoviz Technologies</span><span class="country">🇮🇱 Israel</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$169M</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-3.6</div>
+  <div class="col-chg down">-13.3%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="lidr.html" data-themes="photonics">
+  <div class="col-ticker">LIDR</div>
+  <div class="col-name"><span class="name">AEye</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$93M</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-3.0</div>
+  <div class="col-chg up">+181.7%</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a><a class="stock-row" href="iqe_l.html" data-themes="photonics">
+  <div class="col-ticker">IQE.L</div>
+  <div class="col-name"><span class="name">IQE plc</span><span class="country">🇬🇧 UK</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">$6M</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">-76.4</div>
+  <div class="col-chg up">+349.5%</div>
+  <div class="col-essays"><span class="essay-badge" title="Discussed in 3 essays">3 essays</span></div>
+</a><a class="stock-row" href="lazr.html" data-themes="photonics">
+  <div class="col-ticker">LAZR</div>
+  <div class="col-name"><span class="name">Luminar</span><span class="country">🇺🇸 USA</span></div>
+  <div class="col-themes">Photonics</div>
+  <div class="col-mcap">—</div>
+  <div class="col-pe">—</div>
+  <div class="col-fwdpe">—</div>
+  <div class="col-chg ">—</div>
+  <div class="col-essays"><span class="essay-badge muted">—</span></div>
+</a>
+    </div>
+    <p class="markets-note">Market data refresh: daily via Yahoo Finance. Essay coverage scanned across the full SotF archive. Not investment advice.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year"></span> Lawrence Lundy-Bryan</span>
+    <span>stateofthefuture.io</span>
+  </div>
+</footer>
+
+<script src="../assets/markets.js"></script>
+<script>document.getElementById('year').textContent = String(new Date().getFullYear());</script>
+</body>
+</html>

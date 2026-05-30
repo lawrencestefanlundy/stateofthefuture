@@ -1,0 +1,263 @@
+/* /markets/ section styles — inherits palette/typography from styles.css */
+
+.page-markets .markets-wrap { padding: 2rem 0 4rem; }
+
+/* Stock table on the index page */
+.stock-table {
+  display: grid;
+  grid-template-columns:
+    minmax(70px, auto)    /* ticker */
+    minmax(220px, 2fr)    /* name + country */
+    minmax(140px, 1.4fr)  /* themes */
+    minmax(90px, auto)    /* mcap */
+    minmax(60px, auto)    /* pe */
+    minmax(60px, auto)    /* fwd pe */
+    minmax(80px, auto)    /* 52w chg */
+    minmax(100px, auto);  /* coverage */
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+.stock-table > div, .stock-table > a { display: contents; }
+.stock-head,
+.stock-row {
+  display: contents;
+}
+.stock-head > div {
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--ink);
+  padding: 0.65rem 0.85rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-60);
+  white-space: nowrap;
+}
+.stock-head .sortable { cursor: pointer; user-select: none; }
+.stock-head .sortable:hover { color: var(--ink); background: var(--bg); }
+.stock-head .sortable.active { color: var(--ink); }
+.stock-head .sortable.active::after { content: " ↓"; }
+.stock-head .sortable.active.asc::after { content: " ↑"; }
+
+.stock-row > div {
+  padding: 0.85rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.9rem;
+  align-self: center;
+  text-decoration: none;
+  color: var(--ink);
+}
+.stock-row:hover > div { background: var(--bg-tint); }
+
+.stock-row .col-ticker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+.stock-row .col-name {
+  display: flex; flex-direction: column; gap: 0.15rem;
+}
+.stock-row .col-name .name {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.stock-row .col-name .country {
+  font-size: 0.72rem;
+  color: var(--ink-50);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em;
+}
+.stock-row .col-themes {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-60);
+}
+.stock-row .col-mcap,
+.stock-row .col-pe,
+.stock-row .col-fwdpe,
+.stock-row .col-chg {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+.stock-row .col-chg.up { color: #1a6f3a; }
+.stock-row .col-chg.down { color: #a03030; }
+.stock-row .col-essays { text-align: right; }
+
+.essay-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.55rem;
+  background: var(--ink);
+  color: var(--bg);
+  white-space: nowrap;
+}
+.essay-badge.muted {
+  background: transparent;
+  color: var(--ink-25);
+}
+
+.markets-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-50);
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.issue-bar .muted { color: var(--ink-50); }
+
+/* ── Per-stock page ────────────────────────────────────────────── */
+
+.page-stock .stock-article { padding: 2rem 0 4rem; background: var(--bg); }
+.stock-article-inner { max-width: 920px; margin: 0 auto; }
+
+.stock-header {
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+.stock-ticker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-50);
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+.stock-name {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+}
+.stock-country {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--ink-60);
+  margin-bottom: 0.85rem;
+}
+.stock-why {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink-80);
+  max-width: 720px;
+  line-height: 1.45;
+}
+.analyst-block {
+  margin-top: 1rem;
+  display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+}
+.rec-badge {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--ink);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.rec-strong-buy { background: var(--teal); color: var(--bg); border-color: var(--teal); }
+.rec-buy { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.rec-hold { background: var(--bg-soft); color: var(--ink); }
+.rec-sell { background: #a03030; color: var(--bg); border-color: #a03030; }
+.analyst-target { color: var(--ink-60); }
+
+.stock-market-data { margin-bottom: 3rem; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+.stats-grid .stat {
+  padding: 1rem 1.1rem;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: var(--paper);
+}
+.stats-grid .stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-60);
+  margin-bottom: 0.4rem;
+}
+.stats-grid .stat-value {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.stock-essays h2 {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 0.5rem;
+}
+.essay-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--ink); }
+.essay-link {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--paper);
+  align-items: baseline;
+}
+.essay-link:last-child { border-bottom: none; }
+.essay-link:hover { background: var(--bg-tint); }
+.essay-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.74rem;
+  color: var(--ink-60);
+  letter-spacing: 0.04em;
+}
+.essay-cat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--ink-25);
+  color: var(--ink-60);
+}
+.essay-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.stock-essays .empty {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  color: var(--ink-50);
+}
+
+@media (max-width: 900px) {
+  .stock-table {
+    grid-template-columns: minmax(60px, auto) 1fr minmax(80px, auto) minmax(60px, auto) minmax(80px, auto);
+  }
+  .stock-head .col-themes,
+  .stock-head .col-fwdpe,
+  .stock-head .col-essays,
+  .stock-row .col-themes,
+  .stock-row .col-fwdpe,
+  .stock-row .col-essays {
+    display: none;
+  }
+}

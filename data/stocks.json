@@ -1,0 +1,2684 @@
+{
+  "generated_at": "2026-05-30T12:21:25.220676+00:00",
+  "market_data_refreshed_at": "2026-05-30T10:15:19Z",
+  "stock_count": 75,
+  "essays_with_mentions": 60,
+  "tickers_mentioned": 37,
+  "themes": [
+    {
+      "slug": "ai-compute",
+      "label": "AI & compute",
+      "count": 37
+    },
+    {
+      "slug": "photonics",
+      "label": "Photonics",
+      "count": 37
+    },
+    {
+      "slug": "quantum",
+      "label": "Quantum",
+      "count": 6
+    },
+    {
+      "slug": "fusion-nuclear",
+      "label": "Fusion & nuclear",
+      "count": 6
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy",
+      "count": 4
+    }
+  ],
+  "subcat_counts": {
+    "gpu-accelerator": 3,
+    "foundry": 2,
+    "networking-asic": 3,
+    "memory": 3,
+    "semicap-litho": 1,
+    "cpu": 2,
+    "semicap-etch-cmp": 1,
+    "ip-edaeds": 3,
+    "semicap-deposition": 2,
+    "quantum-hardware": 4,
+    "analog": 2,
+    "rf": 1,
+    "nuclear-power-utility": 3,
+    "semicap-other": 2,
+    "cyber-network": 3,
+    "cyber-endpoint": 1,
+    "fiber-optic-glass": 1,
+    "image-sensor": 7,
+    "power-sic-gan": 3,
+    "semicap-test": 1,
+    "packaging-osats": 1,
+    "optical-transceiver": 3,
+    "laser-chip-inp": 2,
+    "mcu-microcontroller": 1,
+    "nuclear-other": 1,
+    "nuclear-reactor": 2,
+    "pic-substrate": 2,
+    "display-oled": 2,
+    "laser-fiber-industrial": 2,
+    "lidar": 9,
+    "silicon-photonics": 1,
+    "laser-other": 1
+  },
+  "tickers": [
+    {
+      "ticker": "NVDA",
+      "exchange": "NASDAQ",
+      "name": "NVIDIA",
+      "kb_slug": "nvidia",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "gpu-accelerator",
+      "why_it_matters": "Dominant share of AI training compute. GPU + NVLink + CUDA = the full stack. The single most important AI-infrastructure name.",
+      "company_kb_present": true,
+      "price": 211.14,
+      "currency": "USD",
+      "market_cap_usd": 5114022068224.0,
+      "trailing_pe": 32.383434,
+      "forward_pe": 16.681019,
+      "peg_ratio": 0.6505,
+      "ev_to_revenue": 19.998,
+      "revenue_ttm_usd": 253491003392.0,
+      "gross_margin": 0.74144995,
+      "operating_margin": 0.65596,
+      "fifty_two_week_change": 0.53690493,
+      "analyst_mean_target": 296.81033,
+      "analyst_count": 58,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "a-specific-theory-of-sovereign-ai",
+        "ai-chips-computeram-and-the-future",
+        "carbon-nanotubes-in-the-datacentre",
+        "chips-for-the-brain-modular-semiconductors",
+        "confidential-ai-the-dog-that-didnt",
+        "consensus-capital",
+        "consensus-capital-national-ai-stacks",
+        "deploy-intelligence-too-cheap-to",
+        "e04-no10-downing-street-and-vector",
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "e06-the-model-t-moment-for-bits-llms",
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e19-trusted-execution-environments",
+        "e21-can-we-make-enough-ai-chips",
+        "four-things-friday",
+        "four-things-friday-575",
+        "fund-frontier-expeditions-otherwise",
+        "gallium-nitride-photonics-w-james",
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "lfg-for-semiconductors",
+        "photonic-engines-for-data-centers",
+        "state-of-the-future-friday-four-002",
+        "state-of-the-future-friday-four-03a",
+        "state-of-the-future-friday-four-251",
+        "state-of-the-future-friday-four-551",
+        "state-of-the-future-friday-four-67c",
+        "state-of-the-future-friday-four-7b7",
+        "state-of-the-future-friday-four-be4",
+        "state-of-the-future-friday-four-d68",
+        "state-of-the-future-part-deux",
+        "the-compute-gradient",
+        "the-future-of-computing-is-glass",
+        "the-photonic-foundry-fallacy",
+        "the-state-of-photonic-computing",
+        "uk-opportunity-in-ai-compound-semiconductors",
+        "willow-and-the-race-to-quantum-advantage"
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "exchange": "NYSE",
+      "name": "TSMC",
+      "kb_slug": "tsmc",
+      "country": "🇹🇼 Taiwan",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "foundry",
+      "why_it_matters": "Foundry monopoly at 3nm / 2nm. CoWoS capacity is the binding AI constraint. 61% HPC, packaging sold out through 2026.",
+      "company_kb_present": true,
+      "price": 418.45,
+      "currency": "USD",
+      "market_cap_usd": 2170280083456.0,
+      "trailing_pe": 35.8569,
+      "forward_pe": 21.44058,
+      "peg_ratio": 1.3006,
+      "ev_to_revenue": 2.096,
+      "revenue_ttm_usd": 4103904165888.0,
+      "gross_margin": 0.61873,
+      "operating_margin": 0.58105,
+      "fifty_two_week_change": 1.1476595,
+      "analyst_mean_target": 467.84027,
+      "analyst_count": 18,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "ai-chips-computeram-and-the-future",
+        "chips-for-the-brain-modular-semiconductors",
+        "consensus-capital",
+        "consensus-capital-national-ai-stacks",
+        "cubits-in-a-fridge-why-is-nobody",
+        "deploy-intelligence-too-cheap-to",
+        "e10-pushing-moores-law-to-the-limit",
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e19-trusted-execution-environments",
+        "e21-can-we-make-enough-ai-chips",
+        "fungible-compute-mortal-computing",
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "lfg-for-semiconductors",
+        "photonic-engines-for-data-centers",
+        "state-of-the-future-friday-four-002",
+        "state-of-the-future-friday-four-67c",
+        "state-of-the-future-friday-four-7b7",
+        "state-of-the-future-friday-four-d68",
+        "the-photonic-foundry-fallacy",
+        "the-state-of-photonic-computing",
+        "uk-opportunity-in-ai-compound-semiconductors",
+        "wen-babelfish-feat-aron-of-semron"
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "exchange": "NASDAQ",
+      "name": "Broadcom",
+      "kb_slug": "broadcom",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute",
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute",
+        "Photonics"
+      ],
+      "sub_category": "networking-asic",
+      "why_it_matters": "Custom ASICs for Google/Meta + networking silicon. Co-Packaged Optics roadmap. The 'NVIDIA alternative for hyperscalers' bet.",
+      "company_kb_present": true,
+      "price": 446.77,
+      "currency": "USD",
+      "market_cap_usd": 2115307700224.0,
+      "trailing_pe": 86.920235,
+      "forward_pe": 24.227072,
+      "peg_ratio": 0.9719,
+      "ev_to_revenue": 31.739,
+      "revenue_ttm_usd": 68281999360.0,
+      "gross_margin": 0.76725996,
+      "operating_margin": 0.44943002,
+      "fifty_two_week_change": 0.79634917,
+      "analyst_mean_target": 481.9678,
+      "analyst_count": 44,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "e21-can-we-make-enough-ai-chips",
+        "gallium-nitride-photonics-w-james",
+        "lfg-for-semiconductors",
+        "photonic-engines-for-data-centers",
+        "state-of-the-future-friday-four-d68",
+        "state-of-the-future-part-deux",
+        "the-future-of-computing-is-glass",
+        "the-photonic-foundry-fallacy",
+        "the-state-of-photonic-computing",
+        "uk-opportunity-in-ai-compound-semiconductors"
+      ]
+    },
+    {
+      "ticker": "005930.KS",
+      "exchange": "KRX",
+      "name": "Samsung Electronics",
+      "kb_slug": "samsung-electronics",
+      "country": "🇰🇷 South Korea",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "memory",
+      "why_it_matters": "Memory (DRAM/NAND) + foundry + displays. HBM3E catch-up vs SK Hynix is the binary story.",
+      "company_kb_present": true,
+      "price": 317000.0,
+      "currency": "KRW",
+      "market_cap_usd": 1381168575046.4949,
+      "trailing_pe": null,
+      "forward_pe": 5.9372644,
+      "peg_ratio": 0.1813,
+      "ev_to_revenue": 5.109,
+      "revenue_ttm_usd": 257667794622.0963,
+      "gross_margin": 0.47678003,
+      "operating_margin": 0.42751,
+      "fifty_two_week_change": 4.580986,
+      "analyst_mean_target": 363208.62,
+      "analyst_count": 37,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "ai-chips-computeram-and-the-future",
+        "consensus-capital",
+        "e10-pushing-moores-law-to-the-limit",
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e19-trusted-execution-environments",
+        "e21-can-we-make-enough-ai-chips",
+        "interview-ben-mildenhall-co-inventor",
+        "lfg-for-semiconductors",
+        "state-of-the-future-friday-four-251",
+        "wen-babelfish-feat-aron-of-semron"
+      ]
+    },
+    {
+      "ticker": "000660.KS",
+      "exchange": "KRX",
+      "name": "SK Hynix",
+      "kb_slug": "sk-hynix",
+      "country": "🇰🇷 South Korea",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "memory",
+      "why_it_matters": "HBM leader — primary supplier to NVIDIA. Cleanest memory play on AI training demand.",
+      "company_kb_present": true,
+      "price": 2333000.0,
+      "currency": "KRW",
+      "market_cap_usd": 1098837839873.6035,
+      "trailing_pe": null,
+      "forward_pe": 6.1025953,
+      "peg_ratio": 3.2986,
+      "ev_to_revenue": 12.265,
+      "revenue_ttm_usd": 87639299277.26474,
+      "gross_margin": 0.68342,
+      "operating_margin": 0.71535003,
+      "fifty_two_week_change": 10.243374,
+      "analyst_mean_target": 2076603.1,
+      "analyst_count": 38,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "ai-chips-computeram-and-the-future",
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e21-can-we-make-enough-ai-chips",
+        "state-of-the-future-friday-four-251"
+      ]
+    },
+    {
+      "ticker": "MU",
+      "exchange": "NASDAQ",
+      "name": "Micron",
+      "kb_slug": "micron",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "memory",
+      "why_it_matters": "HBM3E/HBM4 — one of three suppliers (vs Samsung, SK Hynix). HBM is the binding constraint on AI training. Cyclical leveraged play.",
+      "company_kb_present": false,
+      "price": 971.0,
+      "currency": "USD",
+      "market_cap_usd": 1095029751808.0,
+      "trailing_pe": 45.86679,
+      "forward_pe": 9.222632,
+      "peg_ratio": 0.3346,
+      "ev_to_revenue": 18.776,
+      "revenue_ttm_usd": 58119000064.0,
+      "gross_margin": 0.58437,
+      "operating_margin": 0.67624,
+      "fifty_two_week_change": 8.889998,
+      "analyst_mean_target": 674.225,
+      "analyst_count": 40,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "carbon-nanotubes-in-the-datacentre",
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e21-can-we-make-enough-ai-chips",
+        "gallium-nitride-photonics-w-james",
+        "the-photonic-foundry-fallacy"
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "exchange": "NASDAQ",
+      "name": "AMD",
+      "kb_slug": "amd",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "gpu-accelerator",
+      "why_it_matters": "MI300/MI350 is the only credible non-NVIDIA training silicon at scale. Margin expansion if AI-compute share grows from low single digits.",
+      "company_kb_present": true,
+      "price": 516.1,
+      "currency": "USD",
+      "market_cap_usd": 841552887808.0,
+      "trailing_pe": 172.60869,
+      "forward_pe": 39.82394,
+      "peg_ratio": 1.2415,
+      "ev_to_revenue": 22.243,
+      "revenue_ttm_usd": 37454000128.0,
+      "gross_margin": 0.5306,
+      "operating_margin": 0.14396,
+      "fifty_two_week_change": 3.5023117,
+      "analyst_mean_target": 472.16666,
+      "analyst_count": 48,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "a-specific-theory-of-sovereign-ai",
+        "ai-chips-computeram-and-the-future",
+        "consensus-capital-national-ai-stacks",
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "e19-trusted-execution-environments",
+        "e21-can-we-make-enough-ai-chips",
+        "state-of-the-future-part-deux",
+        "the-future-of-computing-is-glass",
+        "wen-babelfish-feat-aron-of-semron"
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "exchange": "NASDAQ",
+      "name": "ASML Holding",
+      "kb_slug": "asml",
+      "country": "🇳🇱 Netherlands",
+      "sotf_themes": [
+        "ai-compute",
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute",
+        "Photonics"
+      ],
+      "sub_category": "semicap-litho",
+      "why_it_matters": "EUV monopoly + High-NA EUV ramp. Largest photonics business on earth. Cyclical demand on memory + China weakness.",
+      "company_kb_present": true,
+      "price": 1612.76,
+      "currency": "USD",
+      "market_cap_usd": 621586219008.0,
+      "trailing_pe": 53.758667,
+      "forward_pe": 33.870872,
+      "peg_ratio": 2.4219,
+      "ev_to_revenue": 18.28,
+      "revenue_ttm_usd": 33692700672.0,
+      "gross_margin": 0.52603,
+      "operating_margin": 0.36020002,
+      "fifty_two_week_change": 1.1603417,
+      "analyst_mean_target": 1667.4479,
+      "analyst_count": 15,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "consensus-capital-national-ai-stacks",
+        "e10-pushing-moores-law-to-the-limit",
+        "four-things-friday-575",
+        "gallium-nitride-photonics-w-james",
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "lfg-for-semiconductors",
+        "state-of-the-future-friday-four",
+        "state-of-the-future-friday-four-67c",
+        "state-of-the-future-friday-four-7b7",
+        "uk-opportunity-in-ai-compound-semiconductors"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "exchange": "NASDAQ",
+      "name": "Intel",
+      "kb_slug": "intel",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute",
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute",
+        "Photonics"
+      ],
+      "sub_category": "cpu",
+      "why_it_matters": "Foundry comeback bet (18A, 14A). Photonic-I/O internal effort. Negative trailing earnings; turnaround story.",
+      "company_kb_present": true,
+      "price": 114.68,
+      "currency": "USD",
+      "market_cap_usd": 576381648896.0,
+      "trailing_pe": null,
+      "forward_pe": 74.48107,
+      "peg_ratio": 1.36,
+      "ev_to_revenue": 11.201,
+      "revenue_ttm_usd": 53762998272.0,
+      "gross_margin": 0.372,
+      "operating_margin": 0.06879,
+      "fifty_two_week_change": 4.8095236,
+      "analyst_mean_target": 87.76098,
+      "analyst_count": 41,
+      "recommendation_key": "hold",
+      "essays": [
+        "ai-chips-computeram-and-the-future",
+        "confidential-ai-the-dog-that-didnt",
+        "consensus-capital",
+        "consensus-capital-national-ai-stacks",
+        "cubits-in-a-fridge-why-is-nobody",
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "e10-pushing-moores-law-to-the-limit",
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e19-trusted-execution-environments",
+        "fund-frontier-expeditions-otherwise",
+        "gallium-nitride-photonics-w-james",
+        "interview-christine-huang-data-privacy",
+        "interview-dr-hyoduk-shin-professor",
+        "interview-flavio-bergamaschi-private",
+        "lfg-for-semiconductors",
+        "making-ai-inference-cheap-with-analog",
+        "state-of-the-future-friday-four-7b7",
+        "state-of-the-future-part-deux",
+        "the-future-of-computing-is-glass",
+        "the-photonic-foundry-fallacy",
+        "the-state-of-photonic-computing",
+        "three-overrated-technologies-from",
+        "unbundling-the-database",
+        "wen-babelfish-feat-aron-of-semron"
+      ]
+    },
+    {
+      "ticker": "LRCX",
+      "exchange": "NASDAQ",
+      "name": "Lam Research",
+      "kb_slug": "lam-research",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "semicap-etch-cmp",
+      "why_it_matters": "Etch + CMP — critical for HBM TSV and advanced logic. WFE leverage to memory + packaging investment.",
+      "company_kb_present": true,
+      "price": 318.18,
+      "currency": "USD",
+      "market_cap_usd": 397906673664.0,
+      "trailing_pe": 60.26136,
+      "forward_pe": 40.06129,
+      "peg_ratio": 1.8527,
+      "ev_to_revenue": 18.305,
+      "revenue_ttm_usd": 21681844224.0,
+      "gross_margin": 0.49979,
+      "operating_margin": 0.35042998,
+      "fifty_two_week_change": 2.8576624,
+      "analyst_mean_target": 313.6875,
+      "analyst_count": 32,
+      "recommendation_key": "buy",
+      "essays": [
+        "uk-opportunity-in-ai-compound-semiconductors"
+      ]
+    },
+    {
+      "ticker": "ARM",
+      "exchange": "NASDAQ",
+      "name": "Arm",
+      "kb_slug": "arm-holdings",
+      "country": "🇬🇧 UK",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "ip-edaeds",
+      "why_it_matters": "ISA tax on every mobile + most datacenter Arm-server CPUs. Sky-high P/E reflects monopoly + royalty growth.",
+      "company_kb_present": true,
+      "price": 353.29,
+      "currency": "USD",
+      "market_cap_usd": 377341575168.0,
+      "trailing_pe": 415.63528,
+      "forward_pe": 115.63715,
+      "peg_ratio": 3.0705,
+      "ev_to_revenue": 76.063,
+      "revenue_ttm_usd": 4920000000.0,
+      "gross_margin": 0.97541,
+      "operating_margin": 0.2953,
+      "fifty_two_week_change": 1.8026655,
+      "analyst_mean_target": 234.02757,
+      "analyst_count": 37,
+      "recommendation_key": "buy",
+      "essays": [
+        "consensus-capital-national-ai-stacks",
+        "e19-trusted-execution-environments",
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "lfg-for-semiconductors",
+        "uk-opportunity-in-ai-compound-semiconductors"
+      ]
+    },
+    {
+      "ticker": "AMAT",
+      "exchange": "NASDAQ",
+      "name": "Applied Materials",
+      "kb_slug": "applied-materials",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute",
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute",
+        "Photonics"
+      ],
+      "sub_category": "semicap-deposition",
+      "why_it_matters": "Deposition + ion implant. Photonic packaging adjacency via emerging tools.",
+      "company_kb_present": true,
+      "price": 450.06,
+      "currency": "USD",
+      "market_cap_usd": 357329371136.0,
+      "trailing_pe": 42.378532,
+      "forward_pe": 27.833576,
+      "peg_ratio": 1.5273,
+      "ev_to_revenue": 12.278,
+      "revenue_ttm_usd": 29024000000.0,
+      "gross_margin": 0.48956,
+      "operating_margin": 0.31896,
+      "fifty_two_week_change": 1.8617029,
+      "analyst_mean_target": 511.16666,
+      "analyst_count": 36,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "uk-opportunity-in-ai-compound-semiconductors"
+      ]
+    },
+    {
+      "ticker": "IBM",
+      "exchange": "NYSE",
+      "name": "IBM",
+      "kb_slug": "ibm",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute",
+        "quantum"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute",
+        "Quantum"
+      ],
+      "sub_category": "quantum-hardware",
+      "why_it_matters": "Superconducting qubits roadmap (Heron, Condor, Kingfisher). Quantum services revenue line.",
+      "company_kb_present": true,
+      "price": 297.8,
+      "currency": "USD",
+      "market_cap_usd": 279897833472.0,
+      "trailing_pe": 26.377323,
+      "forward_pe": 22.133545,
+      "peg_ratio": 2.7809,
+      "ev_to_revenue": 4.905,
+      "revenue_ttm_usd": 68910997504.0,
+      "gross_margin": 0.58358,
+      "operating_margin": 0.13809,
+      "fifty_two_week_change": 0.12845778,
+      "analyst_mean_target": 277.68,
+      "analyst_count": 20,
+      "recommendation_key": "buy",
+      "essays": [
+        "a-primer-carbon-nanotubes",
+        "confidential-ai-the-dog-that-didnt",
+        "cubits-in-a-fridge-why-is-nobody",
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "e19-trusted-execution-environments",
+        "fund-frontier-expeditions-otherwise",
+        "making-ai-inference-cheap-with-analog",
+        "the-state-of-photonic-computing"
+      ]
+    },
+    {
+      "ticker": "TXN",
+      "exchange": "NASDAQ",
+      "name": "Texas Instruments",
+      "kb_slug": "texas-instruments",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "analog",
+      "why_it_matters": "Analog — cyclically depressed earnings. Idle 300mm fab capacity = optionality.",
+      "company_kb_present": true,
+      "price": 305.68,
+      "currency": "USD",
+      "market_cap_usd": 278197174272.0,
+      "trailing_pe": 52.342464,
+      "forward_pe": 32.47213,
+      "peg_ratio": 1.4587,
+      "ev_to_revenue": 15.573,
+      "revenue_ttm_usd": 18438000640.0,
+      "gross_margin": 0.57322,
+      "operating_margin": 0.37824002,
+      "fifty_two_week_change": 0.6594105,
+      "analyst_mean_target": 290.33334,
+      "analyst_count": 33,
+      "recommendation_key": "buy",
+      "essays": [
+        "analog-computing-the-once-and-future",
+        "e12-nanomechanical-computing-gears"
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "exchange": "NASDAQ",
+      "name": "Qualcomm",
+      "kb_slug": "qualcomm",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "rf",
+      "why_it_matters": "Mobile SoC + RF. Cheapest large-cap semi by P/E. PC + auto diversification grinding.",
+      "company_kb_present": true,
+      "price": 251.02,
+      "currency": "USD",
+      "market_cap_usd": 264575090688.0,
+      "trailing_pe": 27.020452,
+      "forward_pe": 23.6006,
+      "peg_ratio": 1.0694,
+      "ev_to_revenue": 6.07,
+      "revenue_ttm_usd": 44486000640.0,
+      "gross_margin": 0.54799,
+      "operating_margin": 0.22059,
+      "fifty_two_week_change": 0.711928,
+      "analyst_mean_target": 177.8125,
+      "analyst_count": 32,
+      "recommendation_key": "hold",
+      "essays": [
+        "ai-chips-computeram-and-the-future",
+        "e13-chiplets-how-chip-lego-is-driving",
+        "e19-trusted-execution-environments",
+        "how-to-invest-in-ai-sovereignty-sovereign",
+        "state-of-the-future-friday-four-d68",
+        "wen-babelfish-feat-aron-of-semron"
+      ]
+    },
+    {
+      "ticker": "GEV",
+      "exchange": "NYSE",
+      "name": "GE Vernova",
+      "kb_slug": "ge-vernova",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "fusion-nuclear"
+      ],
+      "sotf_theme_labels": [
+        "Fusion & nuclear"
+      ],
+      "sub_category": "nuclear-power-utility",
+      "why_it_matters": "GE spinout. Grid + gas + wind + nuclear (Hitachi JV).",
+      "company_kb_present": true,
+      "price": 968.32,
+      "currency": "USD",
+      "market_cap_usd": 260206952448.0,
+      "trailing_pe": 28.330017,
+      "forward_pe": 39.504578,
+      "peg_ratio": 1.6729,
+      "ev_to_revenue": 6.485,
+      "revenue_ttm_usd": 39374999552.0,
+      "gross_margin": 0.20282,
+      "operating_margin": 0.05461,
+      "fifty_two_week_change": 0.9958776,
+      "analyst_mean_target": 1215.8585,
+      "analyst_count": 33,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "KLAC",
+      "exchange": "NASDAQ",
+      "name": "KLA",
+      "kb_slug": "kla",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "semicap-other",
+      "why_it_matters": "Process control + inspection. Highest margins in semicap. Wins as nodes shrink + packaging complexity grows.",
+      "company_kb_present": false,
+      "price": 1921.71,
+      "currency": "USD",
+      "market_cap_usd": 251028209664.0,
+      "trailing_pe": 54.347,
+      "forward_pe": 38.54616,
+      "peg_ratio": 2.0173,
+      "ev_to_revenue": 19.258,
+      "revenue_ttm_usd": 13096660992.0,
+      "gross_margin": 0.61446,
+      "operating_margin": 0.41215,
+      "fifty_two_week_change": 1.5204737,
+      "analyst_mean_target": 1855.138,
+      "analyst_count": 29,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "PANW",
+      "exchange": "NASDAQ",
+      "name": "Palo Alto Networks",
+      "kb_slug": "palo-alto-networks",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "privacy"
+      ],
+      "sotf_theme_labels": [
+        "Privacy"
+      ],
+      "sub_category": "cyber-network",
+      "why_it_matters": "Platform play: firewall + SASE + SOC. Largest pure-play cyber.",
+      "company_kb_present": true,
+      "price": 281.69,
+      "currency": "USD",
+      "market_cap_usd": 228450598912.0,
+      "trailing_pe": 156.49445,
+      "forward_pe": 70.777985,
+      "peg_ratio": 4.7244,
+      "ev_to_revenue": 22.821,
+      "revenue_ttm_usd": 9893499904.0,
+      "gross_margin": 0.73502,
+      "operating_margin": 0.15496999,
+      "fifty_two_week_change": 0.44560194,
+      "analyst_mean_target": 230.10286,
+      "analyst_count": 49,
+      "recommendation_key": "buy",
+      "essays": [
+        "state-of-the-future-friday-four-551"
+      ]
+    },
+    {
+      "ticker": "2454.TW",
+      "exchange": "TWSE",
+      "name": "MediaTek",
+      "kb_slug": "mediatek",
+      "country": "🇹🇼 Taiwan",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "cpu",
+      "why_it_matters": "Mobile + auto + edge AI SoC. Datacenter ASIC efforts.",
+      "company_kb_present": true,
+      "price": 4310.0,
+      "currency": "TWD",
+      "market_cap_usd": 219007187052.68854,
+      "trailing_pe": 65.36245,
+      "forward_pe": 36.08229,
+      "peg_ratio": 2.0957,
+      "ev_to_revenue": 11.353,
+      "revenue_ttm_usd": 18840660075.514946,
+      "gross_margin": 0.4703,
+      "operating_margin": 0.15347,
+      "fifty_two_week_change": 2.420635,
+      "analyst_mean_target": 3928.5217,
+      "analyst_count": 23,
+      "recommendation_key": "strong_buy",
+      "essays": []
+    },
+    {
+      "ticker": "ADI",
+      "exchange": "NASDAQ",
+      "name": "Analog Devices",
+      "kb_slug": "analog-devices",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "analog",
+      "why_it_matters": "Analog + signal-chain. High-quality cyclical.",
+      "company_kb_present": true,
+      "price": 413.85,
+      "currency": "USD",
+      "market_cap_usd": 201580969984.0,
+      "trailing_pe": 61.768658,
+      "forward_pe": 28.013319,
+      "peg_ratio": 0.9057,
+      "ev_to_revenue": 16.236,
+      "revenue_ttm_usd": 12740193280.0,
+      "gross_margin": 0.64491,
+      "operating_margin": 0.38076,
+      "fifty_two_week_change": 0.9208633,
+      "analyst_mean_target": 446.03226,
+      "analyst_count": 31,
+      "recommendation_key": "buy",
+      "essays": [
+        "ai-chips-computeram-and-the-future",
+        "analog-computing-the-once-and-future"
+      ]
+    },
+    {
+      "ticker": "CRWD",
+      "exchange": "NASDAQ",
+      "name": "CrowdStrike",
+      "kb_slug": "crowdstrike",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "privacy"
+      ],
+      "sotf_theme_labels": [
+        "Privacy"
+      ],
+      "sub_category": "cyber-endpoint",
+      "why_it_matters": "Endpoint detection — Falcon platform. Post-incident comeback.",
+      "company_kb_present": true,
+      "price": 731.0,
+      "currency": "USD",
+      "market_cap_usd": 186066206720.0,
+      "trailing_pe": null,
+      "forward_pe": 118.45845,
+      "peg_ratio": 6.0289,
+      "ev_to_revenue": 37.62,
+      "revenue_ttm_usd": 4812004864.0,
+      "gross_margin": 0.74808997,
+      "operating_margin": 0.0100300005,
+      "fifty_two_week_change": 0.52555466,
+      "analyst_mean_target": 550.52783,
+      "analyst_count": 51,
+      "recommendation_key": "buy",
+      "essays": [
+        "state-of-the-future-friday-four-551"
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "exchange": "NASDAQ",
+      "name": "Marvell Technology",
+      "kb_slug": "marvell",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute",
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute",
+        "Photonics"
+      ],
+      "sub_category": "networking-asic",
+      "why_it_matters": "Inphi optical DSP + custom AI ASIC for AWS. The 'silicon photonics interconnect' bet. Co-packaged optics roadmap.",
+      "company_kb_present": false,
+      "price": 205.0,
+      "currency": "USD",
+      "market_cap_usd": 179488391168.0,
+      "trailing_pe": 70.44673,
+      "forward_pe": 33.994205,
+      "peg_ratio": 1.1672,
+      "ev_to_revenue": 20.737,
+      "revenue_ttm_usd": 8717100032.0,
+      "gross_margin": 0.51502997,
+      "operating_margin": 0.14479999,
+      "fifty_two_week_change": 2.3349602,
+      "analyst_mean_target": 215.40732,
+      "analyst_count": 41,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "consensus-capital-national-ai-stacks",
+        "e13-chiplets-how-chip-lego-is-driving",
+        "the-photonic-foundry-fallacy"
+      ]
+    },
+    {
+      "ticker": "GLW",
+      "exchange": "NYSE",
+      "name": "Corning",
+      "kb_slug": "corning",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "fiber-optic-glass",
+      "why_it_matters": "Optical fiber + Gorilla Glass + display. Photonic packaging glass.",
+      "company_kb_present": true,
+      "price": 181.16,
+      "currency": "USD",
+      "market_cap_usd": 155913158656.0,
+      "trailing_pe": 87.09616,
+      "forward_pe": 42.891914,
+      "peg_ratio": 1.4181,
+      "ev_to_revenue": 10.086,
+      "revenue_ttm_usd": 16321000448.0,
+      "gross_margin": 0.36383,
+      "operating_margin": 0.15661,
+      "fifty_two_week_change": 2.6203039,
+      "analyst_mean_target": 197.66667,
+      "analyst_count": 15,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "8035.T",
+      "exchange": "TSE",
+      "name": "Tokyo Electron",
+      "kb_slug": "tokyo-electron",
+      "country": "🇯🇵 Japan",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "semicap-deposition",
+      "why_it_matters": "Coater/developer monopoly + etch. WFE leverage.",
+      "company_kb_present": false,
+      "price": 52420.0,
+      "currency": "JPY",
+      "market_cap_usd": 150364870019.6289,
+      "trailing_pe": 41.84094,
+      "forward_pe": 40.946728,
+      "peg_ratio": 1.9904,
+      "ev_to_revenue": 9.551,
+      "revenue_ttm_usd": 15343525106.376566,
+      "gross_margin": 0.45339,
+      "operating_margin": 0.2889,
+      "fifty_two_week_change": 1.3189559,
+      "analyst_mean_target": 53381.816,
+      "analyst_count": 22,
+      "recommendation_key": "buy",
+      "essays": [
+        "uk-opportunity-in-ai-compound-semiconductors"
+      ]
+    },
+    {
+      "ticker": "SONY",
+      "exchange": "NYSE",
+      "name": "Sony Group",
+      "kb_slug": "sony",
+      "country": "🇯🇵 Japan",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "image-sensor",
+      "why_it_matters": "63.6% of global image sensor market (2025). Whole-conglomerate ticker; pure-semi exposure is partial.",
+      "company_kb_present": true,
+      "price": 21.57,
+      "currency": "USD",
+      "market_cap_usd": 127436881920.0,
+      "trailing_pe": 20.158876,
+      "forward_pe": 18.126049,
+      "peg_ratio": 1.9519,
+      "ev_to_revenue": -0.001,
+      "revenue_ttm_usd": 12479619923968.0,
+      "gross_margin": 0.30805,
+      "operating_margin": 0.07552,
+      "fifty_two_week_change": -0.19754463,
+      "analyst_mean_target": 29.375,
+      "analyst_count": 4,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "detecting-proteins-in-blood-with",
+        "e15-in-conversation-with-wisear-on"
+      ]
+    },
+    {
+      "ticker": "IFX.DE",
+      "exchange": "ETR",
+      "name": "Infineon",
+      "kb_slug": "infineon",
+      "country": "🇩🇪 Germany",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "power-sic-gan",
+      "why_it_matters": "Auto power + microcontroller + SiC.",
+      "company_kb_present": false,
+      "price": 81.11,
+      "currency": "EUR",
+      "market_cap_usd": 122889608431.85263,
+      "trailing_pe": 98.914635,
+      "forward_pe": 31.568789,
+      "peg_ratio": 1.1472,
+      "ev_to_revenue": 7.376,
+      "revenue_ttm_usd": 17632039547.627377,
+      "gross_margin": 0.41162,
+      "operating_margin": 0.46667,
+      "fifty_two_week_change": 1.3680165,
+      "analyst_mean_target": 69.16667,
+      "analyst_count": 24,
+      "recommendation_key": "buy",
+      "essays": [
+        "ai-chips-computeram-and-the-future",
+        "analog-computing-the-once-and-future",
+        "consensus-capital-national-ai-stacks",
+        "e12-nanomechanical-computing-gears",
+        "lfg-for-semiconductors",
+        "state-of-the-future-friday-four-7b7"
+      ]
+    },
+    {
+      "ticker": "688256.SS",
+      "exchange": "SSE",
+      "name": "Cambricon",
+      "kb_slug": "cambricon",
+      "country": "🇨🇳 China",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "gpu-accelerator",
+      "why_it_matters": "China's NVIDIA alternative. Domestic sovereign-AI bet.",
+      "company_kb_present": false,
+      "price": 1310.0,
+      "currency": "CNY",
+      "market_cap_usd": 121652424132.31447,
+      "trailing_pe": 303.24072,
+      "forward_pe": 58.22222,
+      "peg_ratio": null,
+      "ev_to_revenue": 98.767,
+      "revenue_ttm_usd": 1222415154.0860517,
+      "gross_margin": 0.53134996,
+      "operating_margin": 0.43036997,
+      "fifty_two_week_change": 2.2334428,
+      "analyst_mean_target": null,
+      "analyst_count": null,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "6857.T",
+      "exchange": "TSE",
+      "name": "Advantest",
+      "kb_slug": "advantest",
+      "country": "🇯🇵 Japan",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "semicap-test",
+      "why_it_matters": "AI-chip test monopoly. Earnings highly leveraged to NVIDIA volumes.",
+      "company_kb_present": true,
+      "price": 26170.0,
+      "currency": "JPY",
+      "market_cap_usd": 119200984553.92923,
+      "trailing_pe": 51.020607,
+      "forward_pe": 110.08287,
+      "peg_ratio": 2.0736,
+      "ev_to_revenue": 16.54,
+      "revenue_ttm_usd": 7086810492.5559635,
+      "gross_margin": 0.64335996,
+      "operating_margin": 0.46671,
+      "fifty_two_week_change": 2.6911142,
+      "analyst_mean_target": 32695.0,
+      "analyst_count": 20,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "CEG",
+      "exchange": "NASDAQ",
+      "name": "Constellation Energy",
+      "kb_slug": "constellation-energy",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "fusion-nuclear"
+      ],
+      "sotf_theme_labels": [
+        "Fusion & nuclear"
+      ],
+      "sub_category": "nuclear-power-utility",
+      "why_it_matters": "Largest US nuclear fleet. Microsoft 20-year PPA on Three Mile Island. AI datacenter power direct beneficiary.",
+      "company_kb_present": false,
+      "price": 287.75,
+      "currency": "USD",
+      "market_cap_usd": 103932436480.0,
+      "trailing_pe": 25.0,
+      "forward_pe": 21.171726,
+      "peg_ratio": 3.74,
+      "ev_to_revenue": 4.214,
+      "revenue_ttm_usd": 29866999808.0,
+      "gross_margin": 0.23263,
+      "operating_margin": 0.21858,
+      "fifty_two_week_change": -0.08193219,
+      "analyst_mean_target": 365.7315,
+      "analyst_count": 20,
+      "recommendation_key": "buy",
+      "essays": [
+        "atomic-energy-can-nuclear-power-our"
+      ]
+    },
+    {
+      "ticker": "CDNS",
+      "exchange": "NASDAQ",
+      "name": "Cadence Design Systems",
+      "kb_slug": "cadence",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "ip-edaeds",
+      "why_it_matters": "EDA duopoly. Chip-design-as-software with strong AI tailwind in design automation.",
+      "company_kb_present": false,
+      "price": 374.93,
+      "currency": "USD",
+      "market_cap_usd": 103411687424.0,
+      "trailing_pe": 87.80562,
+      "forward_pe": 39.949917,
+      "peg_ratio": 3.5594,
+      "ev_to_revenue": 18.983,
+      "revenue_ttm_usd": 5528612864.0,
+      "gross_margin": 0.86079,
+      "operating_margin": 0.29699,
+      "fifty_two_week_change": 0.28168046,
+      "analyst_mean_target": 383.94193,
+      "analyst_count": 26,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "ai-chips-computeram-and-the-future",
+        "deploy-intelligence-too-cheap-to",
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "state-of-the-future-friday-four-d68"
+      ]
+    },
+    {
+      "ticker": "SNPS",
+      "exchange": "NASDAQ",
+      "name": "Synopsys",
+      "kb_slug": "synopsys",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "ip-edaeds",
+      "why_it_matters": "EDA duopoly with Cadence. AI-design-flow leverage. Ansys acquisition closing.",
+      "company_kb_present": true,
+      "price": 475.62,
+      "currency": "USD",
+      "market_cap_usd": 91071397888.0,
+      "trailing_pe": 108.589035,
+      "forward_pe": 27.633432,
+      "peg_ratio": 3.0174,
+      "ev_to_revenue": 11.456,
+      "revenue_ttm_usd": 8679379968.0,
+      "gross_margin": 0.82598996,
+      "operating_margin": 0.10383,
+      "fifty_two_week_change": 0.020315409,
+      "analyst_mean_target": 558.45575,
+      "analyst_count": 26,
+      "recommendation_key": "buy",
+      "essays": [
+        "deploy-intelligence-too-cheap-to",
+        "e05-the-future-of-edge-ai-brain-inspired",
+        "e14-the-real-ai-bottleneck-high-bandwidth",
+        "has-the-time-come-to-take-mortal"
+      ]
+    },
+    {
+      "ticker": "ASX",
+      "exchange": "NYSE",
+      "name": "ASE Technology",
+      "kb_slug": "ase-group",
+      "country": "🇹🇼 Taiwan",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "packaging-osats",
+      "why_it_matters": "Largest OSAT — packaging + test. CoWoS adjacent.",
+      "company_kb_present": false,
+      "price": 38.35,
+      "currency": "USD",
+      "market_cap_usd": 84137820160.0,
+      "trailing_pe": 59.0,
+      "forward_pe": 24.17865,
+      "peg_ratio": 4.96,
+      "ev_to_revenue": 0.511,
+      "revenue_ttm_usd": 670896619520.0,
+      "gross_margin": 0.18505,
+      "operating_margin": 0.10095,
+      "fifty_two_week_change": 3.0668082,
+      "analyst_mean_target": 38.64756,
+      "analyst_count": 3,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "0981.HK",
+      "exchange": "HKEX",
+      "name": "SMIC",
+      "kb_slug": "smic",
+      "country": "🇨🇳 China",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "foundry",
+      "why_it_matters": "China's TSMC. Geopolitical proxy.",
+      "company_kb_present": true,
+      "price": 81.6,
+      "currency": "HKD",
+      "market_cap_usd": 83442351719.45587,
+      "trailing_pe": 116.57143,
+      "forward_pe": 59.364395,
+      "peg_ratio": 9.7892,
+      "ev_to_revenue": 50.744,
+      "revenue_ttm_usd": 1223180296.5723183,
+      "gross_margin": 0.20389,
+      "operating_margin": 0.098900005,
+      "fifty_two_week_change": 1.0349128,
+      "analyst_mean_target": 79.99005,
+      "analyst_count": 21,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "CIEN",
+      "exchange": "NYSE",
+      "name": "Ciena",
+      "kb_slug": "ciena",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics",
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "Photonics",
+        "AI & compute"
+      ],
+      "sub_category": "optical-transceiver",
+      "why_it_matters": "Coherent optical networking systems. +147% YTD on AI DC interconnect demand.",
+      "company_kb_present": false,
+      "price": 580.23,
+      "currency": "USD",
+      "market_cap_usd": 82043609088.0,
+      "trailing_pe": 376.77274,
+      "forward_pe": 66.35059,
+      "peg_ratio": 2.4204,
+      "ev_to_revenue": 16.067,
+      "revenue_ttm_usd": 5124289024.0,
+      "gross_margin": 0.42125,
+      "operating_margin": 0.13399,
+      "fifty_two_week_change": 6.097615,
+      "analyst_mean_target": 457.90585,
+      "analyst_count": 19,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "COHR",
+      "exchange": "NYSE",
+      "name": "Coherent Corp",
+      "kb_slug": "coherent",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics",
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "Photonics",
+        "AI & compute"
+      ],
+      "sub_category": "laser-chip-inp",
+      "why_it_matters": "InP laser-chip in-house + transceivers. ~25% transceiver share. 1.6T pluggable + CPO roadmap. Two-firm story with Lumentum.",
+      "company_kb_present": false,
+      "price": 361.47,
+      "currency": "USD",
+      "market_cap_usd": 70717751296.0,
+      "trailing_pe": 172.12859,
+      "forward_pe": 44.64974,
+      "peg_ratio": 0.92,
+      "ev_to_revenue": 10.914,
+      "revenue_ttm_usd": 6602083840.0,
+      "gross_margin": 0.36990002,
+      "operating_margin": 0.13572,
+      "fifty_two_week_change": 3.7078667,
+      "analyst_mean_target": 380.61707,
+      "analyst_count": 21,
+      "recommendation_key": "buy",
+      "essays": [
+        "a-specific-theory-of-sovereign-ai",
+        "chips-for-the-brain-modular-semiconductors",
+        "consensus-capital-national-ai-stacks",
+        "e08-optical-computing",
+        "e16-in-conversation-with-shiv-malik",
+        "fungible-compute-mortal-computing",
+        "gallium-nitride-photonics-w-james",
+        "has-the-time-come-to-take-mortal",
+        "photonic-engines-for-data-centers",
+        "state-of-the-future-friday-four",
+        "state-of-the-future-friday-four-d68",
+        "state-of-the-future-part-deux",
+        "the-photonic-foundry-fallacy",
+        "the-state-of-photonic-computing",
+        "uk-opportunity-in-ai-compound-semiconductors",
+        "unbundling-the-job"
+      ]
+    },
+    {
+      "ticker": "LITE",
+      "exchange": "NASDAQ",
+      "name": "Lumentum",
+      "kb_slug": "lumentum",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics",
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "Photonics",
+        "AI & compute"
+      ],
+      "sub_category": "laser-chip-inp",
+      "why_it_matters": "200G/lane EML lasers — only volume shipper. $2B NVDA strategic investment Mar 2026. Multi-year supply commitments. +966% LTM.",
+      "company_kb_present": true,
+      "price": 854.96,
+      "currency": "USD",
+      "market_cap_usd": 66515890176.0,
+      "trailing_pe": 151.58865,
+      "forward_pe": 47.233612,
+      "peg_ratio": 0.63,
+      "ev_to_revenue": 24.691,
+      "revenue_ttm_usd": 2488399872.0,
+      "gross_margin": 0.40837002,
+      "operating_margin": 0.21771,
+      "fifty_two_week_change": 10.270235,
+      "analyst_mean_target": 1104.6777,
+      "analyst_count": 24,
+      "recommendation_key": "buy",
+      "essays": [
+        "state-of-the-future-friday-four-d68",
+        "the-photonic-foundry-fallacy"
+      ]
+    },
+    {
+      "ticker": "STM",
+      "exchange": "NYSE",
+      "name": "STMicroelectronics",
+      "kb_slug": "stmicroelectronics",
+      "country": "🇨🇭 Switzerland",
+      "sotf_themes": [
+        "photonics",
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "Photonics",
+        "AI & compute"
+      ],
+      "sub_category": "mcu-microcontroller",
+      "why_it_matters": "Auto + industrial MCU + ToF sensors + SiC. Pan-European cyclical.",
+      "company_kb_present": true,
+      "price": 69.31,
+      "currency": "USD",
+      "market_cap_usd": 61602316288.0,
+      "trailing_pe": 433.1875,
+      "forward_pe": 31.080715,
+      "peg_ratio": 0.7168,
+      "ev_to_revenue": 4.865,
+      "revenue_ttm_usd": 12378000384.0,
+      "gross_margin": 0.33955002,
+      "operating_margin": 0.036510002,
+      "fifty_two_week_change": 1.7668662,
+      "analyst_mean_target": 57.44286,
+      "analyst_count": 14,
+      "recommendation_key": "buy",
+      "essays": [
+        "analog-computing-the-once-and-future",
+        "consensus-capital-national-ai-stacks",
+        "e12-nanomechanical-computing-gears",
+        "lfg-for-semiconductors",
+        "state-of-the-future-friday-four-7b7"
+      ]
+    },
+    {
+      "ticker": "ALAB",
+      "exchange": "NASDAQ",
+      "name": "Astera Labs",
+      "kb_slug": "astera-labs",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "networking-asic",
+      "why_it_matters": "Aries retimers, Taurus smart cable modules, Scorpio switches. Scale-up connectivity inside AI racks. PCIe → optical transition play.",
+      "company_kb_present": true,
+      "price": 342.85,
+      "currency": "USD",
+      "market_cap_usd": 58767212544.0,
+      "trailing_pe": 233.2313,
+      "forward_pe": 81.50114,
+      "peg_ratio": null,
+      "ev_to_revenue": 57.541,
+      "revenue_ttm_usd": 1001443968.0,
+      "gross_margin": 0.75988996,
+      "operating_margin": 0.20052,
+      "fifty_two_week_change": 2.689733,
+      "analyst_mean_target": 244.96773,
+      "analyst_count": 22,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "VST",
+      "exchange": "NYSE",
+      "name": "Vistra",
+      "kb_slug": "vistra",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "fusion-nuclear"
+      ],
+      "sotf_theme_labels": [
+        "Fusion & nuclear"
+      ],
+      "sub_category": "nuclear-power-utility",
+      "why_it_matters": "Comanche Peak nuclear + gas. AI-power play.",
+      "company_kb_present": false,
+      "price": 160.23,
+      "currency": "USD",
+      "market_cap_usd": 54026743808.0,
+      "trailing_pe": 26.794313,
+      "forward_pe": 14.623195,
+      "peg_ratio": 0.4768,
+      "ev_to_revenue": 3.897,
+      "revenue_ttm_usd": 19445000192.0,
+      "gross_margin": 0.38637,
+      "operating_margin": 0.26578,
+      "fifty_two_week_change": -0.043231606,
+      "analyst_mean_target": 225.29411,
+      "analyst_count": 17,
+      "recommendation_key": "strong_buy",
+      "essays": []
+    },
+    {
+      "ticker": "CCJ",
+      "exchange": "NYSE",
+      "name": "Cameco",
+      "kb_slug": "cameco",
+      "country": "🇨🇦 Canada",
+      "sotf_themes": [
+        "fusion-nuclear"
+      ],
+      "sotf_theme_labels": [
+        "Fusion & nuclear"
+      ],
+      "sub_category": "nuclear-other",
+      "why_it_matters": "Largest uranium miner. Westinghouse JV with Brookfield. Pure-play uranium thesis.",
+      "company_kb_present": false,
+      "price": 112.7,
+      "currency": "USD",
+      "market_cap_usd": 49084567552.0,
+      "trailing_pe": 105.327095,
+      "forward_pe": 58.62512,
+      "peg_ratio": 1.92,
+      "ev_to_revenue": 13.846,
+      "revenue_ttm_usd": 3537865984.0,
+      "gross_margin": 0.36782002,
+      "operating_margin": 0.18194,
+      "fifty_two_week_change": 0.9370918,
+      "analyst_mean_target": 130.07498,
+      "analyst_count": 11,
+      "recommendation_key": "buy",
+      "essays": [
+        "atomic-energy-can-nuclear-power-our"
+      ]
+    },
+    {
+      "ticker": "ON",
+      "exchange": "NASDAQ",
+      "name": "ON Semiconductor",
+      "kb_slug": "on-semiconductor",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics",
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "Photonics",
+        "AI & compute"
+      ],
+      "sub_category": "image-sensor",
+      "why_it_matters": "Auto CMOS image sensor + power. SiC arm spun out.",
+      "company_kb_present": false,
+      "price": 120.62,
+      "currency": "USD",
+      "market_cap_usd": 46897442816.0,
+      "trailing_pe": 88.69118,
+      "forward_pe": 28.374702,
+      "peg_ratio": 0.3991,
+      "ev_to_revenue": 7.939,
+      "revenue_ttm_usd": 6063000064.0,
+      "gross_margin": 0.42665002,
+      "operating_margin": 0.18232,
+      "fifty_two_week_change": 1.835449,
+      "analyst_mean_target": 105.44828,
+      "analyst_count": 29,
+      "recommendation_key": "buy",
+      "essays": [
+        "a-primer-carbon-nanotubes",
+        "carbon-nanotubes-in-the-datacentre",
+        "e10-pushing-moores-law-to-the-limit",
+        "state-of-the-future-part-deux"
+      ]
+    },
+    {
+      "ticker": "TDY",
+      "exchange": "NYSE",
+      "name": "Teledyne Technologies",
+      "kb_slug": "teledyne",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "image-sensor",
+      "why_it_matters": "Industrial imaging incl. FLIR thermal. Defense + scientific.",
+      "company_kb_present": false,
+      "price": 619.83,
+      "currency": "USD",
+      "market_cap_usd": 28716189696.0,
+      "trailing_pe": 31.44749,
+      "forward_pe": 23.788416,
+      "peg_ratio": 1.4,
+      "ev_to_revenue": 4.927,
+      "revenue_ttm_usd": 6225600000.0,
+      "gross_margin": 0.42873,
+      "operating_margin": 0.19031,
+      "fifty_two_week_change": 0.25410736,
+      "analyst_mean_target": 736.8461,
+      "analyst_count": 13,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "MTSI",
+      "exchange": "NASDAQ",
+      "name": "MACOM",
+      "kb_slug": "macom",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics",
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "Photonics",
+        "AI & compute"
+      ],
+      "sub_category": "optical-transceiver",
+      "why_it_matters": "High-speed analog for optical + RF. 200G/400G/800G transceiver enablers.",
+      "company_kb_present": false,
+      "price": 364.64,
+      "currency": "USD",
+      "market_cap_usd": 27820492800.0,
+      "trailing_pe": 156.49786,
+      "forward_pe": 53.27209,
+      "peg_ratio": 2.05,
+      "ev_to_revenue": 25.674,
+      "revenue_ttm_usd": 1073816064.0,
+      "gross_margin": 0.55684,
+      "operating_margin": 0.17591,
+      "fifty_two_week_change": 1.9468241,
+      "analyst_mean_target": 393.0,
+      "analyst_count": 14,
+      "recommendation_key": "buy",
+      "essays": [
+        "consensus-capital-national-ai-stacks"
+      ]
+    },
+    {
+      "ticker": "IONQ",
+      "exchange": "NYSE",
+      "name": "IonQ",
+      "kb_slug": "ionq",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "quantum"
+      ],
+      "sotf_theme_labels": [
+        "Quantum"
+      ],
+      "sub_category": "quantum-hardware",
+      "why_it_matters": "Trapped-ion qubits. Cloud access via AWS/Azure. Highest revenue among quantum pure-plays.",
+      "company_kb_present": true,
+      "price": 72.07,
+      "currency": "USD",
+      "market_cap_usd": 26901565440.0,
+      "trailing_pe": 184.79488,
+      "forward_pe": -69.13786,
+      "peg_ratio": null,
+      "ev_to_revenue": 133.137,
+      "revenue_ttm_usd": 187118000.0,
+      "gross_margin": 0.36110002,
+      "operating_margin": -4.01755,
+      "fifty_two_week_change": 0.77643573,
+      "analyst_mean_target": 67.63692,
+      "analyst_count": 13,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "willow-and-the-race-to-quantum-advantage"
+      ]
+    },
+    {
+      "ticker": "ZS",
+      "exchange": "NASDAQ",
+      "name": "Zscaler",
+      "kb_slug": "zscaler",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "privacy"
+      ],
+      "sotf_theme_labels": [
+        "Privacy"
+      ],
+      "sub_category": "cyber-network",
+      "why_it_matters": "Zero-trust network — proxy-based SSE.",
+      "company_kb_present": false,
+      "price": 139.73,
+      "currency": "USD",
+      "market_cap_usd": 22595670016.0,
+      "trailing_pe": null,
+      "forward_pe": 30.393002,
+      "peg_ratio": 1.5221,
+      "ev_to_revenue": 6.593,
+      "revenue_ttm_usd": 3173563904.0,
+      "gross_margin": 0.76737,
+      "operating_margin": -0.03276,
+      "fifty_two_week_change": -0.52339864,
+      "analyst_mean_target": 194.4625,
+      "analyst_count": 44,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "MKSI",
+      "exchange": "NASDAQ",
+      "name": "MKS Instruments",
+      "kb_slug": "mks-instruments",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics",
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "Photonics",
+        "AI & compute"
+      ],
+      "sub_category": "semicap-other",
+      "why_it_matters": "Vacuum + photonics for semi manufacturing + advanced packaging. +74% YTD.",
+      "company_kb_present": false,
+      "price": 324.26,
+      "currency": "USD",
+      "market_cap_usd": 21901858816.0,
+      "trailing_pe": 67.979034,
+      "forward_pe": 21.695917,
+      "peg_ratio": 1.32,
+      "ev_to_revenue": 6.291,
+      "revenue_ttm_usd": 4072999936.0,
+      "gross_margin": 0.46648997,
+      "operating_margin": 0.16048001,
+      "fifty_two_week_change": 2.9309008,
+      "analyst_mean_target": 359.91666,
+      "analyst_count": 12,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "BWXT",
+      "exchange": "NYSE",
+      "name": "BWX Technologies",
+      "kb_slug": "bwx-technologies",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "fusion-nuclear"
+      ],
+      "sotf_theme_labels": [
+        "Fusion & nuclear"
+      ],
+      "sub_category": "nuclear-reactor",
+      "why_it_matters": "Naval reactor + SMR + medical isotopes. Government revenue stability.",
+      "company_kb_present": true,
+      "price": 195.88,
+      "currency": "USD",
+      "market_cap_usd": 17945477120.0,
+      "trailing_pe": 52.374332,
+      "forward_pe": 37.71231,
+      "peg_ratio": 1.67,
+      "ev_to_revenue": 5.761,
+      "revenue_ttm_usd": 3376384000.0,
+      "gross_margin": 0.22658001,
+      "operating_margin": 0.1038,
+      "fifty_two_week_change": 0.55337036,
+      "analyst_mean_target": 239.27274,
+      "analyst_count": 11,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "AAOI",
+      "exchange": "NASDAQ",
+      "name": "Applied Optoelectronics",
+      "kb_slug": "applied-optoelectronics",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "optical-transceiver",
+      "why_it_matters": "Datacenter transceivers — Microsoft is largest customer.",
+      "company_kb_present": false,
+      "price": 158.41,
+      "currency": "USD",
+      "market_cap_usd": 12711257088.0,
+      "trailing_pe": null,
+      "forward_pe": 33.19573,
+      "peg_ratio": 0.78,
+      "ev_to_revenue": 24.757,
+      "revenue_ttm_usd": 507000000.0,
+      "gross_margin": 0.29642,
+      "operating_margin": -0.08595,
+      "fifty_two_week_change": 9.210119,
+      "analyst_mean_target": 151.3,
+      "analyst_count": 5,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "QBTS",
+      "exchange": "NYSE",
+      "name": "D-Wave Quantum",
+      "kb_slug": "d-wave",
+      "country": "🇨🇦 Canada",
+      "sotf_themes": [
+        "quantum"
+      ],
+      "sotf_theme_labels": [
+        "Quantum"
+      ],
+      "sub_category": "quantum-hardware",
+      "why_it_matters": "Annealing quantum — different paradigm. Optimization niche.",
+      "company_kb_present": false,
+      "price": 30.14,
+      "currency": "USD",
+      "market_cap_usd": 11165217792.0,
+      "trailing_pe": null,
+      "forward_pe": -79.615395,
+      "peg_ratio": null,
+      "ev_to_revenue": 852.429,
+      "revenue_ttm_usd": 12444000.0,
+      "gross_margin": 0.66273004,
+      "operating_margin": -19.14871,
+      "fifty_two_week_change": 0.7615429,
+      "analyst_mean_target": 35.172,
+      "analyst_count": 15,
+      "recommendation_key": "strong_buy",
+      "essays": [
+        "cubits-in-a-fridge-why-is-nobody",
+        "willow-and-the-race-to-quantum-advantage"
+      ]
+    },
+    {
+      "ticker": "CGNX",
+      "exchange": "NASDAQ",
+      "name": "Cognex",
+      "kb_slug": "cognex",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "image-sensor",
+      "why_it_matters": "Industrial machine vision — factory automation pure-play.",
+      "company_kb_present": false,
+      "price": 65.85,
+      "currency": "USD",
+      "market_cap_usd": 10958721024.0,
+      "trailing_pe": 77.47058,
+      "forward_pe": 37.376545,
+      "peg_ratio": 2.71,
+      "ev_to_revenue": 10.256,
+      "revenue_ttm_usd": 1046760000.0,
+      "gross_margin": 0.6802,
+      "operating_margin": 0.22304001,
+      "fifty_two_week_change": 1.2186658,
+      "analyst_mean_target": 76.25,
+      "analyst_count": 20,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "RGTI",
+      "exchange": "NASDAQ",
+      "name": "Rigetti Computing",
+      "kb_slug": "rigetti",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "quantum"
+      ],
+      "sotf_theme_labels": [
+        "Quantum"
+      ],
+      "sub_category": "quantum-hardware",
+      "why_it_matters": "Superconducting qubits — pure-play SPAC. Volatile.",
+      "company_kb_present": false,
+      "price": 25.54,
+      "currency": "USD",
+      "market_cap_usd": 8489465856.0,
+      "trailing_pe": null,
+      "forward_pe": -125.60863,
+      "peg_ratio": null,
+      "ev_to_revenue": 806.51,
+      "revenue_ttm_usd": 10016000.0,
+      "gross_margin": 0.29952,
+      "operating_margin": -5.8979497,
+      "fifty_two_week_change": 1.0831974,
+      "analyst_mean_target": 29.2425,
+      "analyst_count": 12,
+      "recommendation_key": "none",
+      "essays": [
+        "willow-and-the-race-to-quantum-advantage"
+      ]
+    },
+    {
+      "ticker": "AXTI",
+      "exchange": "NASDAQ",
+      "name": "AXT Inc",
+      "kb_slug": "axt",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "pic-substrate",
+      "why_it_matters": "InP, GaAs substrates for photonics + lasers.",
+      "company_kb_present": false,
+      "price": 103.16,
+      "currency": "USD",
+      "market_cap_usd": 6749056000.0,
+      "trailing_pe": null,
+      "forward_pe": 137.18086,
+      "peg_ratio": 12.09,
+      "ev_to_revenue": 57.746,
+      "revenue_ttm_usd": 95894000.0,
+      "gross_margin": 0.21337,
+      "operating_margin": -0.058870003,
+      "fifty_two_week_change": 64.70701,
+      "analyst_mean_target": 87.75,
+      "analyst_count": 4,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "NVTS",
+      "exchange": "NASDAQ",
+      "name": "Navitas Semiconductor",
+      "kb_slug": "navitas",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "power-sic-gan",
+      "why_it_matters": "GaN + SiC for AI power supplies — datacenter PSU efficiency.",
+      "company_kb_present": false,
+      "price": 26.6,
+      "currency": "USD",
+      "market_cap_usd": 6303950336.0,
+      "trailing_pe": null,
+      "forward_pe": -185.34003,
+      "peg_ratio": null,
+      "ev_to_revenue": 148.215,
+      "revenue_ttm_usd": 40496000.0,
+      "gross_margin": 0.30072,
+      "operating_margin": -3.17702,
+      "fifty_two_week_change": 3.8188405,
+      "analyst_mean_target": 13.5875,
+      "analyst_count": 8,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "LPL",
+      "exchange": "NYSE",
+      "name": "LG Display",
+      "kb_slug": "lg-display",
+      "country": "🇰🇷 South Korea",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "display-oled",
+      "why_it_matters": "OLED panels — Apple + auto.",
+      "company_kb_present": true,
+      "price": 5.55,
+      "currency": "USD",
+      "market_cap_usd": 5550000128.0,
+      "trailing_pe": null,
+      "forward_pe": 52.407936,
+      "peg_ratio": 6.56,
+      "ev_to_revenue": 0.537,
+      "revenue_ttm_usd": 25278784995328.0,
+      "gross_margin": 0.13447,
+      "operating_margin": 0.02651,
+      "fifty_two_week_change": 0.77884614,
+      "analyst_mean_target": 4.415,
+      "analyst_count": 2,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "6965.T",
+      "exchange": "TSE",
+      "name": "Hamamatsu Photonics",
+      "kb_slug": "hamamatsu",
+      "country": "🇯🇵 Japan",
+      "sotf_themes": [
+        "photonics",
+        "quantum"
+      ],
+      "sotf_theme_labels": [
+        "Photonics",
+        "Quantum"
+      ],
+      "sub_category": "image-sensor",
+      "why_it_matters": "Photomultipliers + SPADs + scientific sensors. Quantum sensing + medical.",
+      "company_kb_present": false,
+      "price": 2863.0,
+      "currency": "JPY",
+      "market_cap_usd": 5215866024.175065,
+      "trailing_pe": 62.49727,
+      "forward_pe": 33.945934,
+      "peg_ratio": 1.88,
+      "ev_to_revenue": 3.797,
+      "revenue_ttm_usd": 1367630519.2050486,
+      "gross_margin": 0.47318,
+      "operating_margin": 0.12576,
+      "fifty_two_week_change": 0.8554764,
+      "analyst_mean_target": 1878.5714,
+      "analyst_count": 7,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "IPGP",
+      "exchange": "NASDAQ",
+      "name": "IPG Photonics",
+      "kb_slug": "ipg-photonics",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "laser-fiber-industrial",
+      "why_it_matters": "Fiber lasers — industrial cutting + welding. Cyclical industrial exposure.",
+      "company_kb_present": true,
+      "price": 114.52,
+      "currency": "USD",
+      "market_cap_usd": 4860642816.0,
+      "trailing_pe": 168.41176,
+      "forward_pe": 49.545086,
+      "peg_ratio": 1.83,
+      "ev_to_revenue": 3.902,
+      "revenue_ttm_usd": 1041481024.0,
+      "gross_margin": 0.37557,
+      "operating_margin": 0.02096,
+      "fifty_two_week_change": 0.7231418,
+      "analyst_mean_target": 130.5,
+      "analyst_count": 7,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "SMR",
+      "exchange": "NYSE",
+      "name": "NuScale Power",
+      "kb_slug": "nuscale-power",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "fusion-nuclear"
+      ],
+      "sotf_theme_labels": [
+        "Fusion & nuclear"
+      ],
+      "sub_category": "nuclear-reactor",
+      "why_it_matters": "Small modular reactor pure-play. Long timelines, optionality on AI datacenter power demand.",
+      "company_kb_present": false,
+      "price": 12.67,
+      "currency": "USD",
+      "market_cap_usd": 4385160192.0,
+      "trailing_pe": null,
+      "forward_pe": -18.907345,
+      "peg_ratio": null,
+      "ev_to_revenue": 184.463,
+      "revenue_ttm_usd": 18669000.0,
+      "gross_margin": 0.23836,
+      "operating_margin": -101.81239,
+      "fifty_two_week_change": -0.60443336,
+      "analyst_mean_target": 15.35714,
+      "analyst_count": 14,
+      "recommendation_key": "hold",
+      "essays": [
+        "atomic-energy-can-nuclear-power-our",
+        "nuclear-fusion-the-state-of-play",
+        "three-overrated-technologies-from"
+      ]
+    },
+    {
+      "ticker": "OLED",
+      "exchange": "NASDAQ",
+      "name": "Universal Display",
+      "kb_slug": "universal-display",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "display-oled",
+      "why_it_matters": "OLED emitter materials + IP — duopoly with Samsung.",
+      "company_kb_present": false,
+      "price": 92.12,
+      "currency": "USD",
+      "market_cap_usd": 4306692096.0,
+      "trailing_pe": 20.516705,
+      "forward_pe": 18.474102,
+      "peg_ratio": 1.0,
+      "ev_to_revenue": 6.085,
+      "revenue_ttm_usd": 626545024.0,
+      "gross_margin": 0.74166,
+      "operating_margin": 0.30062,
+      "fifty_two_week_change": -0.37097985,
+      "analyst_mean_target": 128.11111,
+      "analyst_count": 9,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "LASR",
+      "exchange": "NASDAQ",
+      "name": "nLIGHT",
+      "kb_slug": "nlight",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "laser-fiber-industrial",
+      "why_it_matters": "Defense + industrial lasers. Directed energy upside.",
+      "company_kb_present": true,
+      "price": 74.12,
+      "currency": "USD",
+      "market_cap_usd": 4181013504.0,
+      "trailing_pe": null,
+      "forward_pe": 109.716385,
+      "peg_ratio": 1.78,
+      "ev_to_revenue": 13.4,
+      "revenue_ttm_usd": 289843008.0,
+      "gross_margin": 0.31285,
+      "operating_margin": -0.00529,
+      "fifty_two_week_change": 3.7543297,
+      "analyst_mean_target": 86.42857,
+      "analyst_count": 7,
+      "recommendation_key": "strong_buy",
+      "essays": []
+    },
+    {
+      "ticker": "FR.PA",
+      "exchange": "EPA",
+      "name": "Valeo",
+      "kb_slug": "valeo",
+      "country": "🇫🇷 France",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "Tier-1 auto supplier — first to mass-volume LiDAR (Mercedes Drive Pilot).",
+      "company_kb_present": true,
+      "price": 13.27,
+      "currency": "EUR",
+      "market_cap_usd": 3758731565.815553,
+      "trailing_pe": 16.382717,
+      "forward_pe": 6.059527,
+      "peg_ratio": 0.18,
+      "ev_to_revenue": 0.384,
+      "revenue_ttm_usd": 24370992263.02903,
+      "gross_margin": 0.20232001,
+      "operating_margin": 0.07039,
+      "fifty_two_week_change": 0.4836762,
+      "analyst_mean_target": 12.84667,
+      "analyst_count": 15,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "HIMX",
+      "exchange": "NASDAQ",
+      "name": "Himax Technologies",
+      "kb_slug": "himax",
+      "country": "🇹🇼 Taiwan",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "image-sensor",
+      "why_it_matters": "Display drivers + WLO optics for AR glasses + CIS.",
+      "company_kb_present": false,
+      "price": 20.57,
+      "currency": "USD",
+      "market_cap_usd": 3587941120.0,
+      "trailing_pe": 108.26316,
+      "forward_pe": 20.57,
+      "peg_ratio": 1.49,
+      "ev_to_revenue": 4.785,
+      "revenue_ttm_usd": 816052992.0,
+      "gross_margin": 0.30544,
+      "operating_margin": 0.05105,
+      "fifty_two_week_change": 1.4753308,
+      "analyst_mean_target": 23.7,
+      "analyst_count": 2,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "HSAI",
+      "exchange": "NASDAQ",
+      "name": "Hesai",
+      "kb_slug": "hesai",
+      "country": "🇨🇳 China",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "Volume leader for automotive LiDAR. Robotaxi exposure.",
+      "company_kb_present": false,
+      "price": 18.9,
+      "currency": "USD",
+      "market_cap_usd": 2969987584.0,
+      "trailing_pe": 40.212765,
+      "forward_pe": 20.857342,
+      "peg_ratio": 0.6684,
+      "ev_to_revenue": -0.612,
+      "revenue_ttm_usd": 3182825984.0,
+      "gross_margin": 0.41217,
+      "operating_margin": -0.01258,
+      "fifty_two_week_change": 0.013404846,
+      "analyst_mean_target": 30.289324,
+      "analyst_count": 21,
+      "recommendation_key": "strong_buy",
+      "essays": []
+    },
+    {
+      "ticker": "OUST",
+      "exchange": "NASDAQ",
+      "name": "Ouster",
+      "kb_slug": "ouster",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "Digital LiDAR + camera + AI vision after StereoLabs acquisition. Physical-AI platform pivot.",
+      "company_kb_present": false,
+      "price": 46.05,
+      "currency": "USD",
+      "market_cap_usd": 2932139264.0,
+      "trailing_pe": null,
+      "forward_pe": -1023.33325,
+      "peg_ratio": null,
+      "ev_to_revenue": 14.981,
+      "revenue_ttm_usd": 185330000.0,
+      "gross_margin": 0.47694,
+      "operating_margin": -0.39549,
+      "fifty_two_week_change": 2.600469,
+      "analyst_mean_target": 42.16667,
+      "analyst_count": 6,
+      "recommendation_key": "strong_buy",
+      "essays": []
+    },
+    {
+      "ticker": "WOLF",
+      "exchange": "NYSE",
+      "name": "Wolfspeed",
+      "kb_slug": "wolfspeed",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "ai-compute"
+      ],
+      "sotf_theme_labels": [
+        "AI & compute"
+      ],
+      "sub_category": "power-sic-gan",
+      "why_it_matters": "SiC pure-play — auto/grid. Balance-sheet repair story.",
+      "company_kb_present": true,
+      "price": 59.28,
+      "currency": "USD",
+      "market_cap_usd": 2865540608.0,
+      "trailing_pe": null,
+      "forward_pe": -11.844155,
+      "peg_ratio": null,
+      "ev_to_revenue": 4.956,
+      "revenue_ttm_usd": 712499968.0,
+      "gross_margin": -0.17403999,
+      "operating_margin": -0.71971,
+      "fifty_two_week_change": 1.682353,
+      "analyst_mean_target": 40.0,
+      "analyst_count": 1,
+      "recommendation_key": "hold",
+      "essays": [
+        "state-of-the-future-friday-four-7b7",
+        "uk-opportunity-in-ai-compound-semiconductors"
+      ]
+    },
+    {
+      "ticker": "AMS.SW",
+      "exchange": "SIX",
+      "name": "ams-OSRAM",
+      "kb_slug": "ams-osram",
+      "country": "🇨🇭 Switzerland",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "image-sensor",
+      "why_it_matters": "Optical + depth + multi-illumination sensors + LEDs. Restructuring story.",
+      "company_kb_present": true,
+      "price": 20.14,
+      "currency": "CHF",
+      "market_cap_usd": 2571152761.318456,
+      "trailing_pe": null,
+      "forward_pe": 22.91779,
+      "peg_ratio": 0.21,
+      "ev_to_revenue": 1.096,
+      "revenue_ttm_usd": 4231114613.3128133,
+      "gross_margin": 0.291,
+      "operating_margin": 0.00126,
+      "fifty_two_week_change": 1.5953608,
+      "analyst_mean_target": 14.977959,
+      "analyst_count": 9,
+      "recommendation_key": "hold",
+      "essays": []
+    },
+    {
+      "ticker": "POET",
+      "exchange": "NASDAQ",
+      "name": "POET Technologies",
+      "kb_slug": "poet-technologies",
+      "country": "🇨🇦 Canada",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "silicon-photonics",
+      "why_it_matters": "Silicon-photonics interposer architecture for transceivers and co-packaged optics. Micro-cap, technology bet.",
+      "company_kb_present": true,
+      "price": 12.29,
+      "currency": "USD",
+      "market_cap_usd": 2121197568.0,
+      "trailing_pe": null,
+      "forward_pe": "Infinity",
+      "peg_ratio": null,
+      "ev_to_revenue": 1676.538,
+      "revenue_ttm_usd": 1074865.0,
+      "gross_margin": 1.0,
+      "operating_margin": -41.7443,
+      "fifty_two_week_change": 1.9401913,
+      "analyst_mean_target": 8.2,
+      "analyst_count": 2,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "AEVA",
+      "exchange": "NYSE",
+      "name": "Aeva Technologies",
+      "kb_slug": "aeva",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "FMCW LiDAR — Nvidia DRIVE Hyperion win.",
+      "company_kb_present": false,
+      "price": 28.18,
+      "currency": "USD",
+      "market_cap_usd": 1776490368.0,
+      "trailing_pe": null,
+      "forward_pe": -18.298702,
+      "peg_ratio": null,
+      "ev_to_revenue": 84.825,
+      "revenue_ttm_usd": 20973000.0,
+      "gross_margin": 0.0463,
+      "operating_margin": -5.61099,
+      "fifty_two_week_change": 0.62702084,
+      "analyst_mean_target": 24.1,
+      "analyst_count": 5,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "INDI",
+      "exchange": "NASDAQ",
+      "name": "indie Semiconductor",
+      "kb_slug": "indie-semiconductor",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "Auto chips incl. LiDAR exposure via acquired iC-Haus.",
+      "company_kb_present": false,
+      "price": 4.99,
+      "currency": "USD",
+      "market_cap_usd": 1054330048.0,
+      "trailing_pe": null,
+      "forward_pe": 34.771095,
+      "peg_ratio": null,
+      "ev_to_revenue": 6.103,
+      "revenue_ttm_usd": 218774000.0,
+      "gross_margin": -0.29868,
+      "operating_margin": -0.70088995,
+      "fifty_two_week_change": 0.9118774,
+      "analyst_mean_target": 6.10714,
+      "analyst_count": 7,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "LBIRD.PA",
+      "exchange": "EPA",
+      "name": "Lumibird",
+      "kb_slug": "lumibird",
+      "country": "🇫🇷 France",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "laser-other",
+      "why_it_matters": "Lasers for defense + scientific + medical.",
+      "company_kb_present": true,
+      "price": 26.8,
+      "currency": "EUR",
+      "market_cap_usd": 689470425.5567214,
+      "trailing_pe": 41.875,
+      "forward_pe": 22.905983,
+      "peg_ratio": null,
+      "ev_to_revenue": 2.957,
+      "revenue_ttm_usd": 266443968.75364345,
+      "gross_margin": 0.63359,
+      "operating_margin": 0.13357,
+      "fifty_two_week_change": 0.887324,
+      "analyst_mean_target": 29.5,
+      "analyst_count": 3,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "ARQQ",
+      "exchange": "NASDAQ",
+      "name": "Arqit Quantum",
+      "kb_slug": "arqit",
+      "country": "🇬🇧 UK",
+      "sotf_themes": [
+        "privacy",
+        "quantum"
+      ],
+      "sotf_theme_labels": [
+        "Privacy",
+        "Quantum"
+      ],
+      "sub_category": "cyber-network",
+      "why_it_matters": "Quantum-safe encryption keys — small UK pure-play.",
+      "company_kb_present": false,
+      "price": 16.51,
+      "currency": "USD",
+      "market_cap_usd": 287313824.0,
+      "trailing_pe": null,
+      "forward_pe": -15.575473,
+      "peg_ratio": null,
+      "ev_to_revenue": 227.497,
+      "revenue_ttm_usd": 1086000.0,
+      "gross_margin": 0.49723998,
+      "operating_margin": -49.31621,
+      "fifty_two_week_change": -0.264588,
+      "analyst_mean_target": 60.0,
+      "analyst_count": 1,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "MVIS",
+      "exchange": "NASDAQ",
+      "name": "MicroVision",
+      "kb_slug": "microvision",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "MEMS-based LiDAR pivot from AR display.",
+      "company_kb_present": false,
+      "price": 0.6067,
+      "currency": "USD",
+      "market_cap_usd": 201191008.0,
+      "trailing_pe": null,
+      "forward_pe": -3.193158,
+      "peg_ratio": null,
+      "ev_to_revenue": 134.163,
+      "revenue_ttm_usd": 1554000.0,
+      "gross_margin": 0.0,
+      "operating_margin": -22.13155,
+      "fifty_two_week_change": -0.45045048,
+      "analyst_mean_target": null,
+      "analyst_count": null,
+      "recommendation_key": "none",
+      "essays": []
+    },
+    {
+      "ticker": "INVZ",
+      "exchange": "NASDAQ",
+      "name": "Innoviz Technologies",
+      "kb_slug": "innoviz",
+      "country": "🇮🇱 Israel",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "Automotive LiDAR — only one integrated into an L3 program with SOP 2026/2027.",
+      "company_kb_present": false,
+      "price": 0.7631,
+      "currency": "USD",
+      "market_cap_usd": 168923888.0,
+      "trailing_pe": null,
+      "forward_pe": -3.572231,
+      "peg_ratio": null,
+      "ev_to_revenue": 2.239,
+      "revenue_ttm_usd": 55089000.0,
+      "gross_margin": 0.23426001,
+      "operating_margin": -1.6511799,
+      "fifty_two_week_change": -0.13295454,
+      "analyst_mean_target": 2.025,
+      "analyst_count": 2,
+      "recommendation_key": "buy",
+      "essays": []
+    },
+    {
+      "ticker": "LIDR",
+      "exchange": "NASDAQ",
+      "name": "AEye",
+      "kb_slug": "aeye",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "Adaptive LiDAR — micro-cap.",
+      "company_kb_present": true,
+      "price": 2.0,
+      "currency": "USD",
+      "market_cap_usd": 92629640.0,
+      "trailing_pe": null,
+      "forward_pe": -3.030303,
+      "peg_ratio": null,
+      "ev_to_revenue": 52.829,
+      "revenue_ttm_usd": 270000.0,
+      "gross_margin": -1.4407401,
+      "operating_margin": -89.396034,
+      "fifty_two_week_change": 1.8169014,
+      "analyst_mean_target": 5.16667,
+      "analyst_count": 3,
+      "recommendation_key": "strong_buy",
+      "essays": []
+    },
+    {
+      "ticker": "IQE.L",
+      "exchange": "LSE",
+      "name": "IQE plc",
+      "kb_slug": "iqe",
+      "country": "🇬🇧 UK",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "pic-substrate",
+      "why_it_matters": "Epi-wafer leader for VCSELs + photonic lasers. Lumentum strategic partnership.",
+      "company_kb_present": true,
+      "price": 47.5,
+      "currency": "GBp",
+      "market_cap_usd": 6263461.614027532,
+      "trailing_pe": null,
+      "forward_pe": -76.36656,
+      "peg_ratio": 0.45,
+      "ev_to_revenue": 5.767,
+      "revenue_ttm_usd": 1308958.2968874054,
+      "gross_margin": -0.00014999999,
+      "operating_margin": -0.31663,
+      "fifty_two_week_change": 3.4952831,
+      "analyst_mean_target": 56.667,
+      "analyst_count": 3,
+      "recommendation_key": "buy",
+      "essays": [
+        "a-specific-theory-of-sovereign-ai",
+        "gallium-nitride-photonics-w-james",
+        "uk-opportunity-in-ai-compound-semiconductors"
+      ]
+    },
+    {
+      "ticker": "LAZR",
+      "exchange": "NASDAQ",
+      "name": "Luminar",
+      "kb_slug": "luminar",
+      "country": "🇺🇸 USA",
+      "sotf_themes": [
+        "photonics"
+      ],
+      "sotf_theme_labels": [
+        "Photonics"
+      ],
+      "sub_category": "lidar",
+      "why_it_matters": "Volvo, Mercedes wins. Stretched balance sheet.",
+      "company_kb_present": false,
+      "price": null,
+      "currency": null,
+      "market_cap_usd": null,
+      "trailing_pe": null,
+      "forward_pe": null,
+      "peg_ratio": null,
+      "ev_to_revenue": null,
+      "revenue_ttm_usd": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "fifty_two_week_change": null,
+      "analyst_mean_target": null,
+      "analyst_count": null,
+      "recommendation_key": null,
+      "essays": []
+    }
+  ]
+}

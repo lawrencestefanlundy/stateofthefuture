@@ -84,9 +84,17 @@
     writeHash();
   }
 
+  // Note: `chips` selector [data-theme] also matches .basket-card. When a
+  // basket card is clicked we scroll the table into view; for the small
+  // top-row chips we don't (the user is already looking at them).
   chips.forEach(function (c) {
     c.addEventListener('click', function () {
       activeTheme = c.dataset.theme || '';
+      if (c.classList.contains('basket-card')) {
+        setTimeout(function () {
+          table.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }, 50);
+      }
       render();
     });
   });

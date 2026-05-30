@@ -261,3 +261,95 @@
     display: none;
   }
 }
+
+/* ── Theme baskets — performance-summary cards above the table ───── */
+
+.basket-bar { padding: 1.5rem 0 0.5rem; }
+.basket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+.basket-card {
+  display: flex; flex-direction: column; gap: 0.55rem;
+  padding: 1rem 1.1rem 1rem;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: var(--paper);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.12s;
+}
+.basket-card:hover { background: var(--bg-tint); }
+.basket-head {
+  display: flex; flex-direction: column; gap: 0.1rem;
+}
+.basket-name {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+.basket-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-50);
+}
+.basket-headline {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  display: flex; align-items: baseline; gap: 0.55rem;
+}
+.basket-headline.up { color: #1a6f3a; }
+.basket-headline.down { color: #a03030; }
+.basket-headline-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-50);
+}
+.basket-spread {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-60);
+  display: flex; gap: 1rem; flex-wrap: wrap;
+}
+.basket-best { color: #1a6f3a; }
+.basket-worst { color: #a03030; }
+.basket-essay {
+  margin-top: 0.4rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--rule);
+  display: flex; flex-direction: column; gap: 0.15rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+.basket-essay-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-50);
+}
+.basket-essay-title {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--ink-80);
+  line-height: 1.25;
+}
+.basket-card:hover .basket-essay-title { color: var(--ink); }
+
+@media (max-width: 700px) {
+  .basket-grid { grid-template-columns: 1fr; }
+}

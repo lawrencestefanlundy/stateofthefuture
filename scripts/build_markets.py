@@ -113,6 +113,48 @@ def masthead():
 
 # ── INDEX PAGE ──────────────────────────────────────────────────────
 
+def _basket_stats(theme_slug: str) -> dict:
+    """Aggregate basket-level metrics for one theme.
+    Returns: count, total_mcap_usd, mean_52w, median_52w, top_ticker_by_mcap,
+    top_performer (ticker, change), worst_performer (ticker, change),
+    latest_essay (slug, title, date)."""
+    members = [t for t in stocks["tickers"] if theme_slug in t.get("sotf_themes", [])]
+    if not members:
+        return None
+    mcaps = [m["market_cap_usd"] for m in members if m.get("market_cap_usd")]
+    changes = [(m["ticker"], m["fifty_two_week_change"]) for m in members if m.get("fifty_two_week_change") is not None]
+    changes_sorted = sorted(changes, key=lambda x: x[1])
+    mean_52w = sum(c for _, c in changes) / len(changes) if changes else None
+    median_52w = changes_sorted[len(changes_sorted)//2][1] if changes_sorted else None
+    top_mcap = max(members, key=lambda m: m.get("market_cap_usd") or 0) if mcaps else None
+    # Find the latest essay tagged with this theme
+    latest_essay = None
+    site_theme_to_topic = {
+        "ai-compute": "ai-compute",
+        "photonics": "photonics",
+        "quantum": "quantum",
+        "fusion-nuclear": "fusion-nuclear",
+        "privacy": "privacy",
+    }
+    topic_slug = site_theme_to_topic.get(theme_slug)
+    if topic_slug:
+        matches = [p for p in posts_manifest["posts"] if topic_slug in (p.get("topics") or [])]
+        matches.sort(key=lambda p: p.get("date", ""), reverse=True)
+        if matches:
+            latest_essay = matches[0]
+    return {
+        "slug": theme_slug,
+        "count": len(members),
+        "total_mcap_usd": sum(mcaps),
+        "mean_52w": mean_52w,
+        "median_52w": median_52w,
+        "top_mcap": {"ticker": top_mcap["ticker"], "name": top_mcap["name"], "market_cap_usd": top_mcap["market_cap_usd"]} if top_mcap else None,
+        "top_performer": {"ticker": changes_sorted[-1][0], "change": changes_sorted[-1][1]} if changes_sorted else None,
+        "worst_performer": {"ticker": changes_sorted[0][0], "change": changes_sorted[0][1]} if changes_sorted else None,
+        "latest_essay": {"slug": latest_essay["slug"], "title": latest_essay["title"], "date": latest_essay.get("date", "")} if latest_essay else None,
+    }
+
+
 def render_index():
     themes = stocks["themes"]
     refreshed = stocks.get("market_data_refreshed_at", "")
@@ -123,6 +165,32 @@ def render_index():
             refreshed_pretty = dt.strftime("%-d %b %Y")
         except Exception:
             refreshed_pretty = refreshed
+
+    # Theme baskets — one card per theme
+    basket_cards = []
+    for theme in themes:
+        b = _basket_stats(theme["slug"])
+        if not b:
+            continue
+        mean_str = fmt_pct(b["mean_52w"])
+        mean_class = "up" if (b["mean_52w"] or 0) > 0 else "down" if (b["mean_52w"] or 0) < 0 else ""
+        top = b.get("top_performer") or {}
+        worst = b.get("worst_performer") or {}
+        top_str = f'<span class="basket-best">↑ {html.escape(top["ticker"])} {fmt_pct(top["change"])}</span>' if top else ''
+        worst_str = f'<span class="basket-worst">↓ {html.escape(worst["ticker"])} {fmt_pct(worst["change"])}</span>' if worst else ''
+        latest = b.get("latest_essay")
+        latest_str = ""
+        if latest:
+            latest_str = f'<a class="basket-essay" href="../posts/{html.escape(latest["slug"])}.html"><span class="basket-essay-label">Latest</span><span class="basket-essay-title">{html.escape(latest["title"])}</span></a>'
+        basket_cards.append(f"""<button class="basket-card" data-theme="{html.escape(theme["slug"])}" aria-label="Filter to {html.escape(theme["label"])}">
+  <div class="basket-head">
+    <div class="basket-name">{html.escape(theme["label"])}</div>
+    <div class="basket-count">{b["count"]} stocks · {fmt_mcap(b["total_mcap_usd"])}</div>
+  </div>
+  <div class="basket-headline {mean_class}">{mean_str}<span class="basket-headline-sub">52w mean</span></div>
+  <div class="basket-spread">{top_str}{worst_str}</div>
+  {latest_str}
+</button>""")
 
     theme_chips = "".join(
         f'<button class="filter-chip" data-theme="{t["slug"]}" aria-pressed="false">{html.escape(t["label"])} <span class="count">({t["count"]})</span></button>'
@@ -174,6 +242,14 @@ def render_index():
     <div class="topic-list" id="theme-list">
       <button class="filter-chip" data-theme="" aria-pressed="true">All themes <span class="count">({len(stocks["tickers"])})</span></button>
       {theme_chips}
+    </div>
+  </div>
+</section>
+
+<section class="basket-bar">
+  <div class="container">
+    <div class="basket-grid">
+      {"".join(basket_cards)}
     </div>
   </div>
 </section>
